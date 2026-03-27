@@ -1,0 +1,125 @@
+{
+  "common": {
+    "search": "Buscar...",
+    "readMore": "Leer más",
+    "sources": "Fuentes",
+    "relatedArguments": "Argumentos relacionados",
+    "openInTree": "Abrir en Árbol de Argumentos",
+    "openInDebate": "Abrir en Modo Debate",
+    "language": "Idioma",
+    "viewAll": "Ver todos",
+    "learnMore": "Más información",
+    "back": "Volver",
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron resultados",
+    "premise": "Premisa",
+    "conclusion": "Conclusión",
+    "objection": "Objeción",
+    "response": "Respuesta",
+    "support": "Apoyo",
+    "keyProponents": "Proponentes principales",
+    "historicalBackground": "Contexto histórico",
+    "formalStatement": "Declaración formal",
+    "objectionsAndResponses": "Objeciones y respuestas",
+    "significance": "Importancia",
+    "keyDistinction": "Distinción clave",
+    "primarySource": "Fuente primaria",
+    "searchPlaceholder": "Buscar argumentos, fuentes, doctrinas..."
+  },
+  "nav": {
+    "home": "Inicio",
+    "defend": "Defender",
+    "compare": "Comparar",
+    "sources": "Fuentes",
+    "explore": "Explorar",
+    "search": "Buscar",
+    "glossary": "Glosario",
+    "about": "Acerca de"
+  },
+  "home": {
+    "heroTitle": "La Plataforma Definitiva de Estudio de Teología Cristiana",
+    "heroSubtitle": "Explora 2.000 años de apologética, doctrina y fuentes primarias — con herramientas interactivas para un estudio profundo.",
+    "heroSearch": "¿Qué pregunta estás explorando?",
+    "quickFilters": {
+      "scientific": "Científico",
+      "philosophical": "Filosófico",
+      "historical": "Histórico",
+      "theological": "Teológico"
+    },
+    "defendCard": {
+      "title": "Defender",
+      "subtitle": "Apologética y Argumentos",
+      "desc": "Explora argumentos filosóficos, científicos e históricos a favor de la fe cristiana. Lógica formal, objeciones y respuestas."
+    },
+    "compareCard": {
+      "title": "Comparar",
+      "subtitle": "Tradiciones y Denominaciones",
+      "desc": "Ortodoxa, Católica, Protestante — compara tradiciones lado a lado en cada doctrina clave."
+    },
+    "sourcesCard": {
+      "title": "Fuentes",
+      "subtitle": "Documentos Primarios",
+      "desc": "5.800+ manuscritos del NT, Padres de la Iglesia, concilios ecuménicos y documentos credales."
+    },
+    "featuredArgument": "Argumento Destacado",
+    "recentAdditions": "Adiciones Recientes",
+    "timelinePreview": "Línea de Tiempo Histórica",
+    "quickLinks": "Enlaces Rápidos",
+    "exploreTools": "Herramientas Interactivas",
+    "argumentTree": "Árbol de Argumentos",
+    "argumentTreeDesc": "Visualiza argumentos como árboles interactivos y expandibles con premisas, objeciones y respuestas.",
+    "debateMode": "Modo Debate",
+    "debateModeDesc": "Ve argumentos y contraargumentos lado a lado en un formato dialéctico estructurado.",
+    "timeline": "Explorador de Línea de Tiempo",
+    "timelineDesc": "Navega por 2.000 años de historia cristiana — concilios, credos, controversias y figuras clave."
+  },
+  "defend": {
+    "title": "Defender la Fe",
+    "subtitle": "Argumentos filosóficos, científicos e históricos a favor del cristianismo",
+    "againstAtheism": "Contra el Ateísmo y el Secularismo",
+    "againstCults": "Contra Cultos y Herejías",
+    "categories": {
+      "cosmological": { "name": "Argumentos Cosmológicos", "desc": "Del universo existente a una primera causa necesaria" },
+      "ontological": { "name": "Argumentos Ontológicos", "desc": "Del concepto mismo de Dios a la realidad de Su existencia" },
+      "teleological": { "name": "Argumentos Teleológicos", "desc": "Del orden y la sintonización fina del universo al diseño inteligente" },
+      "moral": { "name": "Argumentos Morales", "desc": "De la existencia de valores morales objetivos a un legislador moral" },
+      "existential": { "name": "Argumentos Existenciales", "desc": "De la conciencia, el deseo y el significado a una fuente trascendente" },
+      "historical": { "name": "Evidencia Histórica", "desc": "De la evidencia manuscrita, el testimonio ocular y la Resurrección" },
+      "objections": { "name": "Objeciones Ateas", "desc": "Respuestas al problema del mal, la ocultación divina y más" }
+    }
+  },
+  "compare": {
+    "title": "Comparar Tradiciones",
+    "subtitle": "Comprende los fundamentos teológicos de las principales ramas del cristianismo",
+    "orthodoxy": "Ortodoxia Oriental",
+    "catholicism": "Catolicismo Romano",
+    "protestantism": "Protestantismo",
+    "sideBySide": "Comparación Lado a Lado",
+    "selectTraditions": "Seleccionar tradiciones",
+    "selectDoctrine": "Seleccionar doctrina",
+    "doctrines": { "eucharist": "Eucaristía", "salvation": "Salvación", "authority": "Autoridad", "baptism": "Bautismo", "mary": "María", "church": "Iglesia" }
+  },
+  "sources": {
+    "title": "Archivo de Fuentes Primarias",
+    "subtitle": "Los textos originales que dieron forma a la teología cristiana",
+    "manuscripts": "Manuscritos Bíblicos",
+    "manuscriptsDesc": "5.800+ manuscritos griegos del NT, papiros, unciales y minúsculos",
+    "churchFathers": "Padres de la Iglesia",
+    "churchFathersDesc": "Escritos apostólicos, ante-nicenos y nicenos y post-nicenos",
+    "councils": "Concilios y Credos",
+    "councilsDesc": "Siete concilios ecuménicos, sínodos regionales y documentos credales",
+    "liturgical": "Textos Litúrgicos",
+    "liturgicalDesc": "La Didaché, liturgias orientales y occidentales"
+  },
+  "explore": {
+    "title": "Herramientas Interactivas",
+    "subtitle": "Interactúa con la teología a través de la visualización y el análisis estructurado",
+    "argumentTree": { "title": "Árbol de Argumentos", "desc": "Visualiza argumentos como árboles interactivos y expandibles" },
+    "debateMode": { "title": "Modo Debate", "desc": "Argumentos y contraargumentos lado a lado" },
+    "timeline": { "title": "Explorador de Línea de Tiempo", "desc": "Navega por 2.000 años de historia cristiana" },
+    "scriptureRef": { "title": "Referencia Cruzada de Escrituras", "desc": "Encuentra a cada Padre de la Iglesia que comenta sobre un versículo dado" }
+  },
+  "glossary": { "title": "Glosario Teológico", "subtitle": "Términos y conceptos clave en teología cristiana" },
+  "about": { "title": "Acerca de esta Plataforma", "subtitle": "Metodología, fuentes y misión" }
+}

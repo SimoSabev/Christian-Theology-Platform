@@ -1,0 +1,171 @@
+{
+  "common": {
+    "search": "Search...",
+    "readMore": "Read more",
+    "sources": "Sources",
+    "relatedArguments": "Related Arguments",
+    "openInTree": "Open in Argument Tree",
+    "openInDebate": "Open in Debate Mode",
+    "language": "Language",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "premise": "Premise",
+    "conclusion": "Conclusion",
+    "objection": "Objection",
+    "response": "Response",
+    "support": "Support",
+    "keyProponents": "Key Proponents",
+    "historicalBackground": "Historical Background",
+    "formalStatement": "Formal Statement",
+    "objectionsAndResponses": "Objections & Responses",
+    "significance": "Significance",
+    "keyDistinction": "Key Distinction",
+    "primarySource": "Primary Source",
+    "searchPlaceholder": "Search arguments, sources, doctrines..."
+  },
+  "nav": {
+    "home": "Home",
+    "defend": "Defend",
+    "compare": "Compare",
+    "sources": "Sources",
+    "explore": "Explore",
+    "search": "Search",
+    "glossary": "Glossary",
+    "about": "About"
+  },
+  "home": {
+    "heroTitle": "The Definitive Christian Theology Study Platform",
+    "heroSubtitle": "Explore 2,000 years of apologetics, doctrine, and primary sources — with interactive tools for deep study.",
+    "heroSearch": "What question are you exploring?",
+    "quickFilters": {
+      "scientific": "Scientific",
+      "philosophical": "Philosophical",
+      "historical": "Historical",
+      "theological": "Theological"
+    },
+    "defendCard": {
+      "title": "Defend",
+      "subtitle": "Apologetics & Arguments",
+      "desc": "Explore philosophical, scientific, and historical arguments for the Christian faith. Formal logic, objections, and responses."
+    },
+    "compareCard": {
+      "title": "Compare",
+      "subtitle": "Traditions & Denominations",
+      "desc": "Orthodox, Catholic, Protestant — compare traditions side by side on every key doctrine."
+    },
+    "sourcesCard": {
+      "title": "Sources",
+      "subtitle": "Primary Documents",
+      "desc": "5,800+ NT manuscripts, Church Fathers, ecumenical councils, and creedal documents."
+    },
+    "featuredArgument": "Featured Argument",
+    "recentAdditions": "Recent Additions",
+    "timelinePreview": "Historical Timeline",
+    "quickLinks": "Quick Links",
+    "exploreTools": "Interactive Tools",
+    "argumentTree": "Argument Tree",
+    "argumentTreeDesc": "Visualize arguments as interactive, expandable trees with premises, objections, and responses.",
+    "debateMode": "Debate Mode",
+    "debateModeDesc": "See arguments and counter-arguments side by side in a structured dialectical format.",
+    "timeline": "Timeline Explorer",
+    "timelineDesc": "Navigate 2,000 years of Christian history — councils, creeds, controversies, and key figures."
+  },
+  "defend": {
+    "title": "Defend the Faith",
+    "subtitle": "Philosophical, scientific, and historical arguments for Christianity",
+    "againstAtheism": "Against Atheism & Secularism",
+    "againstCults": "Against Cults & Heresies",
+    "categories": {
+      "cosmological": {
+        "name": "Cosmological Arguments",
+        "desc": "From the existence of the universe to a necessary first cause"
+      },
+      "ontological": {
+        "name": "Ontological Arguments",
+        "desc": "From the very concept of God to the reality of His existence"
+      },
+      "teleological": {
+        "name": "Teleological Arguments",
+        "desc": "From the order and fine-tuning of the universe to intelligent design"
+      },
+      "moral": {
+        "name": "Moral Arguments",
+        "desc": "From the existence of objective moral values to a moral lawgiver"
+      },
+      "existential": {
+        "name": "Existential Arguments",
+        "desc": "From consciousness, desire, and meaning to a transcendent source"
+      },
+      "historical": {
+        "name": "Historical Evidence",
+        "desc": "From manuscript evidence, eyewitness testimony, and the Resurrection"
+      },
+      "objections": {
+        "name": "Atheist Objections",
+        "desc": "Responses to the problem of evil, divine hiddenness, and more"
+      }
+    }
+  },
+  "compare": {
+    "title": "Compare Traditions",
+    "subtitle": "Understand the theological foundations of Christianity's major branches",
+    "orthodoxy": "Eastern Orthodoxy",
+    "catholicism": "Roman Catholicism",
+    "protestantism": "Protestantism",
+    "sideBySide": "Side-by-Side Comparison",
+    "selectTraditions": "Select traditions",
+    "selectDoctrine": "Select doctrine",
+    "doctrines": {
+      "eucharist": "Eucharist",
+      "salvation": "Salvation",
+      "authority": "Authority",
+      "baptism": "Baptism",
+      "mary": "Mary",
+      "church": "Church"
+    }
+  },
+  "sources": {
+    "title": "Primary Sources Archive",
+    "subtitle": "The original texts that shaped Christian theology",
+    "manuscripts": "Biblical Manuscripts",
+    "manuscriptsDesc": "5,800+ Greek NT manuscripts, papyri, uncials, and minuscules",
+    "churchFathers": "Church Fathers",
+    "churchFathersDesc": "Apostolic, Ante-Nicene, and Nicene & Post-Nicene writings",
+    "councils": "Councils & Creeds",
+    "councilsDesc": "Seven ecumenical councils, regional synods, and creedal documents",
+    "liturgical": "Liturgical Texts",
+    "liturgicalDesc": "The Didache, Eastern and Western liturgies"
+  },
+  "explore": {
+    "title": "Interactive Tools",
+    "subtitle": "Engage with theology through visualization and structured analysis",
+    "argumentTree": {
+      "title": "Argument Tree",
+      "desc": "Visualize arguments as interactive, expandable trees"
+    },
+    "debateMode": {
+      "title": "Debate Mode",
+      "desc": "Arguments and counter-arguments side by side"
+    },
+    "timeline": {
+      "title": "Timeline Explorer",
+      "desc": "Navigate 2,000 years of Christian history"
+    },
+    "scriptureRef": {
+      "title": "Scripture Cross-Reference",
+      "desc": "Find every Church Father who comments on a given verse"
+    }
+  },
+  "glossary": {
+    "title": "Theological Glossary",
+    "subtitle": "Key terms and concepts in Christian theology"
+  },
+  "about": {
+    "title": "About This Platform",
+    "subtitle": "Methodology, sources, and mission"
+  }
+}
