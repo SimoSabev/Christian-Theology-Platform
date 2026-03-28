@@ -7,6 +7,7 @@ import { locales, isRtl, type Locale } from '@/i18n/config';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const notoSans = Noto_Sans({
   weight: ['400', '500', '600', '700'],
@@ -61,7 +62,10 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary font-sans">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">
+            {children}
+            <SpeedInsights />
+            </main>
           <Footer />
         </NextIntlClientProvider>
       </body>
