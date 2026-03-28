@@ -272,8 +272,8 @@ The prologue of John (1:1-18) in 𝔓66 is of particular theological importance,
     ],
     passages: [
       {
-        title: 'The Logos Hymn — John 1:1–5',
-        reference: 'John 1:1–5',
+        title: 'The Logos Hymn — John 1:1–18',
+        reference: 'John 1:1–18',
         notes: 'The prologue of John is one of the most theologically significant passages in the entire New Testament. 𝔓66 provides one of the earliest complete witnesses to this text, dating to c. 200 AD.',
         verses: [
           {
@@ -546,6 +546,94 @@ The prologue of John (1:1-18) in 𝔓66 is of particular theological importance,
               { original: 'χάριτος', transliteration: 'charitos', parsing: 'N-GFS', gloss: 'of grace', strongs: 'G5485', lemma: 'χάρις' },
               { original: 'καὶ', transliteration: 'kai', parsing: 'Conj', gloss: 'and', strongs: 'G2532', lemma: 'καί' },
               { original: 'ἀληθείας', transliteration: 'alētheias', parsing: 'N-GFS', gloss: 'of truth', strongs: 'G225', lemma: 'ἀλήθεια' }
+            ]
+          },
+          {
+            reference: 'John 1:15',
+            originalText: 'Ἰωάννης μαρτυρεῖ περὶ αὐτοῦ καὶ κέκραγεν λέγων οὗτος ἦν ὃν εἶπον ὁ ὀπίσω μου ἐρχόμενος ἔμπροσθέν μου γέγονεν ὅτι πρῶτός μου ἦν',
+            words: [
+              { original: 'Ἰωάννης', transliteration: 'Iōannēs', parsing: 'N-NMS', gloss: 'John', strongs: 'G2491', lemma: 'Ἰωάννης' },
+              { original: 'μαρτυρεῖ', transliteration: 'martyrei', parsing: 'V-PAI-3S', gloss: 'testifies', strongs: 'G3140', lemma: 'μαρτυρέω' },
+              { original: 'περὶ', transliteration: 'peri', parsing: 'Prep', gloss: 'about', strongs: 'G4012', lemma: 'περί' },
+              { original: 'αὐτοῦ', transliteration: 'autou', parsing: 'PPro-GM3S', gloss: 'him', strongs: 'G846', lemma: 'αὐτός' },
+              { original: 'καὶ', transliteration: 'kai', parsing: 'Conj', gloss: 'and', strongs: 'G2532', lemma: 'καί' },
+              { original: 'κέκραγεν', transliteration: 'kekragen', parsing: 'V-RAI-3S', gloss: 'cried out', strongs: 'G2896', lemma: 'κράζω' },
+              { original: 'λέγων', transliteration: 'legōn', parsing: 'V-PAP-NMS', gloss: 'saying', strongs: 'G3004', lemma: 'λέγω' },
+              { original: 'οὗτος', transliteration: 'houtos', parsing: 'DPro-NMS', gloss: 'This', strongs: 'G3778', lemma: 'οὗτος' },
+              { original: 'ἦν', transliteration: 'ēn', parsing: 'V-IAI-3S', gloss: 'was', strongs: 'G1510', lemma: 'εἰμί' },
+              { original: 'ὃν', transliteration: 'hon', parsing: 'RelPro-AMS', gloss: 'whom', strongs: 'G3739', lemma: 'ὅς' },
+              { original: 'εἶπον', transliteration: 'eipon', parsing: 'V-2AAI-1S', gloss: 'I spoke of', strongs: 'G2036', lemma: 'λέγω' },
+              { original: 'ὁ', transliteration: 'ho', parsing: 'Art-NMS', gloss: 'the (one)', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'ὀπίσω', transliteration: 'opisō', parsing: 'Prep', gloss: 'after', strongs: 'G3694', lemma: 'ὀπίσω' },
+              { original: 'μου', transliteration: 'mou', parsing: 'PPro-G1S', gloss: 'me', strongs: 'G1473', lemma: 'ἐγώ' },
+              { original: 'ἐρχόμενος', transliteration: 'erchomenos', parsing: 'V-PNP-NMS', gloss: 'coming', strongs: 'G2064', lemma: 'ἔρχομαι' },
+              { original: 'ἔμπροσθέν', transliteration: 'emprosthen', parsing: 'Prep', gloss: 'before', strongs: 'G1715', lemma: 'ἔμπροσθεν' },
+              { original: 'μου', transliteration: 'mou', parsing: 'PPro-G1S', gloss: 'me', strongs: 'G1473', lemma: 'ἐγώ' },
+              { original: 'γέγονεν', transliteration: 'gegonen', parsing: 'V-RAI-3S', gloss: 'has moved', strongs: 'G1096', lemma: 'γίνομαι' },
+              { original: 'ὅτι', transliteration: 'hoti', parsing: 'Conj', gloss: 'for', strongs: 'G3754', lemma: 'ὅτι' },
+              { original: 'πρῶτός', transliteration: 'prōtos', parsing: 'Adj-NMS', gloss: 'before', strongs: 'G4413', lemma: 'πρῶτος' },
+              { original: 'μου', transliteration: 'mou', parsing: 'PPro-G1S', gloss: 'me', strongs: 'G1473', lemma: 'ἐγώ' },
+              { original: 'ἦν', transliteration: 'ēn', parsing: 'V-IAI-3S', gloss: 'he was', strongs: 'G1510', lemma: 'εἰμί' }
+            ]
+          },
+          {
+            reference: 'John 1:16',
+            originalText: 'ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν καὶ χάριν ἀντὶ χάριτος',
+            words: [
+              { original: 'ὅτι', transliteration: 'hoti', parsing: 'Conj', gloss: 'For', strongs: 'G3754', lemma: 'ὅτι' },
+              { original: 'ἐκ', transliteration: 'ek', parsing: 'Prep', gloss: 'of', strongs: 'G1537', lemma: 'ἐκ' },
+              { original: 'τοῦ', transliteration: 'tou', parsing: 'Art-GNS', gloss: 'the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'πληρώματος', transliteration: 'plērōmatos', parsing: 'N-GNS', gloss: 'fullness', strongs: 'G4138', lemma: 'πλήρωμα' },
+              { original: 'αὐτοῦ', transliteration: 'autou', parsing: 'PPro-GM3S', gloss: 'his', strongs: 'G846', lemma: 'αὐτός' },
+              { original: 'ἡμεῖς', transliteration: 'hēmeis', parsing: 'PPro-N1P', gloss: 'we', strongs: 'G2249', lemma: 'ἐγώ' },
+              { original: 'πάντες', transliteration: 'pantes', parsing: 'Adj-NMP', gloss: 'all', strongs: 'G3956', lemma: 'πᾶς' },
+              { original: 'ἐλάβομεν', transliteration: 'elabomen', parsing: 'V-2AAI-1P', gloss: 'received', strongs: 'G2983', lemma: 'λαμβάνω' },
+              { original: 'καὶ', transliteration: 'kai', parsing: 'Conj', gloss: 'and', strongs: 'G2532', lemma: 'καί' },
+              { original: 'χάριν', transliteration: 'charin', parsing: 'N-AFS', gloss: 'grace', strongs: 'G5485', lemma: 'χάρις' },
+              { original: 'ἀντὶ', transliteration: 'anti', parsing: 'Prep', gloss: 'upon', strongs: 'G473', lemma: 'ἀντί' },
+              { original: 'χάριτος', transliteration: 'charitos', parsing: 'N-GFS', gloss: 'grace', strongs: 'G5485', lemma: 'χάρις' }
+            ]
+          },
+          {
+            reference: 'John 1:17',
+            originalText: 'ὅτι ὁ νόμος διὰ Μωϋσέως ἐδόθη ἡ χάρις καὶ ἡ ἀλήθεια διὰ Ἰησοῦ Χριστοῦ ἐγένετο',
+            words: [
+              { original: 'ὅτι', transliteration: 'hoti', parsing: 'Conj', gloss: 'For', strongs: 'G3754', lemma: 'ὅτι' },
+              { original: 'ὁ', transliteration: 'ho', parsing: 'Art-NMS', gloss: 'the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'νόμος', transliteration: 'nomos', parsing: 'N-NMS', gloss: 'law', strongs: 'G3551', lemma: 'νόμος' },
+              { original: 'διὰ', transliteration: 'dia', parsing: 'Prep', gloss: 'through', strongs: 'G1223', lemma: 'διά' },
+              { original: 'Μωϋσέως', transliteration: 'Mōyseōs', parsing: 'N-GMS', gloss: 'Moses', strongs: 'G3475', lemma: 'Μωϋσῆς' },
+              { original: 'ἐδόθη', transliteration: 'edothē', parsing: 'V-API-3S', gloss: 'was given', strongs: 'G1325', lemma: 'δίδωμι' },
+              { original: 'ἡ', transliteration: 'hē', parsing: 'Art-NFS', gloss: 'the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'χάρις', transliteration: 'charis', parsing: 'N-NFS', gloss: 'grace', strongs: 'G5485', lemma: 'χάρις' },
+              { original: 'καὶ', transliteration: 'kai', parsing: 'Conj', gloss: 'and', strongs: 'G2532', lemma: 'καί' },
+              { original: 'ἡ', transliteration: 'hē', parsing: 'Art-NFS', gloss: 'the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'ἀλήθεια', transliteration: 'alētheia', parsing: 'N-NFS', gloss: 'truth', strongs: 'G225', lemma: 'ἀλήθεια' },
+              { original: 'διὰ', transliteration: 'dia', parsing: 'Prep', gloss: 'through', strongs: 'G1223', lemma: 'διά' },
+              { original: 'Ἰησοῦ', transliteration: 'Iēsou', parsing: 'N-GMS', gloss: 'Jesus', strongs: 'G2424', lemma: 'Ἰησοῦς' },
+              { original: 'Χριστοῦ', transliteration: 'Christou', parsing: 'N-GMS', gloss: 'Christ', strongs: 'G5547', lemma: 'Χριστός' },
+              { original: 'ἐγένετο', transliteration: 'egeneto', parsing: 'V-2ADI-3S', gloss: 'came', strongs: 'G1096', lemma: 'γίνομαι' }
+            ]
+          },
+          {
+            reference: 'John 1:18',
+            originalText: 'θεὸν οὐδεὶς ἑώρακεν πώποτε μονογενὴς θεὸς ὁ ὢν εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος ἐξηγήσατο',
+            words: [
+              { original: 'θεὸν', transliteration: 'theon', parsing: 'N-AMS', gloss: 'God', strongs: 'G2316', lemma: 'θεός' },
+              { original: 'οὐδεὶς', transliteration: 'oudeis', parsing: 'Adj-NMS', gloss: 'No one', strongs: 'G3762', lemma: 'οὐδείς' },
+              { original: 'ἑώρακεν', transliteration: 'heōraken', parsing: 'V-RAI-3S', gloss: 'has seen', strongs: 'G3708', lemma: 'ὁράω' },
+              { original: 'πώποτε', transliteration: 'pōpote', parsing: 'Adv', gloss: 'ever', strongs: 'G4455', lemma: 'πώποτε' },
+              { original: 'μονογενὴς', transliteration: 'monogenēs', parsing: 'Adj-NMS', gloss: 'the only-begotten', strongs: 'G3439', lemma: 'μονογενής' },
+              { original: 'θεὸς', transliteration: 'theos', parsing: 'N-NMS', gloss: 'God', strongs: 'G2316', lemma: 'θεός' },
+              { original: 'ὁ', transliteration: 'ho', parsing: 'Art-NMS', gloss: 'the (one)', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'ὢν', transliteration: 'ōn', parsing: 'V-PAP-NMS', gloss: 'being', strongs: 'G1510', lemma: 'εἰμί' },
+              { original: 'εἰς', transliteration: 'eis', parsing: 'Prep', gloss: 'in', strongs: 'G1519', lemma: 'εἰς' },
+              { original: 'τὸν', transliteration: 'ton', parsing: 'Art-AMS', gloss: 'the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'κόλπον', transliteration: 'kolpon', parsing: 'N-AMS', gloss: 'bosom', strongs: 'G2859', lemma: 'κόλπος' },
+              { original: 'τοῦ', transliteration: 'tou', parsing: 'Art-GMS', gloss: 'of the', strongs: 'G3588', lemma: 'ὁ' },
+              { original: 'πατρὸς', transliteration: 'patros', parsing: 'N-GMS', gloss: 'Father', strongs: 'G3962', lemma: 'πατήρ' },
+              { original: 'ἐκεῖνος', transliteration: 'ekeinos', parsing: 'DPro-NMS', gloss: 'he', strongs: 'G1565', lemma: 'ἐκεῖνος' },
+              { original: 'ἐξηγήσατο', transliteration: 'exēgēsato', parsing: 'V-ADI-3S', gloss: 'has made him known', strongs: 'G1834', lemma: 'ἐξηγέομαι' }
             ]
           }
         ],
