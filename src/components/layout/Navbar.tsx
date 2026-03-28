@@ -3,12 +3,13 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
-import { Shield, Scale, BookOpen, Compass, Search, Menu, X, Globe } from 'lucide-react';
+import { Shield, Scale, BookOpen, Compass, Search, Menu, X, BookType } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
   { href: '/defend', labelKey: 'defend', icon: Shield },
   { href: '/compare', labelKey: 'compare', icon: Scale },
+  { href: '/semantics', labelKey: 'semantics', icon: BookType },
   { href: '/sources', labelKey: 'sources', icon: BookOpen },
   { href: '/explore', labelKey: 'explore', icon: Compass },
 ] as const;

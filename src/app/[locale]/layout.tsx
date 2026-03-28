@@ -2,21 +2,23 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import "@/app/globals.css";
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Inter, Lora } from 'next/font/google';
+import { Noto_Sans, Noto_Serif } from 'next/font/google';
 import { locales, isRtl, type Locale } from '@/i18n/config';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 
-const inter = Inter({
-  subsets: ['latin', 'cyrillic', 'greek', 'vietnamese'],
-  variable: '--font-inter',
+const notoSans = Noto_Sans({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin', 'greek', 'cyrillic', 'vietnamese'],
+  variable: '--font-noto-sans',
   display: 'swap',
 });
 
-const lora = Lora({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-lora',
+const notoSerif = Noto_Serif({
+  weight: ['400', '700'],
+  subsets: ['latin', 'greek', 'cyrillic', 'vietnamese'],
+  variable: '--font-noto-serif',
   display: 'swap',
 });
 
@@ -54,7 +56,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={rtl ? 'rtl' : 'ltr'}
-      className={`${inter.variable} ${lora.variable} h-full antialiased`}
+      className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary font-sans">
         <NextIntlClientProvider messages={messages}>
