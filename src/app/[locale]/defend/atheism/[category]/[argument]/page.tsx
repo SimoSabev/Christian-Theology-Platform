@@ -3,15 +3,19 @@
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { getArgumentBySlug } from '@/data/arguments';
+import { getSemanticDefensesByArgument } from '@/data/semantic-defense';
+import SemanticDefenseSlideshow from '@/components/semantic/SemanticDefenseSlideshow';
 import { ArrowLeft, TreePine, Swords, BookOpen, ChevronDown, ChevronUp, ExternalLink, Quote } from 'lucide-react';
 
 export default function ArgumentPage() {
   const params = useParams();
   const slug = params.argument as string;
   const arg = getArgumentBySlug(slug);
+  const semanticDefenses = getSemanticDefensesByArgument(arg?.id || '');
   const [expandedObjections, setExpandedObjections] = useState<Set<string>>(new Set());
+  const [activeSemanticDefense, setActiveSemanticDefense] = useState<string | null>(null);
 
   if (!arg) {
     return <div className="max-w-4xl mx-auto px-4 py-20 text-center text-text-muted">Argument not found</div>;
@@ -50,6 +54,15 @@ export default function ArgumentPage() {
         <Link href={`/explore/debate-mode/${arg.slug}`} className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-lg text-sm text-text-secondary hover:border-accent-blue/30 hover:text-accent-blue transition-all">
           <Swords size={16} /> Debate Mode
         </Link>
+        {semanticDefenses.map(sd => (
+          <button
+            key={sd.id}
+            onClick={() => setActiveSemanticDefense(sd.id)}
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-lg text-sm text-text-secondary hover:border-accent-purple/30 hover:text-accent-purple transition-all"
+          >
+            <BookOpen size={16} /> {sd.title}
+          </button>
+        ))}
       </motion.div>
 
       {/* Formal Statement */}
@@ -195,6 +208,25 @@ export default function ArgumentPage() {
           </div>
         </motion.section>
       )}
+
+      {/* Semantic Defense Modal */}
+      <AnimatePresence>
+        {activeSemanticDefense && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-12 bg-bg-primary/95 backdrop-blur-sm"
+          >
+            <div className="w-full max-w-5xl h-full flex items-center justify-center relative">
+              <SemanticDefenseSlideshow 
+                defense={semanticDefenses.find(sd => sd.id === activeSemanticDefense)!}
+                onClose={() => setActiveSemanticDefense(null)}
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
