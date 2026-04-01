@@ -25,7 +25,8 @@
     "significance": "الأهمية",
     "keyDistinction": "التمييز الرئيسي",
     "primarySource": "المصدر الأساسي",
-    "searchPlaceholder": "ابحث عن حجج ومصادر ومذاهب..."
+    "searchPlaceholder": "ابحث عن حجج ومصادر ومذاهب...",
+    "semanticDefense": "Semantic Defense"
   },
   "nav": {
     "home": "الرئيسية",
@@ -35,7 +36,8 @@
     "explore": "استكشاف",
     "search": "بحث",
     "glossary": "المعجم",
-    "about": "حول"
+    "about": "حول",
+    "semantics": "Semantics"
   },
   "home": {
     "heroTitle": "المنصة الشاملة لدراسة اللاهوت المسيحي",
@@ -80,13 +82,34 @@
     "againstAtheism": "ضد الإلحاد والعلمانية",
     "againstCults": "ضد الطوائف والبدع",
     "categories": {
-      "cosmological": { "name": "الحجج الكونية", "desc": "من وجود الكون إلى سبب أول ضروري" },
-      "ontological": { "name": "الحجج الوجودية", "desc": "من مفهوم الله ذاته إلى حقيقة وجوده" },
-      "teleological": { "name": "الحجج الغائية", "desc": "من النظام والضبط الدقيق للكون إلى التصميم الذكي" },
-      "moral": { "name": "الحجج الأخلاقية", "desc": "من وجود القيم الأخلاقية الموضوعية إلى مشرع أخلاقي" },
-      "existential": { "name": "الحجج الوجودية", "desc": "من الوعي والرغبة والمعنى إلى مصدر متعالٍ" },
-      "historical": { "name": "الأدلة التاريخية", "desc": "من أدلة المخطوطات وشهادة العيان والقيامة" },
-      "objections": { "name": "الاعتراضات الإلحادية", "desc": "ردود على مشكلة الشر والاختفاء الإلهي والمزيد" }
+      "cosmological": {
+        "name": "الحجج الكونية",
+        "desc": "من وجود الكون إلى سبب أول ضروري"
+      },
+      "ontological": {
+        "name": "الحجج الوجودية",
+        "desc": "من مفهوم الله ذاته إلى حقيقة وجوده"
+      },
+      "teleological": {
+        "name": "الحجج الغائية",
+        "desc": "من النظام والضبط الدقيق للكون إلى التصميم الذكي"
+      },
+      "moral": {
+        "name": "الحجج الأخلاقية",
+        "desc": "من وجود القيم الأخلاقية الموضوعية إلى مشرع أخلاقي"
+      },
+      "existential": {
+        "name": "الحجج الوجودية",
+        "desc": "من الوعي والرغبة والمعنى إلى مصدر متعالٍ"
+      },
+      "historical": {
+        "name": "الأدلة التاريخية",
+        "desc": "من أدلة المخطوطات وشهادة العيان والقيامة"
+      },
+      "objections": {
+        "name": "الاعتراضات الإلحادية",
+        "desc": "ردود على مشكلة الشر والاختفاء الإلهي والمزيد"
+      }
     }
   },
   "compare": {
@@ -98,7 +121,14 @@
     "sideBySide": "مقارنة جنباً إلى جنب",
     "selectTraditions": "اختر التقاليد",
     "selectDoctrine": "اختر العقيدة",
-    "doctrines": { "eucharist": "الإفخارستيا", "salvation": "الخلاص", "authority": "السلطة", "baptism": "المعمودية", "mary": "مريم", "church": "الكنيسة" }
+    "doctrines": {
+      "eucharist": "الإفخارستيا",
+      "salvation": "الخلاص",
+      "authority": "السلطة",
+      "baptism": "المعمودية",
+      "mary": "مريم",
+      "church": "الكنيسة"
+    }
   },
   "sources": {
     "title": "أرشيف المصادر الأولية",
@@ -115,11 +145,66 @@
   "explore": {
     "title": "أدوات تفاعلية",
     "subtitle": "تعامل مع اللاهوت من خلال التصور والتحليل المنظم",
-    "argumentTree": { "title": "شجرة الحجج", "desc": "تصور الحجج كأشجار تفاعلية قابلة للتوسيع" },
-    "debateMode": { "title": "وضع المناظرة", "desc": "الحجج والحجج المضادة جنباً إلى جنب" },
-    "timeline": { "title": "مستكشف الجدول الزمني", "desc": "تنقل عبر ألفي عام من التاريخ المسيحي" },
-    "scriptureRef": { "title": "مرجع الكتاب المقدس المتقاطع", "desc": "اعثر على كل أب من آباء الكنيسة يعلق على آية معينة" }
+    "argumentTree": {
+      "title": "شجرة الحجج",
+      "desc": "تصور الحجج كأشجار تفاعلية قابلة للتوسيع"
+    },
+    "debateMode": {
+      "title": "وضع المناظرة",
+      "desc": "الحجج والحجج المضادة جنباً إلى جنب"
+    },
+    "timeline": {
+      "title": "مستكشف الجدول الزمني",
+      "desc": "تنقل عبر ألفي عام من التاريخ المسيحي"
+    },
+    "scriptureRef": {
+      "title": "مرجع الكتاب المقدس المتقاطع",
+      "desc": "اعثر على كل أب من آباء الكنيسة يعلق على آية معينة"
+    }
   },
-  "glossary": { "title": "المعجم اللاهوتي", "subtitle": "المصطلحات والمفاهيم الرئيسية في اللاهوت المسيحي" },
-  "about": { "title": "حول هذه المنصة", "subtitle": "المنهجية والمصادر والرسالة" }
+  "glossary": {
+    "title": "المعجم اللاهوتي",
+    "subtitle": "المصطلحات والمفاهيم الرئيسية في اللاهوت المسيحي"
+  },
+  "about": {
+    "title": "حول هذه المنصة",
+    "subtitle": "المنهجية والمصادر والرسالة"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

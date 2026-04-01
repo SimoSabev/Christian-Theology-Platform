@@ -1,11 +1,210 @@
 {
-  "common": { "search": "搜尋...", "readMore": "閱讀更多", "sources": "來源", "relatedArguments": "相關論證", "openInTree": "在論證樹中開啟", "openInDebate": "在辯論模式中開啟", "language": "語言", "viewAll": "查看全部", "learnMore": "了解更多", "back": "返回", "close": "關閉", "loading": "載入中...", "noResults": "未找到結果", "premise": "前提", "conclusion": "結論", "objection": "反駁", "response": "回應", "support": "支持", "keyProponents": "主要支持者", "historicalBackground": "歷史背景", "formalStatement": "形式陳述", "objectionsAndResponses": "反駁與回應", "significance": "意義", "keyDistinction": "關鍵區別", "primarySource": "原始資料", "searchPlaceholder": "搜尋論證、來源、教義..." },
-  "nav": { "home": "首頁", "defend": "辯護", "compare": "比較", "sources": "來源", "explore": "探索", "search": "搜尋", "glossary": "術語表", "about": "關於" },
-  "home": { "heroTitle": "權威基督教神學研究平台", "heroSubtitle": "探索2000年的護教學、教義和原始資料——配備深度學習的互動工具。", "heroSearch": "您正在探索什麼問題？", "quickFilters": { "scientific": "科學", "philosophical": "哲學", "historical": "歷史", "theological": "神學" }, "defendCard": { "title": "辯護", "subtitle": "護教學與論證", "desc": "探索支持基督教信仰的哲學、科學和歷史論證。" }, "compareCard": { "title": "比較", "subtitle": "傳統與宗派", "desc": "東正教、天主教、新教——在每個關鍵教義上進行並列比較。" }, "sourcesCard": { "title": "來源", "subtitle": "原始文獻", "desc": "5800+新約手稿、教父著作、大公會議和信經文件。" }, "featuredArgument": "精選論證", "recentAdditions": "最近添加", "timelinePreview": "歷史時間線", "quickLinks": "快速連結", "exploreTools": "互動工具", "argumentTree": "論證樹", "argumentTreeDesc": "將論證視覺化為可互動、可展開的樹狀結構。", "debateMode": "辯論模式", "debateModeDesc": "以結構化的辯證格式並列查看論證和反論證。", "timeline": "時間線瀏覽器", "timelineDesc": "瀏覽2000年基督教歷史——大公會議、信經、爭議和關鍵人物。" },
-  "defend": { "title": "捍衛信仰", "subtitle": "支持基督教的哲學、科學和歷史論證", "againstAtheism": "反對無神論與世俗主義", "againstCults": "反對異端與邪教", "categories": { "cosmological": { "name": "宇宙論論證", "desc": "從宇宙的存在到必然的第一因" }, "ontological": { "name": "本體論論證", "desc": "從上帝的概念本身到其存在的現實" }, "teleological": { "name": "目的論論證", "desc": "從宇宙的秩序和微調到智能設計" }, "moral": { "name": "道德論證", "desc": "從客觀道德價值的存在到道德立法者" }, "existential": { "name": "存在論證", "desc": "從意識、慾望和意義到超越的源泉" }, "historical": { "name": "歷史證據", "desc": "來自手稿證據、目擊者證詞和復活" }, "objections": { "name": "無神論反駁", "desc": "對惡的問題、神的隱藏等的回應" } } },
-  "compare": { "title": "比較傳統", "subtitle": "理解基督教主要分支的神學基礎", "orthodoxy": "東正教", "catholicism": "羅馬天主教", "protestantism": "新教", "sideBySide": "並列比較", "selectTraditions": "選擇傳統", "selectDoctrine": "選擇教義", "doctrines": { "eucharist": "聖餐", "salvation": "救贖", "authority": "權威", "baptism": "洗禮", "mary": "聖母", "church": "教會" } },
-  "sources": { "title": "原始資料檔案", "subtitle": "塑造基督教神學的原始文本", "manuscripts": "聖經手稿", "manuscriptsDesc": "5800+希臘語新約手稿", "churchFathers": "教父", "churchFathersDesc": "使徒時代、前尼西亞和尼西亞及後尼西亞著作", "councils": "大公會議與信經", "councilsDesc": "七次大公會議和信經文件", "liturgical": "禮儀文本", "liturgicalDesc": "十二使徒遺訓、東方和西方禮儀" },
-  "explore": { "title": "互動工具", "subtitle": "通過視覺化和結構化分析參與神學研究", "argumentTree": { "title": "論證樹", "desc": "將論證視覺化為可互動的樹" }, "debateMode": { "title": "辯論模式", "desc": "論證和反論證並列顯示" }, "timeline": { "title": "時間線瀏覽器", "desc": "瀏覽2000年基督教歷史" }, "scriptureRef": { "title": "經文交叉引用", "desc": "查找評論特定經文的每位教父" } },
-  "glossary": { "title": "神學術語表", "subtitle": "基督教神學的關鍵術語和概念" },
-  "about": { "title": "關於此平台", "subtitle": "方法論、來源和使命" }
+  "common": {
+    "search": "搜尋...",
+    "readMore": "閱讀更多",
+    "sources": "來源",
+    "relatedArguments": "相關論證",
+    "openInTree": "在論證樹中開啟",
+    "openInDebate": "在辯論模式中開啟",
+    "language": "語言",
+    "viewAll": "查看全部",
+    "learnMore": "了解更多",
+    "back": "返回",
+    "close": "關閉",
+    "loading": "載入中...",
+    "noResults": "未找到結果",
+    "premise": "前提",
+    "conclusion": "結論",
+    "objection": "反駁",
+    "response": "回應",
+    "support": "支持",
+    "keyProponents": "主要支持者",
+    "historicalBackground": "歷史背景",
+    "formalStatement": "形式陳述",
+    "objectionsAndResponses": "反駁與回應",
+    "significance": "意義",
+    "keyDistinction": "關鍵區別",
+    "primarySource": "原始資料",
+    "searchPlaceholder": "搜尋論證、來源、教義...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "首頁",
+    "defend": "辯護",
+    "compare": "比較",
+    "sources": "來源",
+    "explore": "探索",
+    "search": "搜尋",
+    "glossary": "術語表",
+    "about": "關於",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "權威基督教神學研究平台",
+    "heroSubtitle": "探索2000年的護教學、教義和原始資料——配備深度學習的互動工具。",
+    "heroSearch": "您正在探索什麼問題？",
+    "quickFilters": {
+      "scientific": "科學",
+      "philosophical": "哲學",
+      "historical": "歷史",
+      "theological": "神學"
+    },
+    "defendCard": {
+      "title": "辯護",
+      "subtitle": "護教學與論證",
+      "desc": "探索支持基督教信仰的哲學、科學和歷史論證。"
+    },
+    "compareCard": {
+      "title": "比較",
+      "subtitle": "傳統與宗派",
+      "desc": "東正教、天主教、新教——在每個關鍵教義上進行並列比較。"
+    },
+    "sourcesCard": {
+      "title": "來源",
+      "subtitle": "原始文獻",
+      "desc": "5800+新約手稿、教父著作、大公會議和信經文件。"
+    },
+    "featuredArgument": "精選論證",
+    "recentAdditions": "最近添加",
+    "timelinePreview": "歷史時間線",
+    "quickLinks": "快速連結",
+    "exploreTools": "互動工具",
+    "argumentTree": "論證樹",
+    "argumentTreeDesc": "將論證視覺化為可互動、可展開的樹狀結構。",
+    "debateMode": "辯論模式",
+    "debateModeDesc": "以結構化的辯證格式並列查看論證和反論證。",
+    "timeline": "時間線瀏覽器",
+    "timelineDesc": "瀏覽2000年基督教歷史——大公會議、信經、爭議和關鍵人物。"
+  },
+  "defend": {
+    "title": "捍衛信仰",
+    "subtitle": "支持基督教的哲學、科學和歷史論證",
+    "againstAtheism": "反對無神論與世俗主義",
+    "againstCults": "反對異端與邪教",
+    "categories": {
+      "cosmological": {
+        "name": "宇宙論論證",
+        "desc": "從宇宙的存在到必然的第一因"
+      },
+      "ontological": {
+        "name": "本體論論證",
+        "desc": "從上帝的概念本身到其存在的現實"
+      },
+      "teleological": {
+        "name": "目的論論證",
+        "desc": "從宇宙的秩序和微調到智能設計"
+      },
+      "moral": {
+        "name": "道德論證",
+        "desc": "從客觀道德價值的存在到道德立法者"
+      },
+      "existential": {
+        "name": "存在論證",
+        "desc": "從意識、慾望和意義到超越的源泉"
+      },
+      "historical": {
+        "name": "歷史證據",
+        "desc": "來自手稿證據、目擊者證詞和復活"
+      },
+      "objections": {
+        "name": "無神論反駁",
+        "desc": "對惡的問題、神的隱藏等的回應"
+      }
+    }
+  },
+  "compare": {
+    "title": "比較傳統",
+    "subtitle": "理解基督教主要分支的神學基礎",
+    "orthodoxy": "東正教",
+    "catholicism": "羅馬天主教",
+    "protestantism": "新教",
+    "sideBySide": "並列比較",
+    "selectTraditions": "選擇傳統",
+    "selectDoctrine": "選擇教義",
+    "doctrines": {
+      "eucharist": "聖餐",
+      "salvation": "救贖",
+      "authority": "權威",
+      "baptism": "洗禮",
+      "mary": "聖母",
+      "church": "教會"
+    }
+  },
+  "sources": {
+    "title": "原始資料檔案",
+    "subtitle": "塑造基督教神學的原始文本",
+    "manuscripts": "聖經手稿",
+    "manuscriptsDesc": "5800+希臘語新約手稿",
+    "churchFathers": "教父",
+    "churchFathersDesc": "使徒時代、前尼西亞和尼西亞及後尼西亞著作",
+    "councils": "大公會議與信經",
+    "councilsDesc": "七次大公會議和信經文件",
+    "liturgical": "禮儀文本",
+    "liturgicalDesc": "十二使徒遺訓、東方和西方禮儀"
+  },
+  "explore": {
+    "title": "互動工具",
+    "subtitle": "通過視覺化和結構化分析參與神學研究",
+    "argumentTree": {
+      "title": "論證樹",
+      "desc": "將論證視覺化為可互動的樹"
+    },
+    "debateMode": {
+      "title": "辯論模式",
+      "desc": "論證和反論證並列顯示"
+    },
+    "timeline": {
+      "title": "時間線瀏覽器",
+      "desc": "瀏覽2000年基督教歷史"
+    },
+    "scriptureRef": {
+      "title": "經文交叉引用",
+      "desc": "查找評論特定經文的每位教父"
+    }
+  },
+  "glossary": {
+    "title": "神學術語表",
+    "subtitle": "基督教神學的關鍵術語和概念"
+  },
+  "about": {
+    "title": "關於此平台",
+    "subtitle": "方法論、來源和使命"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

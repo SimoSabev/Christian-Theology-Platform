@@ -25,7 +25,8 @@
     "significance": "Importancia",
     "keyDistinction": "Distinción clave",
     "primarySource": "Fuente primaria",
-    "searchPlaceholder": "Buscar argumentos, fuentes, doctrinas..."
+    "searchPlaceholder": "Buscar argumentos, fuentes, doctrinas...",
+    "semanticDefense": "Semantic Defense"
   },
   "nav": {
     "home": "Inicio",
@@ -35,7 +36,8 @@
     "explore": "Explorar",
     "search": "Buscar",
     "glossary": "Glosario",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "semantics": "Semantics"
   },
   "home": {
     "heroTitle": "La Plataforma Definitiva de Estudio de Teología Cristiana",
@@ -80,13 +82,34 @@
     "againstAtheism": "Contra el Ateísmo y el Secularismo",
     "againstCults": "Contra Cultos y Herejías",
     "categories": {
-      "cosmological": { "name": "Argumentos Cosmológicos", "desc": "Del universo existente a una primera causa necesaria" },
-      "ontological": { "name": "Argumentos Ontológicos", "desc": "Del concepto mismo de Dios a la realidad de Su existencia" },
-      "teleological": { "name": "Argumentos Teleológicos", "desc": "Del orden y la sintonización fina del universo al diseño inteligente" },
-      "moral": { "name": "Argumentos Morales", "desc": "De la existencia de valores morales objetivos a un legislador moral" },
-      "existential": { "name": "Argumentos Existenciales", "desc": "De la conciencia, el deseo y el significado a una fuente trascendente" },
-      "historical": { "name": "Evidencia Histórica", "desc": "De la evidencia manuscrita, el testimonio ocular y la Resurrección" },
-      "objections": { "name": "Objeciones Ateas", "desc": "Respuestas al problema del mal, la ocultación divina y más" }
+      "cosmological": {
+        "name": "Argumentos Cosmológicos",
+        "desc": "Del universo existente a una primera causa necesaria"
+      },
+      "ontological": {
+        "name": "Argumentos Ontológicos",
+        "desc": "Del concepto mismo de Dios a la realidad de Su existencia"
+      },
+      "teleological": {
+        "name": "Argumentos Teleológicos",
+        "desc": "Del orden y la sintonización fina del universo al diseño inteligente"
+      },
+      "moral": {
+        "name": "Argumentos Morales",
+        "desc": "De la existencia de valores morales objetivos a un legislador moral"
+      },
+      "existential": {
+        "name": "Argumentos Existenciales",
+        "desc": "De la conciencia, el deseo y el significado a una fuente trascendente"
+      },
+      "historical": {
+        "name": "Evidencia Histórica",
+        "desc": "De la evidencia manuscrita, el testimonio ocular y la Resurrección"
+      },
+      "objections": {
+        "name": "Objeciones Ateas",
+        "desc": "Respuestas al problema del mal, la ocultación divina y más"
+      }
     }
   },
   "compare": {
@@ -98,7 +121,14 @@
     "sideBySide": "Comparación Lado a Lado",
     "selectTraditions": "Seleccionar tradiciones",
     "selectDoctrine": "Seleccionar doctrina",
-    "doctrines": { "eucharist": "Eucaristía", "salvation": "Salvación", "authority": "Autoridad", "baptism": "Bautismo", "mary": "María", "church": "Iglesia" }
+    "doctrines": {
+      "eucharist": "Eucaristía",
+      "salvation": "Salvación",
+      "authority": "Autoridad",
+      "baptism": "Bautismo",
+      "mary": "María",
+      "church": "Iglesia"
+    }
   },
   "sources": {
     "title": "Archivo de Fuentes Primarias",
@@ -115,11 +145,66 @@
   "explore": {
     "title": "Herramientas Interactivas",
     "subtitle": "Interactúa con la teología a través de la visualización y el análisis estructurado",
-    "argumentTree": { "title": "Árbol de Argumentos", "desc": "Visualiza argumentos como árboles interactivos y expandibles" },
-    "debateMode": { "title": "Modo Debate", "desc": "Argumentos y contraargumentos lado a lado" },
-    "timeline": { "title": "Explorador de Línea de Tiempo", "desc": "Navega por 2.000 años de historia cristiana" },
-    "scriptureRef": { "title": "Referencia Cruzada de Escrituras", "desc": "Encuentra a cada Padre de la Iglesia que comenta sobre un versículo dado" }
+    "argumentTree": {
+      "title": "Árbol de Argumentos",
+      "desc": "Visualiza argumentos como árboles interactivos y expandibles"
+    },
+    "debateMode": {
+      "title": "Modo Debate",
+      "desc": "Argumentos y contraargumentos lado a lado"
+    },
+    "timeline": {
+      "title": "Explorador de Línea de Tiempo",
+      "desc": "Navega por 2.000 años de historia cristiana"
+    },
+    "scriptureRef": {
+      "title": "Referencia Cruzada de Escrituras",
+      "desc": "Encuentra a cada Padre de la Iglesia que comenta sobre un versículo dado"
+    }
   },
-  "glossary": { "title": "Glosario Teológico", "subtitle": "Términos y conceptos clave en teología cristiana" },
-  "about": { "title": "Acerca de esta Plataforma", "subtitle": "Metodología, fuentes y misión" }
+  "glossary": {
+    "title": "Glosario Teológico",
+    "subtitle": "Términos y conceptos clave en teología cristiana"
+  },
+  "about": {
+    "title": "Acerca de esta Plataforma",
+    "subtitle": "Metodología, fuentes y misión"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

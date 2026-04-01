@@ -1,11 +1,210 @@
 {
-  "common": { "search": "Tìm kiếm...", "readMore": "Đọc thêm", "sources": "Nguồn", "relatedArguments": "Các luận chứng liên quan", "openInTree": "Mở trong Cây luận chứng", "openInDebate": "Mở trong Chế độ tranh luận", "language": "Ngôn ngữ", "viewAll": "Xem tất cả", "learnMore": "Tìm hiểu thêm", "back": "Quay lại", "close": "Đóng", "loading": "Đang tải...", "noResults": "Không có kết quả", "premise": "Tiền đề", "conclusion": "Kết luận", "objection": "Phản đối", "response": "Đáp lại", "support": "Hỗ trợ", "keyProponents": "Người đề xướng chính", "historicalBackground": "Bối cảnh lịch sử", "formalStatement": "Phát biểu chính thức", "objectionsAndResponses": "Phản đối và đáp lại", "significance": "Ý nghĩa", "keyDistinction": "Sự phân biệt chính", "primarySource": "Nguồn sơ cấp", "searchPlaceholder": "Tìm luận chứng, nguồn, giáo lý..." },
-  "nav": { "home": "Trang chủ", "defend": "Biện hộ", "compare": "So sánh", "sources": "Nguồn", "explore": "Khám phá", "search": "Tìm kiếm", "glossary": "Thuật ngữ", "about": "Giới thiệu" },
-  "home": { "heroTitle": "Nền tảng Nghiên cứu Thần học Cơ Đốc", "heroSubtitle": "Khám phá 2.000 năm biện giáo, giáo lý và tài liệu sơ cấp — với các công cụ tương tác để nghiên cứu chuyên sâu.", "heroSearch": "Bạn đang tìm hiểu câu hỏi nào?", "quickFilters": { "scientific": "Khoa học", "philosophical": "Triết học", "historical": "Lịch sử", "theological": "Thần học" }, "defendCard": { "title": "Biện hộ", "subtitle": "Biện giáo & Luận chứng", "desc": "Khám phá các luận chứng triết học, khoa học và lịch sử cho đức tin Cơ Đốc." }, "compareCard": { "title": "So sánh", "subtitle": "Truyền thống & Giáo phái", "desc": "Chính Thống, Công Giáo, Tin Lành — so sánh các truyền thống trên từng giáo lý chính." }, "sourcesCard": { "title": "Nguồn", "subtitle": "Tài liệu Sơ cấp", "desc": "5.800+ bản thảo Tân Ước, Giáo phụ, công đồng đại kết và tín điều." }, "featuredArgument": "Luận chứng nổi bật", "recentAdditions": "Mới thêm gần đây", "timelinePreview": "Dòng thời gian lịch sử", "quickLinks": "Liên kết nhanh", "exploreTools": "Công cụ tương tác", "argumentTree": "Cây luận chứng", "argumentTreeDesc": "Trực quan hóa các luận chứng dưới dạng cây tương tác với tiền đề, phản đối và đáp lại.", "debateMode": "Chế độ tranh luận", "debateModeDesc": "Xem luận chứng và phản luận song song trong định dạng biện chứng có cấu trúc.", "timeline": "Dòng thời gian", "timelineDesc": "Hành trình qua 2.000 năm lịch sử Cơ Đốc — công đồng, tín điều, tranh luận và nhân vật chính." },
-  "defend": { "title": "Biện hộ đức tin", "subtitle": "Luận chứng triết học, khoa học và lịch sử cho Cơ Đốc giáo", "againstAtheism": "Chống vô thần & thế tục", "againstCults": "Chống tà giáo & dị giáo", "categories": { "cosmological": { "name": "Luận chứng vũ trụ học", "desc": "Từ sự tồn tại của vũ trụ đến nguyên nhân đầu tiên tất yếu" }, "ontological": { "name": "Luận chứng bản thể học", "desc": "Từ khái niệm về Thiên Chúa đến thực tại về sự hiện hữu của Ngài" }, "teleological": { "name": "Luận chứng mục đích luận", "desc": "Từ trật tự và tinh chỉnh vũ trụ đến thiết kế thông minh" }, "moral": { "name": "Luận chứng đạo đức", "desc": "Từ sự tồn tại của giá trị đạo đức khách quan đến nhà lập pháp đạo đức" }, "existential": { "name": "Luận chứng hiện sinh", "desc": "Từ ý thức, khao khát và ý nghĩa đến nguồn siêu việt" }, "historical": { "name": "Bằng chứng lịch sử", "desc": "Từ bản thảo, lời chứng nhân và Phục Sinh" }, "objections": { "name": "Phản đối vô thần", "desc": "Đáp lại vấn đề sự ác, sự ẩn giấu thần thánh và hơn thế" } } },
-  "compare": { "title": "So sánh truyền thống", "subtitle": "Hiểu nền tảng thần học của các nhánh chính Cơ Đốc giáo", "orthodoxy": "Chính Thống Đông Phương", "catholicism": "Công Giáo La Mã", "protestantism": "Tin Lành", "sideBySide": "So sánh song song", "selectTraditions": "Chọn truyền thống", "selectDoctrine": "Chọn giáo lý", "doctrines": { "eucharist": "Thánh Thể", "salvation": "Cứu rỗi", "authority": "Thẩm quyền", "baptism": "Phép rửa", "mary": "Đức Mẹ", "church": "Giáo hội" } },
-  "sources": { "title": "Kho tài liệu sơ cấp", "subtitle": "Các văn bản gốc đã hình thành thần học Cơ Đốc", "manuscripts": "Bản thảo Kinh Thánh", "manuscriptsDesc": "5.800+ bản thảo Hy Lạp Tân Ước", "churchFathers": "Giáo phụ", "churchFathersDesc": "Tông đồ, tiền Nicaea và Nicaea", "councils": "Công đồng & Tín điều", "councilsDesc": "Bảy công đồng đại kết và tài liệu tín điều", "liturgical": "Văn bản phụng vụ", "liturgicalDesc": "Didache, phụng vụ Đông và Tây phương" },
-  "explore": { "title": "Công cụ tương tác", "subtitle": "Thần học qua trực quan hóa và phân tích có cấu trúc", "argumentTree": { "title": "Cây luận chứng", "desc": "Trực quan hóa các luận chứng dạng cây" }, "debateMode": { "title": "Chế độ tranh luận", "desc": "Luận chứng và phản luận song song" }, "timeline": { "title": "Dòng thời gian", "desc": "2.000 năm lịch sử Cơ Đốc" }, "scriptureRef": { "title": "Tham chiếu chéo Kinh Thánh", "desc": "Tìm Giáo phụ chú giải một câu Kinh Thánh" } },
-  "glossary": { "title": "Thuật ngữ thần học", "subtitle": "Các thuật ngữ và khái niệm chính trong thần học Cơ Đốc" },
-  "about": { "title": "Về nền tảng này", "subtitle": "Phương pháp luận, nguồn và sứ mệnh" }
+  "common": {
+    "search": "Tìm kiếm...",
+    "readMore": "Đọc thêm",
+    "sources": "Nguồn",
+    "relatedArguments": "Các luận chứng liên quan",
+    "openInTree": "Mở trong Cây luận chứng",
+    "openInDebate": "Mở trong Chế độ tranh luận",
+    "language": "Ngôn ngữ",
+    "viewAll": "Xem tất cả",
+    "learnMore": "Tìm hiểu thêm",
+    "back": "Quay lại",
+    "close": "Đóng",
+    "loading": "Đang tải...",
+    "noResults": "Không có kết quả",
+    "premise": "Tiền đề",
+    "conclusion": "Kết luận",
+    "objection": "Phản đối",
+    "response": "Đáp lại",
+    "support": "Hỗ trợ",
+    "keyProponents": "Người đề xướng chính",
+    "historicalBackground": "Bối cảnh lịch sử",
+    "formalStatement": "Phát biểu chính thức",
+    "objectionsAndResponses": "Phản đối và đáp lại",
+    "significance": "Ý nghĩa",
+    "keyDistinction": "Sự phân biệt chính",
+    "primarySource": "Nguồn sơ cấp",
+    "searchPlaceholder": "Tìm luận chứng, nguồn, giáo lý...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "defend": "Biện hộ",
+    "compare": "So sánh",
+    "sources": "Nguồn",
+    "explore": "Khám phá",
+    "search": "Tìm kiếm",
+    "glossary": "Thuật ngữ",
+    "about": "Giới thiệu",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "Nền tảng Nghiên cứu Thần học Cơ Đốc",
+    "heroSubtitle": "Khám phá 2.000 năm biện giáo, giáo lý và tài liệu sơ cấp — với các công cụ tương tác để nghiên cứu chuyên sâu.",
+    "heroSearch": "Bạn đang tìm hiểu câu hỏi nào?",
+    "quickFilters": {
+      "scientific": "Khoa học",
+      "philosophical": "Triết học",
+      "historical": "Lịch sử",
+      "theological": "Thần học"
+    },
+    "defendCard": {
+      "title": "Biện hộ",
+      "subtitle": "Biện giáo & Luận chứng",
+      "desc": "Khám phá các luận chứng triết học, khoa học và lịch sử cho đức tin Cơ Đốc."
+    },
+    "compareCard": {
+      "title": "So sánh",
+      "subtitle": "Truyền thống & Giáo phái",
+      "desc": "Chính Thống, Công Giáo, Tin Lành — so sánh các truyền thống trên từng giáo lý chính."
+    },
+    "sourcesCard": {
+      "title": "Nguồn",
+      "subtitle": "Tài liệu Sơ cấp",
+      "desc": "5.800+ bản thảo Tân Ước, Giáo phụ, công đồng đại kết và tín điều."
+    },
+    "featuredArgument": "Luận chứng nổi bật",
+    "recentAdditions": "Mới thêm gần đây",
+    "timelinePreview": "Dòng thời gian lịch sử",
+    "quickLinks": "Liên kết nhanh",
+    "exploreTools": "Công cụ tương tác",
+    "argumentTree": "Cây luận chứng",
+    "argumentTreeDesc": "Trực quan hóa các luận chứng dưới dạng cây tương tác với tiền đề, phản đối và đáp lại.",
+    "debateMode": "Chế độ tranh luận",
+    "debateModeDesc": "Xem luận chứng và phản luận song song trong định dạng biện chứng có cấu trúc.",
+    "timeline": "Dòng thời gian",
+    "timelineDesc": "Hành trình qua 2.000 năm lịch sử Cơ Đốc — công đồng, tín điều, tranh luận và nhân vật chính."
+  },
+  "defend": {
+    "title": "Biện hộ đức tin",
+    "subtitle": "Luận chứng triết học, khoa học và lịch sử cho Cơ Đốc giáo",
+    "againstAtheism": "Chống vô thần & thế tục",
+    "againstCults": "Chống tà giáo & dị giáo",
+    "categories": {
+      "cosmological": {
+        "name": "Luận chứng vũ trụ học",
+        "desc": "Từ sự tồn tại của vũ trụ đến nguyên nhân đầu tiên tất yếu"
+      },
+      "ontological": {
+        "name": "Luận chứng bản thể học",
+        "desc": "Từ khái niệm về Thiên Chúa đến thực tại về sự hiện hữu của Ngài"
+      },
+      "teleological": {
+        "name": "Luận chứng mục đích luận",
+        "desc": "Từ trật tự và tinh chỉnh vũ trụ đến thiết kế thông minh"
+      },
+      "moral": {
+        "name": "Luận chứng đạo đức",
+        "desc": "Từ sự tồn tại của giá trị đạo đức khách quan đến nhà lập pháp đạo đức"
+      },
+      "existential": {
+        "name": "Luận chứng hiện sinh",
+        "desc": "Từ ý thức, khao khát và ý nghĩa đến nguồn siêu việt"
+      },
+      "historical": {
+        "name": "Bằng chứng lịch sử",
+        "desc": "Từ bản thảo, lời chứng nhân và Phục Sinh"
+      },
+      "objections": {
+        "name": "Phản đối vô thần",
+        "desc": "Đáp lại vấn đề sự ác, sự ẩn giấu thần thánh và hơn thế"
+      }
+    }
+  },
+  "compare": {
+    "title": "So sánh truyền thống",
+    "subtitle": "Hiểu nền tảng thần học của các nhánh chính Cơ Đốc giáo",
+    "orthodoxy": "Chính Thống Đông Phương",
+    "catholicism": "Công Giáo La Mã",
+    "protestantism": "Tin Lành",
+    "sideBySide": "So sánh song song",
+    "selectTraditions": "Chọn truyền thống",
+    "selectDoctrine": "Chọn giáo lý",
+    "doctrines": {
+      "eucharist": "Thánh Thể",
+      "salvation": "Cứu rỗi",
+      "authority": "Thẩm quyền",
+      "baptism": "Phép rửa",
+      "mary": "Đức Mẹ",
+      "church": "Giáo hội"
+    }
+  },
+  "sources": {
+    "title": "Kho tài liệu sơ cấp",
+    "subtitle": "Các văn bản gốc đã hình thành thần học Cơ Đốc",
+    "manuscripts": "Bản thảo Kinh Thánh",
+    "manuscriptsDesc": "5.800+ bản thảo Hy Lạp Tân Ước",
+    "churchFathers": "Giáo phụ",
+    "churchFathersDesc": "Tông đồ, tiền Nicaea và Nicaea",
+    "councils": "Công đồng & Tín điều",
+    "councilsDesc": "Bảy công đồng đại kết và tài liệu tín điều",
+    "liturgical": "Văn bản phụng vụ",
+    "liturgicalDesc": "Didache, phụng vụ Đông và Tây phương"
+  },
+  "explore": {
+    "title": "Công cụ tương tác",
+    "subtitle": "Thần học qua trực quan hóa và phân tích có cấu trúc",
+    "argumentTree": {
+      "title": "Cây luận chứng",
+      "desc": "Trực quan hóa các luận chứng dạng cây"
+    },
+    "debateMode": {
+      "title": "Chế độ tranh luận",
+      "desc": "Luận chứng và phản luận song song"
+    },
+    "timeline": {
+      "title": "Dòng thời gian",
+      "desc": "2.000 năm lịch sử Cơ Đốc"
+    },
+    "scriptureRef": {
+      "title": "Tham chiếu chéo Kinh Thánh",
+      "desc": "Tìm Giáo phụ chú giải một câu Kinh Thánh"
+    }
+  },
+  "glossary": {
+    "title": "Thuật ngữ thần học",
+    "subtitle": "Các thuật ngữ và khái niệm chính trong thần học Cơ Đốc"
+  },
+  "about": {
+    "title": "Về nền tảng này",
+    "subtitle": "Phương pháp luận, nguồn và sứ mệnh"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

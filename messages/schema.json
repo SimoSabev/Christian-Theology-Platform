@@ -1,0 +1,445 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Theology Study Platform Translation Messages",
+  "description": "Schema for validated translation messages across all 26 locales",
+  "type": "object",
+  "required": ["common", "nav", "home", "defend", "compare", "explore", "sources", "semantics", "components", "errors", "api", "data"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON schema reference (must be included for validation)"
+    },
+    "locale": {
+      "type": "string",
+      "description": "Locale identifier (e.g., 'en', 'es', 'fr')",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Translation file version (semantic versioning)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "description": "ISO 8601 date of last update",
+      "format": "date"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author or system that created the translations"
+    },
+    "common": {
+      "type": "object",
+      "description": "Global shared components",
+      "properties": {
+        "search": { "type": "string" },
+        "readMore": { "type": "string" },
+        "sources": { "type": "string" },
+        "relatedArguments": { "type": "string" },
+        "openInTree": { "type": "string" },
+        "openInDebate": { "type": "string" },
+        "semanticDefense": { "type": "string" },
+        "language": { "type": "string" },
+        "viewAll": { "type": "string" },
+        "learnMore": { "type": "string" },
+        "back": { "type": "string" },
+        "close": { "type": "string" },
+        "loading": { "type": "string" },
+        "noResults": { "type": "string" },
+        "premise": { "type": "string" },
+        "conclusion": { "type": "string" },
+        "objection": { "type": "string" },
+        "response": { "type": "string" },
+        "support": { "type": "string" },
+        "keyProponents": { "type": "string" },
+        "historicalBackground": { "type": "string" },
+        "formalStatement": { "type": "string" },
+        "objectionsAndResponses": { "type": "string" },
+        "significance": { "type": "string" },
+        "keyDistinction": { "type": "string" },
+        "primarySource": { "type": "string" },
+        "searchPlaceholder": { "type": "string" }
+      }
+    },
+    "nav": {
+      "type": "object",
+      "description": "Navigation links and menu items",
+      "properties": {
+        "home": { "type": "string" },
+        "defend": { "type": "string" },
+        "compare": { "type": "string" },
+        "semantics": { "type": "string" },
+        "sources": { "type": "string" },
+        "explore": { "type": "string" },
+        "search": { "type": "string" },
+        "glossary": { "type": "string" },
+        "about": { "type": "string" }
+      }
+    },
+    "home": {
+      "type": "object",
+      "description": "Home page content",
+      "properties": {
+        "heroTitle": { "type": "string" },
+        "heroSubtitle": { "type": "string" },
+        "heroSearch": { "type": "string" },
+        "quickFilters": {
+          "type": "object",
+          "properties": {
+            "scientific": { "type": "string" },
+            "philosophical": { "type": "string" },
+            "historical": { "type": "string" },
+            "theological": { "type": "string" }
+          },
+          "required": ["scientific", "philosophical", "historical", "theological"]
+        }
+      }
+    },
+    "defend": {
+      "type": "object",
+      "description": "Defense pages content",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "categories": {
+          "type": "object",
+          "properties": {
+            "atheism": { "type": "string" },
+            "cults": { "type": "string" },
+            "skepticism": { "type": "string" }
+          }
+        }
+      }
+    },
+    "compare": {
+      "type": "object",
+      "description": "Comparison pages content",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "keyBeliefs": { "type": "string" },
+        "historicalBackground": { "type": "string" },
+        "practices": { "type": "string" },
+        "sacraments": { "type": "string" }
+      }
+    },
+    "explore": {
+      "type": "object",
+      "description": "Exploration tools content",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "argumentTree": { "type": "string" },
+        "debateMode": { "type": "string" },
+        "timeline": { "type": "string" },
+        "strengths": {
+          "type": "object",
+          "properties": {
+            "strong": { "type": "string" },
+            "moderate": { "type": "string" },
+            "weak": { "type": "string" },
+            "contested": { "type": "string" }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "description": "Primary sources content",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "categories": {
+          "type": "object",
+          "properties": {
+            "church-fathers": { "type": "string" },
+            "councils": { "type": "string" },
+            "manuscripts": { "type": "string" }
+          }
+        },
+        "featured": { "type": "string" },
+        "readMore": { "type": "string" }
+      }
+    },
+    "semantics": {
+      "type": "object",
+      "description": "Semantic defense content",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "tutorial": { "type": "string" },
+        "examples": { "type": "string" },
+        "analysis": { "type": "string" },
+        "conclusion": { "type": "string" }
+      }
+    },
+    "components": {
+      "type": "object",
+      "description": "Component-specific translations",
+      "properties": {
+        "argumentCard": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "readMore": { "type": "string" },
+            "objections": { "type": "string" },
+            "responses": { "type": "string" },
+            "viewFull": { "type": "string" },
+            "proponents": { "type": "string" },
+            "historicalContext": { "type": "string" }
+          }
+        },
+        "manuscriptCard": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "viewDetails": { "type": "string" },
+            "date": { "type": "string" },
+            "location": { "type": "string" },
+            "significance": { "type": "string" }
+          }
+        },
+        "pagination": {
+          "type": "object",
+          "properties": {
+            "previous": { "type": "string" },
+            "next": { "type": "string" },
+            "items": { "type": "string" },
+            "showing": { "type": "string" }
+          }
+        },
+        "modal": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "close": { "type": "string" },
+            "confirm": { "type": "string" },
+            "cancel": { "type": "string" }
+          }
+        }
+      }
+    },
+    "errors": {
+      "type": "object",
+      "description": "Error messages",
+      "properties": {
+        "notFound": { "type": "string" },
+        "invalidArgument": { "type": "string" },
+        "invalidSource": { "type": "string" },
+        "invalidTradition": { "type": "string" },
+        "missingTranslation": { "type": "string" },
+        "serverError": { "type": "string" },
+        "networkError": { "type": "string" },
+        "authorizationError": { "type": "string" }
+      }
+    },
+    "api": {
+      "type": "object",
+      "description": "API response messages",
+      "properties": {
+        "success": { "type": "string" },
+        "error": { "type": "string" },
+        "loading": { "type": "string" },
+        "searching": { "type": "string" },
+        "noResults": { "type": "string" },
+        "retry": { "type": "string" }
+      }
+    },
+    "data": {
+      "type": "object",
+      "description": "Dynamic content translations",
+      "properties": {
+        "arguments": {
+          "type": "object",
+          "description": "Theological arguments",
+          "properties": {
+            "cosmological": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "description": { "type": "string" },
+                    "proponents": { "type": "array", "items": { "type": "string" } },
+                    "descriptions": {
+                      "type": "object",
+                      "properties": {
+                        "support": { "type": "string" },
+                        "explanation": { "type": "string" },
+                        "summary": { "type": "string" }
+                      }
+                    },
+                    "objections": {
+                      "type": "object",
+                      "patternProperties": {
+                        "^[a-z-]+$": {
+                          "type": "object",
+                          "properties": {
+                            "title": { "type": "string" },
+                            "description": { "type": "string" },
+                            "response": { "type": "string" }
+                          }
+                        }
+                      }
+                    },
+                    "responses": {
+                      "type": "object",
+                      "patternProperties": {
+                        "^[a-z-]+$": {
+                          "type": "object",
+                          "properties": {
+                            "title": { "type": "string" },
+                            "description": { "type": "string" },
+                            "response": { "type": "string" }
+                          }
+                        }
+                      }
+                    },
+                    "significance": { "type": "string" },
+                    "historicalBackground": { "type": "string" },
+                    "formalStatement": { "type": "string" },
+                    "keyProponents": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "ontological": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            },
+            "teleological-moral-historical": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "manuscripts": {
+          "type": "object",
+          "description": "Manuscript content",
+          "properties": {
+            "codexes": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object",
+                  "properties": {
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "date": { "type": "string" },
+                    "location": { "type": "string" },
+                    "significance": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "papyri": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            },
+            "papyri-additional": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            },
+            "other-documents": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "cults": {
+          "type": "object",
+          "description": "Cult information",
+          "patternProperties": {
+            "^[a-z0-9-]+$": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "origins": { "type": "string" },
+                "keyBeliefs": { "type": "array", "items": { "type": "string" } },
+                "objections": {
+                  "type": "object",
+                  "patternProperties": {
+                    "^[a-z-]+$": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "semantic-defense": {
+          "type": "object",
+          "description": "Semantic defense content",
+          "properties": {
+            "arguments": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object",
+                  "properties": {
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "applications": { "type": "array", "items": { "type": "string" } }
+                  }
+                }
+              }
+            },
+            "arguments-nt-advanced": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            },
+            "arguments-ot-nt": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            },
+            "tutorial": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-z0-9-]+$": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "patternProperties": {
+    "data\\.(arguments|manuscripts|cults|semantic-defense)\\.[a-z0-9-]+\\.[a-z0-9-]+": {
+      "type": "object"
+    }
+  }
+}

@@ -25,7 +25,8 @@
     "significance": "Significância",
     "keyDistinction": "Distinção chave",
     "primarySource": "Fonte primária",
-    "searchPlaceholder": "Buscar argumentos, fontes, doutrinas..."
+    "searchPlaceholder": "Buscar argumentos, fontes, doutrinas...",
+    "semanticDefense": "Semantic Defense"
   },
   "nav": {
     "home": "Início",
@@ -35,16 +36,34 @@
     "explore": "Explorar",
     "search": "Buscar",
     "glossary": "Glossário",
-    "about": "Sobre"
+    "about": "Sobre",
+    "semantics": "Semantics"
   },
   "home": {
     "heroTitle": "A Plataforma Definitiva de Estudo da Teologia Cristã",
     "heroSubtitle": "Explore 2.000 anos de apologética, doutrina e fontes primárias — com ferramentas interativas para estudo aprofundado.",
     "heroSearch": "Que pergunta você está explorando?",
-    "quickFilters": { "scientific": "Científico", "philosophical": "Filosófico", "historical": "Histórico", "theological": "Teológico" },
-    "defendCard": { "title": "Defender", "subtitle": "Apologética e Argumentos", "desc": "Explore argumentos filosóficos, científicos e históricos a favor da fé cristã. Lógica formal, objeções e respostas." },
-    "compareCard": { "title": "Comparar", "subtitle": "Tradições e Denominações", "desc": "Ortodoxa, Católica, Protestante — compare tradições lado a lado em cada doutrina chave." },
-    "sourcesCard": { "title": "Fontes", "subtitle": "Documentos Primários", "desc": "5.800+ manuscritos do NT, Pais da Igreja, concílios ecumênicos e documentos credais." },
+    "quickFilters": {
+      "scientific": "Científico",
+      "philosophical": "Filosófico",
+      "historical": "Histórico",
+      "theological": "Teológico"
+    },
+    "defendCard": {
+      "title": "Defender",
+      "subtitle": "Apologética e Argumentos",
+      "desc": "Explore argumentos filosóficos, científicos e históricos a favor da fé cristã. Lógica formal, objeções e respostas."
+    },
+    "compareCard": {
+      "title": "Comparar",
+      "subtitle": "Tradições e Denominações",
+      "desc": "Ortodoxa, Católica, Protestante — compare tradições lado a lado em cada doutrina chave."
+    },
+    "sourcesCard": {
+      "title": "Fontes",
+      "subtitle": "Documentos Primários",
+      "desc": "5.800+ manuscritos do NT, Pais da Igreja, concílios ecumênicos e documentos credais."
+    },
     "featuredArgument": "Argumento em Destaque",
     "recentAdditions": "Adições Recentes",
     "timelinePreview": "Linha do Tempo Histórica",
@@ -63,13 +82,34 @@
     "againstAtheism": "Contra o Ateísmo e o Secularismo",
     "againstCults": "Contra Seitas e Heresias",
     "categories": {
-      "cosmological": { "name": "Argumentos Cosmológicos", "desc": "Da existência do universo a uma primeira causa necessária" },
-      "ontological": { "name": "Argumentos Ontológicos", "desc": "Do conceito de Deus à realidade de Sua existência" },
-      "teleological": { "name": "Argumentos Teleológicos", "desc": "Da ordem e ajuste fino do universo ao design inteligente" },
-      "moral": { "name": "Argumentos Morais", "desc": "Da existência de valores morais objetivos a um legislador moral" },
-      "existential": { "name": "Argumentos Existenciais", "desc": "Da consciência, desejo e significado a uma fonte transcendente" },
-      "historical": { "name": "Evidência Histórica", "desc": "De evidências manuscritas, testemunho ocular e Ressurreição" },
-      "objections": { "name": "Objeções Ateístas", "desc": "Respostas ao problema do mal, ocultamento divino e mais" }
+      "cosmological": {
+        "name": "Argumentos Cosmológicos",
+        "desc": "Da existência do universo a uma primeira causa necessária"
+      },
+      "ontological": {
+        "name": "Argumentos Ontológicos",
+        "desc": "Do conceito de Deus à realidade de Sua existência"
+      },
+      "teleological": {
+        "name": "Argumentos Teleológicos",
+        "desc": "Da ordem e ajuste fino do universo ao design inteligente"
+      },
+      "moral": {
+        "name": "Argumentos Morais",
+        "desc": "Da existência de valores morais objetivos a um legislador moral"
+      },
+      "existential": {
+        "name": "Argumentos Existenciais",
+        "desc": "Da consciência, desejo e significado a uma fonte transcendente"
+      },
+      "historical": {
+        "name": "Evidência Histórica",
+        "desc": "De evidências manuscritas, testemunho ocular e Ressurreição"
+      },
+      "objections": {
+        "name": "Objeções Ateístas",
+        "desc": "Respostas ao problema do mal, ocultamento divino e mais"
+      }
     }
   },
   "compare": {
@@ -81,7 +121,14 @@
     "sideBySide": "Comparação Lado a Lado",
     "selectTraditions": "Selecionar tradições",
     "selectDoctrine": "Selecionar doutrina",
-    "doctrines": { "eucharist": "Eucaristia", "salvation": "Salvação", "authority": "Autoridade", "baptism": "Batismo", "mary": "Maria", "church": "Igreja" }
+    "doctrines": {
+      "eucharist": "Eucaristia",
+      "salvation": "Salvação",
+      "authority": "Autoridade",
+      "baptism": "Batismo",
+      "mary": "Maria",
+      "church": "Igreja"
+    }
   },
   "sources": {
     "title": "Arquivo de Fontes Primárias",
@@ -98,11 +145,66 @@
   "explore": {
     "title": "Ferramentas Interativas",
     "subtitle": "Interaja com a teologia por visualização e análise estruturada",
-    "argumentTree": { "title": "Árvore de Argumentos", "desc": "Visualize argumentos como árvores interativas" },
-    "debateMode": { "title": "Modo Debate", "desc": "Argumentos e contra-argumentos lado a lado" },
-    "timeline": { "title": "Linha do Tempo", "desc": "Navegue por 2.000 anos de história cristã" },
-    "scriptureRef": { "title": "Referência Cruzada das Escrituras", "desc": "Encontre cada Pai da Igreja que comenta um dado versículo" }
+    "argumentTree": {
+      "title": "Árvore de Argumentos",
+      "desc": "Visualize argumentos como árvores interativas"
+    },
+    "debateMode": {
+      "title": "Modo Debate",
+      "desc": "Argumentos e contra-argumentos lado a lado"
+    },
+    "timeline": {
+      "title": "Linha do Tempo",
+      "desc": "Navegue por 2.000 anos de história cristã"
+    },
+    "scriptureRef": {
+      "title": "Referência Cruzada das Escrituras",
+      "desc": "Encontre cada Pai da Igreja que comenta um dado versículo"
+    }
   },
-  "glossary": { "title": "Glossário Teológico", "subtitle": "Termos e conceitos-chave na teologia cristã" },
-  "about": { "title": "Sobre esta Plataforma", "subtitle": "Metodologia, fontes e missão" }
+  "glossary": {
+    "title": "Glossário Teológico",
+    "subtitle": "Termos e conceitos-chave na teologia cristã"
+  },
+  "about": {
+    "title": "Sobre esta Plataforma",
+    "subtitle": "Metodologia, fontes e missão"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:i18n": "node scripts/validate-translations.js",
+    "check:translations": "node scripts/check-translations.js",
+    "generate:i18n-report": "node scripts/generate-i18n-report.js",
+    "extract:i18n-keys": "node scripts/extract-i18n-keys.js"
   },
   "dependencies": {
     "@vercel/speed-insights": "^2.0.0",
@@ -27,6 +31,9 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "i18next-scanner": "^4.4.0",
+    "json-schema-to-typescript": "^13.1.0",
+    "eslint-plugin-i18next": "^0.9.0"
   }
 }

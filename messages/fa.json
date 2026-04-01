@@ -1,11 +1,210 @@
 {
-  "common": { "search": "...جستجو", "readMore": "بیشتر بخوانید", "sources": "منابع", "relatedArguments": "استدلال‌های مرتبط", "openInTree": "باز کردن در درخت استدلال", "openInDebate": "باز کردن در حالت مناظره", "language": "زبان", "viewAll": "مشاهده همه", "learnMore": "اطلاعات بیشتر", "back": "بازگشت", "close": "بستن", "loading": "...بارگذاری", "noResults": "نتیجه‌ای یافت نشد", "premise": "مقدمه", "conclusion": "نتیجه", "objection": "اعتراض", "response": "پاسخ", "support": "پشتیبانی", "keyProponents": "طرفداران اصلی", "historicalBackground": "زمینه تاریخی", "formalStatement": "بیانیه رسمی", "objectionsAndResponses": "اعتراضات و پاسخ‌ها", "significance": "اهمیت", "keyDistinction": "تمایز کلیدی", "primarySource": "منبع اصلی", "searchPlaceholder": "جستجوی استدلال، منابع، آموزه‌ها..." },
-  "nav": { "home": "خانه", "defend": "دفاع", "compare": "مقایسه", "sources": "منابع", "explore": "کاوش", "search": "جستجو", "glossary": "واژه‌نامه", "about": "درباره" },
-  "home": { "heroTitle": "پلتفرم جامع مطالعه الاهیات مسیحی", "heroSubtitle": "دو هزار سال دفاعیات، آموزه و منابع اصلی را کاوش کنید — با ابزارهای تعاملی برای مطالعه عمیق.", "heroSearch": "چه سوالی را بررسی می‌کنید؟", "quickFilters": { "scientific": "علمی", "philosophical": "فلسفی", "historical": "تاریخی", "theological": "الاهیاتی" }, "defendCard": { "title": "دفاع", "subtitle": "دفاعیات و استدلال‌ها", "desc": "استدلال‌های فلسفی، علمی و تاریخی به نفع ایمان مسیحی را کاوش کنید." }, "compareCard": { "title": "مقایسه", "subtitle": "سنت‌ها و فرقه‌ها", "desc": "ارتدکس، کاتولیک، پروتستان — سنت‌ها را در هر آموزه کلیدی مقایسه کنید." }, "sourcesCard": { "title": "منابع", "subtitle": "اسناد اصلی", "desc": "بیش از ۵۸۰۰ نسخه خطی عهد جدید، آباء کلیسا، شوراهای جهانی و اسناد ایمان." }, "featuredArgument": "استدلال ویژه", "recentAdditions": "افزوده‌های اخیر", "timelinePreview": "خط زمانی تاریخی", "quickLinks": "لینک‌های سریع", "exploreTools": "ابزارهای تعاملی", "argumentTree": "درخت استدلال", "argumentTreeDesc": "استدلال‌ها را به صورت درخت‌های تعاملی با مقدمات، اعتراضات و پاسخ‌ها مشاهده کنید.", "debateMode": "حالت مناظره", "debateModeDesc": "استدلال و ضد استدلال را در قالب دیالکتیکی ساختاریافته مشاهده کنید.", "timeline": "کاوشگر خط زمانی", "timelineDesc": "دو هزار سال تاریخ مسیحیت را مرور کنید — شوراها، اعتقادنامه‌ها، مناقشات و چهره‌های کلیدی." },
-  "defend": { "title": "دفاع از ایمان", "subtitle": "استدلال‌های فلسفی، علمی و تاریخی به نفع مسیحیت", "againstAtheism": "در برابر الحاد و سکولاریسم", "againstCults": "در برابر فرقه‌ها و بدعت‌ها", "categories": { "cosmological": { "name": "استدلال‌های کیهان‌شناختی", "desc": "از وجود جهان به علت اول ضروری" }, "ontological": { "name": "استدلال‌های وجودشناختی", "desc": "از مفهوم خدا به واقعیت وجودش" }, "teleological": { "name": "استدلال‌های غایت‌شناختی", "desc": "از نظم و تنظیم دقیق جهان به طراحی هوشمند" }, "moral": { "name": "استدلال‌های اخلاقی", "desc": "از وجود ارزش‌های اخلاقی عینی به قانونگذار اخلاقی" }, "existential": { "name": "استدلال‌های اگزیستانسیالیستی", "desc": "از آگاهی، خواست و معنا به منبع متعالی" }, "historical": { "name": "شواهد تاریخی", "desc": "از شواهد نسخه خطی، شهادت شاهدان عینی و رستاخیز" }, "objections": { "name": "اعتراضات الحادی", "desc": "پاسخ به مسئله شر، پنهان‌شدگی الهی و موارد دیگر" } } },
-  "compare": { "title": "مقایسه سنت‌ها", "subtitle": "درک مبانی الاهیاتی شاخه‌های اصلی مسیحیت", "orthodoxy": "ارتدکس شرقی", "catholicism": "کاتولیک رومی", "protestantism": "پروتستانتیسم", "sideBySide": "مقایسه کنار هم", "selectTraditions": "انتخاب سنت‌ها", "selectDoctrine": "انتخاب آموزه", "doctrines": { "eucharist": "عشای ربانی", "salvation": "نجات", "authority": "اقتدار", "baptism": "تعمید", "mary": "مریم", "church": "کلیسا" } },
-  "sources": { "title": "آرشیو منابع اصلی", "subtitle": "متون اصلی که الاهیات مسیحی را شکل دادند", "manuscripts": "نسخه‌های خطی کتاب مقدس", "manuscriptsDesc": "بیش از ۵۸۰۰ نسخه خطی یونانی عهد جدید", "churchFathers": "آباء کلیسا", "churchFathersDesc": "نوشته‌های رسولی، پیش‌نیقیه‌ای و نیقیه‌ای", "councils": "شوراها و اعتقادنامه‌ها", "councilsDesc": "هفت شورای جهانی و اسناد ایمان", "liturgical": "متون آیینی", "liturgicalDesc": "دیداخه، آیین‌های شرقی و غربی" },
-  "explore": { "title": "ابزارهای تعاملی", "subtitle": "مشارکت با الاهیات از طریق تصویرسازی و تحلیل ساختاریافته", "argumentTree": { "title": "درخت استدلال", "desc": "استدلال‌ها را به صورت درخت‌های تعاملی مشاهده کنید" }, "debateMode": { "title": "حالت مناظره", "desc": "استدلال و ضد استدلال کنار هم" }, "timeline": { "title": "کاوشگر خط زمانی", "desc": "دو هزار سال تاریخ مسیحیت" }, "scriptureRef": { "title": "ارجاع متقابل کتاب مقدس", "desc": "هر یک از آباء کلیسا که آیه‌ای خاص را تفسیر کرده بیابید" } },
-  "glossary": { "title": "واژه‌نامه الاهیاتی", "subtitle": "اصطلاحات و مفاهیم کلیدی الاهیات مسیحی" },
-  "about": { "title": "درباره این پلتفرم", "subtitle": "روش‌شناسی، منابع و مأموریت" }
+  "common": {
+    "search": "...جستجو",
+    "readMore": "بیشتر بخوانید",
+    "sources": "منابع",
+    "relatedArguments": "استدلال‌های مرتبط",
+    "openInTree": "باز کردن در درخت استدلال",
+    "openInDebate": "باز کردن در حالت مناظره",
+    "language": "زبان",
+    "viewAll": "مشاهده همه",
+    "learnMore": "اطلاعات بیشتر",
+    "back": "بازگشت",
+    "close": "بستن",
+    "loading": "...بارگذاری",
+    "noResults": "نتیجه‌ای یافت نشد",
+    "premise": "مقدمه",
+    "conclusion": "نتیجه",
+    "objection": "اعتراض",
+    "response": "پاسخ",
+    "support": "پشتیبانی",
+    "keyProponents": "طرفداران اصلی",
+    "historicalBackground": "زمینه تاریخی",
+    "formalStatement": "بیانیه رسمی",
+    "objectionsAndResponses": "اعتراضات و پاسخ‌ها",
+    "significance": "اهمیت",
+    "keyDistinction": "تمایز کلیدی",
+    "primarySource": "منبع اصلی",
+    "searchPlaceholder": "جستجوی استدلال، منابع، آموزه‌ها...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "خانه",
+    "defend": "دفاع",
+    "compare": "مقایسه",
+    "sources": "منابع",
+    "explore": "کاوش",
+    "search": "جستجو",
+    "glossary": "واژه‌نامه",
+    "about": "درباره",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "پلتفرم جامع مطالعه الاهیات مسیحی",
+    "heroSubtitle": "دو هزار سال دفاعیات، آموزه و منابع اصلی را کاوش کنید — با ابزارهای تعاملی برای مطالعه عمیق.",
+    "heroSearch": "چه سوالی را بررسی می‌کنید؟",
+    "quickFilters": {
+      "scientific": "علمی",
+      "philosophical": "فلسفی",
+      "historical": "تاریخی",
+      "theological": "الاهیاتی"
+    },
+    "defendCard": {
+      "title": "دفاع",
+      "subtitle": "دفاعیات و استدلال‌ها",
+      "desc": "استدلال‌های فلسفی، علمی و تاریخی به نفع ایمان مسیحی را کاوش کنید."
+    },
+    "compareCard": {
+      "title": "مقایسه",
+      "subtitle": "سنت‌ها و فرقه‌ها",
+      "desc": "ارتدکس، کاتولیک، پروتستان — سنت‌ها را در هر آموزه کلیدی مقایسه کنید."
+    },
+    "sourcesCard": {
+      "title": "منابع",
+      "subtitle": "اسناد اصلی",
+      "desc": "بیش از ۵۸۰۰ نسخه خطی عهد جدید، آباء کلیسا، شوراهای جهانی و اسناد ایمان."
+    },
+    "featuredArgument": "استدلال ویژه",
+    "recentAdditions": "افزوده‌های اخیر",
+    "timelinePreview": "خط زمانی تاریخی",
+    "quickLinks": "لینک‌های سریع",
+    "exploreTools": "ابزارهای تعاملی",
+    "argumentTree": "درخت استدلال",
+    "argumentTreeDesc": "استدلال‌ها را به صورت درخت‌های تعاملی با مقدمات، اعتراضات و پاسخ‌ها مشاهده کنید.",
+    "debateMode": "حالت مناظره",
+    "debateModeDesc": "استدلال و ضد استدلال را در قالب دیالکتیکی ساختاریافته مشاهده کنید.",
+    "timeline": "کاوشگر خط زمانی",
+    "timelineDesc": "دو هزار سال تاریخ مسیحیت را مرور کنید — شوراها، اعتقادنامه‌ها، مناقشات و چهره‌های کلیدی."
+  },
+  "defend": {
+    "title": "دفاع از ایمان",
+    "subtitle": "استدلال‌های فلسفی، علمی و تاریخی به نفع مسیحیت",
+    "againstAtheism": "در برابر الحاد و سکولاریسم",
+    "againstCults": "در برابر فرقه‌ها و بدعت‌ها",
+    "categories": {
+      "cosmological": {
+        "name": "استدلال‌های کیهان‌شناختی",
+        "desc": "از وجود جهان به علت اول ضروری"
+      },
+      "ontological": {
+        "name": "استدلال‌های وجودشناختی",
+        "desc": "از مفهوم خدا به واقعیت وجودش"
+      },
+      "teleological": {
+        "name": "استدلال‌های غایت‌شناختی",
+        "desc": "از نظم و تنظیم دقیق جهان به طراحی هوشمند"
+      },
+      "moral": {
+        "name": "استدلال‌های اخلاقی",
+        "desc": "از وجود ارزش‌های اخلاقی عینی به قانونگذار اخلاقی"
+      },
+      "existential": {
+        "name": "استدلال‌های اگزیستانسیالیستی",
+        "desc": "از آگاهی، خواست و معنا به منبع متعالی"
+      },
+      "historical": {
+        "name": "شواهد تاریخی",
+        "desc": "از شواهد نسخه خطی، شهادت شاهدان عینی و رستاخیز"
+      },
+      "objections": {
+        "name": "اعتراضات الحادی",
+        "desc": "پاسخ به مسئله شر، پنهان‌شدگی الهی و موارد دیگر"
+      }
+    }
+  },
+  "compare": {
+    "title": "مقایسه سنت‌ها",
+    "subtitle": "درک مبانی الاهیاتی شاخه‌های اصلی مسیحیت",
+    "orthodoxy": "ارتدکس شرقی",
+    "catholicism": "کاتولیک رومی",
+    "protestantism": "پروتستانتیسم",
+    "sideBySide": "مقایسه کنار هم",
+    "selectTraditions": "انتخاب سنت‌ها",
+    "selectDoctrine": "انتخاب آموزه",
+    "doctrines": {
+      "eucharist": "عشای ربانی",
+      "salvation": "نجات",
+      "authority": "اقتدار",
+      "baptism": "تعمید",
+      "mary": "مریم",
+      "church": "کلیسا"
+    }
+  },
+  "sources": {
+    "title": "آرشیو منابع اصلی",
+    "subtitle": "متون اصلی که الاهیات مسیحی را شکل دادند",
+    "manuscripts": "نسخه‌های خطی کتاب مقدس",
+    "manuscriptsDesc": "بیش از ۵۸۰۰ نسخه خطی یونانی عهد جدید",
+    "churchFathers": "آباء کلیسا",
+    "churchFathersDesc": "نوشته‌های رسولی، پیش‌نیقیه‌ای و نیقیه‌ای",
+    "councils": "شوراها و اعتقادنامه‌ها",
+    "councilsDesc": "هفت شورای جهانی و اسناد ایمان",
+    "liturgical": "متون آیینی",
+    "liturgicalDesc": "دیداخه، آیین‌های شرقی و غربی"
+  },
+  "explore": {
+    "title": "ابزارهای تعاملی",
+    "subtitle": "مشارکت با الاهیات از طریق تصویرسازی و تحلیل ساختاریافته",
+    "argumentTree": {
+      "title": "درخت استدلال",
+      "desc": "استدلال‌ها را به صورت درخت‌های تعاملی مشاهده کنید"
+    },
+    "debateMode": {
+      "title": "حالت مناظره",
+      "desc": "استدلال و ضد استدلال کنار هم"
+    },
+    "timeline": {
+      "title": "کاوشگر خط زمانی",
+      "desc": "دو هزار سال تاریخ مسیحیت"
+    },
+    "scriptureRef": {
+      "title": "ارجاع متقابل کتاب مقدس",
+      "desc": "هر یک از آباء کلیسا که آیه‌ای خاص را تفسیر کرده بیابید"
+    }
+  },
+  "glossary": {
+    "title": "واژه‌نامه الاهیاتی",
+    "subtitle": "اصطلاحات و مفاهیم کلیدی الاهیات مسیحی"
+  },
+  "about": {
+    "title": "درباره این پلتفرم",
+    "subtitle": "روش‌شناسی، منابع و مأموریت"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

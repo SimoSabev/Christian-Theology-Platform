@@ -1,11 +1,210 @@
 {
-  "common": { "search": "Zoeken...", "readMore": "Lees meer", "sources": "Bronnen", "relatedArguments": "Gerelateerde argumenten", "openInTree": "Open in argumentboom", "openInDebate": "Open in debatmodus", "language": "Taal", "viewAll": "Alles bekijken", "learnMore": "Meer informatie", "back": "Terug", "close": "Sluiten", "loading": "Laden...", "noResults": "Geen resultaten", "premise": "Premisse", "conclusion": "Conclusie", "objection": "Bezwaar", "response": "Antwoord", "support": "Ondersteuning", "keyProponents": "Belangrijke voorstanders", "historicalBackground": "Historische achtergrond", "formalStatement": "Formele verklaring", "objectionsAndResponses": "Bezwaren en antwoorden", "significance": "Betekenis", "keyDistinction": "Belangrijk onderscheid", "primarySource": "Primaire bron", "searchPlaceholder": "Zoek argumenten, bronnen, doctrines..." },
-  "nav": { "home": "Home", "defend": "Verdedigen", "compare": "Vergelijken", "sources": "Bronnen", "explore": "Verkennen", "search": "Zoeken", "glossary": "Woordenlijst", "about": "Over" },
-  "home": { "heroTitle": "Het Definitieve Platform voor Christelijke Theologie", "heroSubtitle": "Verken 2.000 jaar apologetiek, doctrine en primaire bronnen — met interactieve tools voor diepgaand onderzoek.", "heroSearch": "Welke vraag verkent u?", "quickFilters": { "scientific": "Wetenschappelijk", "philosophical": "Filosofisch", "historical": "Historisch", "theological": "Theologisch" }, "defendCard": { "title": "Verdedigen", "subtitle": "Apologetiek & Argumenten", "desc": "Verken filosofische, wetenschappelijke en historische argumenten voor het christelijk geloof." }, "compareCard": { "title": "Vergelijken", "subtitle": "Tradities & Denominaties", "desc": "Orthodox, katholiek, protestants — vergelijk tradities naast elkaar bij elke kernleer." }, "sourcesCard": { "title": "Bronnen", "subtitle": "Primaire Documenten", "desc": "5.800+ NT-manuscripten, kerkvaders, oecumenische concilies en geloofsbelijdenissen." }, "featuredArgument": "Uitgelicht Argument", "recentAdditions": "Recente toevoegingen", "timelinePreview": "Historische tijdlijn", "quickLinks": "Snelle links", "exploreTools": "Interactieve tools", "argumentTree": "Argumentboom", "argumentTreeDesc": "Visualiseer argumenten als interactieve, uitvouwbare bomen met premissen, bezwaren en antwoorden.", "debateMode": "Debatmodus", "debateModeDesc": "Bekijk argumenten en tegenargumenten naast elkaar in een gestructureerd dialectisch formaat.", "timeline": "Tijdlijnverkenner", "timelineDesc": "Navigeer door 2.000 jaar christelijke geschiedenis — concilies, geloofsbelijdenissen, controverses en sleutelfiguren." },
-  "defend": { "title": "Het geloof verdedigen", "subtitle": "Filosofische, wetenschappelijke en historische argumenten voor het christendom", "againstAtheism": "Tegen atheïsme & secularisme", "againstCults": "Tegen sekten & ketterijen", "categories": { "cosmological": { "name": "Kosmologische argumenten", "desc": "Van het bestaan van het universum naar een noodzakelijke eerste oorzaak" }, "ontological": { "name": "Ontologische argumenten", "desc": "Van het concept van God naar de realiteit van Zijn bestaan" }, "teleological": { "name": "Teleologische argumenten", "desc": "Van de orde en fijnafstemming van het universum naar intelligent ontwerp" }, "moral": { "name": "Morele argumenten", "desc": "Van het bestaan van objectieve morele waarden naar een morele wetgever" }, "existential": { "name": "Existentiële argumenten", "desc": "Van bewustzijn, verlangen en betekenis naar een transcendente bron" }, "historical": { "name": "Historisch bewijs", "desc": "Van manuscriptbewijs, ooggetuigenverklaringen en de Opstanding" }, "objections": { "name": "Atheïstische bezwaren", "desc": "Antwoorden op het probleem van het kwaad, goddelijke verborgenheid en meer" } } },
-  "compare": { "title": "Tradities vergelijken", "subtitle": "Begrijp de theologische fundamenten van de grote christelijke takken", "orthodoxy": "Oosterse Orthodoxie", "catholicism": "Rooms-Katholicisme", "protestantism": "Protestantisme", "sideBySide": "Vergelijking naast elkaar", "selectTraditions": "Tradities selecteren", "selectDoctrine": "Doctrine selecteren", "doctrines": { "eucharist": "Eucharistie", "salvation": "Verlossing", "authority": "Autoriteit", "baptism": "Doop", "mary": "Maria", "church": "Kerk" } },
-  "sources": { "title": "Archief van primaire bronnen", "subtitle": "De originele teksten die de christelijke theologie vormden", "manuscripts": "Bijbelse manuscripten", "manuscriptsDesc": "5.800+ Griekse NT-manuscripten", "churchFathers": "Kerkvaders", "churchFathersDesc": "Apostolische, voor-Niceense en Niceense geschriften", "councils": "Concilies & Geloofsbelijdenissen", "councilsDesc": "Zeven oecumenische concilies en geloofsdocumenten", "liturgical": "Liturgische teksten", "liturgicalDesc": "De Didache, oosterse en westerse liturgieën" },
-  "explore": { "title": "Interactieve tools", "subtitle": "Theologie beleven door visualisatie en gestructureerde analyse", "argumentTree": { "title": "Argumentboom", "desc": "Argumenten als interactieve bomen visualiseren" }, "debateMode": { "title": "Debatmodus", "desc": "Argumenten en tegenargumenten naast elkaar" }, "timeline": { "title": "Tijdlijnverkenner", "desc": "2.000 jaar christelijke geschiedenis doorbladeren" }, "scriptureRef": { "title": "Schriftverwijzingen", "desc": "Elke kerkvader vinden die een vers becommentarieert" } },
-  "glossary": { "title": "Theologische woordenlijst", "subtitle": "Sleutelbegrippen van de christelijke theologie" },
-  "about": { "title": "Over dit platform", "subtitle": "Methodologie, bronnen en missie" }
+  "common": {
+    "search": "Zoeken...",
+    "readMore": "Lees meer",
+    "sources": "Bronnen",
+    "relatedArguments": "Gerelateerde argumenten",
+    "openInTree": "Open in argumentboom",
+    "openInDebate": "Open in debatmodus",
+    "language": "Taal",
+    "viewAll": "Alles bekijken",
+    "learnMore": "Meer informatie",
+    "back": "Terug",
+    "close": "Sluiten",
+    "loading": "Laden...",
+    "noResults": "Geen resultaten",
+    "premise": "Premisse",
+    "conclusion": "Conclusie",
+    "objection": "Bezwaar",
+    "response": "Antwoord",
+    "support": "Ondersteuning",
+    "keyProponents": "Belangrijke voorstanders",
+    "historicalBackground": "Historische achtergrond",
+    "formalStatement": "Formele verklaring",
+    "objectionsAndResponses": "Bezwaren en antwoorden",
+    "significance": "Betekenis",
+    "keyDistinction": "Belangrijk onderscheid",
+    "primarySource": "Primaire bron",
+    "searchPlaceholder": "Zoek argumenten, bronnen, doctrines...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "Home",
+    "defend": "Verdedigen",
+    "compare": "Vergelijken",
+    "sources": "Bronnen",
+    "explore": "Verkennen",
+    "search": "Zoeken",
+    "glossary": "Woordenlijst",
+    "about": "Over",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "Het Definitieve Platform voor Christelijke Theologie",
+    "heroSubtitle": "Verken 2.000 jaar apologetiek, doctrine en primaire bronnen — met interactieve tools voor diepgaand onderzoek.",
+    "heroSearch": "Welke vraag verkent u?",
+    "quickFilters": {
+      "scientific": "Wetenschappelijk",
+      "philosophical": "Filosofisch",
+      "historical": "Historisch",
+      "theological": "Theologisch"
+    },
+    "defendCard": {
+      "title": "Verdedigen",
+      "subtitle": "Apologetiek & Argumenten",
+      "desc": "Verken filosofische, wetenschappelijke en historische argumenten voor het christelijk geloof."
+    },
+    "compareCard": {
+      "title": "Vergelijken",
+      "subtitle": "Tradities & Denominaties",
+      "desc": "Orthodox, katholiek, protestants — vergelijk tradities naast elkaar bij elke kernleer."
+    },
+    "sourcesCard": {
+      "title": "Bronnen",
+      "subtitle": "Primaire Documenten",
+      "desc": "5.800+ NT-manuscripten, kerkvaders, oecumenische concilies en geloofsbelijdenissen."
+    },
+    "featuredArgument": "Uitgelicht Argument",
+    "recentAdditions": "Recente toevoegingen",
+    "timelinePreview": "Historische tijdlijn",
+    "quickLinks": "Snelle links",
+    "exploreTools": "Interactieve tools",
+    "argumentTree": "Argumentboom",
+    "argumentTreeDesc": "Visualiseer argumenten als interactieve, uitvouwbare bomen met premissen, bezwaren en antwoorden.",
+    "debateMode": "Debatmodus",
+    "debateModeDesc": "Bekijk argumenten en tegenargumenten naast elkaar in een gestructureerd dialectisch formaat.",
+    "timeline": "Tijdlijnverkenner",
+    "timelineDesc": "Navigeer door 2.000 jaar christelijke geschiedenis — concilies, geloofsbelijdenissen, controverses en sleutelfiguren."
+  },
+  "defend": {
+    "title": "Het geloof verdedigen",
+    "subtitle": "Filosofische, wetenschappelijke en historische argumenten voor het christendom",
+    "againstAtheism": "Tegen atheïsme & secularisme",
+    "againstCults": "Tegen sekten & ketterijen",
+    "categories": {
+      "cosmological": {
+        "name": "Kosmologische argumenten",
+        "desc": "Van het bestaan van het universum naar een noodzakelijke eerste oorzaak"
+      },
+      "ontological": {
+        "name": "Ontologische argumenten",
+        "desc": "Van het concept van God naar de realiteit van Zijn bestaan"
+      },
+      "teleological": {
+        "name": "Teleologische argumenten",
+        "desc": "Van de orde en fijnafstemming van het universum naar intelligent ontwerp"
+      },
+      "moral": {
+        "name": "Morele argumenten",
+        "desc": "Van het bestaan van objectieve morele waarden naar een morele wetgever"
+      },
+      "existential": {
+        "name": "Existentiële argumenten",
+        "desc": "Van bewustzijn, verlangen en betekenis naar een transcendente bron"
+      },
+      "historical": {
+        "name": "Historisch bewijs",
+        "desc": "Van manuscriptbewijs, ooggetuigenverklaringen en de Opstanding"
+      },
+      "objections": {
+        "name": "Atheïstische bezwaren",
+        "desc": "Antwoorden op het probleem van het kwaad, goddelijke verborgenheid en meer"
+      }
+    }
+  },
+  "compare": {
+    "title": "Tradities vergelijken",
+    "subtitle": "Begrijp de theologische fundamenten van de grote christelijke takken",
+    "orthodoxy": "Oosterse Orthodoxie",
+    "catholicism": "Rooms-Katholicisme",
+    "protestantism": "Protestantisme",
+    "sideBySide": "Vergelijking naast elkaar",
+    "selectTraditions": "Tradities selecteren",
+    "selectDoctrine": "Doctrine selecteren",
+    "doctrines": {
+      "eucharist": "Eucharistie",
+      "salvation": "Verlossing",
+      "authority": "Autoriteit",
+      "baptism": "Doop",
+      "mary": "Maria",
+      "church": "Kerk"
+    }
+  },
+  "sources": {
+    "title": "Archief van primaire bronnen",
+    "subtitle": "De originele teksten die de christelijke theologie vormden",
+    "manuscripts": "Bijbelse manuscripten",
+    "manuscriptsDesc": "5.800+ Griekse NT-manuscripten",
+    "churchFathers": "Kerkvaders",
+    "churchFathersDesc": "Apostolische, voor-Niceense en Niceense geschriften",
+    "councils": "Concilies & Geloofsbelijdenissen",
+    "councilsDesc": "Zeven oecumenische concilies en geloofsdocumenten",
+    "liturgical": "Liturgische teksten",
+    "liturgicalDesc": "De Didache, oosterse en westerse liturgieën"
+  },
+  "explore": {
+    "title": "Interactieve tools",
+    "subtitle": "Theologie beleven door visualisatie en gestructureerde analyse",
+    "argumentTree": {
+      "title": "Argumentboom",
+      "desc": "Argumenten als interactieve bomen visualiseren"
+    },
+    "debateMode": {
+      "title": "Debatmodus",
+      "desc": "Argumenten en tegenargumenten naast elkaar"
+    },
+    "timeline": {
+      "title": "Tijdlijnverkenner",
+      "desc": "2.000 jaar christelijke geschiedenis doorbladeren"
+    },
+    "scriptureRef": {
+      "title": "Schriftverwijzingen",
+      "desc": "Elke kerkvader vinden die een vers becommentarieert"
+    }
+  },
+  "glossary": {
+    "title": "Theologische woordenlijst",
+    "subtitle": "Sleutelbegrippen van de christelijke theologie"
+  },
+  "about": {
+    "title": "Over dit platform",
+    "subtitle": "Methodologie, bronnen en missie"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

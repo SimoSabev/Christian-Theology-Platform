@@ -1,11 +1,210 @@
 {
-  "common": { "search": "Cari...", "readMore": "Baca selengkapnya", "sources": "Sumber", "relatedArguments": "Argumen terkait", "openInTree": "Buka di Pohon Argumen", "openInDebate": "Buka di Mode Debat", "language": "Bahasa", "viewAll": "Lihat semua", "learnMore": "Pelajari lebih lanjut", "back": "Kembali", "close": "Tutup", "loading": "Memuat...", "noResults": "Tidak ada hasil", "premise": "Premis", "conclusion": "Kesimpulan", "objection": "Keberatan", "response": "Tanggapan", "support": "Dukungan", "keyProponents": "Pendukung utama", "historicalBackground": "Latar belakang sejarah", "formalStatement": "Pernyataan formal", "objectionsAndResponses": "Keberatan & tanggapan", "significance": "Signifikansi", "keyDistinction": "Pembedaan kunci", "primarySource": "Sumber primer", "searchPlaceholder": "Cari argumen, sumber, doktrin..." },
-  "nav": { "home": "Beranda", "defend": "Membela", "compare": "Membandingkan", "sources": "Sumber", "explore": "Jelajahi", "search": "Cari", "glossary": "Glosarium", "about": "Tentang" },
-  "home": { "heroTitle": "Platform Studi Teologi Kristen", "heroSubtitle": "Jelajahi 2.000 tahun apologetika, doktrin, dan sumber primer — dengan alat interaktif untuk studi mendalam.", "heroSearch": "Pertanyaan apa yang Anda telusuri?", "quickFilters": { "scientific": "Ilmiah", "philosophical": "Filosofis", "historical": "Historis", "theological": "Teologis" }, "defendCard": { "title": "Membela", "subtitle": "Apologetika & Argumen", "desc": "Jelajahi argumen filosofis, ilmiah, dan historis untuk iman Kristen." }, "compareCard": { "title": "Membandingkan", "subtitle": "Tradisi & Denominasi", "desc": "Ortodoks, Katolik, Protestan — bandingkan tradisi secara berdampingan." }, "sourcesCard": { "title": "Sumber", "subtitle": "Dokumen Primer", "desc": "5.800+ manuskrip PB, Bapa Gereja, konsili ekumenis, dan dokumen iman." }, "featuredArgument": "Argumen unggulan", "recentAdditions": "Tambahan terbaru", "timelinePreview": "Garis waktu historis", "quickLinks": "Tautan cepat", "exploreTools": "Alat interaktif", "argumentTree": "Pohon Argumen", "argumentTreeDesc": "Visualisasikan argumen sebagai pohon interaktif dengan premis, keberatan, dan tanggapan.", "debateMode": "Mode Debat", "debateModeDesc": "Lihat argumen dan kontra-argumen berdampingan dalam format dialektis terstruktur.", "timeline": "Penjelajah Garis Waktu", "timelineDesc": "Navigasi 2.000 tahun sejarah Kristen — konsili, kredo, kontroversi, dan tokoh kunci." },
-  "defend": { "title": "Membela iman", "subtitle": "Argumen filosofis, ilmiah, dan historis untuk kekristenan", "againstAtheism": "Melawan ateisme & sekularisme", "againstCults": "Melawan sekte & bidat", "categories": { "cosmological": { "name": "Argumen kosmologis", "desc": "Dari keberadaan alam semesta ke penyebab pertama yang diperlukan" }, "ontological": { "name": "Argumen ontologis", "desc": "Dari konsep Tuhan ke realitas keberadaan-Nya" }, "teleological": { "name": "Argumen teleologis", "desc": "Dari keteraturan dan penyempurnaan alam semesta ke desain cerdas" }, "moral": { "name": "Argumen moral", "desc": "Dari keberadaan nilai moral objektif ke pemberi hukum moral" }, "existential": { "name": "Argumen eksistensial", "desc": "Dari kesadaran, keinginan, dan makna ke sumber transenden" }, "historical": { "name": "Bukti historis", "desc": "Dari bukti manuskrip, kesaksian mata, dan Kebangkitan" }, "objections": { "name": "Keberatan ateis", "desc": "Tanggapan terhadap masalah kejahatan, penyembunyian ilahi, dan lainnya" } } },
-  "compare": { "title": "Membandingkan tradisi", "subtitle": "Memahami fondasi teologis cabang-cabang utama kekristenan", "orthodoxy": "Ortodoksi Timur", "catholicism": "Katolikisme Roma", "protestantism": "Protestantisme", "sideBySide": "Perbandingan berdampingan", "selectTraditions": "Pilih tradisi", "selectDoctrine": "Pilih doktrin", "doctrines": { "eucharist": "Ekaristi", "salvation": "Keselamatan", "authority": "Otoritas", "baptism": "Pembaptisan", "mary": "Maria", "church": "Gereja" } },
-  "sources": { "title": "Arsip sumber primer", "subtitle": "Teks asli yang membentuk teologi Kristen", "manuscripts": "Manuskrip Alkitab", "manuscriptsDesc": "5.800+ manuskrip Yunani PB", "churchFathers": "Bapa Gereja", "churchFathersDesc": "Tulisan apostolik, pra-Nicea dan Nicea", "councils": "Konsili & Kredo", "councilsDesc": "Tujuh konsili ekumenis dan dokumen iman", "liturgical": "Teks liturgis", "liturgicalDesc": "Didache, liturgi Timur dan Barat" },
-  "explore": { "title": "Alat interaktif", "subtitle": "Teologi melalui visualisasi dan analisis terstruktur", "argumentTree": { "title": "Pohon Argumen", "desc": "Visualisasikan argumen sebagai pohon interaktif" }, "debateMode": { "title": "Mode Debat", "desc": "Argumen dan kontra-argumen berdampingan" }, "timeline": { "title": "Garis Waktu", "desc": "2.000 tahun sejarah Kristen" }, "scriptureRef": { "title": "Referensi silang Kitab Suci", "desc": "Temukan setiap Bapa Gereja yang mengomentari suatu ayat" } },
-  "glossary": { "title": "Glosarium teologis", "subtitle": "Istilah dan konsep kunci teologi Kristen" },
-  "about": { "title": "Tentang platform ini", "subtitle": "Metodologi, sumber, dan misi" }
+  "common": {
+    "search": "Cari...",
+    "readMore": "Baca selengkapnya",
+    "sources": "Sumber",
+    "relatedArguments": "Argumen terkait",
+    "openInTree": "Buka di Pohon Argumen",
+    "openInDebate": "Buka di Mode Debat",
+    "language": "Bahasa",
+    "viewAll": "Lihat semua",
+    "learnMore": "Pelajari lebih lanjut",
+    "back": "Kembali",
+    "close": "Tutup",
+    "loading": "Memuat...",
+    "noResults": "Tidak ada hasil",
+    "premise": "Premis",
+    "conclusion": "Kesimpulan",
+    "objection": "Keberatan",
+    "response": "Tanggapan",
+    "support": "Dukungan",
+    "keyProponents": "Pendukung utama",
+    "historicalBackground": "Latar belakang sejarah",
+    "formalStatement": "Pernyataan formal",
+    "objectionsAndResponses": "Keberatan & tanggapan",
+    "significance": "Signifikansi",
+    "keyDistinction": "Pembedaan kunci",
+    "primarySource": "Sumber primer",
+    "searchPlaceholder": "Cari argumen, sumber, doktrin...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "Beranda",
+    "defend": "Membela",
+    "compare": "Membandingkan",
+    "sources": "Sumber",
+    "explore": "Jelajahi",
+    "search": "Cari",
+    "glossary": "Glosarium",
+    "about": "Tentang",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "Platform Studi Teologi Kristen",
+    "heroSubtitle": "Jelajahi 2.000 tahun apologetika, doktrin, dan sumber primer — dengan alat interaktif untuk studi mendalam.",
+    "heroSearch": "Pertanyaan apa yang Anda telusuri?",
+    "quickFilters": {
+      "scientific": "Ilmiah",
+      "philosophical": "Filosofis",
+      "historical": "Historis",
+      "theological": "Teologis"
+    },
+    "defendCard": {
+      "title": "Membela",
+      "subtitle": "Apologetika & Argumen",
+      "desc": "Jelajahi argumen filosofis, ilmiah, dan historis untuk iman Kristen."
+    },
+    "compareCard": {
+      "title": "Membandingkan",
+      "subtitle": "Tradisi & Denominasi",
+      "desc": "Ortodoks, Katolik, Protestan — bandingkan tradisi secara berdampingan."
+    },
+    "sourcesCard": {
+      "title": "Sumber",
+      "subtitle": "Dokumen Primer",
+      "desc": "5.800+ manuskrip PB, Bapa Gereja, konsili ekumenis, dan dokumen iman."
+    },
+    "featuredArgument": "Argumen unggulan",
+    "recentAdditions": "Tambahan terbaru",
+    "timelinePreview": "Garis waktu historis",
+    "quickLinks": "Tautan cepat",
+    "exploreTools": "Alat interaktif",
+    "argumentTree": "Pohon Argumen",
+    "argumentTreeDesc": "Visualisasikan argumen sebagai pohon interaktif dengan premis, keberatan, dan tanggapan.",
+    "debateMode": "Mode Debat",
+    "debateModeDesc": "Lihat argumen dan kontra-argumen berdampingan dalam format dialektis terstruktur.",
+    "timeline": "Penjelajah Garis Waktu",
+    "timelineDesc": "Navigasi 2.000 tahun sejarah Kristen — konsili, kredo, kontroversi, dan tokoh kunci."
+  },
+  "defend": {
+    "title": "Membela iman",
+    "subtitle": "Argumen filosofis, ilmiah, dan historis untuk kekristenan",
+    "againstAtheism": "Melawan ateisme & sekularisme",
+    "againstCults": "Melawan sekte & bidat",
+    "categories": {
+      "cosmological": {
+        "name": "Argumen kosmologis",
+        "desc": "Dari keberadaan alam semesta ke penyebab pertama yang diperlukan"
+      },
+      "ontological": {
+        "name": "Argumen ontologis",
+        "desc": "Dari konsep Tuhan ke realitas keberadaan-Nya"
+      },
+      "teleological": {
+        "name": "Argumen teleologis",
+        "desc": "Dari keteraturan dan penyempurnaan alam semesta ke desain cerdas"
+      },
+      "moral": {
+        "name": "Argumen moral",
+        "desc": "Dari keberadaan nilai moral objektif ke pemberi hukum moral"
+      },
+      "existential": {
+        "name": "Argumen eksistensial",
+        "desc": "Dari kesadaran, keinginan, dan makna ke sumber transenden"
+      },
+      "historical": {
+        "name": "Bukti historis",
+        "desc": "Dari bukti manuskrip, kesaksian mata, dan Kebangkitan"
+      },
+      "objections": {
+        "name": "Keberatan ateis",
+        "desc": "Tanggapan terhadap masalah kejahatan, penyembunyian ilahi, dan lainnya"
+      }
+    }
+  },
+  "compare": {
+    "title": "Membandingkan tradisi",
+    "subtitle": "Memahami fondasi teologis cabang-cabang utama kekristenan",
+    "orthodoxy": "Ortodoksi Timur",
+    "catholicism": "Katolikisme Roma",
+    "protestantism": "Protestantisme",
+    "sideBySide": "Perbandingan berdampingan",
+    "selectTraditions": "Pilih tradisi",
+    "selectDoctrine": "Pilih doktrin",
+    "doctrines": {
+      "eucharist": "Ekaristi",
+      "salvation": "Keselamatan",
+      "authority": "Otoritas",
+      "baptism": "Pembaptisan",
+      "mary": "Maria",
+      "church": "Gereja"
+    }
+  },
+  "sources": {
+    "title": "Arsip sumber primer",
+    "subtitle": "Teks asli yang membentuk teologi Kristen",
+    "manuscripts": "Manuskrip Alkitab",
+    "manuscriptsDesc": "5.800+ manuskrip Yunani PB",
+    "churchFathers": "Bapa Gereja",
+    "churchFathersDesc": "Tulisan apostolik, pra-Nicea dan Nicea",
+    "councils": "Konsili & Kredo",
+    "councilsDesc": "Tujuh konsili ekumenis dan dokumen iman",
+    "liturgical": "Teks liturgis",
+    "liturgicalDesc": "Didache, liturgi Timur dan Barat"
+  },
+  "explore": {
+    "title": "Alat interaktif",
+    "subtitle": "Teologi melalui visualisasi dan analisis terstruktur",
+    "argumentTree": {
+      "title": "Pohon Argumen",
+      "desc": "Visualisasikan argumen sebagai pohon interaktif"
+    },
+    "debateMode": {
+      "title": "Mode Debat",
+      "desc": "Argumen dan kontra-argumen berdampingan"
+    },
+    "timeline": {
+      "title": "Garis Waktu",
+      "desc": "2.000 tahun sejarah Kristen"
+    },
+    "scriptureRef": {
+      "title": "Referensi silang Kitab Suci",
+      "desc": "Temukan setiap Bapa Gereja yang mengomentari suatu ayat"
+    }
+  },
+  "glossary": {
+    "title": "Glosarium teologis",
+    "subtitle": "Istilah dan konsep kunci teologi Kristen"
+  },
+  "about": {
+    "title": "Tentang platform ini",
+    "subtitle": "Metodologi, sumber, dan misi"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

@@ -25,7 +25,8 @@
     "significance": "중요성",
     "keyDistinction": "핵심 구분",
     "primarySource": "원전",
-    "searchPlaceholder": "논증, 출처, 교리 검색..."
+    "searchPlaceholder": "논증, 출처, 교리 검색...",
+    "semanticDefense": "Semantic Defense"
   },
   "nav": {
     "home": "홈",
@@ -35,16 +36,34 @@
     "explore": "탐색",
     "search": "검색",
     "glossary": "용어집",
-    "about": "소개"
+    "about": "소개",
+    "semantics": "Semantics"
   },
   "home": {
     "heroTitle": "기독교 신학 연구 플랫폼",
     "heroSubtitle": "2,000년의 변증학, 교리, 원전을 탐구하세요 — 깊이 있는 연구를 위한 대화형 도구와 함께.",
     "heroSearch": "어떤 질문을 탐구하고 계신가요?",
-    "quickFilters": { "scientific": "과학적", "philosophical": "철학적", "historical": "역사적", "theological": "신학적" },
-    "defendCard": { "title": "변증", "subtitle": "변증학과 논증", "desc": "기독교 신앙을 위한 철학적, 과학적, 역사적 논증을 탐구하세요." },
-    "compareCard": { "title": "비교", "subtitle": "전통과 교파", "desc": "정교회, 가톨릭, 개신교 — 모든 핵심 교리에서 전통을 나란히 비교하세요." },
-    "sourcesCard": { "title": "출처", "subtitle": "원전 문서", "desc": "5,800+ 신약 사본, 교부 저작, 공의회, 신경 문서." },
+    "quickFilters": {
+      "scientific": "과학적",
+      "philosophical": "철학적",
+      "historical": "역사적",
+      "theological": "신학적"
+    },
+    "defendCard": {
+      "title": "변증",
+      "subtitle": "변증학과 논증",
+      "desc": "기독교 신앙을 위한 철학적, 과학적, 역사적 논증을 탐구하세요."
+    },
+    "compareCard": {
+      "title": "비교",
+      "subtitle": "전통과 교파",
+      "desc": "정교회, 가톨릭, 개신교 — 모든 핵심 교리에서 전통을 나란히 비교하세요."
+    },
+    "sourcesCard": {
+      "title": "출처",
+      "subtitle": "원전 문서",
+      "desc": "5,800+ 신약 사본, 교부 저작, 공의회, 신경 문서."
+    },
     "featuredArgument": "추천 논증",
     "recentAdditions": "최근 추가",
     "timelinePreview": "역사 연대표",
@@ -63,13 +82,34 @@
     "againstAtheism": "무신론과 세속주의에 대한 반박",
     "againstCults": "이단과 사이비에 대한 반박",
     "categories": {
-      "cosmological": { "name": "우주론적 논증", "desc": "우주의 존재에서 필연적 제1원인으로" },
-      "ontological": { "name": "존재론적 논증", "desc": "하나님의 개념 자체에서 그분의 존재 현실로" },
-      "teleological": { "name": "목적론적 논증", "desc": "우주의 질서와 미세조정에서 지적 설계로" },
-      "moral": { "name": "도덕적 논증", "desc": "객관적 도덕 가치의 존재에서 도덕적 입법자로" },
-      "existential": { "name": "실존적 논증", "desc": "의식, 욕구, 의미에서 초월적 원천으로" },
-      "historical": { "name": "역사적 증거", "desc": "사본 증거, 목격자 증언, 부활" },
-      "objections": { "name": "무신론적 반론", "desc": "악의 문제, 신의 은닉 등에 대한 응답" }
+      "cosmological": {
+        "name": "우주론적 논증",
+        "desc": "우주의 존재에서 필연적 제1원인으로"
+      },
+      "ontological": {
+        "name": "존재론적 논증",
+        "desc": "하나님의 개념 자체에서 그분의 존재 현실로"
+      },
+      "teleological": {
+        "name": "목적론적 논증",
+        "desc": "우주의 질서와 미세조정에서 지적 설계로"
+      },
+      "moral": {
+        "name": "도덕적 논증",
+        "desc": "객관적 도덕 가치의 존재에서 도덕적 입법자로"
+      },
+      "existential": {
+        "name": "실존적 논증",
+        "desc": "의식, 욕구, 의미에서 초월적 원천으로"
+      },
+      "historical": {
+        "name": "역사적 증거",
+        "desc": "사본 증거, 목격자 증언, 부활"
+      },
+      "objections": {
+        "name": "무신론적 반론",
+        "desc": "악의 문제, 신의 은닉 등에 대한 응답"
+      }
     }
   },
   "compare": {
@@ -81,7 +121,14 @@
     "sideBySide": "나란히 비교",
     "selectTraditions": "전통 선택",
     "selectDoctrine": "교리 선택",
-    "doctrines": { "eucharist": "성찬", "salvation": "구원", "authority": "권위", "baptism": "세례", "mary": "성모", "church": "교회" }
+    "doctrines": {
+      "eucharist": "성찬",
+      "salvation": "구원",
+      "authority": "권위",
+      "baptism": "세례",
+      "mary": "성모",
+      "church": "교회"
+    }
   },
   "sources": {
     "title": "원전 아카이브",
@@ -98,11 +145,66 @@
   "explore": {
     "title": "대화형 도구",
     "subtitle": "시각화와 구조화된 분석을 통해 신학에 참여하세요",
-    "argumentTree": { "title": "논증 트리", "desc": "논증을 대화형 트리로 시각화" },
-    "debateMode": { "title": "토론 모드", "desc": "논증과 반론을 나란히" },
-    "timeline": { "title": "연대표 탐색기", "desc": "2,000년의 기독교 역사를 탐색" },
-    "scriptureRef": { "title": "성경 교차 참조", "desc": "주어진 구절에 대해 언급하는 모든 교부 찾기" }
+    "argumentTree": {
+      "title": "논증 트리",
+      "desc": "논증을 대화형 트리로 시각화"
+    },
+    "debateMode": {
+      "title": "토론 모드",
+      "desc": "논증과 반론을 나란히"
+    },
+    "timeline": {
+      "title": "연대표 탐색기",
+      "desc": "2,000년의 기독교 역사를 탐색"
+    },
+    "scriptureRef": {
+      "title": "성경 교차 참조",
+      "desc": "주어진 구절에 대해 언급하는 모든 교부 찾기"
+    }
   },
-  "glossary": { "title": "신학 용어집", "subtitle": "기독교 신학의 핵심 용어와 개념" },
-  "about": { "title": "이 플랫폼에 대하여", "subtitle": "방법론, 출처, 사명" }
+  "glossary": {
+    "title": "신학 용어집",
+    "subtitle": "기독교 신학의 핵심 용어와 개념"
+  },
+  "about": {
+    "title": "이 플랫폼에 대하여",
+    "subtitle": "방법론, 출처, 사명"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

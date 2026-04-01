@@ -1,11 +1,210 @@
 {
-  "common": { "search": "Tafuta...", "readMore": "Soma zaidi", "sources": "Vyanzo", "relatedArguments": "Hoja zinazohusiana", "openInTree": "Fungua katika Mti wa Hoja", "openInDebate": "Fungua katika Hali ya Mjadala", "language": "Lugha", "viewAll": "Tazama zote", "learnMore": "Jifunze zaidi", "back": "Rudi", "close": "Funga", "loading": "Inapakia...", "noResults": "Hakuna matokeo", "premise": "Msingi", "conclusion": "Hitimisho", "objection": "Upinzani", "response": "Jibu", "support": "Msaada", "keyProponents": "Watetezi wakuu", "historicalBackground": "Usuli wa kihistoria", "formalStatement": "Taarifa rasmi", "objectionsAndResponses": "Upinzani na majibu", "significance": "Umuhimu", "keyDistinction": "Tofauti kuu", "primarySource": "Chanzo kikuu", "searchPlaceholder": "Tafuta hoja, vyanzo, mafundisho..." },
-  "nav": { "home": "Nyumbani", "defend": "Tetea", "compare": "Linganisha", "sources": "Vyanzo", "explore": "Gundua", "search": "Tafuta", "glossary": "Kamusi", "about": "Kuhusu" },
-  "home": { "heroTitle": "Jukwaa la Masomo ya Theolojia ya Kikristo", "heroSubtitle": "Gundua miaka 2,000 ya apologetiki, mafundisho na vyanzo vya msingi — na zana shirikishi za masomo ya kina.", "heroSearch": "Swali gani unachunguza?", "quickFilters": { "scientific": "Kisayansi", "philosophical": "Kifalsafa", "historical": "Kihistoria", "theological": "Kitheolojia" }, "defendCard": { "title": "Tetea", "subtitle": "Apologetiki na Hoja", "desc": "Chunguza hoja za kifalsafa, kisayansi na kihistoria zinazounga mkono imani ya Kikristo." }, "compareCard": { "title": "Linganisha", "subtitle": "Mila na Madhehebu", "desc": "Orthodox, Katoliki, Protestanti — linganisha mila kwa kila fundisho kuu." }, "sourcesCard": { "title": "Vyanzo", "subtitle": "Hati za Msingi", "desc": "Maandishi 5,800+ ya Agano Jipya, Baba za Kanisa, mabaraza na imani." }, "featuredArgument": "Hoja iliyopendekezwa", "recentAdditions": "Nyongeza za hivi karibuni", "timelinePreview": "Ratiba ya kihistoria", "quickLinks": "Viungo vya haraka", "exploreTools": "Zana shirikishi", "argumentTree": "Mti wa Hoja", "argumentTreeDesc": "Onyesha hoja kama miti shirikishi inayoweza kupanuliwa.", "debateMode": "Hali ya Mjadala", "debateModeDesc": "Tazama hoja na hoja-pinzani bega kwa bega.", "timeline": "Mchunguzi wa Ratiba", "timelineDesc": "Pitia miaka 2,000 ya historia ya Kikristo — mabaraza, imani, migogoro na watu muhimu." },
-  "defend": { "title": "Kutetea imani", "subtitle": "Hoja za kifalsafa, kisayansi na kihistoria za Ukristo", "againstAtheism": "Dhidi ya ukafiri na ulimwengu", "againstCults": "Dhidi ya madhehebu na uzushi", "categories": { "cosmological": { "name": "Hoja za kosmolojia", "desc": "Kutoka uwepo wa ulimwengu hadi sababu ya kwanza muhimu" }, "ontological": { "name": "Hoja za ontolojia", "desc": "Kutoka dhana ya Mungu hadi ukweli wa uwepo Wake" }, "teleological": { "name": "Hoja za teleolojia", "desc": "Kutoka utaratibu wa ulimwengu hadi muundo wa akili" }, "moral": { "name": "Hoja za maadili", "desc": "Kutoka uwepo wa maadili ya lengo hadi mtunga sheria wa maadili" }, "existential": { "name": "Hoja za kuwepo", "desc": "Kutoka fahamu, tamaa na maana hadi chanzo cha juu" }, "historical": { "name": "Ushahidi wa kihistoria", "desc": "Kutoka ushahidi wa maandishi, mashahidi wa macho na Ufufuo" }, "objections": { "name": "Upinzani wa ukafiri", "desc": "Majibu ya tatizo la uovu, kificho cha kimungu na mengine" } } },
-  "compare": { "title": "Kulinganisha mila", "subtitle": "Kuelewa misingi ya kitheolojia ya matawi makuu ya Ukristo", "orthodoxy": "Orthodox ya Mashariki", "catholicism": "Ukatoliki wa Roma", "protestantism": "Uprotestanti", "sideBySide": "Ulinganisho bega kwa bega", "selectTraditions": "Chagua mila", "selectDoctrine": "Chagua mafundisho", "doctrines": { "eucharist": "Ekaristi", "salvation": "Wokovu", "authority": "Mamlaka", "baptism": "Ubatizo", "mary": "Maria", "church": "Kanisa" } },
-  "sources": { "title": "Hazina ya vyanzo vya msingi", "subtitle": "Maandishi asilia yaliyounda theolojia ya Kikristo", "manuscripts": "Maandishi ya Biblia", "manuscriptsDesc": "Maandishi 5,800+ ya Kigiriki ya AJ", "churchFathers": "Baba za Kanisa", "churchFathersDesc": "Maandishi ya kitume, kabla ya Nikea na Nikea", "councils": "Mabaraza na Imani", "councilsDesc": "Mabaraza saba ya kiekumene na hati za imani", "liturgical": "Maandishi ya kiliturjia", "liturgicalDesc": "Didake, liturjia za mashariki na magharibi" },
-  "explore": { "title": "Zana shirikishi", "subtitle": "Theolojia kupitia uonyeshaji na uchambuzi wa muundo", "argumentTree": { "title": "Mti wa Hoja", "desc": "Onyesha hoja kama miti shirikishi" }, "debateMode": { "title": "Hali ya Mjadala", "desc": "Hoja na hoja-pinzani bega kwa bega" }, "timeline": { "title": "Ratiba", "desc": "Miaka 2,000 ya historia ya Kikristo" }, "scriptureRef": { "title": "Marejeo ya Maandiko", "desc": "Pata kila Baba wa Kanisa anayetoa maoni juu ya aya" } },
-  "glossary": { "title": "Kamusi ya kitheolojia", "subtitle": "Maneno muhimu ya theolojia ya Kikristo" },
-  "about": { "title": "Kuhusu jukwaa hili", "subtitle": "Mbinu, vyanzo na misheni" }
+  "common": {
+    "search": "Tafuta...",
+    "readMore": "Soma zaidi",
+    "sources": "Vyanzo",
+    "relatedArguments": "Hoja zinazohusiana",
+    "openInTree": "Fungua katika Mti wa Hoja",
+    "openInDebate": "Fungua katika Hali ya Mjadala",
+    "language": "Lugha",
+    "viewAll": "Tazama zote",
+    "learnMore": "Jifunze zaidi",
+    "back": "Rudi",
+    "close": "Funga",
+    "loading": "Inapakia...",
+    "noResults": "Hakuna matokeo",
+    "premise": "Msingi",
+    "conclusion": "Hitimisho",
+    "objection": "Upinzani",
+    "response": "Jibu",
+    "support": "Msaada",
+    "keyProponents": "Watetezi wakuu",
+    "historicalBackground": "Usuli wa kihistoria",
+    "formalStatement": "Taarifa rasmi",
+    "objectionsAndResponses": "Upinzani na majibu",
+    "significance": "Umuhimu",
+    "keyDistinction": "Tofauti kuu",
+    "primarySource": "Chanzo kikuu",
+    "searchPlaceholder": "Tafuta hoja, vyanzo, mafundisho...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "defend": "Tetea",
+    "compare": "Linganisha",
+    "sources": "Vyanzo",
+    "explore": "Gundua",
+    "search": "Tafuta",
+    "glossary": "Kamusi",
+    "about": "Kuhusu",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "Jukwaa la Masomo ya Theolojia ya Kikristo",
+    "heroSubtitle": "Gundua miaka 2,000 ya apologetiki, mafundisho na vyanzo vya msingi — na zana shirikishi za masomo ya kina.",
+    "heroSearch": "Swali gani unachunguza?",
+    "quickFilters": {
+      "scientific": "Kisayansi",
+      "philosophical": "Kifalsafa",
+      "historical": "Kihistoria",
+      "theological": "Kitheolojia"
+    },
+    "defendCard": {
+      "title": "Tetea",
+      "subtitle": "Apologetiki na Hoja",
+      "desc": "Chunguza hoja za kifalsafa, kisayansi na kihistoria zinazounga mkono imani ya Kikristo."
+    },
+    "compareCard": {
+      "title": "Linganisha",
+      "subtitle": "Mila na Madhehebu",
+      "desc": "Orthodox, Katoliki, Protestanti — linganisha mila kwa kila fundisho kuu."
+    },
+    "sourcesCard": {
+      "title": "Vyanzo",
+      "subtitle": "Hati za Msingi",
+      "desc": "Maandishi 5,800+ ya Agano Jipya, Baba za Kanisa, mabaraza na imani."
+    },
+    "featuredArgument": "Hoja iliyopendekezwa",
+    "recentAdditions": "Nyongeza za hivi karibuni",
+    "timelinePreview": "Ratiba ya kihistoria",
+    "quickLinks": "Viungo vya haraka",
+    "exploreTools": "Zana shirikishi",
+    "argumentTree": "Mti wa Hoja",
+    "argumentTreeDesc": "Onyesha hoja kama miti shirikishi inayoweza kupanuliwa.",
+    "debateMode": "Hali ya Mjadala",
+    "debateModeDesc": "Tazama hoja na hoja-pinzani bega kwa bega.",
+    "timeline": "Mchunguzi wa Ratiba",
+    "timelineDesc": "Pitia miaka 2,000 ya historia ya Kikristo — mabaraza, imani, migogoro na watu muhimu."
+  },
+  "defend": {
+    "title": "Kutetea imani",
+    "subtitle": "Hoja za kifalsafa, kisayansi na kihistoria za Ukristo",
+    "againstAtheism": "Dhidi ya ukafiri na ulimwengu",
+    "againstCults": "Dhidi ya madhehebu na uzushi",
+    "categories": {
+      "cosmological": {
+        "name": "Hoja za kosmolojia",
+        "desc": "Kutoka uwepo wa ulimwengu hadi sababu ya kwanza muhimu"
+      },
+      "ontological": {
+        "name": "Hoja za ontolojia",
+        "desc": "Kutoka dhana ya Mungu hadi ukweli wa uwepo Wake"
+      },
+      "teleological": {
+        "name": "Hoja za teleolojia",
+        "desc": "Kutoka utaratibu wa ulimwengu hadi muundo wa akili"
+      },
+      "moral": {
+        "name": "Hoja za maadili",
+        "desc": "Kutoka uwepo wa maadili ya lengo hadi mtunga sheria wa maadili"
+      },
+      "existential": {
+        "name": "Hoja za kuwepo",
+        "desc": "Kutoka fahamu, tamaa na maana hadi chanzo cha juu"
+      },
+      "historical": {
+        "name": "Ushahidi wa kihistoria",
+        "desc": "Kutoka ushahidi wa maandishi, mashahidi wa macho na Ufufuo"
+      },
+      "objections": {
+        "name": "Upinzani wa ukafiri",
+        "desc": "Majibu ya tatizo la uovu, kificho cha kimungu na mengine"
+      }
+    }
+  },
+  "compare": {
+    "title": "Kulinganisha mila",
+    "subtitle": "Kuelewa misingi ya kitheolojia ya matawi makuu ya Ukristo",
+    "orthodoxy": "Orthodox ya Mashariki",
+    "catholicism": "Ukatoliki wa Roma",
+    "protestantism": "Uprotestanti",
+    "sideBySide": "Ulinganisho bega kwa bega",
+    "selectTraditions": "Chagua mila",
+    "selectDoctrine": "Chagua mafundisho",
+    "doctrines": {
+      "eucharist": "Ekaristi",
+      "salvation": "Wokovu",
+      "authority": "Mamlaka",
+      "baptism": "Ubatizo",
+      "mary": "Maria",
+      "church": "Kanisa"
+    }
+  },
+  "sources": {
+    "title": "Hazina ya vyanzo vya msingi",
+    "subtitle": "Maandishi asilia yaliyounda theolojia ya Kikristo",
+    "manuscripts": "Maandishi ya Biblia",
+    "manuscriptsDesc": "Maandishi 5,800+ ya Kigiriki ya AJ",
+    "churchFathers": "Baba za Kanisa",
+    "churchFathersDesc": "Maandishi ya kitume, kabla ya Nikea na Nikea",
+    "councils": "Mabaraza na Imani",
+    "councilsDesc": "Mabaraza saba ya kiekumene na hati za imani",
+    "liturgical": "Maandishi ya kiliturjia",
+    "liturgicalDesc": "Didake, liturjia za mashariki na magharibi"
+  },
+  "explore": {
+    "title": "Zana shirikishi",
+    "subtitle": "Theolojia kupitia uonyeshaji na uchambuzi wa muundo",
+    "argumentTree": {
+      "title": "Mti wa Hoja",
+      "desc": "Onyesha hoja kama miti shirikishi"
+    },
+    "debateMode": {
+      "title": "Hali ya Mjadala",
+      "desc": "Hoja na hoja-pinzani bega kwa bega"
+    },
+    "timeline": {
+      "title": "Ratiba",
+      "desc": "Miaka 2,000 ya historia ya Kikristo"
+    },
+    "scriptureRef": {
+      "title": "Marejeo ya Maandiko",
+      "desc": "Pata kila Baba wa Kanisa anayetoa maoni juu ya aya"
+    }
+  },
+  "glossary": {
+    "title": "Kamusi ya kitheolojia",
+    "subtitle": "Maneno muhimu ya theolojia ya Kikristo"
+  },
+  "about": {
+    "title": "Kuhusu jukwaa hili",
+    "subtitle": "Mbinu, vyanzo na misheni"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

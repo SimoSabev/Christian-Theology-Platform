@@ -1,11 +1,210 @@
 {
-  "common": { "search": "ፈልግ...", "readMore": "ተጨማሪ አንብብ", "sources": "ምንጮች", "relatedArguments": "ተዛማጅ ክርክሮች", "openInTree": "በክርክር ዛፍ ውስጥ ክፈት", "openInDebate": "በክርክር ሁነታ ክፈት", "language": "ቋንቋ", "viewAll": "ሁሉንም ተመልከት", "learnMore": "ተጨማሪ ይወቁ", "back": "ተመለስ", "close": "ዝጋ", "loading": "በመጫን ላይ...", "noResults": "ውጤት አልተገኘም", "premise": "ቅድመ-ሁኔታ", "conclusion": "ድምዳሜ", "objection": "ተቃውሞ", "response": "ምላሽ", "support": "ድጋፍ", "keyProponents": "ዋና ደጋፊዎች", "historicalBackground": "ታሪካዊ ዳራ", "formalStatement": "መደበኛ መግለጫ", "objectionsAndResponses": "ተቃውሞዎች እና ምላሾች", "significance": "ጠቀሜታ", "keyDistinction": "ዋና ልዩነት", "primarySource": "ዋና ምንጭ", "searchPlaceholder": "ክርክሮች፣ ምንጮች፣ ትምህርቶች ይፈልጉ..." },
-  "nav": { "home": "መነሻ", "defend": "ተከላከል", "compare": "ንጽጽር", "sources": "ምንጮች", "explore": "አስስ", "search": "ፈልግ", "glossary": "የቃላት ዝርዝር", "about": "ስለ" },
-  "home": { "heroTitle": "የክርስቲያን ስነ-መለኮት ጥናት መድረክ", "heroSubtitle": "2,000 ዓመታት የወንጌል ተሟጋችነት፣ ዶግማ እና ዋና ምንጮችን ያስሱ — ለጥልቅ ጥናት በበይነ ግንኙነት መሳሪያዎች።", "heroSearch": "ምን ጥያቄ እያጠኑ ነው?", "quickFilters": { "scientific": "ሳይንሳዊ", "philosophical": "ፍልስፍናዊ", "historical": "ታሪካዊ", "theological": "ስነ-መለኮታዊ" }, "defendCard": { "title": "ተከላከል", "subtitle": "ወንጌል ተሟጋችነት እና ክርክሮች", "desc": "ለክርስቲያን እምነት የሚደግፉ ፍልስፍናዊ፣ ሳይንሳዊ እና ታሪካዊ ክርክሮችን ያስሱ።" }, "compareCard": { "title": "ንጽጽር", "subtitle": "ወጎች እና ቤተ-እምነቶች", "desc": "ኦርቶዶክስ፣ ካቶሊክ፣ ፕሮቴስታንት — ወጎችን ጎን ለጎን ያነጻጽሩ።" }, "sourcesCard": { "title": "ምንጮች", "subtitle": "ዋና ሰነዶች", "desc": "5,800+ የአዲስ ኪዳን ጽሑፎች፣ የቤተ ክርስቲያን አባቶች፣ ጉባኤዎች እና የእምነት ቃላት።" }, "featuredArgument": "ተመራጭ ክርክር", "recentAdditions": "ቅርብ ጊዜ ተጨማሪዎች", "timelinePreview": "ታሪካዊ የጊዜ መስመር", "quickLinks": "ፈጣን አገናኞች", "exploreTools": "በይነ ግንኙነት መሳሪያዎች", "argumentTree": "የክርክር ዛፍ", "argumentTreeDesc": "ክርክሮችን በበይነ ግንኙነት ዛፎች ይመልከቱ።", "debateMode": "የክርክር ሁነታ", "debateModeDesc": "ክርክሮችን እና ፀረ-ክርክሮችን ጎን ለጎን ይመልከቱ።", "timeline": "የጊዜ መስመር", "timelineDesc": "2,000 ዓመታት የክርስትና ታሪክን ያስሱ።" },
-  "defend": { "title": "የእምነት ተከላካይ", "subtitle": "ለክርስትና የሚደግፉ ፍልስፍናዊ፣ ሳይንሳዊ እና ታሪካዊ ክርክሮች", "againstAtheism": "ከአምላክ የለሽነት ተቃውሞ", "againstCults": "ከኑፋቄዎች ተቃውሞ", "categories": { "cosmological": { "name": "ኮስሞሎጂካል ክርክሮች", "desc": "ከአጽናፈ ዓለም መኖር ወደ አስፈላጊ የመጀመሪያ ምክንያት" }, "ontological": { "name": "ኦንቶሎጂካል ክርክሮች", "desc": "ከእግዚአብሔር ጽንሰ ሐሳብ ወደ መኖሩ እውነታ" }, "teleological": { "name": "ቴሎሎጂካል ክርክሮች", "desc": "ከአጽናፈ ዓለም ስርዓት ወደ ብልጥ ንድፍ" }, "moral": { "name": "ሥነ-ምግባራዊ ክርክሮች", "desc": "ከተጨባጭ ሥነ-ምግባራዊ እሴቶች ወደ ሕግ አውጪ" }, "existential": { "name": "ኤግዚስቴንሻል ክርክሮች", "desc": "ከንቃተ ህሊና፣ ፍላጎት ወደ ሽግግራዊ ምንጭ" }, "historical": { "name": "ታሪካዊ ማስረጃዎች", "desc": "ከጽሑፍ ማስረጃዎች፣ ምስክሮች እና ትንሣኤ" }, "objections": { "name": "አምላክ የለሽ ተቃውሞዎች", "desc": "ለክፋት ችግር እና ሌሎች ምላሾች" } } },
-  "compare": { "title": "ወጎች ንጽጽር", "subtitle": "ዋና የክርስትና ቅርንጫፎች ስነ-መለኮታዊ መሰረቶችን ይረዱ", "orthodoxy": "ምስራቃዊ ኦርቶዶክስ", "catholicism": "ሮማ ካቶሊክ", "protestantism": "ፕሮቴስታንት", "sideBySide": "ጎን ለጎን ንጽጽር", "selectTraditions": "ወጎችን ይምረጡ", "selectDoctrine": "ትምህርት ይምረጡ", "doctrines": { "eucharist": "ቅደ ቊርባን", "salvation": "ድኅነት", "authority": "ሥልጣን", "baptism": "ጥምቀት", "mary": "ድንግል ማርያም", "church": "ቤተ ክርስቲያን" } },
-  "sources": { "title": "ዋና ምንጮች ማህደር", "subtitle": "የክርስቲያን ስነ-መለኮትን ያቀረውች ዋና ጽሑፎች", "manuscripts": "መጽሐፍ ቅዱሳዊ ጽሑፎች", "manuscriptsDesc": "5,800+ የግሪክ አዲስ ኪዳን ጽሑፎች", "churchFathers": "የቤተ ክርስቲያን አባቶች", "churchFathersDesc": "ሐዋርያዊ፣ ቅድመ ኒቂያ እና ኒቂያ ጽሑፎች", "councils": "ጉባኤዎች እና የእምነት ቃላት", "councilsDesc": "ሰባት ዓለማቀፍ ጉባኤዎች", "liturgical": "ሥርዓተ ቅዳሴ ጽሑፎች", "liturgicalDesc": "ዲዳኬ፣ ምስራቃዊ እና ምዕራባዊ ሥርዓቶች" },
-  "explore": { "title": "በይነ ግንኙነት መሳሪያዎች", "subtitle": "በምስላዊ ትንተና ስነ-መለኮትን ያጠኑ", "argumentTree": { "title": "የክርክር ዛፍ", "desc": "ክርክሮችን በዛፍ ይመልከቱ" }, "debateMode": { "title": "የክርክር ሁነታ", "desc": "ክርክሮች ጎን ለጎን" }, "timeline": { "title": "የጊዜ መስመር", "desc": "2,000 ዓመታት ታሪክ" }, "scriptureRef": { "title": "መጽሐፍ ቅዱስ ማጣቀሻ", "desc": "ጥቅስን የሚያብራሩ አባቶችን ያግኙ" } },
-  "glossary": { "title": "ስነ-መለኮታዊ የቃላት ዝርዝር", "subtitle": "የክርስቲያን ስነ-መለኮት ቁልፍ ቃላት" },
-  "about": { "title": "ስለ ይህ መድረክ", "subtitle": "ዘዴ፣ ምንጮች እና ተልእኮ" }
+  "common": {
+    "search": "ፈልግ...",
+    "readMore": "ተጨማሪ አንብብ",
+    "sources": "ምንጮች",
+    "relatedArguments": "ተዛማጅ ክርክሮች",
+    "openInTree": "በክርክር ዛፍ ውስጥ ክፈት",
+    "openInDebate": "በክርክር ሁነታ ክፈት",
+    "language": "ቋንቋ",
+    "viewAll": "ሁሉንም ተመልከት",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "back": "ተመለስ",
+    "close": "ዝጋ",
+    "loading": "በመጫን ላይ...",
+    "noResults": "ውጤት አልተገኘም",
+    "premise": "ቅድመ-ሁኔታ",
+    "conclusion": "ድምዳሜ",
+    "objection": "ተቃውሞ",
+    "response": "ምላሽ",
+    "support": "ድጋፍ",
+    "keyProponents": "ዋና ደጋፊዎች",
+    "historicalBackground": "ታሪካዊ ዳራ",
+    "formalStatement": "መደበኛ መግለጫ",
+    "objectionsAndResponses": "ተቃውሞዎች እና ምላሾች",
+    "significance": "ጠቀሜታ",
+    "keyDistinction": "ዋና ልዩነት",
+    "primarySource": "ዋና ምንጭ",
+    "searchPlaceholder": "ክርክሮች፣ ምንጮች፣ ትምህርቶች ይፈልጉ...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "መነሻ",
+    "defend": "ተከላከል",
+    "compare": "ንጽጽር",
+    "sources": "ምንጮች",
+    "explore": "አስስ",
+    "search": "ፈልግ",
+    "glossary": "የቃላት ዝርዝር",
+    "about": "ስለ",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "የክርስቲያን ስነ-መለኮት ጥናት መድረክ",
+    "heroSubtitle": "2,000 ዓመታት የወንጌል ተሟጋችነት፣ ዶግማ እና ዋና ምንጮችን ያስሱ — ለጥልቅ ጥናት በበይነ ግንኙነት መሳሪያዎች።",
+    "heroSearch": "ምን ጥያቄ እያጠኑ ነው?",
+    "quickFilters": {
+      "scientific": "ሳይንሳዊ",
+      "philosophical": "ፍልስፍናዊ",
+      "historical": "ታሪካዊ",
+      "theological": "ስነ-መለኮታዊ"
+    },
+    "defendCard": {
+      "title": "ተከላከል",
+      "subtitle": "ወንጌል ተሟጋችነት እና ክርክሮች",
+      "desc": "ለክርስቲያን እምነት የሚደግፉ ፍልስፍናዊ፣ ሳይንሳዊ እና ታሪካዊ ክርክሮችን ያስሱ።"
+    },
+    "compareCard": {
+      "title": "ንጽጽር",
+      "subtitle": "ወጎች እና ቤተ-እምነቶች",
+      "desc": "ኦርቶዶክስ፣ ካቶሊክ፣ ፕሮቴስታንት — ወጎችን ጎን ለጎን ያነጻጽሩ።"
+    },
+    "sourcesCard": {
+      "title": "ምንጮች",
+      "subtitle": "ዋና ሰነዶች",
+      "desc": "5,800+ የአዲስ ኪዳን ጽሑፎች፣ የቤተ ክርስቲያን አባቶች፣ ጉባኤዎች እና የእምነት ቃላት።"
+    },
+    "featuredArgument": "ተመራጭ ክርክር",
+    "recentAdditions": "ቅርብ ጊዜ ተጨማሪዎች",
+    "timelinePreview": "ታሪካዊ የጊዜ መስመር",
+    "quickLinks": "ፈጣን አገናኞች",
+    "exploreTools": "በይነ ግንኙነት መሳሪያዎች",
+    "argumentTree": "የክርክር ዛፍ",
+    "argumentTreeDesc": "ክርክሮችን በበይነ ግንኙነት ዛፎች ይመልከቱ።",
+    "debateMode": "የክርክር ሁነታ",
+    "debateModeDesc": "ክርክሮችን እና ፀረ-ክርክሮችን ጎን ለጎን ይመልከቱ።",
+    "timeline": "የጊዜ መስመር",
+    "timelineDesc": "2,000 ዓመታት የክርስትና ታሪክን ያስሱ።"
+  },
+  "defend": {
+    "title": "የእምነት ተከላካይ",
+    "subtitle": "ለክርስትና የሚደግፉ ፍልስፍናዊ፣ ሳይንሳዊ እና ታሪካዊ ክርክሮች",
+    "againstAtheism": "ከአምላክ የለሽነት ተቃውሞ",
+    "againstCults": "ከኑፋቄዎች ተቃውሞ",
+    "categories": {
+      "cosmological": {
+        "name": "ኮስሞሎጂካል ክርክሮች",
+        "desc": "ከአጽናፈ ዓለም መኖር ወደ አስፈላጊ የመጀመሪያ ምክንያት"
+      },
+      "ontological": {
+        "name": "ኦንቶሎጂካል ክርክሮች",
+        "desc": "ከእግዚአብሔር ጽንሰ ሐሳብ ወደ መኖሩ እውነታ"
+      },
+      "teleological": {
+        "name": "ቴሎሎጂካል ክርክሮች",
+        "desc": "ከአጽናፈ ዓለም ስርዓት ወደ ብልጥ ንድፍ"
+      },
+      "moral": {
+        "name": "ሥነ-ምግባራዊ ክርክሮች",
+        "desc": "ከተጨባጭ ሥነ-ምግባራዊ እሴቶች ወደ ሕግ አውጪ"
+      },
+      "existential": {
+        "name": "ኤግዚስቴንሻል ክርክሮች",
+        "desc": "ከንቃተ ህሊና፣ ፍላጎት ወደ ሽግግራዊ ምንጭ"
+      },
+      "historical": {
+        "name": "ታሪካዊ ማስረጃዎች",
+        "desc": "ከጽሑፍ ማስረጃዎች፣ ምስክሮች እና ትንሣኤ"
+      },
+      "objections": {
+        "name": "አምላክ የለሽ ተቃውሞዎች",
+        "desc": "ለክፋት ችግር እና ሌሎች ምላሾች"
+      }
+    }
+  },
+  "compare": {
+    "title": "ወጎች ንጽጽር",
+    "subtitle": "ዋና የክርስትና ቅርንጫፎች ስነ-መለኮታዊ መሰረቶችን ይረዱ",
+    "orthodoxy": "ምስራቃዊ ኦርቶዶክስ",
+    "catholicism": "ሮማ ካቶሊክ",
+    "protestantism": "ፕሮቴስታንት",
+    "sideBySide": "ጎን ለጎን ንጽጽር",
+    "selectTraditions": "ወጎችን ይምረጡ",
+    "selectDoctrine": "ትምህርት ይምረጡ",
+    "doctrines": {
+      "eucharist": "ቅደ ቊርባን",
+      "salvation": "ድኅነት",
+      "authority": "ሥልጣን",
+      "baptism": "ጥምቀት",
+      "mary": "ድንግል ማርያም",
+      "church": "ቤተ ክርስቲያን"
+    }
+  },
+  "sources": {
+    "title": "ዋና ምንጮች ማህደር",
+    "subtitle": "የክርስቲያን ስነ-መለኮትን ያቀረውች ዋና ጽሑፎች",
+    "manuscripts": "መጽሐፍ ቅዱሳዊ ጽሑፎች",
+    "manuscriptsDesc": "5,800+ የግሪክ አዲስ ኪዳን ጽሑፎች",
+    "churchFathers": "የቤተ ክርስቲያን አባቶች",
+    "churchFathersDesc": "ሐዋርያዊ፣ ቅድመ ኒቂያ እና ኒቂያ ጽሑፎች",
+    "councils": "ጉባኤዎች እና የእምነት ቃላት",
+    "councilsDesc": "ሰባት ዓለማቀፍ ጉባኤዎች",
+    "liturgical": "ሥርዓተ ቅዳሴ ጽሑፎች",
+    "liturgicalDesc": "ዲዳኬ፣ ምስራቃዊ እና ምዕራባዊ ሥርዓቶች"
+  },
+  "explore": {
+    "title": "በይነ ግንኙነት መሳሪያዎች",
+    "subtitle": "በምስላዊ ትንተና ስነ-መለኮትን ያጠኑ",
+    "argumentTree": {
+      "title": "የክርክር ዛፍ",
+      "desc": "ክርክሮችን በዛፍ ይመልከቱ"
+    },
+    "debateMode": {
+      "title": "የክርክር ሁነታ",
+      "desc": "ክርክሮች ጎን ለጎን"
+    },
+    "timeline": {
+      "title": "የጊዜ መስመር",
+      "desc": "2,000 ዓመታት ታሪክ"
+    },
+    "scriptureRef": {
+      "title": "መጽሐፍ ቅዱስ ማጣቀሻ",
+      "desc": "ጥቅስን የሚያብራሩ አባቶችን ያግኙ"
+    }
+  },
+  "glossary": {
+    "title": "ስነ-መለኮታዊ የቃላት ዝርዝር",
+    "subtitle": "የክርስቲያን ስነ-መለኮት ቁልፍ ቃላት"
+  },
+  "about": {
+    "title": "ስለ ይህ መድረክ",
+    "subtitle": "ዘዴ፣ ምንጮች እና ተልእኮ"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

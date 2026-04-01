@@ -1,11 +1,210 @@
 {
-  "common": { "search": "Ara...", "readMore": "Devamını oku", "sources": "Kaynaklar", "relatedArguments": "İlgili argümanlar", "openInTree": "Argüman ağacında aç", "openInDebate": "Tartışma modunda aç", "language": "Dil", "viewAll": "Tümünü gör", "learnMore": "Daha fazla bilgi", "back": "Geri", "close": "Kapat", "loading": "Yükleniyor...", "noResults": "Sonuç bulunamadı", "premise": "Öncül", "conclusion": "Sonuç", "objection": "İtiraz", "response": "Cevap", "support": "Destek", "keyProponents": "Başlıca destekçiler", "historicalBackground": "Tarihsel arka plan", "formalStatement": "Resmi ifade", "objectionsAndResponses": "İtirazlar ve cevaplar", "significance": "Önem", "keyDistinction": "Temel ayrım", "primarySource": "Birincil kaynak", "searchPlaceholder": "Argüman, kaynak, doktrin ara..." },
-  "nav": { "home": "Ana Sayfa", "defend": "Savunma", "compare": "Karşılaştır", "sources": "Kaynaklar", "explore": "Keşfet", "search": "Ara", "glossary": "Sözlük", "about": "Hakkında" },
-  "home": { "heroTitle": "Hristiyan Teolojisi Çalışma Platformu", "heroSubtitle": "2.000 yıllık apologetik, doktrin ve birincil kaynakları keşfedin — derinlemesine çalışma için interaktif araçlarla.", "heroSearch": "Hangi soruyu araştırıyorsunuz?", "quickFilters": { "scientific": "Bilimsel", "philosophical": "Felsefi", "historical": "Tarihsel", "theological": "Teolojik" }, "defendCard": { "title": "Savunma", "subtitle": "Apologetik & Argümanlar", "desc": "Hristiyan inancı lehine felsefi, bilimsel ve tarihsel argümanları keşfedin." }, "compareCard": { "title": "Karşılaştır", "subtitle": "Gelenekler & Mezhepler", "desc": "Ortodoks, Katolik, Protestan — her temel doktrinde gelenekleri yan yana karşılaştırın." }, "sourcesCard": { "title": "Kaynaklar", "subtitle": "Birincil Belgeler", "desc": "5.800+ YA el yazmaları, Kilise Babaları, ekümenik konsiller ve iman belgeleri." }, "featuredArgument": "Öne çıkan argüman", "recentAdditions": "Son eklemeler", "timelinePreview": "Tarihsel zaman çizelgesi", "quickLinks": "Hızlı bağlantılar", "exploreTools": "İnteraktif araçlar", "argumentTree": "Argüman ağacı", "argumentTreeDesc": "Argümanları öncüller, itirazlar ve cevaplarla interaktif ağaçlar olarak görselleştirin.", "debateMode": "Tartışma modu", "debateModeDesc": "Argüman ve karşı argümanları yapılandırılmış bir formatta yan yana görün.", "timeline": "Zaman çizelgesi gezgini", "timelineDesc": "2.000 yıllık Hristiyan tarihinde gezinin — konsiller, inanç ifadeleri, tartışmalar ve önemli isimler." },
-  "defend": { "title": "İnancın savunması", "subtitle": "Hristiyanlık lehine felsefi, bilimsel ve tarihsel argümanlar", "againstAtheism": "Ateizme ve sekülarizme karşı", "againstCults": "Sapkınlıklara ve bid'atlara karşı", "categories": { "cosmological": { "name": "Kozmolojik argümanlar", "desc": "Evrenin varlığından zorunlu bir ilk nedene" }, "ontological": { "name": "Ontolojik argümanlar", "desc": "Tanrı kavramından O'nun varlığının gerçekliğine" }, "teleological": { "name": "Teleolojik argümanlar", "desc": "Evrenin düzeninden akıllı tasarıma" }, "moral": { "name": "Ahlaki argümanlar", "desc": "Nesnel ahlaki değerlerden ahlaki bir yasa koyucuya" }, "existential": { "name": "Varoluşsal argümanlar", "desc": "Bilinç, arzu ve anlam'dan aşkın bir kaynağa" }, "historical": { "name": "Tarihsel kanıtlar", "desc": "El yazması kanıtlardan, görgü tanıklığından ve Diriliş'ten" }, "objections": { "name": "Ateist itirazlar", "desc": "Kötülük sorunu, ilahi gizlenme ve daha fazlasına cevaplar" } } },
-  "compare": { "title": "Gelenekleri karşılaştır", "subtitle": "Hristiyanlığın ana kollarının teolojik temellerini anlayın", "orthodoxy": "Doğu Ortodoks", "catholicism": "Roma Katolik", "protestantism": "Protestanlık", "sideBySide": "Yan yana karşılaştırma", "selectTraditions": "Gelenek seçin", "selectDoctrine": "Doktrin seçin", "doctrines": { "eucharist": "Efkaristiya", "salvation": "Kurtuluş", "authority": "Otorite", "baptism": "Vaftiz", "mary": "Meryem", "church": "Kilise" } },
-  "sources": { "title": "Birincil kaynak arşivi", "subtitle": "Hristiyan teolojisini şekillendiren özgün metinler", "manuscripts": "Kutsal Kitap el yazmaları", "manuscriptsDesc": "5.800+ Yunanca YA el yazması", "churchFathers": "Kilise Babaları", "churchFathersDesc": "Apostolik, İznik öncesi ve İznik dönemi yazıları", "councils": "Konsiller & İnanç İfadeleri", "councilsDesc": "Yedi ekümenik konsil ve iman belgeleri", "liturgical": "Liturjik metinler", "liturgicalDesc": "Didake, doğu ve batı liturjileri" },
-  "explore": { "title": "İnteraktif araçlar", "subtitle": "Görselleştirme ve yapılandırılmış analiz yoluyla teoloji", "argumentTree": { "title": "Argüman ağacı", "desc": "Argümanları interaktif ağaçlar olarak görselleştirin" }, "debateMode": { "title": "Tartışma modu", "desc": "Argüman ve karşı argümanlar yan yana" }, "timeline": { "title": "Zaman çizelgesi", "desc": "2.000 yıllık Hristiyan tarihini keşfedin" }, "scriptureRef": { "title": "Kutsal Yazı çapraz referansları", "desc": "Belirli bir ayeti yorumlayan tüm Kilise Babalarını bulun" } },
-  "glossary": { "title": "Teolojik sözlük", "subtitle": "Hristiyan teolojisinin temel terimleri ve kavramları" },
-  "about": { "title": "Bu platform hakkında", "subtitle": "Metodoloji, kaynaklar ve misyon" }
+  "common": {
+    "search": "Ara...",
+    "readMore": "Devamını oku",
+    "sources": "Kaynaklar",
+    "relatedArguments": "İlgili argümanlar",
+    "openInTree": "Argüman ağacında aç",
+    "openInDebate": "Tartışma modunda aç",
+    "language": "Dil",
+    "viewAll": "Tümünü gör",
+    "learnMore": "Daha fazla bilgi",
+    "back": "Geri",
+    "close": "Kapat",
+    "loading": "Yükleniyor...",
+    "noResults": "Sonuç bulunamadı",
+    "premise": "Öncül",
+    "conclusion": "Sonuç",
+    "objection": "İtiraz",
+    "response": "Cevap",
+    "support": "Destek",
+    "keyProponents": "Başlıca destekçiler",
+    "historicalBackground": "Tarihsel arka plan",
+    "formalStatement": "Resmi ifade",
+    "objectionsAndResponses": "İtirazlar ve cevaplar",
+    "significance": "Önem",
+    "keyDistinction": "Temel ayrım",
+    "primarySource": "Birincil kaynak",
+    "searchPlaceholder": "Argüman, kaynak, doktrin ara...",
+    "semanticDefense": "Semantic Defense"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "defend": "Savunma",
+    "compare": "Karşılaştır",
+    "sources": "Kaynaklar",
+    "explore": "Keşfet",
+    "search": "Ara",
+    "glossary": "Sözlük",
+    "about": "Hakkında",
+    "semantics": "Semantics"
+  },
+  "home": {
+    "heroTitle": "Hristiyan Teolojisi Çalışma Platformu",
+    "heroSubtitle": "2.000 yıllık apologetik, doktrin ve birincil kaynakları keşfedin — derinlemesine çalışma için interaktif araçlarla.",
+    "heroSearch": "Hangi soruyu araştırıyorsunuz?",
+    "quickFilters": {
+      "scientific": "Bilimsel",
+      "philosophical": "Felsefi",
+      "historical": "Tarihsel",
+      "theological": "Teolojik"
+    },
+    "defendCard": {
+      "title": "Savunma",
+      "subtitle": "Apologetik & Argümanlar",
+      "desc": "Hristiyan inancı lehine felsefi, bilimsel ve tarihsel argümanları keşfedin."
+    },
+    "compareCard": {
+      "title": "Karşılaştır",
+      "subtitle": "Gelenekler & Mezhepler",
+      "desc": "Ortodoks, Katolik, Protestan — her temel doktrinde gelenekleri yan yana karşılaştırın."
+    },
+    "sourcesCard": {
+      "title": "Kaynaklar",
+      "subtitle": "Birincil Belgeler",
+      "desc": "5.800+ YA el yazmaları, Kilise Babaları, ekümenik konsiller ve iman belgeleri."
+    },
+    "featuredArgument": "Öne çıkan argüman",
+    "recentAdditions": "Son eklemeler",
+    "timelinePreview": "Tarihsel zaman çizelgesi",
+    "quickLinks": "Hızlı bağlantılar",
+    "exploreTools": "İnteraktif araçlar",
+    "argumentTree": "Argüman ağacı",
+    "argumentTreeDesc": "Argümanları öncüller, itirazlar ve cevaplarla interaktif ağaçlar olarak görselleştirin.",
+    "debateMode": "Tartışma modu",
+    "debateModeDesc": "Argüman ve karşı argümanları yapılandırılmış bir formatta yan yana görün.",
+    "timeline": "Zaman çizelgesi gezgini",
+    "timelineDesc": "2.000 yıllık Hristiyan tarihinde gezinin — konsiller, inanç ifadeleri, tartışmalar ve önemli isimler."
+  },
+  "defend": {
+    "title": "İnancın savunması",
+    "subtitle": "Hristiyanlık lehine felsefi, bilimsel ve tarihsel argümanlar",
+    "againstAtheism": "Ateizme ve sekülarizme karşı",
+    "againstCults": "Sapkınlıklara ve bid'atlara karşı",
+    "categories": {
+      "cosmological": {
+        "name": "Kozmolojik argümanlar",
+        "desc": "Evrenin varlığından zorunlu bir ilk nedene"
+      },
+      "ontological": {
+        "name": "Ontolojik argümanlar",
+        "desc": "Tanrı kavramından O'nun varlığının gerçekliğine"
+      },
+      "teleological": {
+        "name": "Teleolojik argümanlar",
+        "desc": "Evrenin düzeninden akıllı tasarıma"
+      },
+      "moral": {
+        "name": "Ahlaki argümanlar",
+        "desc": "Nesnel ahlaki değerlerden ahlaki bir yasa koyucuya"
+      },
+      "existential": {
+        "name": "Varoluşsal argümanlar",
+        "desc": "Bilinç, arzu ve anlam'dan aşkın bir kaynağa"
+      },
+      "historical": {
+        "name": "Tarihsel kanıtlar",
+        "desc": "El yazması kanıtlardan, görgü tanıklığından ve Diriliş'ten"
+      },
+      "objections": {
+        "name": "Ateist itirazlar",
+        "desc": "Kötülük sorunu, ilahi gizlenme ve daha fazlasına cevaplar"
+      }
+    }
+  },
+  "compare": {
+    "title": "Gelenekleri karşılaştır",
+    "subtitle": "Hristiyanlığın ana kollarının teolojik temellerini anlayın",
+    "orthodoxy": "Doğu Ortodoks",
+    "catholicism": "Roma Katolik",
+    "protestantism": "Protestanlık",
+    "sideBySide": "Yan yana karşılaştırma",
+    "selectTraditions": "Gelenek seçin",
+    "selectDoctrine": "Doktrin seçin",
+    "doctrines": {
+      "eucharist": "Efkaristiya",
+      "salvation": "Kurtuluş",
+      "authority": "Otorite",
+      "baptism": "Vaftiz",
+      "mary": "Meryem",
+      "church": "Kilise"
+    }
+  },
+  "sources": {
+    "title": "Birincil kaynak arşivi",
+    "subtitle": "Hristiyan teolojisini şekillendiren özgün metinler",
+    "manuscripts": "Kutsal Kitap el yazmaları",
+    "manuscriptsDesc": "5.800+ Yunanca YA el yazması",
+    "churchFathers": "Kilise Babaları",
+    "churchFathersDesc": "Apostolik, İznik öncesi ve İznik dönemi yazıları",
+    "councils": "Konsiller & İnanç İfadeleri",
+    "councilsDesc": "Yedi ekümenik konsil ve iman belgeleri",
+    "liturgical": "Liturjik metinler",
+    "liturgicalDesc": "Didake, doğu ve batı liturjileri"
+  },
+  "explore": {
+    "title": "İnteraktif araçlar",
+    "subtitle": "Görselleştirme ve yapılandırılmış analiz yoluyla teoloji",
+    "argumentTree": {
+      "title": "Argüman ağacı",
+      "desc": "Argümanları interaktif ağaçlar olarak görselleştirin"
+    },
+    "debateMode": {
+      "title": "Tartışma modu",
+      "desc": "Argüman ve karşı argümanlar yan yana"
+    },
+    "timeline": {
+      "title": "Zaman çizelgesi",
+      "desc": "2.000 yıllık Hristiyan tarihini keşfedin"
+    },
+    "scriptureRef": {
+      "title": "Kutsal Yazı çapraz referansları",
+      "desc": "Belirli bir ayeti yorumlayan tüm Kilise Babalarını bulun"
+    }
+  },
+  "glossary": {
+    "title": "Teolojik sözlük",
+    "subtitle": "Hristiyan teolojisinin temel terimleri ve kavramları"
+  },
+  "about": {
+    "title": "Bu platform hakkında",
+    "subtitle": "Metodoloji, kaynaklar ve misyon"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }

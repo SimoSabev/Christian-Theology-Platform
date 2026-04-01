@@ -25,7 +25,8 @@
     "significance": "意义",
     "keyDistinction": "关键区别",
     "primarySource": "原始资料",
-    "searchPlaceholder": "搜索论证、来源、教义..."
+    "searchPlaceholder": "搜索论证、来源、教义...",
+    "semanticDefense": "Semantic Defense"
   },
   "nav": {
     "home": "首页",
@@ -35,16 +36,34 @@
     "explore": "探索",
     "search": "搜索",
     "glossary": "术语表",
-    "about": "关于"
+    "about": "关于",
+    "semantics": "Semantics"
   },
   "home": {
     "heroTitle": "权威基督教神学研究平台",
     "heroSubtitle": "探索2000年的护教学、教义和原始资料——配备深度学习的互动工具。",
     "heroSearch": "您正在探索什么问题？",
-    "quickFilters": { "scientific": "科学", "philosophical": "哲学", "historical": "历史", "theological": "神学" },
-    "defendCard": { "title": "辩护", "subtitle": "护教学与论证", "desc": "探索支持基督教信仰的哲学、科学和历史论证。形式逻辑、反驳和回应。" },
-    "compareCard": { "title": "比较", "subtitle": "传统与宗派", "desc": "东正教、天主教、新教——在每个关键教义上进行并列比较。" },
-    "sourcesCard": { "title": "来源", "subtitle": "原始文献", "desc": "5800+新约手稿、教父著作、大公会议和信经文件。" },
+    "quickFilters": {
+      "scientific": "科学",
+      "philosophical": "哲学",
+      "historical": "历史",
+      "theological": "神学"
+    },
+    "defendCard": {
+      "title": "辩护",
+      "subtitle": "护教学与论证",
+      "desc": "探索支持基督教信仰的哲学、科学和历史论证。形式逻辑、反驳和回应。"
+    },
+    "compareCard": {
+      "title": "比较",
+      "subtitle": "传统与宗派",
+      "desc": "东正教、天主教、新教——在每个关键教义上进行并列比较。"
+    },
+    "sourcesCard": {
+      "title": "来源",
+      "subtitle": "原始文献",
+      "desc": "5800+新约手稿、教父著作、大公会议和信经文件。"
+    },
     "featuredArgument": "精选论证",
     "recentAdditions": "最近添加",
     "timelinePreview": "历史时间线",
@@ -63,13 +82,34 @@
     "againstAtheism": "反对无神论与世俗主义",
     "againstCults": "反对异端与邪教",
     "categories": {
-      "cosmological": { "name": "宇宙论论证", "desc": "从宇宙的存在到必然的第一因" },
-      "ontological": { "name": "本体论论证", "desc": "从上帝的概念本身到其存在的现实" },
-      "teleological": { "name": "目的论论证", "desc": "从宇宙的秩序和微调到智能设计" },
-      "moral": { "name": "道德论证", "desc": "从客观道德价值的存在到道德立法者" },
-      "existential": { "name": "存在论证", "desc": "从意识、欲望和意义到超越的源泉" },
-      "historical": { "name": "历史证据", "desc": "来自手稿证据、目击者证词和复活" },
-      "objections": { "name": "无神论反驳", "desc": "对恶的问题、神的隐藏等的回应" }
+      "cosmological": {
+        "name": "宇宙论论证",
+        "desc": "从宇宙的存在到必然的第一因"
+      },
+      "ontological": {
+        "name": "本体论论证",
+        "desc": "从上帝的概念本身到其存在的现实"
+      },
+      "teleological": {
+        "name": "目的论论证",
+        "desc": "从宇宙的秩序和微调到智能设计"
+      },
+      "moral": {
+        "name": "道德论证",
+        "desc": "从客观道德价值的存在到道德立法者"
+      },
+      "existential": {
+        "name": "存在论证",
+        "desc": "从意识、欲望和意义到超越的源泉"
+      },
+      "historical": {
+        "name": "历史证据",
+        "desc": "来自手稿证据、目击者证词和复活"
+      },
+      "objections": {
+        "name": "无神论反驳",
+        "desc": "对恶的问题、神的隐藏等的回应"
+      }
     }
   },
   "compare": {
@@ -81,7 +121,14 @@
     "sideBySide": "并列比较",
     "selectTraditions": "选择传统",
     "selectDoctrine": "选择教义",
-    "doctrines": { "eucharist": "圣餐", "salvation": "救赎", "authority": "权威", "baptism": "洗礼", "mary": "圣母", "church": "教会" }
+    "doctrines": {
+      "eucharist": "圣餐",
+      "salvation": "救赎",
+      "authority": "权威",
+      "baptism": "洗礼",
+      "mary": "圣母",
+      "church": "教会"
+    }
   },
   "sources": {
     "title": "原始资料档案",
@@ -98,11 +145,66 @@
   "explore": {
     "title": "互动工具",
     "subtitle": "通过可视化和结构化分析参与神学研究",
-    "argumentTree": { "title": "论证树", "desc": "将论证可视化为可交互的树" },
-    "debateMode": { "title": "辩论模式", "desc": "论证和反论证并列显示" },
-    "timeline": { "title": "时间线浏览器", "desc": "浏览2000年基督教历史" },
-    "scriptureRef": { "title": "经文交叉引用", "desc": "查找评论特定经文的每位教父" }
+    "argumentTree": {
+      "title": "论证树",
+      "desc": "将论证可视化为可交互的树"
+    },
+    "debateMode": {
+      "title": "辩论模式",
+      "desc": "论证和反论证并列显示"
+    },
+    "timeline": {
+      "title": "时间线浏览器",
+      "desc": "浏览2000年基督教历史"
+    },
+    "scriptureRef": {
+      "title": "经文交叉引用",
+      "desc": "查找评论特定经文的每位教父"
+    }
   },
-  "glossary": { "title": "神学术语表", "subtitle": "基督教神学的关键术语和概念" },
-  "about": { "title": "关于此平台", "subtitle": "方法论、来源和使命" }
+  "glossary": {
+    "title": "神学术语表",
+    "subtitle": "基督教神学的关键术语和概念"
+  },
+  "about": {
+    "title": "关于此平台",
+    "subtitle": "方法论、来源和使命"
+  },
+  "components": {
+    "interlinearReader": {
+      "transliteration": "Transliteration",
+      "gloss": "Gloss",
+      "lemma": "Lemma",
+      "parsing": "Parsing",
+      "fullParsing": "Full Parsing",
+      "strongs": "Strong's"
+    },
+    "semanticSlideShow": {
+      "vs": "vs"
+    },
+    "footer": {
+      "nav": {
+        "cosmological": "Cosmological",
+        "ontological": "Ontological",
+        "teleological": "Teleological",
+        "moral": "Moral",
+        "historical": "Historical",
+        "orthodoxy": "Eastern Orthodoxy",
+        "catholicism": "Roman Catholicism",
+        "protestantism": "Protestantism",
+        "sideBySide": "Side-by-Side Tool",
+        "manuscripts": "Manuscripts",
+        "churchFathers": "Church Fathers",
+        "councilsCreeds": "Councils & Creeds",
+        "argumentTree": "Argument Tree",
+        "debateMode": "Debate Mode",
+        "timeline": "Timeline"
+      },
+      "copyright": "Built with ❤️ for the study of theology"
+    },
+    "navbar": {
+      "brandName": "Theology Study",
+      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+    }
+  }
 }
