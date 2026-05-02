@@ -10,48 +10,6 @@ const path = require('path');
 // Read the English message file
 const enJson = JSON.parse(fs.readFileSync('messages/en.json', 'utf-8'));
 
-// Add components section to en.json
-enJson.components = {
-  interlinearReader: {
-    transliteration: 'Transliteration',
-    gloss: 'Gloss',
-    lemma: 'Lemma',
-    parsing: 'Parsing',
-    fullParsing: 'Full Parsing',
-    strongs: 'Strong\'s'
-  },
-  semanticSlideShow: {
-    vs: 'vs'
-  },
-  footer: {
-    nav: {
-      cosmological: 'Cosmological',
-      ontological: 'Ontological',
-      teleological: 'Teleological',
-      moral: 'Moral',
-      historical: 'Historical',
-      orthodoxy: 'Eastern Orthodoxy',
-      catholicism: 'Roman Catholicism',
-      protestantism: 'Protestantism',
-      sideBySide: 'Side-by-Side Tool',
-      manuscripts: 'Manuscripts',
-      churchFathers: 'Church Fathers',
-      councilsCreeds: 'Councils & Creeds',
-      argumentTree: 'Argument Tree',
-      debateMode: 'Debate Mode',
-      timeline: 'Timeline'
-    },
-    copyright: 'Built with ❤️ for the study of theology'
-  },
-  navbar: {
-    brandName: 'Theology Study',
-    searchPlaceholder: 'Start typing to search arguments, sources, and doctrines...'
-  }
-};
-
-// Write updated en.json
-fs.writeFileSync('messages/en.json', JSON.stringify(enJson, null, 2));
-
 // List of all locales to copy to
 const locales = [
   'es', 'pt', 'fr', 'de', 'it', 'nl',
@@ -61,18 +19,35 @@ const locales = [
   'hi', 'id', 'fil', 'vi', 'tr', 'fa'
 ];
 
-// Copy structure to all locales (will be translated manually)
+function deepMergeKeepExisting(target, source) {
+  for (const key in source) {
+    if (source[key] instanceof Object && !Array.isArray(source[key])) {
+      if (!target[key]) target[key] = {};
+      deepMergeKeepExisting(target[key], source[key]);
+    } else {
+      // Keep existing translation, otherwise apply English source
+      if (!(key in target) || target[key] === null || target[key] === undefined) {
+        target[key] = source[key];
+      }
+    }
+  }
+}
+
+// Copy structure to all locales
 locales.forEach(locale => {
   const localePath = `messages/${locale}.json`;
-  const localeJson = JSON.parse(fs.readFileSync(localePath, 'utf-8'));
+  let localeJson = {};
+  if (fs.existsSync(localePath)) {
+    localeJson = JSON.parse(fs.readFileSync(localePath, 'utf-8'));
+  }
 
-  // Copy the components section
-  localeJson.components = JSON.parse(JSON.stringify(enJson.components));
+  // Deep merge enJson into localeJson while keeping existing translated values
+  deepMergeKeepExisting(localeJson, enJson);
 
   // Write the locale file
   fs.writeFileSync(localePath, JSON.stringify(localeJson, null, 2));
 
-  console.log(`✅ Copied structure to ${locale}.json`);
+  console.log(`✅ Copied structure and new keys to ${locale}.json`);
 });
 
 console.log('\n✨ Structure copied to all 26 locales!');

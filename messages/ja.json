@@ -26,18 +26,18 @@
     "keyDistinction": "主要な区別",
     "primarySource": "一次資料",
     "searchPlaceholder": "論証、出典、教義を検索...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "意味論的弁証"
   },
   "nav": {
     "home": "ホーム",
     "defend": "弁証",
     "compare": "比較",
     "sources": "出典",
-    "explore": "探索",
+    "explore": "探求",
     "search": "検索",
     "glossary": "用語集",
     "about": "概要",
-    "semantics": "Semantics"
+    "semantics": "意味論"
   },
   "home": {
     "heroTitle": "キリスト教神学研究プラットフォーム",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "音訳",
+      "gloss": "語義",
+      "lemma": "見出し語",
+      "parsing": "解析",
+      "fullParsing": "完全解析",
+      "strongs": "ストロング番号"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "対"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "宇宙論的",
+        "ontological": "存在論的",
+        "teleological": "目的論的",
+        "moral": "道徳論的",
+        "historical": "歴史的",
+        "orthodoxy": "東方正教会",
+        "catholicism": "ローマ・カトリック",
+        "protestantism": "プロテスタント",
+        "sideBySide": "並列比較ツール",
+        "manuscripts": "写本",
+        "churchFathers": "教父文献",
+        "councilsCreeds": "公会議と信条",
+        "argumentTree": "論証ツリー",
+        "debateMode": "ディベートモード",
+        "timeline": "タイムライン"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "❤️ で神学研究のために作られました"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "神学研究",
+      "searchPlaceholder": "入力を開始して論証、出典、教義を検索..."
     }
   }
 }

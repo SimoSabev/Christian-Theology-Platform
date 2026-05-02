@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { Shield, Scale, BookOpen, Compass, Search, Menu, X, BookType } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import TheosiaLogo from '@/components/brand/TheosiaLogo';
 
 const navItems = [
   { href: '/defend', labelKey: 'defend', icon: Shield },
@@ -27,12 +28,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent-gold to-accent-amber flex items-center justify-center shadow-lg group-hover:shadow-accent-gold/20 transition-shadow">
-                <span className="text-bg-primary font-bold text-lg">✝</span>
-              </div>
+              <TheosiaLogo size={36} className="group-hover:scale-105 transition-transform" />
               <span className="hidden sm:block font-semibold text-lg tracking-tight">
-                <span className="gold-gradient">Theology</span>
-                <span className="text-text-secondary font-normal"> Study</span>
+                <span className="gold-gradient">Theosia</span>
               </span>
             </Link>
 

@@ -26,7 +26,7 @@
     "keyDistinction": "Tofauti kuu",
     "primarySource": "Chanzo kikuu",
     "searchPlaceholder": "Tafuta hoja, vyanzo, mafundisho...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Ulinzi wa Kisemantiki"
   },
   "nav": {
     "home": "Nyumbani",
@@ -37,7 +37,7 @@
     "search": "Tafuta",
     "glossary": "Kamusi",
     "about": "Kuhusu",
-    "semantics": "Semantics"
+    "semantics": "Semantiki"
   },
   "home": {
     "heroTitle": "Jukwaa la Masomo ya Theolojia ya Kikristo",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Nakala ya matamshi",
+      "gloss": "Tafsiri ya neno",
+      "lemma": "Lema",
+      "parsing": "Uchambuzi",
+      "fullParsing": "Uchambuzi kamili",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "dhidi ya"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Kosmolojia",
+        "ontological": "Ontolojia",
+        "teleological": "Teleolojia",
+        "moral": "Maadili",
+        "historical": "Kihistoria",
+        "orthodoxy": "Orthodoksi ya Mashariki",
+        "catholicism": "Katoliki ya Roma",
+        "protestantism": "Protestanti",
+        "sideBySide": "Zana ya kulinganisha",
+        "manuscripts": "Mikopo ya mikono",
+        "churchFathers": "Baba wa Kanisa",
+        "councilsCreeds": "Mikusanyiko na Imani",
+        "argumentTree": "Mti wa Hoja",
+        "debateMode": "Hali ya Mjadala",
+        "timeline": "Mstari wa Wakati"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Ilijengwa kwa ❤️ kwa ajili ya masomo ya teolojia"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Masomo ya Teolojia",
+      "searchPlaceholder": "Anza kuandika kutafuta hoja, vyanzo na mafundisho..."
     }
   }
 }

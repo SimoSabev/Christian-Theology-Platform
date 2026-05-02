@@ -26,7 +26,7 @@
     "keyDistinction": "मुख्य भेद",
     "primarySource": "प्राथमिक स्रोत",
     "searchPlaceholder": "तर्क, स्रोत, सिद्धांत खोजें...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "शब्दार्थ रक्षा"
   },
   "nav": {
     "home": "होम",
@@ -37,7 +37,7 @@
     "search": "खोज",
     "glossary": "शब्दावली",
     "about": "परिचय",
-    "semantics": "Semantics"
+    "semantics": "शब्दार्थविज्ञान"
   },
   "home": {
     "heroTitle": "ईसाई धर्मशास्त्र अध्ययन मंच",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "लिप्यंतरण",
+      "gloss": "शब्दार्थ",
+      "lemma": "प्रविष्टि शब्द",
+      "parsing": "विश्लेषण",
+      "fullParsing": "पूर्ण विश्लेषण",
+      "strongs": "स्ट्रांग"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "बनाम"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "ब्रह्मांडीय",
+        "ontological": "अस्तित्वमूलक",
+        "teleological": "उद्देश्यमूलक",
+        "moral": "नैतिक",
+        "historical": "ऐतिहासिक",
+        "orthodoxy": "पूर्वी रूढ़िवाद",
+        "catholicism": "रोमन कैथोलिक",
+        "protestantism": "प्रोटेस्टेंट",
+        "sideBySide": "साइड-बाय-साइड उपकरण",
+        "manuscripts": "पांडुलिपियाँ",
+        "churchFathers": "चर्च फादर्स",
+        "councilsCreeds": "परिषदें और विश्वास वाक्य",
+        "argumentTree": "तर्क वृक्ष",
+        "debateMode": "बहस मोड",
+        "timeline": "समयरेखा"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "❤️ से धर्मशास्त्र अध्ययन के लिए बनाया गया"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "धर्मशास्त्र अध्ययन",
+      "searchPlaceholder": "तर्क, स्रोत और सिद्धांत खोजने के लिए टाइप करना शुरू करें..."
     }
   }
 }

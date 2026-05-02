@@ -1,0 +1,54 @@
+<h2>Which visual direction speaks to you?</h2>
+<p class="subtitle">This sets the soul of the platform — typography, color, ornament, density.</p>
+
+<div class="cards" data-multiselect>
+  <div class="card" data-choice="manuscript" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#f4ead5 0%,#e8d9b0 100%);padding:24px;font-family:Georgia,serif;color:#3a2d1a;position:relative;min-height:180px">
+      <div style="font-size:42px;float:left;color:#8b3a1f;font-weight:bold;line-height:1;margin-right:8px">I</div>
+      <div style="font-size:13px;line-height:1.5">n the beginning was the Word, and the Word was with God, and the Word was God. The same was in the beginning with God.</div>
+      <div style="position:absolute;bottom:8px;right:12px;font-size:10px;color:#8b3a1f;letter-spacing:2px">JOHN · I</div>
+    </div>
+    <div class="card-body">
+      <h3>A · Sacred Manuscript</h3>
+      <p>Warm parchment, illuminated drop caps, classical serifs, gold-leaf accents. Feels like a hand-copied codex.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="cathedral" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(180deg,#0d1b2a 0%,#1b2a3f 100%);padding:24px;color:#e8d9b0;font-family:Georgia,serif;min-height:180px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:120px;background:linear-gradient(180deg,#c9302c 0%,#8b3a1f 50%,#1f4e8b 100%);border-radius:40px 40px 0 0;opacity:0.4"></div>
+      <div style="position:relative;text-align:center;margin-top:60px;font-size:24px;letter-spacing:8px;color:#d4a017">SOLI</div>
+      <div style="position:relative;text-align:center;font-size:13px;letter-spacing:6px;color:#bba16e;margin-top:8px">DEO GLORIA</div>
+    </div>
+    <div class="card-body">
+      <h3>B · Cathedral Modern</h3>
+      <p>Deep navy &amp; stone, stained-glass color accents, monumental scale, Gothic geometry. Reverent and architectural.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="monastic" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#fafaf7;padding:36px 24px;color:#1a1a1a;font-family:Georgia,serif;min-height:180px;display:flex;flex-direction:column;justify-content:center">
+      <div style="font-size:11px;letter-spacing:4px;color:#888;margin-bottom:18px">CHAPTER · I</div>
+      <div style="font-size:22px;line-height:1.4;font-weight:300">Be still,<br/>and know that<br/>I am God.</div>
+      <div style="width:30px;height:1px;background:#888;margin-top:20px"></div>
+    </div>
+    <div class="card-body">
+      <h3>C · Monastic Minimal</h3>
+      <p>Quiet whites, restrained serif, generous whitespace. Reads like a meditation. Calm, scholarly, modern.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="byzantine" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:radial-gradient(circle at 50% 40%,#d4a017 0%,#8b6914 60%,#3d2810 100%);padding:24px;color:#fef9e7;font-family:Georgia,serif;min-height:180px;position:relative;text-align:center">
+      <div style="display:inline-block;border:3px solid #fef9e7;border-radius:50%;width:64px;height:64px;line-height:60px;font-size:32px;color:#fef9e7;margin-top:12px;background:rgba(139,58,31,0.4)">☧</div>
+      <div style="font-size:11px;letter-spacing:6px;margin-top:12px;color:#fef9e7">IC · XC</div>
+      <div style="font-size:10px;letter-spacing:3px;margin-top:4px;color:#fef9e7;opacity:0.85">NI · KA</div>
+    </div>
+    <div class="card-body">
+      <h3>D · Byzantine Iconographic</h3>
+      <p>Deep gold, oxblood, midnight blue. Rich, ornate, hieratic. Inspired by icons and mosaics.</p>
+    </div>
+  </div>
+</div>
+
+<p style="margin-top:24px;color:#888;font-size:13px;text-align:center">You can select multiple if you want a hybrid. Tell me in the terminal what resonates and why.</p>

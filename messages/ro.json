@@ -26,7 +26,7 @@
     "keyDistinction": "Distincție cheie",
     "primarySource": "Sursă primară",
     "searchPlaceholder": "Caută argumente, surse, doctrine...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Apărare Semantică"
   },
   "nav": {
     "home": "Acasă",
@@ -37,7 +37,7 @@
     "search": "Căutare",
     "glossary": "Glosar",
     "about": "Despre",
-    "semantics": "Semantics"
+    "semantics": "Semantică"
   },
   "home": {
     "heroTitle": "Platforma Definitivă pentru Studiul Teologiei Creștine",
@@ -172,11 +172,11 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Transliterare",
+      "gloss": "Glosă",
+      "lemma": "Lemă",
+      "parsing": "Analiză",
+      "fullParsing": "Analiză completă",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
+        "cosmological": "Cosmologic",
+        "ontological": "Ontologic",
+        "teleological": "Teleologic",
         "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
+        "historical": "Istoric",
+        "orthodoxy": "Ortodoxie Răsăriteană",
+        "catholicism": "Catolicism Roman",
         "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "sideBySide": "Instrument comparare",
+        "manuscripts": "Manuscrise",
+        "churchFathers": "Părinții Bisericii",
+        "councilsCreeds": "Sinoade și Crezuri",
+        "argumentTree": "Arbore de Argumente",
+        "debateMode": "Mod Dezbatere",
+        "timeline": "Cronologie"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Creat cu ❤️ pentru studiul teologiei"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Studiu Teologic",
+      "searchPlaceholder": "Începeți să tastați pentru a căuta argumente, surse și doctrine..."
     }
   }
 }

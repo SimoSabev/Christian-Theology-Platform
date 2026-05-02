@@ -26,7 +26,7 @@
     "keyDistinction": "Distinzione chiave",
     "primarySource": "Fonte primaria",
     "searchPlaceholder": "Cerca argomenti, fonti, dottrine...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Difesa Semantica"
   },
   "nav": {
     "home": "Home",
@@ -37,7 +37,7 @@
     "search": "Cerca",
     "glossary": "Glossario",
     "about": "Info",
-    "semantics": "Semantics"
+    "semantics": "Semantica"
   },
   "home": {
     "heroTitle": "La Piattaforma Definitiva per lo Studio della Teologia Cristiana",
@@ -172,11 +172,11 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
+      "transliteration": "Traslitterazione",
+      "gloss": "Glossa",
       "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "parsing": "Analisi",
+      "fullParsing": "Analisi completa",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Cosmologico",
+        "ontological": "Ontologico",
+        "teleological": "Teleologico",
+        "moral": "Morale",
+        "historical": "Storico",
+        "orthodoxy": "Ortodossia Orientale",
+        "catholicism": "Cattolicesimo Romano",
+        "protestantism": "Protestantesimo",
+        "sideBySide": "Strumento fianco a fianco",
+        "manuscripts": "Manoscritti",
+        "churchFathers": "Padri della Chiesa",
+        "councilsCreeds": "Concili e Credi",
+        "argumentTree": "Albero degli Argomenti",
+        "debateMode": "Modalità Dibattito",
+        "timeline": "Cronologia"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Creato con ❤️ per lo studio della teologia"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Studio Teologico",
+      "searchPlaceholder": "Inizia a digitare per cercare argomenti, fonti e dottrine..."
     }
   }
 }

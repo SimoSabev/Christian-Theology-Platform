@@ -1,0 +1,132 @@
+<style>
+  .cmp-card { background:#0a0e1a; border:1px solid rgba(212,168,83,0.25); border-radius:14px; overflow:hidden; cursor:pointer; transition:all 0.3s; }
+  .cmp-card:hover { border-color:#d4a853; box-shadow:0 0 36px rgba(212,168,83,0.18); transform:translateY(-2px); }
+  .cmp-card.selected { border-color:#d4a853; box-shadow:0 0 0 2px #d4a853; }
+  .cmp-meta { padding:18px 22px; border-top:1px solid rgba(212,168,83,0.18); }
+  .cmp-meta h3 { color:#f1f5f9; font-family:'Cinzel',serif; letter-spacing:2px; text-transform:uppercase; font-size:13px; margin:0 0 6px; }
+  .cmp-meta p { color:#94a3b8; font-size:13px; line-height:1.5; margin:0; font-family:'Crimson Pro',Georgia,serif; }
+  .ic { font-family:'Cinzel',serif; }
+  .bd { font-family:'Crimson Pro',Georgia,serif; }
+</style>
+
+<h2>Comparison page treatment</h2>
+<p class="subtitle">Comparing traditions on a doctrine (e.g., Justification across Catholic / Orthodox / Protestant).</p>
+
+<div style="display:grid;gap:24px">
+
+  <!-- A: Triptych Columns -->
+  <div class="cmp-card" data-choice="triptych" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:32px 36px;min-height:380px">
+      <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853">DOCTRINE · § 3</div>
+      <h2 class="ic" style="font-size:28px;color:#f1f5f9;letter-spacing:2px;margin:8px 0 24px;text-transform:uppercase;font-weight:700">On Justification</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid rgba(212,168,83,0.25);border-radius:6px;overflow:hidden">
+        <div style="padding:18px;border-right:1px solid rgba(212,168,83,0.2);background:rgba(212,168,83,0.04)">
+          <div class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853;margin-bottom:8px">☩ ORTHODOX</div>
+          <p class="bd" style="font-size:13px;color:#f1f5f9;line-height:1.6;margin:0">Theosis: justification as union with God, a synergistic process of deification.</p>
+          <div style="margin-top:10px;font-size:11px;color:#64748b;font-family:'Crimson Pro',serif">— Gregory Palamas</div>
+        </div>
+        <div style="padding:18px;border-right:1px solid rgba(212,168,83,0.2);background:rgba(212,168,83,0.06)">
+          <div class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853;margin-bottom:8px">✠ CATHOLIC</div>
+          <p class="bd" style="font-size:13px;color:#f1f5f9;line-height:1.6;margin:0">Infused grace through sacraments; faith working through love (Trent, Sess. VI).</p>
+          <div style="margin-top:10px;font-size:11px;color:#64748b;font-family:'Crimson Pro',serif">— Council of Trent</div>
+        </div>
+        <div style="padding:18px;background:rgba(212,168,83,0.04)">
+          <div class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853;margin-bottom:8px">✟ PROTESTANT</div>
+          <p class="bd" style="font-size:13px;color:#f1f5f9;line-height:1.6;margin:0">Forensic imputation: declared righteous by faith alone (sola fide).</p>
+          <div style="margin-top:10px;font-size:11px;color:#64748b;font-family:'Crimson Pro',serif">— Martin Luther</div>
+        </div>
+      </div>
+      <div style="margin-top:18px;background:rgba(212,168,83,0.05);border-left:3px solid #d4a853;padding:14px 18px;border-radius:0 4px 4px 0">
+        <div class="ic" style="font-size:10px;letter-spacing:3px;color:#d4a853;margin-bottom:4px">KEY DISTINCTION</div>
+        <p class="bd" style="color:#f1f5f9;font-size:13px;margin:0;line-height:1.5">Process vs. declaration: is justification something done <i>in</i> the believer, or pronounced <i>over</i> the believer?</p>
+      </div>
+    </div>
+    <div class="cmp-meta">
+      <h3>A · Triptych Columns</h3>
+      <p>Three equal panels per row, like a comparison table but bordered as panels. Each row of doctrines = one altar piece. Most reverent.</p>
+    </div>
+  </div>
+
+  <!-- B: Doctrine Diff -->
+  <div class="cmp-card" data-choice="diff" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:32px 36px;min-height:380px">
+      <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853">COMPARING TWO POSITIONS</div>
+      <h2 class="ic" style="font-size:24px;color:#f1f5f9;letter-spacing:2px;margin:8px 0 18px;text-transform:uppercase">Catholic ⟷ Protestant</h2>
+      <div style="display:flex;gap:8px;margin-bottom:18px">
+        <button style="background:rgba(212,168,83,0.15);border:1px solid #d4a853;color:#d4a853;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px">JUSTIFICATION</button>
+        <button style="background:transparent;border:1px solid rgba(212,168,83,0.25);color:#94a3b8;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px">EUCHARIST</button>
+        <button style="background:transparent;border:1px solid rgba(212,168,83,0.25);color:#94a3b8;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px">SCRIPTURE</button>
+        <button style="background:transparent;border:1px solid rgba(212,168,83,0.25);color:#94a3b8;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px">MARY</button>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:stretch">
+        <div style="background:rgba(212,168,83,0.04);border:1px solid rgba(212,168,83,0.2);border-radius:6px 0 0 6px;padding:18px">
+          <div class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853">CATHOLIC</div>
+          <p class="bd" style="color:#f1f5f9;font-size:13px;line-height:1.6;margin:8px 0 10px">Faith <span style="background:rgba(34,197,94,0.2);padding:1px 4px">+ works of love</span>; infused grace via sacraments.</p>
+          <div class="ic" style="font-size:9px;color:#64748b;letter-spacing:2px">SOURCE</div>
+          <div class="bd" style="font-size:11px;color:#94a3b8">Trent VI; CCC 1992</div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;background:#0a0e1a">
+          <div class="ic" style="font-size:24px;color:#d4a853;writing-mode:vertical-lr;letter-spacing:6px">VS</div>
+        </div>
+        <div style="background:rgba(212,168,83,0.04);border:1px solid rgba(212,168,83,0.2);border-radius:0 6px 6px 0;padding:18px">
+          <div class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853">PROTESTANT</div>
+          <p class="bd" style="color:#f1f5f9;font-size:13px;line-height:1.6;margin:8px 0 10px"><span style="background:rgba(239,68,68,0.18);padding:1px 4px">Faith alone</span>; imputed righteousness, declarative.</p>
+          <div class="ic" style="font-size:9px;color:#64748b;letter-spacing:2px">SOURCE</div>
+          <div class="bd" style="font-size:11px;color:#94a3b8">Romans 4:5; Galatians 2:16</div>
+        </div>
+      </div>
+      <div style="margin-top:18px;text-align:center">
+        <span class="ic" style="font-size:10px;letter-spacing:3px;color:#94a3b8">SWAP TRADITIONS:</span>
+        <span style="margin-left:8px">
+          <button style="background:transparent;color:#d4a853;border:1px solid rgba(212,168,83,0.3);padding:4px 10px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px">+ ORTHODOX</button>
+        </span>
+      </div>
+    </div>
+    <div class="cmp-meta">
+      <h3>B · Doctrine Diff</h3>
+      <p>Pick any two traditions, see them like a git diff with highlighted differences. Tab to switch doctrines. Best for Researcher mode.</p>
+    </div>
+  </div>
+
+  <!-- C: Matrix -->
+  <div class="cmp-card" data-choice="matrix" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:32px 36px;min-height:380px">
+      <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853">FULL DOCTRINAL MATRIX</div>
+      <h2 class="ic" style="font-size:24px;color:#f1f5f9;letter-spacing:2px;margin:8px 0 18px;text-transform:uppercase">Five Traditions, Eight Doctrines</h2>
+      <div style="border:1px solid rgba(212,168,83,0.25);border-radius:6px;overflow:hidden">
+        <div style="display:grid;grid-template-columns:160px repeat(5,1fr);background:rgba(212,168,83,0.08)">
+          <div style="padding:10px 12px"></div>
+          <div class="ic" style="padding:10px 12px;font-size:10px;letter-spacing:2px;color:#d4a853;border-left:1px solid rgba(212,168,83,0.15)">ORTHODOX</div>
+          <div class="ic" style="padding:10px 12px;font-size:10px;letter-spacing:2px;color:#d4a853;border-left:1px solid rgba(212,168,83,0.15)">CATHOLIC</div>
+          <div class="ic" style="padding:10px 12px;font-size:10px;letter-spacing:2px;color:#d4a853;border-left:1px solid rgba(212,168,83,0.15)">LUTHERAN</div>
+          <div class="ic" style="padding:10px 12px;font-size:10px;letter-spacing:2px;color:#d4a853;border-left:1px solid rgba(212,168,83,0.15)">REFORMED</div>
+          <div class="ic" style="padding:10px 12px;font-size:10px;letter-spacing:2px;color:#d4a853;border-left:1px solid rgba(212,168,83,0.15)">BAPTIST</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px repeat(5,1fr);border-top:1px solid rgba(212,168,83,0.15)">
+          <div class="ic" style="padding:12px;font-size:10px;letter-spacing:2px;color:#f1f5f9;background:rgba(212,168,83,0.04)">JUSTIFICATION</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Theosis (synergistic)</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Infused grace</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Forensic / FA</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Forensic / FA</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Forensic / FA</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px repeat(5,1fr);border-top:1px solid rgba(212,168,83,0.15)">
+          <div class="ic" style="padding:12px;font-size:10px;letter-spacing:2px;color:#f1f5f9;background:rgba(212,168,83,0.04)">EUCHARIST</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Real presence (mystery)</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Transubstantiation</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Consubstantiation</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Spiritual presence</div>
+          <div style="padding:12px;font-family:'Crimson Pro',serif;font-size:12px;color:#f1f5f9;border-left:1px solid rgba(212,168,83,0.15)">Memorialist</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;text-align:center;font-family:'Crimson Pro',serif;font-size:12px;color:#64748b;font-style:italic">Click any cell to expand into A's triptych view of that row.</div>
+    </div>
+    <div class="cmp-meta">
+      <h3>C · Doctrinal Matrix</h3>
+      <p>Bird's-eye view: traditions × doctrines grid. Drill into any cell. Best at-a-glance overview before diving in.</p>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:24px;color:#64748b;font-size:12px;text-align:center">My take: <b>C as the entry view</b> (overview) + <b>A as the doctrine detail</b> + <b>B as a focused 1-on-1 mode</b>. They're complementary, not exclusive.</p>

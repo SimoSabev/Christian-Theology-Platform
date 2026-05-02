@@ -26,7 +26,7 @@
     "keyDistinction": "Kluczowe rozróżnienie",
     "primarySource": "Źródło pierwotne",
     "searchPlaceholder": "Szukaj argumentów, źródeł, doktryn...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Obrona Semantyczna"
   },
   "nav": {
     "home": "Strona główna",
@@ -37,7 +37,7 @@
     "search": "Szukaj",
     "glossary": "Słownik",
     "about": "O nas",
-    "semantics": "Semantics"
+    "semantics": "Semantyka"
   },
   "home": {
     "heroTitle": "Platforma do Studiowania Teologii Chrześcijańskiej",
@@ -172,11 +172,11 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Transliteracja",
+      "gloss": "Glosa",
+      "lemma": "Lemat",
+      "parsing": "Analiza",
+      "fullParsing": "Pełna analiza",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Kosmologiczny",
+        "ontological": "Ontologiczny",
+        "teleological": "Teleologiczny",
+        "moral": "Moralny",
+        "historical": "Historyczny",
+        "orthodoxy": "Prawosławie Wschodnie",
+        "catholicism": "Katolicyzm Rzymski",
+        "protestantism": "Protestantyzm",
+        "sideBySide": "Narzędzie porównania",
+        "manuscripts": "Rękopisy",
+        "churchFathers": "Ojcowie Kościoła",
+        "councilsCreeds": "Sobory i Wyznania",
+        "argumentTree": "Drzewo Argumentów",
+        "debateMode": "Tryb Debaty",
+        "timeline": "Oś Czasu"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Stworzone z ❤️ dla studiowania teologii"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Studia Teologiczne",
+      "searchPlaceholder": "Zacznij pisać, aby szukać argumentów, źródeł i doktryn..."
     }
   }
 }

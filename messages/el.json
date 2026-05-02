@@ -26,7 +26,7 @@
     "keyDistinction": "Κύρια διάκριση",
     "primarySource": "Πρωτογενής πηγή",
     "searchPlaceholder": "Αναζήτηση επιχειρημάτων, πηγών, δογμάτων...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Σημασιολογική Υπεράσπιση"
   },
   "nav": {
     "home": "Αρχική",
@@ -37,7 +37,7 @@
     "search": "Αναζήτηση",
     "glossary": "Γλωσσάριο",
     "about": "Σχετικά",
-    "semantics": "Semantics"
+    "semantics": "Σημασιολογία"
   },
   "home": {
     "heroTitle": "Η Πλατφόρμα Μελέτης Χριστιανικής Θεολογίας",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Μεταγραφή",
+      "gloss": "Γλωσσική απόδοση",
+      "lemma": "Λήμμα",
+      "parsing": "Ανάλυση",
+      "fullParsing": "Πλήρης ανάλυση",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "εναντίον"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Κοσμολογικό",
+        "ontological": "Οντολογικό",
+        "teleological": "Τελεολογικό",
+        "moral": "Ηθικό",
+        "historical": "Ιστορικό",
+        "orthodoxy": "Ανατολική Ορθοδοξία",
+        "catholicism": "Ρωμαιοκαθολικισμός",
+        "protestantism": "Προτεσταντισμός",
+        "sideBySide": "Εργαλείο σύγκρισης",
+        "manuscripts": "Χειρόγραφα",
+        "churchFathers": "Πατέρες της Εκκλησίας",
+        "councilsCreeds": "Σύνοδοι και Σύμβολα Πίστεως",
+        "argumentTree": "Δέντρο Επιχειρημάτων",
+        "debateMode": "Λειτουργία Συζήτησης",
+        "timeline": "Χρονολόγιο"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Δημιουργήθηκε με ❤️ για τη μελέτη της θεολογίας"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Θεολογική Μελέτη",
+      "searchPlaceholder": "Ξεκινήστε να πληκτρολογείτε για αναζήτηση επιχειρημάτων, πηγών και δογμάτων..."
     }
   }
 }

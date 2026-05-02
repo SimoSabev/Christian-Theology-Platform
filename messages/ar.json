@@ -26,7 +26,7 @@
     "keyDistinction": "التمييز الرئيسي",
     "primarySource": "المصدر الأساسي",
     "searchPlaceholder": "ابحث عن حجج ومصادر ومذاهب...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "الدفاع الدلالي"
   },
   "nav": {
     "home": "الرئيسية",
@@ -37,7 +37,7 @@
     "search": "بحث",
     "glossary": "المعجم",
     "about": "حول",
-    "semantics": "Semantics"
+    "semantics": "الدلالة"
   },
   "home": {
     "heroTitle": "المنصة الشاملة لدراسة اللاهوت المسيحي",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "الترجمة الصوتية",
+      "gloss": "الترجمة",
+      "lemma": "السند",
+      "parsing": "التحليل",
+      "fullParsing": "التحليل الكامل",
+      "strongs": "سترونغ"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "ضد"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "كوني",
+        "ontological": "وجودي",
+        "teleological": "غائي",
+        "moral": "أخلاقي",
+        "historical": "تاريخي",
+        "orthodoxy": "الأرثوذكسية الشرقية",
+        "catholicism": "الكاثوليكية الرومانية",
+        "protestantism": "البروتستانتية",
+        "sideBySide": "أداة المقارنة",
+        "manuscripts": "المخطوطات",
+        "churchFathers": "آباء الكنيسة",
+        "councilsCreeds": "المجامع والعقائد",
+        "argumentTree": "شجرة الحجج",
+        "debateMode": "وضع المناظرة",
+        "timeline": "الجدول الزمني"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "بُني بـ ❤️ لدراسة اللاهوت"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "دراسة اللاهوت",
+      "searchPlaceholder": "ابدأ الكتابة للبحث عن حجج ومصادر ومذاهب..."
     }
   }
 }

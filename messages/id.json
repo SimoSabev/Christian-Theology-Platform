@@ -26,7 +26,7 @@
     "keyDistinction": "Pembedaan kunci",
     "primarySource": "Sumber primer",
     "searchPlaceholder": "Cari argumen, sumber, doktrin...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Pertahanan Semantik"
   },
   "nav": {
     "home": "Beranda",
@@ -37,7 +37,7 @@
     "search": "Cari",
     "glossary": "Glosarium",
     "about": "Tentang",
-    "semantics": "Semantics"
+    "semantics": "Semantik"
   },
   "home": {
     "heroTitle": "Platform Studi Teologi Kristen",
@@ -172,11 +172,11 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Transliterasi",
+      "gloss": "Glos",
+      "lemma": "Lema",
+      "parsing": "Penguraian",
+      "fullParsing": "Penguraian lengkap",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
+        "cosmological": "Kosmologis",
+        "ontological": "Ontologis",
+        "teleological": "Teleologis",
         "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "historical": "Historis",
+        "orthodoxy": "Ortodoksi Timur",
+        "catholicism": "Katolik Roma",
+        "protestantism": "Protestan",
+        "sideBySide": "Alat perbandingan berdampingan",
+        "manuscripts": "Manuskrip",
+        "churchFathers": "Bapak Gereja",
+        "councilsCreeds": "Konsili & Pengakuan Iman",
+        "argumentTree": "Pohon Argumen",
+        "debateMode": "Mode Debat",
+        "timeline": "Garis Waktu"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Dibuat dengan ❤️ untuk studi teologi"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Studi Teologi",
+      "searchPlaceholder": "Mulai mengetik untuk mencari argumen, sumber, dan doktrin..."
     }
   }
 }

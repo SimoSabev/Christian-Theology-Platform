@@ -26,7 +26,7 @@
     "keyDistinction": "ዋና ልዩነት",
     "primarySource": "ዋና ምንጭ",
     "searchPlaceholder": "ክርክሮች፣ ምንጮች፣ ትምህርቶች ይፈልጉ...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "ሴማንቲክ መከላከያ"
   },
   "nav": {
     "home": "መነሻ",
@@ -37,7 +37,7 @@
     "search": "ፈልግ",
     "glossary": "የቃላት ዝርዝር",
     "about": "ስለ",
-    "semantics": "Semantics"
+    "semantics": "ሴማንቲክስ"
   },
   "home": {
     "heroTitle": "የክርስቲያን ስነ-መለኮት ጥናት መድረክ",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "ትርጉም በፊደል",
+      "gloss": "ጽሑፍ ትርጉም",
+      "lemma": "ሌማ",
+      "parsing": "ቅርጸ-ትርጉም",
+      "fullParsing": "ሙሉ ቅርጸ-ትርጉም",
+      "strongs": "ስትሮንግ"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "እና"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "ኮስሞሎጂካል",
+        "ontological": "ኦንቶሎጂካል",
+        "teleological": "ቴሌዮሎጂካል",
+        "moral": "ስነምግባር",
+        "historical": "ታሪካዊ",
+        "orthodoxy": "ምስራቃዊ ኦርቶዶክስ",
+        "catholicism": "ሮማን ካቶሊክ",
+        "protestantism": "ፕሮቴስታንት",
+        "sideBySide": "የጎን-ለጎን መሳሪያ",
+        "manuscripts": "የእጅ ጽሑፎች",
+        "churchFathers": "የቤተክርስቲያን አባቶች",
+        "councilsCreeds": "ምክሮች እና እምነቶች",
+        "argumentTree": "የክርክር ዛፍ",
+        "debateMode": "የክርክር ሁነታ",
+        "timeline": "የጊዜ መስመር"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "በ ❤️ ለመጽሐፍ ቅዱስ ጥናት የተሰራ"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "የአምልኮ ጥናት",
+      "searchPlaceholder": "ክርክሮች፣ ምንጮች፣ ትምህርቶች ለመፈለግ መተየብ ይጀምሩ..."
     }
   }
 }

@@ -26,18 +26,18 @@
     "keyDistinction": "关键区别",
     "primarySource": "原始资料",
     "searchPlaceholder": "搜索论证、来源、教义...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "语义辩护"
   },
   "nav": {
     "home": "首页",
-    "defend": "辩护",
+    "defend": "护教",
     "compare": "比较",
     "sources": "来源",
     "explore": "探索",
     "search": "搜索",
     "glossary": "术语表",
     "about": "关于",
-    "semantics": "Semantics"
+    "semantics": "语义学"
   },
   "home": {
     "heroTitle": "权威基督教神学研究平台",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "音译",
+      "gloss": "注释",
+      "lemma": "词元",
+      "parsing": "语法分析",
+      "fullParsing": "完整语法分析",
+      "strongs": "史特朗编号"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "对"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "宇宙论",
+        "ontological": "本体论",
+        "teleological": "目的论",
+        "moral": "道德论",
+        "historical": "历史证据",
+        "orthodoxy": "东正教",
+        "catholicism": "罗马天主教",
+        "protestantism": "新教",
+        "sideBySide": "并列比较工具",
+        "manuscripts": "手稿",
+        "churchFathers": "教父文献",
+        "councilsCreeds": "大公会议与信经",
+        "argumentTree": "论证树",
+        "debateMode": "辩论模式",
+        "timeline": "历史时间线"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "用 ❤️ 为神学研究而建"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "神学研究",
+      "searchPlaceholder": "开始输入以搜索论证、来源和教义..."
     }
   }
 }

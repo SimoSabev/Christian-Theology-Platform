@@ -1,8 +1,17 @@
 export type CultCategory =
   | 'jehovahs-witnesses'
   | 'lds'
+  | 'christian-science'
+  | 'oneness-pentecostalism'
+  | 'new-age'
   | 'arianism'
   | 'gnosticism'
+  | 'pelagianism'
+  | 'nestorianism'
+  | 'modalism'
+  | 'docetism'
+  | 'monophysitism'
+  | 'montanism'
   | 'islam';
 
 export interface CultObjection {

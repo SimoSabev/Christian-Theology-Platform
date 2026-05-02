@@ -26,7 +26,7 @@
     "keyDistinction": "Ключово разграничение",
     "primarySource": "Първоизточник",
     "searchPlaceholder": "Търси аргументи, източници, доктрини...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Семантична защита"
   },
   "nav": {
     "home": "Начало",
@@ -37,7 +37,7 @@
     "search": "Търсене",
     "glossary": "Речник",
     "about": "За нас",
-    "semantics": "Semantics"
+    "semantics": "Семантика"
   },
   "home": {
     "heroTitle": "Платформата за изучаване на християнското богословие",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "Транслитерация",
+      "gloss": "Глоса",
+      "lemma": "Лема",
+      "parsing": "Разбор",
+      "fullParsing": "Пълен разбор",
+      "strongs": "Стронг"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "срещу"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Космологически",
+        "ontological": "Онтологически",
+        "teleological": "Телеологически",
+        "moral": "Морален",
+        "historical": "Исторически",
+        "orthodoxy": "Източна православие",
+        "catholicism": "Римски католицизъм",
+        "protestantism": "Протестантство",
+        "sideBySide": "Инструмент рамо до рамо",
+        "manuscripts": "Ръкописи",
+        "churchFathers": "Отци на Църквата",
+        "councilsCreeds": "Събори и вероизповедания",
+        "argumentTree": "Дърво на аргументите",
+        "debateMode": "Режим дебат",
+        "timeline": "Хронология"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Създадено с ❤️ за изучаване на богословието"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Богословско проучване",
+      "searchPlaceholder": "Започнете да пишете, за да търсите аргументи, източници и доктрини..."
     }
   }
 }

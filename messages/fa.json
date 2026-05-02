@@ -26,7 +26,7 @@
     "keyDistinction": "تمایز کلیدی",
     "primarySource": "منبع اصلی",
     "searchPlaceholder": "جستجوی استدلال، منابع، آموزه‌ها...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "دفاع معنایی"
   },
   "nav": {
     "home": "خانه",
@@ -37,7 +37,7 @@
     "search": "جستجو",
     "glossary": "واژه‌نامه",
     "about": "درباره",
-    "semantics": "Semantics"
+    "semantics": "معناشناسی"
   },
   "home": {
     "heroTitle": "پلتفرم جامع مطالعه الاهیات مسیحی",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
-      "strongs": "Strong's"
+      "transliteration": "نویسه‌گردانی",
+      "gloss": "ترجمه واژه‌ای",
+      "lemma": "لُمّه",
+      "parsing": "تجزیه",
+      "fullParsing": "تجزیه کامل",
+      "strongs": "استرانگ"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "در برابر"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "کیهانی",
+        "ontological": "وجودی",
+        "teleological": "غایی",
+        "moral": "اخلاقی",
+        "historical": "تاریخی",
+        "orthodoxy": "ارتباط‌دوستی شرقی",
+        "catholicism": "کاتولیک رومی",
+        "protestantism": "پروتستان",
+        "sideBySide": "ابزار مقایسه",
+        "manuscripts": "نسخه‌های خطی",
+        "churchFathers": "پدران کلیسا",
+        "councilsCreeds": "شوراها و عقاید",
+        "argumentTree": "درخت استدلال‌ها",
+        "debateMode": "حالت مناظره",
+        "timeline": "جدول زمانی"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "ساخته شده با ❤️ برای مطالعه الهیات"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "مطالعه الهیات",
+      "searchPlaceholder": "شروع به تایپ کنید برای جستجوی استدلال‌ها، منابع و آموزه‌ها..."
     }
   }
 }

@@ -26,7 +26,7 @@
     "keyDistinction": "Pangunahing pagkakaiba",
     "primarySource": "Pangunahing pinagmulan",
     "searchPlaceholder": "Maghanap ng mga argumento, pinagmulan, doktrina...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Semantikong Pagtatanggol"
   },
   "nav": {
     "home": "Home",
@@ -37,7 +37,7 @@
     "search": "Maghanap",
     "glossary": "Glossary",
     "about": "Tungkol",
-    "semantics": "Semantics"
+    "semantics": "Semantika"
   },
   "home": {
     "heroTitle": "Plataporma para sa Pag-aaral ng Kristiyanong Teolohiya",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Transliterasyon",
+      "gloss": "Salin",
+      "lemma": "Lema",
+      "parsing": "Pagsusuri",
+      "fullParsing": "Buong pagsusuri",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "laban sa"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
+        "cosmological": "Kosmolohikal",
+        "ontological": "Ontolohikal",
+        "teleological": "Teleolohikal",
         "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "historical": "Pangkasaysayan",
+        "orthodoxy": "Silangang Ortodoksiya",
+        "catholicism": "Romano Katolisismo",
+        "protestantism": "Protestantismo",
+        "sideBySide": "Tool na paghahambing",
+        "manuscripts": "Mga Manuskrito",
+        "churchFathers": "Mga Ama ng Simbahan",
+        "councilsCreeds": "Mga Konseho at Kredong",
+        "argumentTree": "Puno ng Argumento",
+        "debateMode": "Mode ng Debato",
+        "timeline": "Linya ng Panahon"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Ginawa ng ❤️ para sa pag-aaral ng teolohiya"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Pag-aaral ng Teolohiya",
+      "searchPlaceholder": "Magsimulang mag-type upang maghanap ng mga argumento, pinagmulan, at doktrina..."
     }
   }
 }

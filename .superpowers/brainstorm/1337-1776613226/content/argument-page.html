@@ -1,0 +1,126 @@
+<style>
+  .arg-card { background:#0a0e1a; border:1px solid rgba(212,168,83,0.25); border-radius:14px; overflow:hidden; cursor:pointer; transition:all 0.3s; }
+  .arg-card:hover { border-color:#d4a853; box-shadow:0 0 36px rgba(212,168,83,0.18); transform:translateY(-2px); }
+  .arg-card.selected { border-color:#d4a853; box-shadow:0 0 0 2px #d4a853; }
+  .arg-meta { padding:18px 22px; border-top:1px solid rgba(212,168,83,0.18); }
+  .arg-meta h3 { color:#f1f5f9; font-family:'Cinzel',serif; letter-spacing:2px; text-transform:uppercase; font-size:13px; margin:0 0 6px; }
+  .arg-meta p { color:#94a3b8; font-size:13px; line-height:1.5; margin:0; font-family:'Crimson Pro',Georgia,serif; }
+  .ic { font-family:'Cinzel',serif; }
+  .bd { font-family:'Crimson Pro',Georgia,serif; }
+  .premise-pill { background:rgba(212,168,83,0.08); border:1px solid rgba(212,168,83,0.3); padding:10px 14px; border-radius:4px; margin-bottom:8px; color:#f1f5f9; font-size:13px; font-family:'Crimson Pro',serif; }
+  .obj-pill { background:rgba(239,68,68,0.06); border-left:3px solid #ef4444; padding:10px 14px; margin-bottom:6px; color:#f1f5f9; font-size:12px; font-family:'Crimson Pro',serif; border-radius:0 4px 4px 0; }
+  .resp-pill { background:rgba(34,197,94,0.06); border-left:3px solid #22c55e; padding:10px 14px; margin-bottom:6px; color:#f1f5f9; font-size:12px; font-family:'Crimson Pro',serif; border-radius:0 4px 4px 0; }
+</style>
+
+<h2>Argument page treatment</h2>
+<p class="subtitle">How a single apologetic argument (e.g., Kalam) is presented. Same content, three layouts.</p>
+
+<div style="display:grid;gap:24px">
+
+  <!-- A: Codex with sidebar -->
+  <div class="arg-card" data-choice="codex" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;display:grid;grid-template-columns:220px 1fr;min-height:380px">
+      <!-- sidebar -->
+      <div style="background:#070b14;border-right:1px solid rgba(212,168,83,0.15);padding:24px 18px">
+        <div class="ic" style="font-size:9px;letter-spacing:3px;color:#d4a853;margin-bottom:14px">ON THIS PAGE</div>
+        <div class="bd" style="font-size:12px;color:#f1f5f9;padding:6px 0;border-left:2px solid #d4a853;padding-left:10px;margin-left:-10px">Premises</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Conclusion</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Defense of P1</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Defense of P2</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Objections</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Proponents</div>
+        <div class="bd" style="font-size:12px;color:#94a3b8;padding:6px 0;padding-left:10px">Sources</div>
+        <div style="margin-top:24px;padding-top:18px;border-top:1px solid rgba(212,168,83,0.15)">
+          <div class="ic" style="font-size:9px;letter-spacing:3px;color:#d4a853;margin-bottom:8px">RELATED</div>
+          <div class="bd" style="font-size:11px;color:#94a3b8;line-height:1.6">Leibnizian Contingency<br/>Thomistic Five Ways</div>
+        </div>
+      </div>
+      <!-- main -->
+      <div style="padding:32px 36px">
+        <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853">PART · I · COSMOLOGICAL · § 1.1.1</div>
+        <h2 class="ic" style="font-size:32px;color:#f1f5f9;letter-spacing:2px;margin:10px 0 6px;text-transform:uppercase;font-weight:700">The Kalam</h2>
+        <div class="bd" style="font-size:13px;color:#94a3b8;font-style:italic;margin-bottom:24px">Cosmological Argument</div>
+        <div style="background:linear-gradient(135deg,rgba(212,168,83,0.06),transparent);border-left:3px solid #d4a853;padding:18px 22px;border-radius:0 6px 6px 0">
+          <div class="bd" style="color:#f1f5f9;font-size:15px;line-height:1.7">
+            <div style="display:flex;gap:12px;margin-bottom:6px"><span style="color:#d4a853;font-weight:700">P1.</span><span>Whatever begins to exist has a cause.</span></div>
+            <div style="display:flex;gap:12px;margin-bottom:6px"><span style="color:#d4a853;font-weight:700">P2.</span><span>The universe began to exist.</span></div>
+            <div style="display:flex;gap:12px;padding-top:10px;border-top:1px solid rgba(212,168,83,0.2);margin-top:6px"><span style="color:#d4a853;font-weight:700">∴</span><span style="color:#d4a853">The universe has a cause.</span></div>
+          </div>
+        </div>
+        <div style="margin-top:22px;display:flex;gap:8px">
+          <button style="background:transparent;border:1px solid #d4a853;color:#d4a853;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer">Copy quote</button>
+          <button style="background:transparent;border:1px solid rgba(212,168,83,0.3);color:#94a3b8;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer">Cite</button>
+          <button style="background:transparent;border:1px solid rgba(212,168,83,0.3);color:#94a3b8;padding:6px 14px;font-family:Cinzel,serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="arg-meta">
+      <h3>A · Scholar's Codex</h3>
+      <p>Persistent left outline (TOC of the argument itself), formal premise block, action toolbar. Best for Students &amp; Researchers; Defenders get the copy button.</p>
+    </div>
+  </div>
+
+  <!-- B: Battle Card -->
+  <div class="arg-card" data-choice="battle" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:32px 36px;min-height:380px">
+      <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853;text-align:center">⚔  ARGUMENT  ⚔</div>
+      <h2 class="ic" style="font-size:28px;color:#f1f5f9;letter-spacing:2px;text-align:center;margin:10px 0 24px;text-transform:uppercase">The Kalam Cosmological</h2>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div>
+          <div class="ic" style="font-size:9px;letter-spacing:3px;color:#22c55e;margin-bottom:10px">◆ THE CASE</div>
+          <div class="premise-pill"><b style="color:#d4a853">P1.</b> Whatever begins to exist has a cause.</div>
+          <div class="premise-pill"><b style="color:#d4a853">P2.</b> The universe began to exist.</div>
+          <div class="premise-pill" style="background:rgba(212,168,83,0.15);border-color:#d4a853"><b style="color:#d4a853">∴</b> The universe has a cause.</div>
+        </div>
+        <div>
+          <div class="ic" style="font-size:9px;letter-spacing:3px;color:#ef4444;margin-bottom:10px">◇ OBJECTIONS &amp; REPLIES</div>
+          <div class="obj-pill"><b>"Quantum vacuum events are uncaused"</b></div>
+          <div class="resp-pill">→ Vacuum is not "nothing"; it has structure &amp; energy.</div>
+          <div class="obj-pill"><b>"Universe could be eternal"</b></div>
+          <div class="resp-pill">→ BGV theorem: any expanding universe has a beginning.</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;text-align:center">
+        <button style="background:#d4a853;color:#0a0e1a;padding:10px 22px;border:none;font-family:Cinzel,serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;cursor:pointer;margin-right:8px">Copy Full Defense</button>
+        <button style="background:transparent;color:#d4a853;padding:10px 22px;border:1px solid #d4a853;font-family:Cinzel,serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer">Sources</button>
+      </div>
+    </div>
+    <div class="arg-meta">
+      <h3>B · Battle Card</h3>
+      <p>Two-column duel: the case vs. objections+replies side by side. Built for Defender mode — fast, dense, copy-ready.</p>
+    </div>
+  </div>
+
+  <!-- C: Long-form Treatise -->
+  <div class="arg-card" data-choice="treatise" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:40px 48px;min-height:380px;max-width:780px;margin:0 auto">
+      <div class="ic" style="font-size:10px;letter-spacing:5px;color:#d4a853">§ 1.1.1 · COSMOLOGICAL ARGUMENTS</div>
+      <h2 class="ic" style="font-size:42px;color:#f1f5f9;letter-spacing:2px;margin:14px 0 8px;text-transform:uppercase;font-weight:700">The Kalam</h2>
+      <div class="bd" style="font-size:14px;color:#94a3b8;font-style:italic;border-bottom:1px solid rgba(212,168,83,0.18);padding-bottom:14px;margin-bottom:22px">A medieval Islamic-Christian inheritance, sharpened by William Lane Craig.</div>
+
+      <div style="position:relative;padding-left:14px">
+        <span style="position:absolute;left:0;top:6px;width:3px;height:calc(100% - 12px);background:linear-gradient(180deg,#d4a853 0%,transparent 100%)"></span>
+        <p class="bd" style="font-size:18px;line-height:1.75;color:#f1f5f9;margin:0">
+          <span class="ic" style="float:left;font-size:64px;line-height:0.85;color:#d4a853;margin:6px 12px 0 0;font-weight:900">T</span>
+          he Kalam Cosmological Argument moves from the universe's beginning to its transcendent cause. Its modern formulation contains two premises and a conclusion that follows by the rule of inference modus ponens.
+        </p>
+      </div>
+
+      <div style="margin-top:22px;background:rgba(212,168,83,0.04);border:1px solid rgba(212,168,83,0.2);border-radius:6px;padding:18px 22px">
+        <div class="bd" style="color:#f1f5f9;font-size:14px;line-height:1.8">
+          <div><b style="color:#d4a853">1.</b> Whatever begins to exist has a cause.</div>
+          <div><b style="color:#d4a853">2.</b> The universe began to exist.</div>
+          <div style="border-top:1px solid rgba(212,168,83,0.2);padding-top:6px;margin-top:6px"><b style="color:#d4a853">3.</b> Therefore, the universe has a cause.</div>
+        </div>
+      </div>
+    </div>
+    <div class="arg-meta">
+      <h3>C · Long-form Treatise</h3>
+      <p>Single column, illuminated drop cap, scholarly flow. Most beautiful, best for Seekers &amp; Students; Defenders need the toolbar added.</p>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:24px;color:#64748b;font-size:12px;text-align:center">Click to choose — or tell me to combine (e.g., "A's sidebar + C's drop-cap intro + B's objections grid below").</p>

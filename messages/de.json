@@ -26,7 +26,7 @@
     "keyDistinction": "Wesentliche Unterscheidung",
     "primarySource": "Primärquelle",
     "searchPlaceholder": "Argumente, Quellen, Lehren suchen...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Semantische Verteidigung"
   },
   "nav": {
     "home": "Startseite",
@@ -37,7 +37,7 @@
     "search": "Suchen",
     "glossary": "Glossar",
     "about": "Über",
-    "semantics": "Semantics"
+    "semantics": "Semantik"
   },
   "home": {
     "heroTitle": "Die definitive Plattform für christliche Theologie",
@@ -173,10 +173,10 @@
   "components": {
     "interlinearReader": {
       "transliteration": "Transliteration",
-      "gloss": "Gloss",
+      "gloss": "Glosse",
       "lemma": "Lemma",
       "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "fullParsing": "Vollständiges Parsing",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Kosmologisch",
+        "ontological": "Ontologisch",
+        "teleological": "Teleologisch",
+        "moral": "Moralisch",
+        "historical": "Historisch",
+        "orthodoxy": "Östliche Orthodoxie",
+        "catholicism": "Römischer Katholizismus",
+        "protestantism": "Protestantismus",
+        "sideBySide": "Side-by-Side Werkzeug",
+        "manuscripts": "Manuskripte",
+        "churchFathers": "Kirchenväter",
+        "councilsCreeds": "Konzilien & Bekenntnisse",
+        "argumentTree": "Argumentbaum",
+        "debateMode": "Debattenmodus",
+        "timeline": "Zeitleiste"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Mit ❤️ für das Theologiestudium erstellt"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Theologiestudium",
+      "searchPlaceholder": "Tippen Sie, um Argumente, Quellen und Lehren zu suchen..."
     }
   }
 }

@@ -10,6 +10,26 @@ const path = require('path');
 // Read the current en.json
 const currentEn = JSON.parse(fs.readFileSync('messages/en.json', 'utf-8'));
 
+let extracted = {};
+try {
+  extracted = JSON.parse(fs.readFileSync('i18n-extraction-results.json', 'utf-8'));
+} catch (e) {
+  console.log('No i18n-extraction-results.json found, skipping extraction merge.');
+}
+
+function deepMerge(target, source) {
+  for (const key in source) {
+    if (source[key] instanceof Object && !Array.isArray(source[key])) {
+      if (!target[key]) target[key] = {};
+      deepMerge(target[key], source[key]);
+    } else {
+      target[key] = source[key];
+    }
+  }
+}
+
+deepMerge(currentEn, extracted);
+
 // Add component translations
 currentEn.components = {
   interlinearReader: {
@@ -53,4 +73,4 @@ currentEn.components = {
 fs.writeFileSync('messages/en.json', JSON.stringify(currentEn, null, 2));
 
 console.log('✅ en.json updated successfully!');
-console.log('✨ Added component translations for Footer, Navbar, InterlinearReader, and SemanticDefenseSlideshow');
+console.log('✨ Data keys and components merged into en.json');

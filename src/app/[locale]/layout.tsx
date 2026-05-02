@@ -25,11 +25,11 @@ const notoSerif = Noto_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Theology Study Platform — Apologetics, Doctrine & Primary Sources',
-    template: '%s | Theology Study Platform',
+    default: 'Theosia — A Journey Toward God | Apologetics, Doctrine & Primary Sources',
+    template: '%s | Theosia',
   },
-  description: 'The definitive Christian theology study platform covering apologetics, denominational comparison, cult refutation, primary source archives, and interactive study tools.',
-  keywords: ['theology', 'apologetics', 'Christian', 'philosophy', 'religion', 'Bible', 'Church Fathers'],
+  description: 'Theosia — a journey toward God. The definitive Christian theology study platform covering apologetics, denominational comparison, cult refutation, primary source archives, and interactive study tools.',
+  keywords: ['theology', 'apologetics', 'Christian', 'philosophy', 'religion', 'Bible', 'Church Fathers', 'Theosia'],
 };
 
 export function generateStaticParams() {

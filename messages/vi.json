@@ -26,7 +26,7 @@
     "keyDistinction": "Sự phân biệt chính",
     "primarySource": "Nguồn sơ cấp",
     "searchPlaceholder": "Tìm luận chứng, nguồn, giáo lý...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Bảo vệ Ngữ nghĩa"
   },
   "nav": {
     "home": "Trang chủ",
@@ -37,7 +37,7 @@
     "search": "Tìm kiếm",
     "glossary": "Thuật ngữ",
     "about": "Giới thiệu",
-    "semantics": "Semantics"
+    "semantics": "Ngữ nghĩa học"
   },
   "home": {
     "heroTitle": "Nền tảng Nghiên cứu Thần học Cơ Đốc",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
-      "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "transliteration": "Chuyển tự",
+      "gloss": "Chú giải",
+      "lemma": "Từ gốc",
+      "parsing": "Phân tích",
+      "fullParsing": "Phân tích đầy đủ",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "đối"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Vũ trụ luận",
+        "ontological": "Bản thể luận",
+        "teleological": "Mục đích luận",
+        "moral": "Đạo đức luận",
+        "historical": "Bằng chứng lịch sử",
+        "orthodoxy": "Chính thống giáo Đông phương",
+        "catholicism": "Công giáo La Mã",
+        "protestantism": "Tin Lành",
+        "sideBySide": "Công cụ so sánh song song",
+        "manuscripts": "Bản thảo",
+        "churchFathers": "Giáo phụ",
+        "councilsCreeds": "Công đồng và Tín điều",
+        "argumentTree": "Cây luận chứng",
+        "debateMode": "Chế độ tranh luận",
+        "timeline": "Dòng thời gian"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Xây dựng với ❤️ cho việc nghiên cứu thần học"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Nghiên cứu Thần học",
+      "searchPlaceholder": "Bắt đầu gõ để tìm kiếm luận chứng, nguồn và giáo lý..."
     }
   }
 }

@@ -26,7 +26,7 @@
     "keyDistinction": "Belangrijk onderscheid",
     "primarySource": "Primaire bron",
     "searchPlaceholder": "Zoek argumenten, bronnen, doctrines...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Semantische Verdediging"
   },
   "nav": {
     "home": "Home",
@@ -37,7 +37,7 @@
     "search": "Zoeken",
     "glossary": "Woordenlijst",
     "about": "Over",
-    "semantics": "Semantics"
+    "semantics": "Semantiek"
   },
   "home": {
     "heroTitle": "Het Definitieve Platform voor Christelijke Theologie",
@@ -172,11 +172,11 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
+      "transliteration": "Transliteratie",
+      "gloss": "Glos",
       "lemma": "Lemma",
       "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "fullParsing": "Volledige parsing",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
@@ -184,27 +184,27 @@
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Cosmologisch",
+        "ontological": "Ontologisch",
+        "teleological": "Teleologisch",
+        "moral": "Moreel",
+        "historical": "Historisch",
+        "orthodoxy": "Oosterse Orthodoxie",
+        "catholicism": "Rooms-Katholicisme",
+        "protestantism": "Protestantisme",
+        "sideBySide": "Zij-aan-zij hulpmiddel",
+        "manuscripts": "Manuscripten",
+        "churchFathers": "Kerkvaders",
+        "councilsCreeds": "Concilies & Geloofsbelijdenissen",
+        "argumentTree": "Argumentenboom",
+        "debateMode": "Debatmodus",
+        "timeline": "Tijdlijn"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "Gebouwd met ❤️ voor de bestudering van de theologie"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "Theologiestudie",
+      "searchPlaceholder": "Begin met typen om argumenten, bronnen en doctrines te zoeken..."
     }
   }
 }

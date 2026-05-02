@@ -26,7 +26,7 @@
     "keyDistinction": "Temel ayrım",
     "primarySource": "Birincil kaynak",
     "searchPlaceholder": "Argüman, kaynak, doktrin ara...",
-    "semanticDefense": "Semantic Defense"
+    "semanticDefense": "Anlamsal Savunma"
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -37,7 +37,7 @@
     "search": "Ara",
     "glossary": "Sözlük",
     "about": "Hakkında",
-    "semantics": "Semantics"
+    "semantics": "Anlambilim"
   },
   "home": {
     "heroTitle": "Hristiyan Teolojisi Çalışma Platformu",
@@ -172,39 +172,39 @@
   },
   "components": {
     "interlinearReader": {
-      "transliteration": "Transliteration",
-      "gloss": "Gloss",
+      "transliteration": "Çevriyazım",
+      "gloss": "Sözlük karşılığı",
       "lemma": "Lemma",
-      "parsing": "Parsing",
-      "fullParsing": "Full Parsing",
+      "parsing": "Çözümleme",
+      "fullParsing": "Tam çözümleme",
       "strongs": "Strong's"
     },
     "semanticSlideShow": {
-      "vs": "vs"
+      "vs": "karşı"
     },
     "footer": {
       "nav": {
-        "cosmological": "Cosmological",
-        "ontological": "Ontological",
-        "teleological": "Teleological",
-        "moral": "Moral",
-        "historical": "Historical",
-        "orthodoxy": "Eastern Orthodoxy",
-        "catholicism": "Roman Catholicism",
-        "protestantism": "Protestantism",
-        "sideBySide": "Side-by-Side Tool",
-        "manuscripts": "Manuscripts",
-        "churchFathers": "Church Fathers",
-        "councilsCreeds": "Councils & Creeds",
-        "argumentTree": "Argument Tree",
-        "debateMode": "Debate Mode",
-        "timeline": "Timeline"
+        "cosmological": "Kozmolojik",
+        "ontological": "Ontolojik",
+        "teleological": "Teleolojik",
+        "moral": "Ahlaki",
+        "historical": "Tarihsel",
+        "orthodoxy": "Doğu Ortodoksluğu",
+        "catholicism": "Roma Katolikliği",
+        "protestantism": "Protestanlık",
+        "sideBySide": "Yan yana karşılaştırma aracı",
+        "manuscripts": "Yazmalar",
+        "churchFathers": "Kilise Babaları",
+        "councilsCreeds": "Konsiller ve İnanç Bildirgeleri",
+        "argumentTree": "Argüman Ağacı",
+        "debateMode": "Tartışma Modu",
+        "timeline": "Zaman Çizelgesi"
       },
-      "copyright": "Built with ❤️ for the study of theology"
+      "copyright": "İlahiyat çalışmaları için ❤️ ile yapılmıştır"
     },
     "navbar": {
-      "brandName": "Theology Study",
-      "searchPlaceholder": "Start typing to search arguments, sources, and doctrines..."
+      "brandName": "İlahiyat Çalışması",
+      "searchPlaceholder": "Argüman, kaynak ve doktrin aramak için yazmaya başlayın..."
     }
   }
 }

@@ -36,7 +36,8 @@ export type ArgumentCategory =
   | 'moral'
   | 'existential'
   | 'historical'
-  | 'objections';
+  | 'objections'
+  | 'psychological';
 
 export interface CategoryInfo {
   id: ArgumentCategory;
