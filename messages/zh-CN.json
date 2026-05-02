@@ -162,49 +162,9 @@
       "desc": "查找评论特定经文的每位教父"
     }
   },
-  "glossary": {
-    "title": "神学术语表",
-    "subtitle": "基督教神学的关键术语和概念"
-  },
-  "about": {
-    "title": "关于此平台",
-    "subtitle": "方法论、来源和使命"
-  },
-  "components": {
-    "interlinearReader": {
-      "transliteration": "音译",
-      "gloss": "注释",
-      "lemma": "词元",
-      "parsing": "语法分析",
-      "fullParsing": "完整语法分析",
-      "strongs": "史特朗编号"
-    },
-    "semanticSlideShow": {
-      "vs": "对"
-    },
-    "footer": {
-      "nav": {
-        "cosmological": "宇宙论",
-        "ontological": "本体论",
-        "teleological": "目的论",
-        "moral": "道德论",
-        "historical": "历史证据",
-        "orthodoxy": "东正教",
-        "catholicism": "罗马天主教",
-        "protestantism": "新教",
-        "sideBySide": "并列比较工具",
-        "manuscripts": "手稿",
-        "churchFathers": "教父文献",
-        "councilsCreeds": "大公会议与信经",
-        "argumentTree": "论证树",
-        "debateMode": "辩论模式",
-        "timeline": "历史时间线"
-      },
-      "copyright": "用 ❤️ 为神学研究而建"
-    },
-    "navbar": {
-      "brandName": "神学研究",
-      "searchPlaceholder": "开始输入以搜索论证、来源和教义..."
-    }
-  }
+  "glossary": { "title": "神学术语表", "subtitle": "基督教神学的关键术语和概念" },
+  "about": { "title": "关于此平台", "subtitle": "方法论、来源和使命" },
+  "hero": { "eyebrow": "SOLI · DEO · GLORIA", "headlineLine1": "Know what", "headlineLine2": "you believe", "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.", "ctaPrimary": "Enter", "ctaSecondary": "Take a Tour", "searchHint": "to search anything", "triptych": { "defend": "Defend", "defendSub": "Apologetics", "compare": "Compare", "compareSub": "Traditions", "sources": "Sources", "sourcesSub": "Manuscripts" } },
+  "command": { "ariaLabel": "Search the platform", "triggerLabel": "Search", "triggerAriaLabel": "Open search", "placeholder": "Search arguments, sources, doctrines…", "close": "Close", "noResults": "No results.", "startTyping": "Begin typing to search.", "groups": { "argument": "Arguments", "doctrine": "Doctrines", "cult": "Cults & movements", "source": "Sources", "page": "Pages" } },
+  "lens": { "toggleAriaLabel": "Change reading mode", "chooseLens": "Reading mode", "names": { "seeker": "Seeker", "student": "Student", "defender": "Defender", "researcher": "Researcher", "all": "Default" }, "descriptions": { "seeker": "Beautiful and atmospheric. Drawn in by wonder.", "student": "Structured. Read sequentially with progress.", "defender": "Fast lookup. Copy-ready answers for debate.", "researcher": "Side-by-side sources and citations.", "all": "Balanced — everything available, nothing pinned." }, "onboarding": { "eyebrow": "WELCOME", "title": "Choose how you'd like to read", "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.", "skip": "Maybe later" } }
 }

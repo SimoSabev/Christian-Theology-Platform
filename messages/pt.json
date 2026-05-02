@@ -162,49 +162,9 @@
       "desc": "Encontre cada Pai da Igreja que comenta um dado versículo"
     }
   },
-  "glossary": {
-    "title": "Glossário Teológico",
-    "subtitle": "Termos e conceitos-chave na teologia cristã"
-  },
-  "about": {
-    "title": "Sobre esta Plataforma",
-    "subtitle": "Metodologia, fontes e missão"
-  },
-  "components": {
-    "interlinearReader": {
-      "transliteration": "Transliteração",
-      "gloss": "Glossa",
-      "lemma": "Lema",
-      "parsing": "Análise",
-      "fullParsing": "Análise completa",
-      "strongs": "Strong's"
-    },
-    "semanticSlideShow": {
-      "vs": "vs"
-    },
-    "footer": {
-      "nav": {
-        "cosmological": "Cosmológico",
-        "ontological": "Ontológico",
-        "teleological": "Teleológico",
-        "moral": "Moral",
-        "historical": "Histórico",
-        "orthodoxy": "Ortodoxia Oriental",
-        "catholicism": "Catolicismo Romano",
-        "protestantism": "Protestantismo",
-        "sideBySide": "Ferramenta lado a lado",
-        "manuscripts": "Manuscritos",
-        "churchFathers": "Pais da Igreja",
-        "councilsCreeds": "Concílios e Credos",
-        "argumentTree": "Árvore de Argumentos",
-        "debateMode": "Modo Debate",
-        "timeline": "Linha do Tempo"
-      },
-      "copyright": "Feito com ❤️ para o estudo da teologia"
-    },
-    "navbar": {
-      "brandName": "Estudo Teológico",
-      "searchPlaceholder": "Comece a digitar para buscar argumentos, fontes e doutrinas..."
-    }
-  }
+  "glossary": { "title": "Glossário Teológico", "subtitle": "Termos e conceitos-chave na teologia cristã" },
+  "about": { "title": "Sobre esta Plataforma", "subtitle": "Metodologia, fontes e missão" },
+  "hero": { "eyebrow": "SOLI · DEO · GLORIA", "headlineLine1": "Know what", "headlineLine2": "you believe", "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.", "ctaPrimary": "Enter", "ctaSecondary": "Take a Tour", "searchHint": "to search anything", "triptych": { "defend": "Defend", "defendSub": "Apologetics", "compare": "Compare", "compareSub": "Traditions", "sources": "Sources", "sourcesSub": "Manuscripts" } },
+  "command": { "ariaLabel": "Search the platform", "triggerLabel": "Search", "triggerAriaLabel": "Open search", "placeholder": "Search arguments, sources, doctrines…", "close": "Close", "noResults": "No results.", "startTyping": "Begin typing to search.", "groups": { "argument": "Arguments", "doctrine": "Doctrines", "cult": "Cults & movements", "source": "Sources", "page": "Pages" } },
+  "lens": { "toggleAriaLabel": "Change reading mode", "chooseLens": "Reading mode", "names": { "seeker": "Seeker", "student": "Student", "defender": "Defender", "researcher": "Researcher", "all": "Default" }, "descriptions": { "seeker": "Beautiful and atmospheric. Drawn in by wonder.", "student": "Structured. Read sequentially with progress.", "defender": "Fast lookup. Copy-ready answers for debate.", "researcher": "Side-by-side sources and citations.", "all": "Balanced — everything available, nothing pinned." }, "onboarding": { "eyebrow": "WELCOME", "title": "Choose how you'd like to read", "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.", "skip": "Maybe later" } }
 }

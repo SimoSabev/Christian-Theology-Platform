@@ -1,130 +1,102 @@
+// src/components/layout/Navbar.tsx
 'use client';
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
-import { Shield, Scale, BookOpen, Compass, Search, Menu, X, BookType } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
-import TheosiaLogo from '@/components/brand/TheosiaLogo';
+import { LensToggle } from '@/components/lens';
+import { CommandBarTrigger } from '@/components/command';
+import { KeystoneDivider } from '@/components/ornament';
 
-const navItems = [
-  { href: '/defend', labelKey: 'defend', icon: Shield },
-  { href: '/compare', labelKey: 'compare', icon: Scale },
-  { href: '/semantics', labelKey: 'semantics', icon: BookType },
-  { href: '/sources', labelKey: 'sources', icon: BookOpen },
-  { href: '/explore', labelKey: 'explore', icon: Compass },
+const NAV_ITEMS = [
+  { href: '/defend',    labelKey: 'defend' },
+  { href: '/compare',   labelKey: 'compare' },
+  { href: '/explore',   labelKey: 'explore' },
+  { href: '/semantics', labelKey: 'semantics' },
+  { href: '/sources',   labelKey: 'sources' },
 ] as const;
 
 export default function Navbar() {
   const t = useTranslations('nav');
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <>
-      <header className="sticky top-0 z-50 border-b border-border backdrop-blur-xl bg-bg-primary/80">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <TheosiaLogo size={36} className="group-hover:scale-105 transition-transform" />
-              <span className="hidden sm:block font-semibold text-lg tracking-tight">
-                <span className="gold-gradient">Theosia</span>
-              </span>
-            </Link>
+    <header
+      className="sticky top-0 z-50"
+      style={{
+        background: 'var(--color-bg-primary)',
+        borderBottom: '1px solid var(--color-border)',
+      }}
+    >
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <Link href="/" className="t-caps text-sm" style={{ color: 'var(--color-text-primary)', letterSpacing: '0.32em' }}>
+            THEOLOGIA
+          </Link>
 
-            {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-1">
-              {navItems.map(({ href, labelKey, icon: Icon }) => {
-                const isActive = pathname.startsWith(href);
-                return (
-                  <Link
-                    key={href}
-                    href={href}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                      isActive
-                        ? 'bg-surface-glass text-accent-gold border border-accent-gold/20'
-                        : 'text-text-secondary hover:text-text-primary hover:bg-surface-glass'
-                    }`}
-                  >
-                    <Icon size={16} />
-                    {t(labelKey)}
-                  </Link>
-                );
-              })}
-            </div>
-
-            {/* Right side */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-glass transition-colors"
-                aria-label={t('search')}
-              >
-                <Search size={18} />
-              </button>
-              <LanguageSwitcher />
-              <button
-                className="md:hidden p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-glass transition-colors"
-                onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Menu"
-              >
-                {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-              </button>
-            </div>
+          <div className="hidden md:flex items-center gap-6">
+            {NAV_ITEMS.map(({ href, labelKey }) => {
+              const isActive = pathname.startsWith(href);
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className="t-caps text-xs relative py-1"
+                  style={{
+                    color: isActive ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)',
+                    transition: 'color var(--motion-duration-base) var(--motion-ease-out)',
+                  }}
+                >
+                  {t(labelKey)}
+                  {isActive && (
+                    <span
+                      className="absolute left-0 right-0 -bottom-1 h-0.5"
+                      style={{ background: 'var(--color-accent-gold)' }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </div>
-        </nav>
 
-        {/* Mobile Menu */}
-        {mobileOpen && (
-          <div className="md:hidden border-t border-border bg-bg-primary/95 backdrop-blur-xl animate-in slide-in-from-top duration-200">
-            <div className="px-4 py-3 space-y-1">
-              {navItems.map(({ href, labelKey, icon: Icon }) => {
-                const isActive = pathname.startsWith(href);
-                return (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={() => setMobileOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                      isActive
-                        ? 'bg-surface-glass text-accent-gold'
-                        : 'text-text-secondary hover:text-text-primary hover:bg-surface-glass'
-                    }`}
-                  >
-                    <Icon size={18} />
-                    {t(labelKey)}
-                  </Link>
-                );
-              })}
-            </div>
+          <div className="flex items-center gap-2">
+            <CommandBarTrigger />
+            <LensToggle />
+            <LanguageSwitcher />
+            <button
+              className="md:hidden p-2"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Menu"
+              style={{ color: 'var(--color-text-secondary)' }}
+            >
+              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
           </div>
-        )}
-      </header>
+        </div>
+      </nav>
 
-      {/* Search Overlay */}
-      {searchOpen && (
-        <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-start justify-center pt-[20vh]" onClick={() => setSearchOpen(false)}>
-          <div className="w-full max-w-2xl mx-4 bg-bg-elevated rounded-2xl border border-border shadow-2xl" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center gap-3 p-4 border-b border-border">
-              <Search size={20} className="text-text-muted" />
-              <input
-                autoFocus
-                type="text"
-                placeholder={t('search') + ' — Ctrl+K'}
-                className="flex-1 bg-transparent text-lg text-text-primary placeholder-text-muted outline-none"
-              />
-              <button onClick={() => setSearchOpen(false)} className="text-text-muted hover:text-text-primary">
-                <X size={18} />
-              </button>
-            </div>
-            <div className="p-6 text-center text-text-muted text-sm">
-              Start typing to search arguments, sources, and doctrines...
-            </div>
+      {mobileOpen && (
+        <div className="md:hidden" style={{ background: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)' }}>
+          <div className="px-4 py-4">
+            {NAV_ITEMS.map(({ href, labelKey }, i) => (
+              <div key={href}>
+                <Link
+                  href={href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block t-caps text-xs py-3"
+                  style={{ color: pathname.startsWith(href) ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)' }}
+                >
+                  {t(labelKey)}
+                </Link>
+                {i < NAV_ITEMS.length - 1 && <KeystoneDivider />}
+              </div>
+            ))}
           </div>
         </div>
       )}
-    </>
+    </header>
   );
 }
