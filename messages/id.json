@@ -109,7 +109,8 @@
         "name": "Keberatan ateis",
         "desc": "Tanggapan terhadap masalah kejahatan, penyembunyian ilahi, dan lainnya"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Membandingkan tradisi",
@@ -127,7 +128,8 @@
       "baptism": "Pembaptisan",
       "mary": "Maria",
       "church": "Gereja"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Arsip sumber primer",
@@ -139,7 +141,8 @@
     "councils": "Konsili & Kredo",
     "councilsDesc": "Tujuh konsili ekumenis dan dokumen iman",
     "liturgical": "Teks liturgis",
-    "liturgicalDesc": "Didache, liturgi Timur dan Barat"
+    "liturgicalDesc": "Didache, liturgi Timur dan Barat",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Alat interaktif",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Referensi silang Kitab Suci",
       "desc": "Temukan setiap Bapa Gereja yang mengomentari suatu ayat"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Glosarium teologis",

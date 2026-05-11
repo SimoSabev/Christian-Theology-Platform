@@ -109,7 +109,8 @@
         "name": "無神論反駁",
         "desc": "對惡的問題、神的隱藏等的回應"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "比較傳統",
@@ -127,7 +128,8 @@
       "baptism": "洗禮",
       "mary": "聖母",
       "church": "教會"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "原始資料檔案",
@@ -139,7 +141,8 @@
     "councils": "大公會議與信經",
     "councilsDesc": "七次大公會議和信經文件",
     "liturgical": "禮儀文本",
-    "liturgicalDesc": "十二使徒遺訓、東方和西方禮儀"
+    "liturgicalDesc": "十二使徒遺訓、東方和西方禮儀",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "互動工具",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "經文交叉引用",
       "desc": "查找評論特定經文的每位教父"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "神學術語表",

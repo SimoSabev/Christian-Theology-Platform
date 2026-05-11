@@ -109,7 +109,8 @@
         "name": "አምላክ የለሽ ተቃውሞዎች",
         "desc": "ለክፋት ችግር እና ሌሎች ምላሾች"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "ወጎች ንጽጽር",
@@ -127,7 +128,8 @@
       "baptism": "ጥምቀት",
       "mary": "ድንግል ማርያም",
       "church": "ቤተ ክርስቲያን"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "ዋና ምንጮች ማህደር",
@@ -139,7 +141,8 @@
     "councils": "ጉባኤዎች እና የእምነት ቃላት",
     "councilsDesc": "ሰባት ዓለማቀፍ ጉባኤዎች",
     "liturgical": "ሥርዓተ ቅዳሴ ጽሑፎች",
-    "liturgicalDesc": "ዲዳኬ፣ ምስራቃዊ እና ምዕራባዊ ሥርዓቶች"
+    "liturgicalDesc": "ዲዳኬ፣ ምስራቃዊ እና ምዕራባዊ ሥርዓቶች",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "በይነ ግንኙነት መሳሪያዎች",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "መጽሐፍ ቅዱስ ማጣቀሻ",
       "desc": "ጥቅስን የሚያብራሩ አባቶችን ያግኙ"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "ስነ-መለኮታዊ የቃላት ዝርዝር",

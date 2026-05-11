@@ -109,7 +109,8 @@
         "name": "Phản đối vô thần",
         "desc": "Đáp lại vấn đề sự ác, sự ẩn giấu thần thánh và hơn thế"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "So sánh truyền thống",
@@ -127,7 +128,8 @@
       "baptism": "Phép rửa",
       "mary": "Đức Mẹ",
       "church": "Giáo hội"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Kho tài liệu sơ cấp",
@@ -139,7 +141,8 @@
     "councils": "Công đồng & Tín điều",
     "councilsDesc": "Bảy công đồng đại kết và tài liệu tín điều",
     "liturgical": "Văn bản phụng vụ",
-    "liturgicalDesc": "Didache, phụng vụ Đông và Tây phương"
+    "liturgicalDesc": "Didache, phụng vụ Đông và Tây phương",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Công cụ tương tác",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Tham chiếu chéo Kinh Thánh",
       "desc": "Tìm Giáo phụ chú giải một câu Kinh Thánh"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Thuật ngữ thần học",

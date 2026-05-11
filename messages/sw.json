@@ -109,7 +109,8 @@
         "name": "Upinzani wa ukafiri",
         "desc": "Majibu ya tatizo la uovu, kificho cha kimungu na mengine"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Kulinganisha mila",
@@ -127,7 +128,8 @@
       "baptism": "Ubatizo",
       "mary": "Maria",
       "church": "Kanisa"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Hazina ya vyanzo vya msingi",
@@ -139,7 +141,8 @@
     "councils": "Mabaraza na Imani",
     "councilsDesc": "Mabaraza saba ya kiekumene na hati za imani",
     "liturgical": "Maandishi ya kiliturjia",
-    "liturgicalDesc": "Didake, liturjia za mashariki na magharibi"
+    "liturgicalDesc": "Didake, liturjia za mashariki na magharibi",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Zana shirikishi",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Marejeo ya Maandiko",
       "desc": "Pata kila Baba wa Kanisa anayetoa maoni juu ya aya"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Kamusi ya kitheolojia",

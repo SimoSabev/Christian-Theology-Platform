@@ -109,7 +109,8 @@
         "name": "無神論的反論",
         "desc": "悪の問題、神の隠れなどへの応答"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "伝統の比較",
@@ -127,7 +128,8 @@
       "baptism": "洗礼",
       "mary": "聖母",
       "church": "教会"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "一次資料アーカイブ",
@@ -139,7 +141,8 @@
     "councils": "公会議と信条",
     "councilsDesc": "七つの公会議と信条文書",
     "liturgical": "典礼文書",
-    "liturgicalDesc": "ディダケー、東方・西方典礼"
+    "liturgicalDesc": "ディダケー、東方・西方典礼",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "インタラクティブツール",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "聖書の相互参照",
       "desc": "特定の聖句を注解した各教父を検索"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "神学用語集",

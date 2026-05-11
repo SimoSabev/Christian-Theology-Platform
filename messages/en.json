@@ -110,7 +110,8 @@
         "name": "Atheist Objections",
         "desc": "Responses to the problem of evil, divine hiddenness, and more"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Compare Traditions",
@@ -128,7 +129,8 @@
       "baptism": "Baptism",
       "mary": "Mary",
       "church": "Church"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Primary Sources Archive",
@@ -140,7 +142,8 @@
     "councils": "Councils & Creeds",
     "councilsDesc": "Seven ecumenical councils, regional synods, and creedal documents",
     "liturgical": "Liturgical Texts",
-    "liturgicalDesc": "The Didache, Eastern and Western liturgies"
+    "liturgicalDesc": "The Didache, Eastern and Western liturgies",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Interactive Tools",
@@ -160,7 +163,8 @@
     "scriptureRef": {
       "title": "Scripture Cross-Reference",
       "desc": "Find every Church Father who comments on a given verse"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Theological Glossary",

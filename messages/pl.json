@@ -109,7 +109,8 @@
         "name": "Ateistyczne zarzuty",
         "desc": "Odpowiedzi na problem zła, ukrycie Boże i inne"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Porównanie tradycji",
@@ -127,7 +128,8 @@
       "baptism": "Chrzest",
       "mary": "Maryja",
       "church": "Kościół"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Archiwum źródeł pierwotnych",
@@ -139,7 +141,8 @@
     "councils": "Sobory i wyznania wiary",
     "councilsDesc": "Siedem soborów ekumenicznych i dokumenty wiary",
     "liturgical": "Teksty liturgiczne",
-    "liturgicalDesc": "Didache, liturgie wschodnie i zachodnie"
+    "liturgicalDesc": "Didache, liturgie wschodnie i zachodnie",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Narzędzia interaktywne",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Odniesienia krzyżowe Pisma",
       "desc": "Znajdź każdego Ojca Kościoła komentującego dany werset"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Słownik teologiczny",

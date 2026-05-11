@@ -109,7 +109,8 @@
         "name": "Obiezioni atee",
         "desc": "Risposte al problema del male, all'hiddenness divino e altro"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Confronta le tradizioni",
@@ -127,7 +128,8 @@
       "baptism": "Battesimo",
       "mary": "Maria",
       "church": "Chiesa"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Archivio delle fonti primarie",
@@ -139,7 +141,8 @@
     "councils": "Concili e credo",
     "councilsDesc": "Sette concili ecumenici e documenti di fede",
     "liturgical": "Testi liturgici",
-    "liturgicalDesc": "La Didaché, liturgie orientali e occidentali"
+    "liturgicalDesc": "La Didaché, liturgie orientali e occidentali",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Strumenti interattivi",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Riferimento incrociato delle Scritture",
       "desc": "Trova ogni Padre della Chiesa che commenta un versetto"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Glossario teologico",

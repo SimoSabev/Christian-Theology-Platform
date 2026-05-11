@@ -109,7 +109,8 @@
         "name": "Atheïstische bezwaren",
         "desc": "Antwoorden op het probleem van het kwaad, goddelijke verborgenheid en meer"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Tradities vergelijken",
@@ -127,7 +128,8 @@
       "baptism": "Doop",
       "mary": "Maria",
       "church": "Kerk"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Archief van primaire bronnen",
@@ -139,7 +141,8 @@
     "councils": "Concilies & Geloofsbelijdenissen",
     "councilsDesc": "Zeven oecumenische concilies en geloofsdocumenten",
     "liturgical": "Liturgische teksten",
-    "liturgicalDesc": "De Didache, oosterse en westerse liturgieën"
+    "liturgicalDesc": "De Didache, oosterse en westerse liturgieën",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Interactieve tools",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Schriftverwijzingen",
       "desc": "Elke kerkvader vinden die een vers becommentarieert"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Theologische woordenlijst",

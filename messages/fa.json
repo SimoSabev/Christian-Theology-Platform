@@ -109,7 +109,8 @@
         "name": "اعتراضات الحادی",
         "desc": "پاسخ به مسئله شر، پنهان‌شدگی الهی و موارد دیگر"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "مقایسه سنت‌ها",
@@ -127,7 +128,8 @@
       "baptism": "تعمید",
       "mary": "مریم",
       "church": "کلیسا"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "آرشیو منابع اصلی",
@@ -139,7 +141,8 @@
     "councils": "شوراها و اعتقادنامه‌ها",
     "councilsDesc": "هفت شورای جهانی و اسناد ایمان",
     "liturgical": "متون آیینی",
-    "liturgicalDesc": "دیداخه، آیین‌های شرقی و غربی"
+    "liturgicalDesc": "دیداخه، آیین‌های شرقی و غربی",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "ابزارهای تعاملی",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "ارجاع متقابل کتاب مقدس",
       "desc": "هر یک از آباء کلیسا که آیه‌ای خاص را تفسیر کرده بیابید"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "واژه‌نامه الاهیاتی",

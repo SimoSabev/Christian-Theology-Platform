@@ -109,7 +109,8 @@
         "name": "Obiecții ateiste",
         "desc": "Răspunsuri la problema răului, ascunderea divină și altele"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Compararea tradițiilor",
@@ -127,7 +128,8 @@
       "baptism": "Botezul",
       "mary": "Maica Domnului",
       "church": "Biserica"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Arhiva surselor primare",
@@ -139,7 +141,8 @@
     "councils": "Concilii și crezuri",
     "councilsDesc": "Șapte concilii ecumenice și documente de credință",
     "liturgical": "Texte liturgice",
-    "liturgicalDesc": "Didahia, liturgii răsăritene și apusene"
+    "liturgicalDesc": "Didahia, liturgii răsăritene și apusene",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Instrumente interactive",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Referințe încrucișate ale Scripturii",
       "desc": "Găsește fiecare Părinte al Bisericii care comentează un verset dat"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Glosar teologic",

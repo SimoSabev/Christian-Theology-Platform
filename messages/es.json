@@ -110,7 +110,8 @@
         "name": "Objeciones Ateas",
         "desc": "Respuestas al problema del mal, la ocultación divina y más"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Comparar Tradiciones",
@@ -128,7 +129,8 @@
       "baptism": "Bautismo",
       "mary": "María",
       "church": "Iglesia"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Archivo de Fuentes Primarias",
@@ -140,7 +142,8 @@
     "councils": "Concilios y Credos",
     "councilsDesc": "Siete concilios ecuménicos, sínodos regionales y documentos credales",
     "liturgical": "Textos Litúrgicos",
-    "liturgicalDesc": "La Didaché, liturgias orientales y occidentales"
+    "liturgicalDesc": "La Didaché, liturgias orientales y occidentales",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Herramientas Interactivas",
@@ -160,11 +163,72 @@
     "scriptureRef": {
       "title": "Referencia Cruzada de Escrituras",
       "desc": "Encuentra a cada Padre de la Iglesia que comenta sobre un versículo dado"
+    },
+    "eyebrow": "TOOLS"
+  },
+  "glossary": {
+    "title": "Glosario Teológico",
+    "subtitle": "Términos y conceptos clave en teología cristiana"
+  },
+  "about": {
+    "title": "Acerca de esta Plataforma",
+    "subtitle": "Metodología, fuentes y misión"
+  },
+  "hero": {
+    "eyebrow": "SOLI · DEO · GLORIA",
+    "headlineLine1": "Know what",
+    "headlineLine2": "you believe",
+    "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.",
+    "ctaPrimary": "Enter",
+    "ctaSecondary": "Take a Tour",
+    "searchHint": "to search anything",
+    "triptych": {
+      "defend": "Defend",
+      "defendSub": "Apologetics",
+      "compare": "Compare",
+      "compareSub": "Traditions",
+      "sources": "Sources",
+      "sourcesSub": "Manuscripts"
     }
   },
-  "glossary": { "title": "Glosario Teológico", "subtitle": "Términos y conceptos clave en teología cristiana" },
-  "about": { "title": "Acerca de esta Plataforma", "subtitle": "Metodología, fuentes y misión" },
-  "hero": { "eyebrow": "SOLI · DEO · GLORIA", "headlineLine1": "Know what", "headlineLine2": "you believe", "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.", "ctaPrimary": "Enter", "ctaSecondary": "Take a Tour", "searchHint": "to search anything", "triptych": { "defend": "Defend", "defendSub": "Apologetics", "compare": "Compare", "compareSub": "Traditions", "sources": "Sources", "sourcesSub": "Manuscripts" } },
-  "command": { "ariaLabel": "Search the platform", "triggerLabel": "Search", "triggerAriaLabel": "Open search", "placeholder": "Search arguments, sources, doctrines…", "close": "Close", "noResults": "No results.", "startTyping": "Begin typing to search.", "groups": { "argument": "Arguments", "doctrine": "Doctrines", "cult": "Cults & movements", "source": "Sources", "page": "Pages" } },
-  "lens": { "toggleAriaLabel": "Change reading mode", "chooseLens": "Reading mode", "names": { "seeker": "Seeker", "student": "Student", "defender": "Defender", "researcher": "Researcher", "all": "Default" }, "descriptions": { "seeker": "Beautiful and atmospheric. Drawn in by wonder.", "student": "Structured. Read sequentially with progress.", "defender": "Fast lookup. Copy-ready answers for debate.", "researcher": "Side-by-side sources and citations.", "all": "Balanced — everything available, nothing pinned." }, "onboarding": { "eyebrow": "WELCOME", "title": "Choose how you'd like to read", "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.", "skip": "Maybe later" } }
+  "command": {
+    "ariaLabel": "Search the platform",
+    "triggerLabel": "Search",
+    "triggerAriaLabel": "Open search",
+    "placeholder": "Search arguments, sources, doctrines…",
+    "close": "Close",
+    "noResults": "No results.",
+    "startTyping": "Begin typing to search.",
+    "groups": {
+      "argument": "Arguments",
+      "doctrine": "Doctrines",
+      "cult": "Cults & movements",
+      "source": "Sources",
+      "page": "Pages"
+    }
+  },
+  "lens": {
+    "toggleAriaLabel": "Change reading mode",
+    "chooseLens": "Reading mode",
+    "names": {
+      "seeker": "Seeker",
+      "student": "Student",
+      "defender": "Defender",
+      "researcher": "Researcher",
+      "all": "Default"
+    },
+    "descriptions": {
+      "seeker": "Beautiful and atmospheric. Drawn in by wonder.",
+      "student": "Structured. Read sequentially with progress.",
+      "defender": "Fast lookup. Copy-ready answers for debate.",
+      "researcher": "Side-by-side sources and citations.",
+      "all": "Balanced — everything available, nothing pinned."
+    },
+    "onboarding": {
+      "eyebrow": "WELCOME",
+      "title": "Choose how you'd like to read",
+      "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.",
+      "skip": "Maybe later"
+    }
+  }
 }

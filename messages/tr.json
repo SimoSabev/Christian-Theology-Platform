@@ -109,7 +109,8 @@
         "name": "Ateist itirazlar",
         "desc": "Kötülük sorunu, ilahi gizlenme ve daha fazlasına cevaplar"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Gelenekleri karşılaştır",
@@ -127,7 +128,8 @@
       "baptism": "Vaftiz",
       "mary": "Meryem",
       "church": "Kilise"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Birincil kaynak arşivi",
@@ -139,7 +141,8 @@
     "councils": "Konsiller & İnanç İfadeleri",
     "councilsDesc": "Yedi ekümenik konsil ve iman belgeleri",
     "liturgical": "Liturjik metinler",
-    "liturgicalDesc": "Didake, doğu ve batı liturjileri"
+    "liturgicalDesc": "Didake, doğu ve batı liturjileri",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "İnteraktif araçlar",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Kutsal Yazı çapraz referansları",
       "desc": "Belirli bir ayeti yorumlayan tüm Kilise Babalarını bulun"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Teolojik sözlük",

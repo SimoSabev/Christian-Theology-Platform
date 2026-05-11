@@ -110,7 +110,8 @@
         "name": "무신론적 반론",
         "desc": "악의 문제, 신의 은닉 등에 대한 응답"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "전통 비교",
@@ -128,7 +129,8 @@
       "baptism": "세례",
       "mary": "성모",
       "church": "교회"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "원전 아카이브",
@@ -140,7 +142,8 @@
     "councils": "공의회와 신경",
     "councilsDesc": "7대 공의회와 신경 문서",
     "liturgical": "전례 텍스트",
-    "liturgicalDesc": "디다케, 동방 및 서방 전례"
+    "liturgicalDesc": "디다케, 동방 및 서방 전례",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "대화형 도구",
@@ -160,11 +163,72 @@
     "scriptureRef": {
       "title": "성경 교차 참조",
       "desc": "주어진 구절에 대해 언급하는 모든 교부 찾기"
+    },
+    "eyebrow": "TOOLS"
+  },
+  "glossary": {
+    "title": "신학 용어집",
+    "subtitle": "기독교 신학의 핵심 용어와 개념"
+  },
+  "about": {
+    "title": "이 플랫폼에 대하여",
+    "subtitle": "방법론, 출처, 사명"
+  },
+  "hero": {
+    "eyebrow": "SOLI · DEO · GLORIA",
+    "headlineLine1": "Know what",
+    "headlineLine2": "you believe",
+    "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.",
+    "ctaPrimary": "Enter",
+    "ctaSecondary": "Take a Tour",
+    "searchHint": "to search anything",
+    "triptych": {
+      "defend": "Defend",
+      "defendSub": "Apologetics",
+      "compare": "Compare",
+      "compareSub": "Traditions",
+      "sources": "Sources",
+      "sourcesSub": "Manuscripts"
     }
   },
-  "glossary": { "title": "신학 용어집", "subtitle": "기독교 신학의 핵심 용어와 개념" },
-  "about": { "title": "이 플랫폼에 대하여", "subtitle": "방법론, 출처, 사명" },
-  "hero": { "eyebrow": "SOLI · DEO · GLORIA", "headlineLine1": "Know what", "headlineLine2": "you believe", "subhead": "Two thousand years of Christian thought, examined, defended, and made navigable.", "ctaPrimary": "Enter", "ctaSecondary": "Take a Tour", "searchHint": "to search anything", "triptych": { "defend": "Defend", "defendSub": "Apologetics", "compare": "Compare", "compareSub": "Traditions", "sources": "Sources", "sourcesSub": "Manuscripts" } },
-  "command": { "ariaLabel": "Search the platform", "triggerLabel": "Search", "triggerAriaLabel": "Open search", "placeholder": "Search arguments, sources, doctrines…", "close": "Close", "noResults": "No results.", "startTyping": "Begin typing to search.", "groups": { "argument": "Arguments", "doctrine": "Doctrines", "cult": "Cults & movements", "source": "Sources", "page": "Pages" } },
-  "lens": { "toggleAriaLabel": "Change reading mode", "chooseLens": "Reading mode", "names": { "seeker": "Seeker", "student": "Student", "defender": "Defender", "researcher": "Researcher", "all": "Default" }, "descriptions": { "seeker": "Beautiful and atmospheric. Drawn in by wonder.", "student": "Structured. Read sequentially with progress.", "defender": "Fast lookup. Copy-ready answers for debate.", "researcher": "Side-by-side sources and citations.", "all": "Balanced — everything available, nothing pinned." }, "onboarding": { "eyebrow": "WELCOME", "title": "Choose how you'd like to read", "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.", "skip": "Maybe later" } }
+  "command": {
+    "ariaLabel": "Search the platform",
+    "triggerLabel": "Search",
+    "triggerAriaLabel": "Open search",
+    "placeholder": "Search arguments, sources, doctrines…",
+    "close": "Close",
+    "noResults": "No results.",
+    "startTyping": "Begin typing to search.",
+    "groups": {
+      "argument": "Arguments",
+      "doctrine": "Doctrines",
+      "cult": "Cults & movements",
+      "source": "Sources",
+      "page": "Pages"
+    }
+  },
+  "lens": {
+    "toggleAriaLabel": "Change reading mode",
+    "chooseLens": "Reading mode",
+    "names": {
+      "seeker": "Seeker",
+      "student": "Student",
+      "defender": "Defender",
+      "researcher": "Researcher",
+      "all": "Default"
+    },
+    "descriptions": {
+      "seeker": "Beautiful and atmospheric. Drawn in by wonder.",
+      "student": "Structured. Read sequentially with progress.",
+      "defender": "Fast lookup. Copy-ready answers for debate.",
+      "researcher": "Side-by-side sources and citations.",
+      "all": "Balanced — everything available, nothing pinned."
+    },
+    "onboarding": {
+      "eyebrow": "WELCOME",
+      "title": "Choose how you'd like to read",
+      "body": "The platform adapts to how you study. Pick a mode now — you can change it any time from the corner toggle.",
+      "skip": "Maybe later"
+    }
+  }
 }

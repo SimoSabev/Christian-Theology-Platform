@@ -109,7 +109,8 @@
         "name": "Mga ateistikong pagtutol",
         "desc": "Mga tugon sa problema ng kasamaan, divine hiddenness, at iba pa"
       }
-    }
+    },
+    "eyebrow": "APOLOGETICS"
   },
   "compare": {
     "title": "Paghahambing ng tradisyon",
@@ -127,7 +128,8 @@
       "baptism": "Bautismo",
       "mary": "Maria",
       "church": "Simbahan"
-    }
+    },
+    "eyebrow": "TRADITIONS"
   },
   "sources": {
     "title": "Arkibo ng pangunahing pinagmulan",
@@ -139,7 +141,8 @@
     "councils": "Mga Konsilio & Kredo",
     "councilsDesc": "Pitong ekumenikal na konsilio at mga dokumento ng pananampalataya",
     "liturgical": "Mga liturhikal na teksto",
-    "liturgicalDesc": "Didache, silangang at kanlurang mga liturhiya"
+    "liturgicalDesc": "Didache, silangang at kanlurang mga liturhiya",
+    "eyebrow": "PRIMARY SOURCES"
   },
   "explore": {
     "title": "Mga interactive na tool",
@@ -159,7 +162,8 @@
     "scriptureRef": {
       "title": "Scripture Cross-Reference",
       "desc": "Hanapin ang bawat Ama ng Simbahan na nagkomentaryo sa isang talata"
-    }
+    },
+    "eyebrow": "TOOLS"
   },
   "glossary": {
     "title": "Teolohikal na glossary",
