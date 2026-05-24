@@ -1,4 +1,4 @@
-export type TraditionCategory = 'eastern_orthodox' | 'oriental_orthodox' | 'assyrian' | 'roman_catholic' | 'protestant' | 'other';
+export type TraditionCategory = 'eastern_orthodox' | 'oriental_orthodox' | 'assyrian' | 'roman_catholic' | 'protestant' | 'other' | 'anabaptist' | 'adventist' | 'restorationist';
 
 export interface Denomination {
   id: string;

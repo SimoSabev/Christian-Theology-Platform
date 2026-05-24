@@ -14,7 +14,24 @@
       "Bash(npm run *)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:v for k,v in {**d.get\\('dependencies',{}\\),**d.get\\('devDependencies',{}\\)}.items\\(\\) if any\\(x in k for x in ['framer','motion','next','react','typescript']\\)}, indent=2\\)\\)\")",
       "Bash(npx next *)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(sed 's/.*MISSING_MESSAGE: //')",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([k for k in d.keys\\(\\)]\\)\")",
+      "Bash(node -e \"const d=require\\('./messages/en.json'\\); console.log\\(JSON.stringify\\({nav: d.nav}, null, 2\\)\\)\")",
+      "Bash(node -e \"console.log\\(JSON.stringify\\(require\\('C:\\\\\\\\Users\\\\\\\\User\\\\\\\\Desktop\\\\\\\\study-theology-platform\\\\\\\\messages\\\\\\\\am.json'\\), null, 2\\)\\)\")",
+      "Bash(node *)",
+      "Bash(git diff *)",
+      "Bash(xargs grep -l \"i18nRouting\\\\|createTranslator\")",
+      "Bash(grep -E \"#[0-9A-Fa-f]{3,6}|rgb\\\\\\(|rgba\\\\\\(\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(grep -E \"\\\\.ts$\")",
+      "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; \\(Get-Content src\\\\data\\\\arguments\\\\moral.ts\\).Count; \\(Get-Content src\\\\data\\\\arguments\\\\historical.ts\\).Count; \\(Get-Content src\\\\data\\\\arguments\\\\teleological.ts\\).Count)",
+      "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; \\(Get-Content src\\\\data\\\\denominations\\\\index.ts\\).Count)",
+      "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; npx tsc --noEmit 2>&1 | Select-Object -First 20; Write-Host \"---LINE COUNTS---\"; \\(Get-Content src\\\\data\\\\denominations\\\\index.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-catholic-orthodox.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-protestant.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-other.ts\\).Count)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "claude-flow"
+  ]
 }
