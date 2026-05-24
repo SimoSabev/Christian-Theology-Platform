@@ -19,6 +19,7 @@ import { motion } from 'framer-motion';
 import { kalamTree } from '@/data/trees';
 import type { TreeNode } from '@/data/arguments/types';
 import { ArrowLeft, TreePine } from 'lucide-react';
+import { Eyebrow } from '@/components/ornament';
 
 const nodeColors: Record<string, { bg: string; border: string; text: string }> = {
   argument: { bg: '#1a2035', border: '#d4a853', text: '#f1f5f9' },
@@ -39,7 +40,7 @@ function CustomNode({ data }: { data: { label: string; nodeType: string; sources
       style={{ background: colors.bg, border: `2px solid ${colors.border}`, padding: '12px 16px' }}
     >
       <Handle type="target" position={Position.Top} className="!bg-transparent !border-0" />
-      <p className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: colors.border }}>{typeLabel}</p>
+      <p style={{ fontFamily: 'var(--font-display)', fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: colors.border, marginBottom: 4 }}>{typeLabel}</p>
       <p className="text-sm leading-relaxed" style={{ color: colors.text }}>{data.label}</p>
       {data.sources && data.sources.length > 0 && (
         <div className="mt-2 pt-2 border-t border-white/10">
@@ -72,7 +73,7 @@ function flattenTree(node: TreeNode, parentId: string | null, x: number, y: numb
       id: `${parentId}-${currentId}`,
       source: parentId,
       target: currentId,
-      style: { stroke: nodeColors[node.type]?.border || '#555', strokeWidth: 2 },
+      style: { stroke: 'rgba(212,168,83,0.5)', strokeWidth: 1.5 },
       animated: node.type === 'objection',
     });
   }
@@ -108,13 +109,13 @@ export default function ArgumentTreePage() {
       {/* Header */}
       <div className="px-4 sm:px-6 lg:px-8 py-4 border-b border-border bg-bg-secondary/50 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/explore" className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-glass transition-colors">
+          <Link href="/explore" className="p-2 text-text-muted hover:text-text-primary transition-colors">
             <ArrowLeft size={18} />
           </Link>
-          <TreePine size={20} className="text-accent-green" />
-          <div>
-            <h1 className="font-bold text-lg">Argument Tree</h1>
-            <p className="text-xs text-text-muted">Kalam Cosmological Argument</p>
+          <TreePine size={20} style={{ color: 'var(--color-accent-gold)' }} />
+          <div className="mb-6">
+            <Eyebrow className="mb-2">EXPLORE · ARGUMENT TREE</Eyebrow>
+            <h1 className="t-h1" style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Argument Structure</h1>
           </div>
         </div>
         {/* Legend */}
