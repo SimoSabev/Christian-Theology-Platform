@@ -2,9 +2,11 @@
 
 import { useParams } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
-import { motion } from 'framer-motion';
 import { getArgumentsByCategory, getCategoryInfo, type ArgumentCategory } from '@/data/arguments';
-import { ArrowLeft, ArrowRight, TreePine, Swords } from 'lucide-react';
+import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
+import CodexCard from '@/components/reader/CodexCard';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default function CategoryPage() {
   const params = useParams();
@@ -13,73 +15,73 @@ export default function CategoryPage() {
   const args = getArgumentsByCategory(category);
 
   if (!catInfo) {
-    return <div className="max-w-4xl mx-auto px-4 py-20 text-center text-text-muted">Category not found</div>;
+    return (
+      <div className="max-w-4xl mx-auto px-4 py-20 text-center t-meta">
+        Category not found. <Link href="/defend" style={{ color: 'var(--color-accent-gold)' }}>← Back</Link>
+      </div>
+    );
   }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-text-muted mb-8">
-        <Link href="/defend" className="hover:text-accent-gold transition-colors">Defend</Link>
+      <div className="t-meta flex items-center gap-2 mb-8" style={{ color: 'var(--color-text-muted)' }}>
+        <Link href="/defend">Defend</Link>
         <span>/</span>
-        <span className="text-text-secondary">{catInfo.name}</span>
+        <span style={{ color: 'var(--color-text-secondary)' }}>{catInfo.name}</span>
       </div>
 
       {/* Header */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-12">
-        <div className="text-4xl mb-4">{catInfo.icon}</div>
-        <h1 className="text-3xl sm:text-4xl font-bold mb-3 gold-gradient">{catInfo.name}</h1>
-        <p className="text-text-secondary text-lg font-serif max-w-2xl">{catInfo.description}</p>
-      </motion.div>
+      <RevealOnScroll>
+        <Eyebrow className="mb-3">DEFEND · ATHEISM · {catInfo.name.toUpperCase()}</Eyebrow>
+        <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)' }}>{catInfo.name}</h1>
+        <p className="t-body mb-8" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>{catInfo.description}</p>
+      </RevealOnScroll>
+
+      <KeystoneDivider className="mb-10" />
 
       {/* Arguments List */}
       <div className="space-y-6">
         {args.map((arg, i) => (
-          <motion.div
-            key={arg.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-          >
-            <Link
-              href={`/defend/atheism/${category}/${arg.slug}`}
-              className="block glass-card p-6 sm:p-8 group"
-            >
-              <h2 className="text-xl font-bold mb-2 group-hover:text-accent-gold transition-colors">{arg.name}</h2>
-              <p className="text-text-secondary font-serif text-sm leading-relaxed mb-4">{arg.shortDescription}</p>
+          <RevealOnScroll key={arg.id} delay={i * 0.07}>
+            <Link href={`/defend/atheism/${category}/${arg.slug}`} className="block group">
+              <CodexCard>
+                <h2 className="t-caps text-sm mb-2" style={{ color: 'var(--color-text-primary)' }}>{arg.name}</h2>
+                <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)' }}>{arg.shortDescription}</p>
 
-              {/* Mini formal statement */}
-              <div className="formal-statement mb-4 text-sm">
-                {arg.premises.map((p, pi) => (
-                  <p key={p.id} className="text-text-secondary">
-                    <strong className="text-text-primary">P{pi + 1}:</strong> {p.text}
+                {/* Mini formal statement */}
+                <div className="mb-4 text-sm space-y-1" style={{ borderLeft: '2px solid var(--color-border)', paddingLeft: 12 }}>
+                  {arg.premises.map((p, pi) => (
+                    <p key={p.id} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+                      <span style={{ color: 'var(--color-accent-gold)' }}>P{pi + 1}.</span> {p.text}
+                    </p>
+                  ))}
+                  <p className="t-body text-sm" style={{ color: 'var(--color-accent-gold)', marginTop: 4 }}>
+                    ∴ {arg.conclusion}
                   </p>
-                ))}
-                <p className="text-accent-gold mt-1">
-                  <strong>∴ C:</strong> {arg.conclusion}
-                </p>
-              </div>
+                </div>
 
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-1.5 text-accent-gold text-sm font-medium group-hover:gap-2.5 transition-all">
-                  Read full argument <ArrowRight size={14} />
-                </span>
-                <span className="text-text-muted text-xs">·</span>
-                <span className="text-text-muted text-xs">{arg.objections.length} objections addressed</span>
-                <span className="text-text-muted text-xs">·</span>
-                <span className="text-text-muted text-xs">{arg.proponents.length} key proponents</span>
-              </div>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="t-caps text-xs inline-flex items-center gap-1.5" style={{ color: 'var(--color-accent-gold)' }}>
+                    Read full argument <ArrowRight size={12} />
+                  </span>
+                  <span className="t-meta" style={{ color: 'var(--color-text-muted)' }}>·</span>
+                  <span className="t-meta" style={{ color: 'var(--color-text-muted)' }}>{arg.objections.length} objections addressed</span>
+                  <span className="t-meta" style={{ color: 'var(--color-text-muted)' }}>·</span>
+                  <span className="t-meta" style={{ color: 'var(--color-text-muted)' }}>{arg.proponents.length} key proponents</span>
+                </div>
+              </CodexCard>
             </Link>
-          </motion.div>
+          </RevealOnScroll>
         ))}
       </div>
 
       {/* Empty state */}
       {args.length === 0 && (
-        <div className="glass-card p-12 text-center">
-          <p className="text-text-muted text-lg">Arguments for this category are coming soon.</p>
-          <Link href="/defend" className="inline-flex items-center gap-2 mt-4 text-accent-gold text-sm">
-            <ArrowLeft size={14} /> Back to all categories
+        <div className="codex-card p-12 text-center">
+          <p className="t-body" style={{ color: 'var(--color-text-muted)' }}>Arguments for this category are coming soon.</p>
+          <Link href="/defend" className="inline-flex items-center gap-2 mt-4 t-caps text-xs" style={{ color: 'var(--color-accent-gold)' }}>
+            <ArrowLeft size={12} /> Back to all categories
           </Link>
         </div>
       )}
