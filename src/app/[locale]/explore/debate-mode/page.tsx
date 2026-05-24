@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { kalamDebate } from '@/data/debates';
 import { ArrowLeft, Swords, ChevronLeft, ChevronRight, BookOpen, CircleDot } from 'lucide-react';
+import { Eyebrow } from '@/components/ornament';
 
 const strengthColors = {
   strong: { bg: 'bg-accent-green/10', border: 'border-accent-green/20', dot: 'bg-accent-green', label: 'Strong' },
@@ -26,10 +27,10 @@ export default function DebateModePage() {
             <Link href="/explore" className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-glass transition-colors">
               <ArrowLeft size={18} />
             </Link>
-            <Swords size={20} className="text-accent-blue" />
+            <Swords size={20} style={{ color: 'var(--color-accent-gold)' }} />
             <div>
-              <h1 className="font-bold text-lg">Debate Mode</h1>
-              <p className="text-xs text-text-muted">{debate.title}</p>
+              <Eyebrow className="mb-1">EXPLORE · DEBATE MODE</Eyebrow>
+              <h1 className="t-h1" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>{debate.title}</h1>
             </div>
           </div>
           {/* Round Navigator */}

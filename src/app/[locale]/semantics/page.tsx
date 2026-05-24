@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { semanticDefenses } from '@/data/semantic-defense';
 import SemanticDefenseSlideshow from '@/components/semantic/SemanticDefenseSlideshow';
 import { BookType, BookOpen, ShieldAlert, ArrowRight } from 'lucide-react';
+import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
 
 export default function SemanticsDashboard() {
   // Separate the tutorial out from the rest of the arguments
@@ -18,21 +20,16 @@ export default function SemanticsDashboard() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-16"
-      >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-gold/20 bg-accent-gold/5 text-accent-gold text-xs font-medium mb-4">
-          <BookType size={14} />
-          Semantic Studies Workspace
+      <RevealOnScroll>
+        <div className="text-center mb-12">
+          <Eyebrow className="mb-4">SEMANTIC STUDIES</Eyebrow>
+          <h1 className="t-h1 mb-4" style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)' }}>Interactive Grammar & Exegesis</h1>
+          <p className="t-body max-w-2xl mx-auto" style={{ color: 'var(--color-text-secondary)', fontSize: '1.0625rem' }}>
+            Explore the exact Koine Greek structure of the most debated Biblical passages.
+          </p>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 gold-gradient">Interactive Grammar & Exegesis</h1>
-        <p className="text-text-secondary text-lg font-serif max-w-2xl mx-auto">
-          Explore the exact Koine Greek structure of the most debated Biblical passages.
-          Understand Colwell&apos;s Rule, Granville Sharp, verb morphology, and qualitative nouns.
-        </p>
-      </motion.div>
+      </RevealOnScroll>
+      <KeystoneDivider className="mb-10" />
 
       {/* Tutorial Banner */}
       {tutorial && (
@@ -40,7 +37,8 @@ export default function SemanticsDashboard() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-12 glass-card p-6 md:p-8 border-l-4 border-l-accent-gold cursor-pointer group hover:-translate-y-1 transition-all"
+          className="mb-12 codex-card p-6 md:p-8 cursor-pointer"
+          style={{ borderLeft: '4px solid var(--color-accent-gold)' }}
           onClick={() => setActiveDefenseId(tutorial.id)}
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -74,7 +72,7 @@ export default function SemanticsDashboard() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + (i * 0.1) }}
             onClick={() => setActiveDefenseId(arg.id)}
-            className="glass-card hover:border-accent-gold/40 hover:shadow-[0_0_20px_rgba(212,168,83,0.1)] transition-all cursor-pointer group flex flex-col h-full overflow-hidden"
+            className="codex-card cursor-pointer group flex flex-col h-full overflow-hidden"
           >
             <div className="p-6 sm:p-8 flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-4">

@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { timelineEvents } from '@/data/sources';
 import { ArrowLeft, Clock, Filter } from 'lucide-react';
+import { Eyebrow } from '@/components/ornament';
 
 const eraColors: Record<string, { bg: string; border: string; text: string; dot: string }> = {
   'Apostolic': { bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400', dot: 'bg-blue-500' },
@@ -52,10 +53,10 @@ export default function TimelinePage() {
             <Link href="/explore" className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-glass transition-colors">
               <ArrowLeft size={18} />
             </Link>
-            <Clock size={22} className="text-accent-amber" />
+            <Clock size={22} style={{ color: 'var(--color-accent-gold)' }} />
             <div>
-              <h1 className="font-bold text-2xl">Timeline Explorer</h1>
-              <p className="text-sm text-text-muted">2,000 years of Christian history</p>
+              <Eyebrow className="mb-1">EXPLORE · TIMELINE</Eyebrow>
+              <h1 className="t-h1" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Timeline Explorer</h1>
             </div>
           </div>
 
@@ -133,7 +134,7 @@ export default function TimelinePage() {
                   </div>
 
                   {/* Card */}
-                  <div className={`flex-1 rounded-xl border ${colors.border} ${colors.bg} p-4 sm:p-5 hover:shadow-lg transition-shadow group`}>
+                  <div className="flex-1 codex-card p-4 sm:p-5">
                     <div className="flex items-start justify-between gap-3 mb-2">
                       <h3 className="font-semibold text-text-primary text-sm sm:text-base leading-snug">
                         {categoryIcons[event.category]} {event.title}
