@@ -4,6 +4,9 @@ import { useParams } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, MapPin, ScrollText, BookOpen, ExternalLink, FileText, Users, Bookmark, ChevronRight, ImageIcon, X } from 'lucide-react';
+import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
+import CodexCard from '@/components/reader/CodexCard';
 import { getManuscriptById } from '@/data/manuscripts';
 import InterlinearReader from '@/components/manuscripts/InterlinearReader';
 import { useState } from 'react';
@@ -54,23 +57,15 @@ export default function ManuscriptDetailPage() {
       </div>
 
       {/* Hero */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-10">
-        <div className="flex flex-wrap items-center gap-3 mb-4">
-          <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${typeColors[ms.type] || typeColors.papyrus}`}>
-            {ms.type.charAt(0).toUpperCase() + ms.type.slice(1)}
-          </span>
-          <span className="px-3 py-1 rounded-full text-xs font-medium border border-border text-text-muted">
-            {scriptLabels[ms.script] || ms.script}
-          </span>
-          {ms.textType && (
-            <span className="px-3 py-1 rounded-full text-xs font-medium border border-accent-teal/20 text-accent-teal bg-accent-teal/5">
-              {ms.textType}
-            </span>
-          )}
+      <RevealOnScroll>
+        <div className="mb-10">
+          <Eyebrow className="mb-3">
+            {[ms.type.toUpperCase(), (scriptLabels[ms.script] || ms.script).toUpperCase(), ms.date, ms.textType].filter(Boolean).join(' · ')}
+          </Eyebrow>
+          <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>{ms.designation}</h1>
+          {ms.alternateName && <p className="t-body" style={{ color: 'var(--color-text-muted)', fontStyle: 'italic' }}>{ms.alternateName}</p>}
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold gold-gradient mb-3">{ms.designation}</h1>
-        {ms.alternateName && <p className="text-text-muted text-lg font-serif italic">{ms.alternateName}</p>}
-      </motion.div>
+      </RevealOnScroll>
 
       <div className="grid lg:grid-cols-3 gap-8">
         {/* Main Content */}
@@ -110,16 +105,16 @@ export default function ManuscriptDetailPage() {
           )}
 
           {/* Full Description */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="glass-card p-6 sm:p-8 hover:translate-y-0">
-            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <FileText size={18} className="text-accent-gold" /> Description
-            </h2>
-            <div className="text-text-secondary font-serif leading-relaxed space-y-4">
-              {ms.detailedDescription.split('\n\n').map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
-            </div>
-          </motion.div>
+          <RevealOnScroll>
+            <CodexCard>
+              <Eyebrow className="mb-4">DESCRIPTION</Eyebrow>
+              <div className="t-body space-y-4" style={{ color: 'var(--color-text-secondary)' }}>
+                {ms.detailedDescription.split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
+            </CodexCard>
+          </RevealOnScroll>
 
           {/* Significance */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="formal-statement">
@@ -129,36 +124,38 @@ export default function ManuscriptDetailPage() {
 
           {/* Interactive Interlinear Reading */}
           {ms.passages.length > 0 && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="glass-card p-6 sm:p-8 hover:translate-y-0">
-              <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <BookOpen size={18} className="text-accent-gold" /> Interactive Interlinear Reading
-              </h2>
-              <InterlinearReader passages={ms.passages} script={ms.script} />
-            </motion.div>
+            <RevealOnScroll>
+              <KeystoneDivider className="my-8" />
+              <CodexCard>
+                <Eyebrow className="mb-6">INTERACTIVE INTERLINEAR READING</Eyebrow>
+                <InterlinearReader passages={ms.passages} script={ms.script} />
+              </CodexCard>
+            </RevealOnScroll>
           )}
 
           {/* Bibliography */}
           {ms.bibliography.length > 0 && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="glass-card p-6 sm:p-8 hover:translate-y-0">
-              <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
-                <Bookmark size={16} className="text-accent-gold" /> Bibliography
-              </h2>
-              <ul className="space-y-2">
-                {ms.bibliography.map((ref, i) => (
-                  <li key={i} className="text-sm text-text-secondary font-serif leading-relaxed pl-4 border-l-2 border-border">
-                    {ref}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+            <RevealOnScroll>
+              <KeystoneDivider className="my-8" />
+              <CodexCard>
+                <Eyebrow className="mb-4">BIBLIOGRAPHY</Eyebrow>
+                <ul className="space-y-2">
+                  {ms.bibliography.map((ref, i) => (
+                    <li key={i} className="t-body text-sm pl-4" style={{ color: 'var(--color-text-secondary)', borderLeft: '2px solid var(--color-border)' }}>
+                      {ref}
+                    </li>
+                  ))}
+                </ul>
+              </CodexCard>
+            </RevealOnScroll>
           )}
         </div>
 
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Quick Info Card */}
-          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15 }} className="glass-card p-6 hover:translate-y-0 sticky top-20">
-            <h3 className="text-sm font-semibold text-accent-gold uppercase tracking-wider mb-4">Manuscript Details</h3>
+          <div className="codex-card p-6 sticky top-20">
+            <Eyebrow className="mb-4">MANUSCRIPT DETAILS</Eyebrow>
             <div className="space-y-3 text-sm">
               <InfoRow icon={Calendar} label="Date" value={ms.date} />
               <InfoRow icon={ScrollText} label="Material" value={ms.material} />
@@ -222,7 +219,7 @@ export default function ManuscriptDetailPage() {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
 

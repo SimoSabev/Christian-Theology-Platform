@@ -5,7 +5,9 @@ import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { allManuscripts, manuscriptCategories } from '@/data/manuscripts';
 import type { ManuscriptCategory, FullManuscript } from '@/data/manuscripts';
-import { ArrowRight, ScrollText, BookOpen, Calendar, MapPin, Search, Filter, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowRight, ScrollText, BookOpen, Calendar, MapPin, Search, Filter, ChevronRight } from 'lucide-react';
+import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
 
 const typeColors: Record<string, string> = {
   papyrus: 'bg-accent-amber/10 text-accent-amber border-accent-amber/20',
@@ -31,7 +33,7 @@ function ManuscriptCard({ ms, index }: { ms: FullManuscript; index: number }) {
     >
       <Link
         href={`/sources/manuscripts/${ms.id}`}
-        className="block glass-card overflow-hidden group"
+        className="block codex-card overflow-hidden group"
       >
         {/* Image thumbnail */}
         {ms.images.length > 0 && (
@@ -118,17 +120,20 @@ export default function ManuscriptsPage() {
       </div>
 
       {/* Hero */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-gold/20 bg-accent-gold/5 text-accent-gold text-xs font-medium mb-4">
-          <Sparkles size={14} />
-          {allManuscripts.length} Manuscripts · Interlinear Text · Original Languages
+      <RevealOnScroll>
+        <div className="text-center mb-12">
+          <Eyebrow className="mb-4">SOURCES · MANUSCRIPTS</Eyebrow>
+          <h1 className="t-h1 mb-4" style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)' }}>Biblical Manuscripts</h1>
+          <p className="t-body max-w-3xl mx-auto" style={{ color: 'var(--color-text-secondary)' }}>
+            Explore the greatest biblical manuscripts ever discovered — from 2nd-century papyrus fragments to medieval codexes.
+            Read the original Greek and Hebrew text with interactive word-by-word interlinear translations.
+          </p>
+          <div className="t-meta mt-3" style={{ color: 'var(--color-text-muted)' }}>
+            {allManuscripts.length} Manuscripts · Interlinear Text · Original Languages
+          </div>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 gold-gradient">Biblical Manuscripts</h1>
-        <p className="text-text-secondary text-lg font-serif max-w-3xl mx-auto">
-          Explore the greatest biblical manuscripts ever discovered — from 2nd-century papyrus fragments to medieval codexes.
-          Read the original Greek and Hebrew text with interactive word-by-word interlinear translations.
-        </p>
-      </motion.div>
+      </RevealOnScroll>
+      <KeystoneDivider className="mb-10" />
 
       {/* Category Cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -141,10 +146,10 @@ export default function ManuscriptsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.08 }}
               onClick={() => setActiveCategory(activeCategory === cat.id ? 'all' : cat.id)}
-              className={`text-left rounded-xl border bg-gradient-to-br p-4 transition-all duration-300 ${colors.bg} ${
+              className={`text-left codex-card p-4 transition-all duration-300 ${
                 activeCategory === cat.id
-                  ? 'border-accent-gold/40 ring-1 ring-accent-gold/20 -translate-y-1 shadow-lg'
-                  : `${colors.border}`
+                  ? 'ring-1 ring-accent-gold/30'
+                  : ''
               }`}
             >
               <ScrollText size={20} className={`${colors.icon} mb-2`} />
