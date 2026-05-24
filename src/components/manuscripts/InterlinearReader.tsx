@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import type { InterlinearVerse, InterlinearWord, ManuscriptPassage } from '@/data/manuscripts/types';
 import { Eye, EyeOff, Type, Columns, AlignLeft, X, BookOpen, Hash } from 'lucide-react';
+import { useLens } from '@/components/lens/useLens';
+import { Eyebrow } from '@/components/ornament';
 
 type ViewMode = 'interlinear' | 'parallel' | 'original';
 
@@ -146,11 +148,47 @@ export default function InterlinearReader({ passages, script }: InterlinearReade
   const [showTransliteration, setShowTransliteration] = useState(true);
   const [showParsing, setShowParsing] = useState(false);
   const [activePassage, setActivePassage] = useState(0);
+  const { lens } = useLens();
+  const isResearcher = lens === 'researcher';
 
   const passage = passages[activePassage];
   if (!passage) return null;
 
   const isRtl = script === 'hebrew' || script === 'aramaic';
+
+  // Researcher-lens split-pane layout
+  if (isResearcher) {
+    return (
+      <div className="flex overflow-hidden" style={{ border: '1px solid var(--color-border)', borderRadius: 4, height: '70vh' }}>
+        {/* Left pane — original language */}
+        <div className="flex-1 overflow-y-auto p-5" style={{ borderRight: '1px solid var(--color-border)' }}>
+          <Eyebrow className="mb-4">ORIGINAL · {script.toUpperCase()}</Eyebrow>
+          <div dir={isRtl ? 'rtl' : 'ltr'}>
+            {passage.verses.map((verse, i) => (
+              <div key={i} className="mb-6">
+                <div className="t-caps text-xs mb-2" style={{ color: 'var(--color-accent-gold)' }}>{verse.reference}</div>
+                <p className="font-serif text-xl leading-loose" style={{ color: 'var(--color-text-primary)' }} dir="auto">
+                  {verse.originalText}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Right pane — translation gloss */}
+        <div className="flex-1 overflow-y-auto p-5">
+          <Eyebrow className="mb-4">TRANSLATION · ENGLISH</Eyebrow>
+          {passage.verses.map((verse, i) => (
+            <div key={i} className="mb-6">
+              <div className="t-caps text-xs mb-2" style={{ color: 'var(--color-accent-gold)' }}>{verse.reference}</div>
+              <p className="t-body leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+                {verse.words.map((w) => w.gloss).join(' ')}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
