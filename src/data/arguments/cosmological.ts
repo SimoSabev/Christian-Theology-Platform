@@ -57,7 +57,68 @@ export const cosmologicalArguments: Argument[] = [
       'William Lane Craig, The Kalām Cosmological Argument (1979)',
       'Alexander Pruss, The Principle of Sufficient Reason (2006)',
       'Borde, Guth & Vilenkin, "Inflationary Spacetimes Are Incomplete" (2003)',
-    ]
+    ],
+    body: `The Kalam Cosmological Argument stands as one of the most elegant and powerful arguments for the existence of God, weaving together centuries of philosophical reflection with the most recent discoveries of modern cosmology. At its core, the argument is deceptively simple: everything that begins to exist has a cause; the universe began to exist; therefore, the universe has a cause. But beneath this simplicity lies profound metaphysical depth that has occupied the greatest minds in both Islamic and Christian philosophy.
+
+The argument takes its name from the Arabic word kalam, meaning theological discourse, and was first systematically formulated by the Islamic philosopher Al-Ghazali (1058–1111 AD) in his celebrated work The Incoherence of the Philosophers. However, the underlying intuition that the universe must have a first cause is far older, appearing in Aristotle's unmoved mover, in the thought of John Philoponus, and anticipating the later Thomistic tradition. John Philoponus, the 6th-century Christian philosopher of Alexandria, argued against Aristotle's eternal universe by demonstrating that an actual infinite series of past events is logically impossible — a key move in the Kalam's second premise.
+
+The first premise — that whatever begins to exist has a cause — rests on the bedrock metaphysical principle ex nihilo nihil fit: from nothing, nothing comes. This principle is not merely an inductive generalization from experience, though it enjoys overwhelming empirical support. It is a metaphysical truth rooted in the very nature of being itself. For "nothing" — by definition — has no properties, no potentialities, and no causal powers. The idea that the entire universe could spring into being from absolute nothing, uncaused, represents not a sophisticated scientific hypothesis but a violation of the most basic canons of rational thought. If things could come into existence uncaused from absolute nothingness, there would be no explanation for why anything exists rather than nothing, why universes don't pop into existence randomly at every moment, and why the scientific enterprise — premised on the discovery of causal explanations — is possible at all.
+
+The second premise — that the universe began to exist — received decisive confirmation from an unexpected quarter in the 20th century. The Big Bang model, now supported by multiple independent lines of evidence including the Hubble expansion of galaxies, the cosmic microwave background radiation, the abundance of light elements from Big Bang nucleosynthesis, and the large-scale structure of the cosmos, indicates that all of physical reality — not merely matter and energy, but space and time themselves — had an absolute beginning approximately 13.8 billion years ago. The universe did not emerge into pre-existing space; rather, space itself came into being at the Big Bang singularity.
+
+This scientific confirmation was supplemented by the celebrated Borde-Guth-Vilenkin theorem of 2003, which proved mathematically that any universe which has, on average, been expanding throughout its history cannot be infinite in the past but must have a past space-time boundary — a beginning. Crucially, this theorem applies to inflationary multiverse models as well as to our observable universe; indeed, Alexander Vilenkin himself — an atheist cosmologist — has stated publicly: "All the evidence we have says that the universe had a beginning."
+
+The philosophical defense of the second premise is equally robust. An actually infinite regress of past events is impossible for reasons identified by medieval Islamic and Christian thinkers alike. If the past were actually infinite, one could never arrive at the present moment — the present would require the traversal of an actually infinite series of prior moments, which is impossible. As Al-Ghazali observed, and as contemporary philosophers like William Lane Craig have rigorously argued, the concept of a completed actual infinite leads to absurdities: one could subtract infinite sets from infinite sets and arrive at contradictory results. The Hilbert's Hotel thought experiment illustrates these absurdities vividly, showing that actual infinities — while mathematically consistent as abstract objects — cannot exist in concrete reality.
+
+The conclusion — that the universe has a cause — demands reflection on what kind of cause could produce the entirety of physical reality. Since the cause brings into existence all matter, energy, space, and time, it must itself be immaterial (not made of matter), non-spatial, and timeless. Since it created time, it cannot itself be in time prior to its creative act. Since it produced the universe from nothing, it must be unimaginably powerful. And since it is timeless and immaterial, yet capable of initiating a temporal effect, the most plausible candidate is a personal agent — a mind with will. Abstract objects are causally inert; they cannot cause anything. A personal, timeless mind whose free decision explains the origin of the universe fits precisely the classical description of God.
+
+William Lane Craig, who has done more than any other contemporary philosopher to revive and defend the Kalam Argument, draws these implications out with clarity: the cause of the universe must be uncaused, timeless, spaceless, immaterial, enormously powerful, and personal. These are not ad hoc additions but necessary properties derived from the argument itself. The Kalam thus does not merely prove that the universe has a cause; it provides a substantive description of that cause that corresponds to the God of classical theism.
+
+The argument faces serious objections — the quantum vacuum, cyclic cosmologies, the Hartle-Hawking no-boundary proposal — but each of these has been met with equally serious responses. The quantum vacuum is emphatically not "nothing" but a structured, law-governed physical state. Cyclic models fall under the BGV theorem. The no-boundary proposal, as Vilenkin and Hawking both acknowledge, still implies a finite past. The Kalam Cosmological Argument remains, after a millennium of philosophical scrutiny, one of the most powerful rational arguments for the existence of God.`,
+    churchFatherQuotes: [
+      {
+        author: 'John of Damascus',
+        work: 'An Exact Exposition of the Orthodox Faith, Book I, Ch. 3',
+        quote: 'All things that exist are either created or uncreated. If created, they are certainly changeable; for those things whose existence originated in change must be subject to change, whether it be that they cease to exist or that they be altered. But if uncreated they are assuredly unchangeable. For things which are opposed in their nature must also be opposed in the mode of their existence... God, then, is uncreated, and for that reason is also unchangeable.',
+      },
+      {
+        author: 'Thomas Aquinas',
+        work: 'Summa Theologiae, I, Question 2, Article 3',
+        quote: 'In the world of sensible things we find there is an order of efficient causes. There is no case known (neither is it, indeed, possible) in which a thing is found to be the efficient cause of itself; for so it would be prior to itself, which is impossible. Now in efficient causes it is not possible to go on to infinity... Therefore it is necessary to admit a first efficient cause, to which everyone gives the name of God.',
+      },
+      {
+        author: 'Augustine of Hippo',
+        work: 'Confessions, Book I, Ch. 1',
+        quote: 'Thou madest us for Thyself, and our heart is restless, until it repose in Thee... Who shall seek Thee, and how, since Thou art not known to us? Or if He is not known, how shall we seek for Him? And how shall He find repose in us who know Him not? Before Thee is all that I know of myself; and with Thee is all that I know not of myself.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Who created God?',
+        rebuttal: 'The Kalam argument specifically concludes that the first cause must be uncreated — a being that exists without beginning and therefore does not require a cause. The question "who created God?" misunderstands the argument: the conclusion is not that "everything has a cause" but that "everything that begins to exist has a cause." An eternal, uncreated God by definition has no beginning and therefore needs no cause. This is not special pleading but the logical terminus of the explanatory chain.',
+      },
+      {
+        title: 'The universe could have popped into existence uncaused from nothing',
+        rebuttal: 'This suggestion, while sometimes attributed to quantum cosmology, represents a misunderstanding of physics. The quantum vacuum is not "nothing" — it is a rich physical entity with energy, fields, and laws governing it. More fundamentally, the claim that the universe emerged from absolute nothingness without any cause violates the most basic principle of rational thought. If things could come from nothing uncaused, we could not explain why anything specific exists rather than nothing, or why everything does not randomly appear from nothing at all times.',
+      },
+      {
+        title: 'An infinite regress of causes is possible',
+        rebuttal: 'A past-eternal series of causes leads to insurmountable philosophical difficulties. An actually infinite series of past events cannot be completed by successive addition — you cannot traverse an actual infinite to arrive at the present. Furthermore, the Borde-Guth-Vilenkin theorem demonstrates that any universe with average positive expansion must have had a beginning, ruling out an infinite past on cosmological grounds. An infinite regress of causes, even if logically possible in the abstract, is physically impossible given the nature of our universe.',
+      },
+    ],
+    scholarProponents: [
+      'William Lane Craig (Talbot School of Theology)',
+      'Alexander Pruss (Baylor University)',
+      'J.P. Moreland (Talbot School of Theology)',
+      'Robert Koons (University of Texas at Austin)',
+    ],
+    bibliography: [
+      'Craig, William Lane. The Kalām Cosmological Argument. Macmillan, 1979.',
+      'Craig, William Lane, and Quentin Smith. Theism, Atheism, and Big Bang Cosmology. Oxford University Press, 1993.',
+      'Pruss, Alexander R. The Principle of Sufficient Reason: A Reassessment. Cambridge University Press, 2006.',
+      'Borde, Arvind, Alan H. Guth, and Alexander Vilenkin. "Inflationary Spacetimes Are Incomplete in Past Directions." Physical Review Letters 90, no. 15 (2003).',
+      'Vilenkin, Alexander. Many Worlds in One: The Search for Other Universes. Hill and Wang, 2006.',
+    ],
   },
   {
     id: 'leibniz',

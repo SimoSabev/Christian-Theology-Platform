@@ -1,12 +1,15 @@
 'use client';
 
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useRef } from 'react';
 import {
   ReactFlow,
   Controls,
   Background,
+  MiniMap,
   useNodesState,
   useEdgesState,
+  useReactFlow,
+  ReactFlowProvider,
   type Node,
   type Edge,
   BackgroundVariant,
@@ -95,7 +98,7 @@ function flattenTree(node: TreeNode, parentId: string | null, x: number, y: numb
   return { nodes, edges };
 }
 
-export default function ArgumentTreePage() {
+function ArgumentTreeInner() {
   const { nodes: initialNodes, edges: initialEdges } = useMemo(
     () => flattenTree(kalamTree, null, 600, 50, 0),
     []
@@ -103,6 +106,7 @@ export default function ArgumentTreePage() {
 
   const [nodes, , onNodesChange] = useNodesState(initialNodes);
   const [edges, , onEdgesChange] = useEdgesState(initialEdges);
+  const { fitView } = useReactFlow();
 
   return (
     <div className="h-[calc(100vh-4rem)] flex flex-col">
@@ -130,7 +134,7 @@ export default function ArgumentTreePage() {
       </div>
 
       {/* React Flow Canvas */}
-      <div className="flex-1">
+      <div className="flex-1 relative">
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -140,13 +144,55 @@ export default function ArgumentTreePage() {
           fitView
           fitViewOptions={{ padding: 0.3 }}
           minZoom={0.2}
-          maxZoom={2}
+          maxZoom={2.5}
+          panOnScroll
+          zoomOnPinch
+          panOnDrag
           proOptions={{ hideAttribution: true }}
         >
-          <Controls className="!bg-bg-elevated !border-border !rounded-xl !shadow-lg [&>button]:!bg-bg-elevated [&>button]:!border-border [&>button]:!text-text-secondary [&>button:hover]:!bg-surface-glass" />
+          <Controls
+            showInteractive={false}
+            className="!bg-bg-elevated !border-border !rounded-xl !shadow-lg [&>button]:!bg-bg-elevated [&>button]:!border-border [&>button]:!text-text-secondary [&>button:hover]:!bg-surface-glass"
+          />
+          <MiniMap
+            style={{ bottom: 80, right: 16 }}
+            zoomable
+            pannable
+            nodeColor={(n) => {
+              const t = (n.data as { nodeType?: string }).nodeType ?? 'argument';
+              return nodeColors[t]?.border ?? '#d4a853';
+            }}
+          />
           <Background variant={BackgroundVariant.Dots} color="#1e293b" gap={24} size={1} />
         </ReactFlow>
+
+        {/* Reset View button — visible on mobile */}
+        <button
+          className="fixed bottom-20 left-4 z-50 md:hidden"
+          onClick={() => fitView({ padding: 0.2, duration: 400 })}
+          style={{
+            background: 'var(--color-bg-elevated)',
+            border: '1px solid var(--color-accent-gold)',
+            color: 'var(--color-accent-gold)',
+            borderRadius: '9999px',
+            padding: '8px 14px',
+            fontFamily: 'var(--font-display)',
+            fontSize: '0.6rem',
+            letterSpacing: '0.15em',
+            textTransform: 'uppercase',
+          }}
+        >
+          Reset View
+        </button>
       </div>
     </div>
+  );
+}
+
+export default function ArgumentTreePage() {
+  return (
+    <ReactFlowProvider>
+      <ArgumentTreeInner />
+    </ReactFlowProvider>
   );
 }

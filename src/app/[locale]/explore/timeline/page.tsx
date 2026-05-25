@@ -148,6 +148,17 @@ export default function TimelinePage() {
                       <span>•</span>
                       <span>{event.year} AD</span>
                     </div>
+                    {'relatedWayHref' in event && event.relatedWayHref && (
+                      <div className="mt-2">
+                        <a
+                          href={event.relatedWayHref as string}
+                          className="text-xs"
+                          style={{ color: 'var(--color-accent-gold)', textDecoration: 'none', fontFamily: 'var(--font-display)', letterSpacing: '0.1em', textTransform: 'uppercase' }}
+                        >
+                          Explore in The Way →
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               );

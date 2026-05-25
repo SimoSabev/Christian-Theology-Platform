@@ -54,6 +54,7 @@ export default function LensToggle() {
               key={l}
               role="menuitemradio"
               aria-checked={lens === l}
+              aria-pressed={lens === l}
               onClick={() => { setLens(l); setOpen(false); }}
               className="w-full text-left px-3 py-2 transition-colors"
               style={{

@@ -56,7 +56,58 @@ export const teleologicalArguments: Argument[] = [
       'Michael Behe, Darwin\'s Black Box: The Biochemical Challenge to Evolution (Free Press, 1996)',
       'Michael Behe, Darwin Devolves (HarperOne, 2019)',
       'William Dembski, The Design Inference (Cambridge University Press, 1998)',
-    ]
+    ],
+    body: `The Teleological Argument — from the Greek telos, meaning purpose or end — argues that the order, complexity, and fine-tuning observable in the natural world are best explained by the existence of an intelligent designer. It is one of the oldest arguments for God's existence, appearing in Plato, Cicero, and prominently in Thomas Aquinas's Fifth Way, but has received its most rigorous modern formulations through discoveries in molecular biology and cosmology.
+
+Michael Behe's argument from Irreducible Complexity brings design reasoning into the heart of biochemistry. The bacterial flagellum — a molecular machine that functions as a rotary propeller, enabling certain bacteria to swim — is composed of approximately forty protein parts, each precisely fitted to the others. Remove any single part, and the flagellum ceases to function entirely. It is, in Behe's terminology, irreducibly complex: it requires all its parts simultaneously to perform its function, and therefore cannot have evolved through a gradual stepwise Darwinian process that selected for incremental improvements.
+
+Darwin himself acknowledged this potential challenge to his theory: "If it could be demonstrated that any complex organ existed which could not possibly have been formed by numerous, successive, slight modifications, my theory would absolutely break down." Behe argues that the bacterial flagellum is precisely such an organ. While biochemists have proposed mechanisms like co-option — borrowing parts from other biological systems — Behe argues that these proposed pathways require the simultaneous availability of multiple coordinated parts, which merely relocates the problem rather than solving it.
+
+The fine-tuning argument, developed by physicists and philosophers including Robin Collins and John Leslie, examines the initial conditions of the universe. The fundamental constants of nature — the gravitational constant, the strong nuclear force, the electromagnetic force, the cosmological constant — are calibrated to extraordinary precision to permit the existence of complex chemistry and therefore life. If the gravitational constant were slightly stronger, stars would burn too hot and too briefly for life to develop. If slightly weaker, stars would never form at all. The cosmological constant — the energy density of empty space — is fine-tuned to one part in 10^120, a precision so extreme that it defies any naturalistic explanation.
+
+The philosopher Robin Collins calculates that the probability of this fine-tuning occurring by chance is so vanishingly small — on the order of 10^-10^123 — that even a multiverse of a trillion trillion universes would not adequately explain it by chance. The theistic explanation — that a supremely intelligent Creator designed the initial conditions to permit life — is not only philosophically parsimonious but the only known explanation that actually explains fine-tuning rather than merely relocating it to a multiverse generator (which itself would require fine-tuned laws).
+
+Stephen C. Meyer's argument from biological information extends design reasoning to the DNA molecule. The digital information encoded in DNA — specifying the precise sequence of amino acids in every protein in every living organism — represents specified complexity of the highest order. The human genome contains approximately 3 billion base pairs encoding roughly 20,000 genes, with a functional information content estimated in billions of bits. Every known source of high-level specified information, from books to computer programs to linguistic messages, is traceable to a mind. The inference to a cosmic mind as the source of biological information is therefore not a god-of-the-gaps argument but a positive inference based on what we know causes information to exist.
+
+The Teleological Argument, in its modern form, does not depend on a naive pre-Darwinian analogy between watches and organisms. It draws instead on the most sophisticated findings of contemporary physics, chemistry, and molecular biology to argue that the universe bears the hallmarks of intentional design at the most fundamental levels of its existence — from the constants of physics to the genetic code of every living cell.`,
+    churchFatherQuotes: [
+      {
+        author: 'Thomas Aquinas',
+        work: 'Summa Theologiae, I, Question 2, Article 3 (Fifth Way)',
+        quote: 'We see that things which lack knowledge, such as natural bodies, act for an end, and this is evident from their acting always, or nearly always, in the same way, so as to obtain the best result. Hence it is plain that they achieve their end, not fortuitously, but designedly. Now whatever lacks knowledge cannot move towards an end, unless it be directed by some being endowed with knowledge and intelligence; as the arrow is directed by the archer. Therefore some intelligent being exists by whom all natural things are directed to their end; and this being we call God.',
+      },
+      {
+        author: 'Basil the Great',
+        work: 'Hexaemeron, Homily I',
+        quote: 'In the beginning God created the heaven and the earth. What a subject for the mind to contemplate! If we were to examine each word of this text, we would find that it contains a whole theology. For it implies a beginning, a Creator, and a creation ordered by wisdom and design. The creation reflects the wisdom of its Author, as a painting reflects the mind of the painter.',
+      },
+      {
+        author: 'John of Damascus',
+        work: 'An Exact Exposition of the Orthodox Faith, Book I, Ch. 3',
+        quote: 'The very continuity of the creation, and its preservation and government, teach us that there does exist a Deity, who supports and maintains and preserves and ever provides for this universe. For how could opposite natures, such as fire and water, air and earth, have combined with each other so as to form one complete world, if there were not some omnipotent power which bound them together and always preserves them from dissolution?',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Natural selection can produce the appearance of design without a designer',
+        rebuttal: 'Natural selection can explain the gradual modification of pre-existing functional systems, but it cannot explain the origin of the very information-bearing systems on which it depends. Before natural selection can operate, there must be self-replicating organisms with genetic information. The origin of the first organism — with its information-processing machinery — represents precisely the kind of specified complexity that requires an intelligent cause. Furthermore, Behe\'s irreducible complexity argument targets systems where no functional precursor pathway exists for selection to traverse.',
+      },
+      {
+        title: 'The fine-tuning could be explained by a multiverse',
+        rebuttal: 'The multiverse hypothesis, even if granted, merely relocates the fine-tuning problem. For a multiverse to generate a variety of universes with different constants, the multiverse-generating mechanism itself must be fine-tuned — it must have the laws, constants, and initial conditions necessary to produce universes at all, and specifically the right variety. Furthermore, a multiverse is unobservable and unfalsifiable, making it more speculative than theism. The theistic hypothesis is simpler: one Intelligent Designer rather than an infinite ensemble of universes.',
+      },
+      {
+        title: 'Who designed the designer? Intelligent design just pushes the problem back a step',
+        rebuttal: 'The demand to explain the designer is a misapplication of the design inference. When archaeologists discover an arrowhead, they infer design without needing to explain who designed the designer\'s cognitive faculties. The inference to design is warranted by the evidence at hand — specified complexity, irreducible complexity, fine-tuning — not by having a complete explanation of the designer. God as the ultimate creative mind is by definition uncreated and self-existent; the regress stops at an eternal, necessary being.',
+      },
+    ],
+    bibliography: [
+      'Behe, Michael. Darwin\'s Black Box: The Biochemical Challenge to Evolution. Free Press, 1996.',
+      'Meyer, Stephen C. Signature in the Cell: DNA and the Evidence for Intelligent Design. HarperOne, 2009.',
+      'Collins, Robin. "The Teleological Argument." In The Blackwell Companion to Natural Theology, ed. Craig and Moreland. Wiley-Blackwell, 2009.',
+      'Dembski, William. The Design Inference. Cambridge University Press, 1998.',
+      'Leslie, John. Universes. Routledge, 1989.',
+    ],
   },
   {
     id: 'meyer-dna',

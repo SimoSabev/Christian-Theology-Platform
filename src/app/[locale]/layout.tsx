@@ -9,6 +9,7 @@ import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { LensProvider, LensOnboarding } from '@/components/lens';
+import OnboardingModal from '@/components/onboarding/OnboardingModal';
 import PageTransition from '@/components/motion/PageTransition';
 
 const cinzel = Cinzel({
@@ -86,6 +87,7 @@ export default async function LocaleLayout({
             </main>
             <Footer />
             <LensOnboarding />
+            <OnboardingModal />
           </LensProvider>
         </NextIntlClientProvider>
       </body>

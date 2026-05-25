@@ -8,14 +8,22 @@ import TriptychPortal from '@/components/hero/TriptychPortal';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import CodexCard from '@/components/reader/CodexCard';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import { getQuoteOfDay } from '@/data/sources/quotes';
+import LensRecommendedPath from '@/components/lens/LensRecommendedPath';
 
 export default function HomePage() {
   const t = useTranslations('home');
+  const quoteOfDay = getQuoteOfDay();
 
   return (
     <div>
       <HeroArchitectural />
       <TriptychPortal />
+
+      {/* Lens Recommended Path */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
+        <LensRecommendedPath />
+      </section>
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <RevealOnScroll>
@@ -39,6 +47,33 @@ export default function HomePage() {
               </Link>
             </div>
           </CodexCard>
+        </RevealOnScroll>
+      </section>
+
+      <KeystoneDivider />
+
+      {/* Quote of the Day */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <RevealOnScroll>
+          <Eyebrow className="mb-4">QUOTE OF THE DAY · CHURCH FATHERS</Eyebrow>
+          <blockquote
+            className="p-6"
+            style={{ borderLeft: '3px solid var(--color-accent-gold)', background: 'rgba(212,168,83,0.04)' }}
+          >
+            <p className="t-body italic mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.85, fontSize: '1.0625rem' }}>
+              &ldquo;{quoteOfDay.quote}&rdquo;
+            </p>
+            <footer>
+              <span className="t-meta" style={{ color: 'var(--color-accent-gold)' }}>
+                — {quoteOfDay.author}, <em>{quoteOfDay.work}</em>
+              </span>
+            </footer>
+          </blockquote>
+          <div className="mt-4 text-right">
+            <Link href="/sources/church-fathers" className="t-meta" style={{ color: 'var(--color-text-muted)', borderBottom: '1px solid var(--color-border)' }}>
+              Browse all patristic quotes →
+            </Link>
+          </div>
         </RevealOnScroll>
       </section>
 

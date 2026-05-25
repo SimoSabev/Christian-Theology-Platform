@@ -50,7 +50,58 @@ export const historicalArguments: Argument[] = [
       'Gary Habermas & Michael Licona, The Case for the Resurrection of Jesus (Kregel, 2004)',
       'Seyoon Kim, The Origin of Paul\'s Gospel (Eerdmans, 1981)',
       'James D.G. Dunn, Jesus Remembered (Eerdmans, 2003)',
-    ]
+    ],
+    body: `The historical argument for God's existence is unique among theistic arguments in that it draws its evidence not from abstract metaphysics or natural science but from the concrete events of human history — specifically, from the historical evidence for the resurrection of Jesus of Nazareth. If Jesus of Nazareth rose from the dead, then the God of the Bible exists, Jesus is who He claimed to be, and Christianity is true. The question is therefore: what does the historical evidence actually show?
+
+Historians working on early Christianity have converged on a set of "minimal facts" — data points that are so well attested and so widely accepted by scholars across the theological spectrum (including sceptics) that they can serve as the foundation for a historical argument. These facts include: the death of Jesus by crucifixion under Pontius Pilate; the discovery of the empty tomb by women followers shortly after the burial; the post-mortem appearances of Jesus to individuals and groups; the transformation of the disciples from despondent fugitives into bold proclaimers of the resurrection; and the conversion of Paul, a former persecutor of the church.
+
+The conversion of Paul of Tarsus represents one of the most remarkable data points in this evidential constellation. Paul (formerly Saul) was not a disciple who might be accused of self-deception or wishful thinking. He was a Pharisee of exemplary credentials, rigorously trained in Jewish law under Gamaliel, who zealously persecuted Christians, supervising the stoning of Stephen, and pursuing followers of Jesus to foreign cities with letters of arrest. He had every incentive to maintain his prior convictions and every reason to be hostile to claims about Jesus.
+
+Yet Paul underwent a dramatic reversal. In his letters — which represent the earliest documents in the New Testament, written within twenty years of the crucifixion and unanimously accepted as authentic by critical scholars — Paul describes an encounter with the risen Jesus that transformed him from persecutor to apostle. He records in 1 Corinthians 15:3–8 (written around 53 AD) a pre-existing creed — a formula that virtually all scholars date to within two to five years of the crucifixion — listing resurrection appearances: to Peter, to the Twelve, to more than five hundred at once, to James, to all the apostles, and finally to Paul himself.
+
+The historical method requires that we explain these facts with the hypothesis that best accounts for all the data. The resurrection hypothesis — that Jesus actually rose from the dead — explains the empty tomb (which opponents never denied but attempted to explain away by claiming the body was stolen), the appearances (which were experienced by multiple individuals and groups), and the transformation of the disciples (who went from hiding in fear to dying for their testimony). Hallucination theories fail because hallucinations are private and individual, not shared by groups. Legendary theories fail because the creedal material in 1 Corinthians 15 predates any plausible legendary development. The "swoon theory" — that Jesus merely fainted and recovered — fails because victims of Roman crucifixion, flogging, and spear wounds to the chest do not recover to appear in glorious form capable of inspiring devoted worship.
+
+The emergence of the Christian church in Jerusalem — the very city where the crucifixion occurred and the empty tomb was located — within weeks of the events, proclaiming the resurrection and being met not with immediate disproof but with alternative explanations from Jewish leaders, is itself a powerful historical datum. The apostles preached the resurrection in Jerusalem, where the events occurred and could be verified or falsified by eyewitnesses — hostile and friendly alike. The rapid growth of the movement in this context is historically remarkable and demands explanation.
+
+The historical argument for the resurrection does not require blind faith. It requires the same historical method applied to other ancient events: evaluating sources for their reliability, proximity to events, internal coherence, and external corroboration. Applied consistently, that method points powerfully to the bodily resurrection of Jesus Christ as the best explanation of the convergent historical evidence.`,
+    churchFatherQuotes: [
+      {
+        author: 'Ignatius of Antioch',
+        work: 'Letter to the Smyrnaeans, Ch. 3',
+        quote: 'For I know that after His resurrection also He was still possessed of flesh, and I believe that He is so now. When, for instance, He came to those who were with Peter, He said to them, "Lay hold, handle Me, and see that I am not an incorporeal spirit." And immediately they touched Him, and believed, being convinced both by His flesh and spirit. For this cause also they despised death, and were found its conquerors.',
+      },
+      {
+        author: 'Justin Martyr',
+        work: 'First Apology, Ch. 50',
+        quote: 'And that it was predicted that our Christ should heal all diseases and raise the dead, hear what was said. There are these words: "At His coming the lame shall leap as an hart, and the tongue of the stammerer shall be clear speaking: the blind shall see, and the lepers shall be cleansed; and the dead shall rise, and walk about." And that He did those things, you can learn from the Acts of Pontius Pilate.',
+      },
+      {
+        author: 'Tertullian',
+        work: 'On the Resurrection of the Flesh, Ch. 1',
+        quote: 'The resurrection of the dead is the Christian\'s trust, the resurrection of the dead is the Christian\'s confidence, the resurrection of the dead is what we are... Its truth is guaranteed to us, first by the Scriptures of God, then by reason; and finally, by the example of Christ Himself.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'The resurrection accounts are legendary additions to the historical Jesus',
+        rebuttal: 'The creedal material in 1 Corinthians 15:3–8 dates to within two to five years of the crucifixion — far too early for legendary development. Paul received this formula from Peter and James, eyewitnesses who were still alive and available for questioning when Paul wrote. The earliest documents in the New Testament presuppose the resurrection rather than developing it gradually. Legendary development requires time and distance from the events; the resurrection was proclaimed in Jerusalem, at the crucifixion site, within weeks of the events.',
+      },
+      {
+        title: 'The disciples had hallucinations or visions of Jesus',
+        rebuttal: 'Hallucinations are private, individual psychological events; they are not shared simultaneously by groups of five hundred people. The disciples themselves distinguished between visionary experiences (like Paul\'s encounter) and the physical appearances they described — Jesus ate with them, invited Thomas to touch His wounds, and appeared multiple times over forty days. The empty tomb — which opponents acknowledged rather than denied — cannot be explained by hallucinations. And no hallucination theory explains Paul\'s conversion from persecutor to apostle.',
+      },
+      {
+        title: 'Miracles are impossible — history cannot establish a resurrection',
+        rebuttal: 'The claim that miracles are impossible is a philosophical presupposition, not a historical conclusion. To rule out the resurrection a priori is to stack the deck before examining the evidence. The historical method requires evaluating all explanations of the data, including miraculous ones, on their merits. When we apply Bayesian reasoning — asking which hypothesis best explains the totality of historical evidence — the resurrection hypothesis outperforms its competitors on every relevant criterion: explanatory scope, explanatory power, plausibility, and degree of ad hoc qualification.',
+      },
+    ],
+    bibliography: [
+      'Habermas, Gary, and Michael Licona. The Case for the Resurrection of Jesus. Kregel, 2004.',
+      'Wright, N.T. The Resurrection of the Son of God. Fortress Press, 2003.',
+      'Licona, Michael. The Resurrection of Jesus: A New Historiographical Approach. IVP Academic, 2010.',
+      'Craig, William Lane. Assessing the New Testament Evidence for the Historicity of the Resurrection of Jesus. Mellen, 1989.',
+      'Dunn, James D.G. Jesus Remembered. Eerdmans, 2003.',
+    ],
   },
   {
     id: 'empty-tomb',

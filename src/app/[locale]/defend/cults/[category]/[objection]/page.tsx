@@ -107,6 +107,52 @@ export default function CultObjectionPage() {
 
       <KeystoneDivider className="my-8" />
 
+      {/* Key Verses Abused */}
+      {objection.keyVersesAbused && objection.keyVersesAbused.length > 0 && (
+        <RevealOnScroll>
+          <section className="mb-10">
+            <Eyebrow className="mb-4">KEY SCRIPTURES MISUSED</Eyebrow>
+            <div className="overflow-x-auto">
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-stone-950 to-transparent md:hidden" />
+              <table className="min-w-full text-sm" style={{ borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+                    <th className="t-eyebrow text-left py-2 pr-6" style={{ color: 'var(--color-accent-gold)', width: '18%' }}>VERSE</th>
+                    <th className="t-eyebrow text-left py-2 pr-6" style={{ color: 'var(--color-accent-gold)', width: '38%' }}>HOW IT IS ABUSED</th>
+                    <th className="t-eyebrow text-left py-2" style={{ color: 'var(--color-accent-gold)', width: '44%' }}>BIBLICAL RESPONSE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {objection.keyVersesAbused.map((kv, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid var(--color-border)' }}>
+                      <td className="t-caps text-xs py-3 pr-6 align-top" style={{ color: 'var(--color-text-primary)' }}>{kv.verse}</td>
+                      <td className="t-body text-sm py-3 pr-6 align-top" style={{ color: 'rgba(239,68,68,0.85)' }}>{kv.abuse}</td>
+                      <td className="t-body text-sm py-3 align-top" style={{ color: 'var(--color-text-secondary)' }}>{kv.response}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </RevealOnScroll>
+      )}
+
+      {/* Pastoral Note */}
+      {objection.pastoralNote && (
+        <RevealOnScroll>
+          <section className="mb-10">
+            <div className="p-5 rounded-sm" style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)' }}>
+              <Eyebrow className="mb-3">PASTORAL NOTE</Eyebrow>
+              <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, fontStyle: 'italic' }}>
+                {objection.pastoralNote}
+              </p>
+            </div>
+          </section>
+        </RevealOnScroll>
+      )}
+
+      <KeystoneDivider className="my-8" />
+
       {/* Key Sources */}
       <RevealOnScroll>
         <section className="mb-10">

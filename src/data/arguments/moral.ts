@@ -50,7 +50,60 @@ export const moralArguments: Argument[] = [
       'Alvin Plantinga, Where the Conflict Really Lies (Oxford University Press, 2011)',
       'C. Stephen Evans, God and Moral Obligation (Oxford University Press, 2013)',
       'Michael Huemer, Ethical Intuitionism (Palgrave Macmillan, 2005)',
-    ]
+    ],
+    body: `The Moral Argument for the existence of God is among the most personally compelling of all theistic arguments, because it confronts every human being with something undeniable: we make moral judgments. We say that gratuitous cruelty is wrong, that the Holocaust was evil, that heroic self-sacrifice is genuinely admirable — and we do not mean merely that we personally dislike these things or that our culture happens to disapprove of them. We mean they are really, objectively wrong or right, independent of what anyone happens to think.
+
+The Argument from Moral Knowledge, as developed by Alvin Plantinga, C.S. Lewis, and many others, draws out the implications of this universal human experience. If moral truths are objective — if they hold regardless of cultural convention or personal preference — then they require a grounding explanation. What in the nature of reality could make moral propositions objectively true?
+
+Naturalism, the worldview that posits only physical reality governed by natural laws, faces a severe challenge here. On naturalism, human beings are the products of undirected evolutionary processes that selected for survival and reproduction, not for moral truth-tracking. As Plantinga argues in his Evolutionary Argument Against Naturalism, if evolution shaped all our cognitive faculties, we have no guarantee that those faculties track truth — including moral truth — rather than merely producing survival-enhancing behavior. A behavior might be adaptive without being morally correct, and morally correct without being adaptive. On naturalism, there is no principled reason to trust that our moral faculties are reliable guides to genuine moral reality.
+
+Theism, by contrast, provides a coherent explanation. If God exists as the perfect, maximally good being — as classical theism affirms — then moral truths are grounded in His nature. God's nature is the standard of goodness: not arbitrary commands, but the eternal character of a perfectly good being. Human moral knowledge is possible because God created human beings in His image (imago Dei), with faculties that are designed to apprehend moral reality — not perfectly, due to the noetic effects of sin, but genuinely. C.S. Lewis put the point vividly in Mere Christianity: the existence of the Moral Law — experienced universally as an obligation from without rather than a preference from within — is best explained by a Moral Lawgiver who transcends humanity.
+
+The deeper metaphysical form of the Moral Argument, developed by William Lane Craig after G.E. Moore and Robert Adams, focuses not merely on knowledge but on ontological grounding: if objective moral facts exist, they require a metaphysical foundation. Numbers and mathematical truths are commonly taken to exist necessarily, as abstract objects. But moral facts are prescriptive — they tell us how we ought to behave — and abstract objects have no causal power. The prescription of the Moral Law demands a personal prescriber. A moral law without a moral lawgiver is a conceptual orphan: a binding obligation with no one to bind it, a command with no commander.
+
+The objection that God could command evil — the Euthyphro dilemma — is answered by the recognition that the good is not determined by God's arbitrary will but by God's unchanging nature. God commands what He commands because it reflects His essential character: He is necessarily good, not by external constraint but by internal nature. This is analogous to asking whether a perfectly rational being could believe a logical contradiction: the question answers itself.
+
+The Argument from Human Dignity adds a complementary dimension. If humans are merely biological organisms produced by undirected processes, then statements like "all persons have inherent dignity" are at best useful fictions. Yet we cannot consistently deny this dignity: we recognize it in our moral outrage at oppression, slavery, and dehumanization. The Christian account — that every human being is made in the image of God (Genesis 1:27), has intrinsic worth derived from their Creator — provides the metaphysical foundation for human dignity that naturalism cannot supply.
+
+Taken together, the moral arguments do not merely suggest theism as a possible explanation; they present it as the best explanation — perhaps the only coherent explanation — for the objectivity, universality, and prescriptive force of morality that every human being experiences as a brute given of conscious life.`,
+    churchFatherQuotes: [
+      {
+        author: 'Augustine of Hippo',
+        work: 'Confessions, Book III, Ch. 7',
+        quote: 'For it is one thing not to know, another to refuse to know: for the will is concerned with the former, the understanding with the latter. For when men say that God is not just, and that God is not good, they are using a standard of justice and goodness above God — but whence comes this standard, if not from God Himself?',
+      },
+      {
+        author: 'Thomas Aquinas',
+        work: 'Summa Theologiae, I-II, Question 91, Article 2',
+        quote: 'The rational creature is subject to Divine providence in the most excellent way, in so far as it partakes of a share of providence, by being provident both for itself and for others. Wherefore it has a share of the Eternal Reason, whereby it has a natural inclination to its proper act and end: and this participation of the eternal law in the rational creature is called the natural law.',
+      },
+      {
+        author: 'C.S. Lewis',
+        work: 'Mere Christianity, Book I, Ch. 1',
+        quote: 'These, then, are the two points I wanted to make. First, that human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. Secondly, that they do not in fact behave in that way. They know the Law of Nature; they break it. These two facts are the foundation of all clear thinking about ourselves and the universe we live in.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Morality is just a social construct or evolutionary adaptation',
+        rebuttal: 'If morality were merely a social construct, then the Holocaust would not be evil in any objective sense — just contrary to some cultures\' preferences. But virtually everyone recognizes this conclusion as monstrous. Social constructs and evolutionary adaptations can explain why we have moral feelings; they cannot explain why those feelings track genuine moral truth or why some actions are genuinely obligatory rather than merely culturally preferred. The universality of basic moral intuitions across cultures — the wrongness of murder, theft, betrayal — is better explained by a common moral reality than by independent cultural invention.',
+      },
+      {
+        title: 'Objective morality exists without God — as abstract Platonic moral facts',
+        rebuttal: 'Abstract Platonic moral facts, even if they existed, would be causally inert — they cannot explain why we have an obligation to follow them, or why they exist in the first place. Prescriptive moral facts — facts about what we ought to do — are not merely descriptive propositions but binding obligations. A binding obligation requires a binder: a personal moral authority. Furthermore, abstract moral facts floating free of any grounding agent are metaphysically unexplained brute facts, more mysterious than the theistic alternative.',
+      },
+      {
+        title: 'God\'s commands are arbitrary — the Euthyphro dilemma',
+        rebuttal: 'The Euthyphro dilemma presents a false dichotomy. Theists do not claim that God arbitrarily wills what is good (making morality arbitrary) or that God is subject to an external moral standard above Him (limiting His sovereignty). Instead, God\'s nature is the standard of goodness: He is essentially, necessarily good. His commands flow from His perfectly good character and are therefore neither arbitrary nor externally constrained. The good is what God is, not merely what He says.',
+      },
+    ],
+    bibliography: [
+      'Plantinga, Alvin. Where the Conflict Really Lies. Oxford University Press, 2011.',
+      'Lewis, C.S. Mere Christianity. HarperCollins, 1952.',
+      'Craig, William Lane. The Moral Argument. Paternoster, 2009.',
+      'Adams, Robert Merrihew. Finite and Infinite Goods. Oxford University Press, 1999.',
+      'Evans, C. Stephen. God and Moral Obligation. Oxford University Press, 2013.',
+    ],
   },
   {
     id: 'human-dignity-budziszewski',

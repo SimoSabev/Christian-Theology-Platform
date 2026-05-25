@@ -64,7 +64,58 @@ export const ontologicalArguments: Argument[] = [
       'Anselm, Reply to Gaunilo',
       'Charles Hartshorne, The Logic of Perfection (1962)',
       'Norman Malcolm, "Anselm\'s Ontological Arguments" (1960)',
-    ]
+    ],
+    body: `The Ontological Argument stands apart from every other theistic argument in the history of philosophy. While the Cosmological Argument reasons from the existence of the universe to a First Cause, and the Teleological Argument reasons from the complexity of life to a Designer, the Ontological Argument proceeds entirely from within — deducing the existence of God from the very concept of God, without a single appeal to empirical experience. It is the most audacious argument in the history of philosophy of religion, and has provoked admiration and rejection in equal measure for nearly a millennium.
+
+Anselm of Canterbury (1033–1109) formulated the argument in his Proslogion, addressed as a meditation directly to God. He begins with a definition that has become perhaps the most famous in all philosophy: God is "that than which nothing greater can be conceived" — id quo nihil maius cogitari potest. This is not arbitrary. It captures precisely what theists mean by God: the ultimate, the supreme, the most perfect being. Even the atheist — the "fool" of Psalm 14:1 who says in his heart there is no God — understands this concept. The concept of God, as the greatest conceivable being, exists at minimum in the understanding.
+
+The key move is Anselm's second premise: it is greater to exist in reality than to exist only in the understanding. Consider a real $100 bill versus an imagined $100 bill — the real one can buy things; the imagined one cannot. A real God could create, sustain, love, and redeem; a merely conceived God could do nothing. Existence in reality is a great-making property — it adds something to a being that existence only in the mind lacks.
+
+From these two premises, Anselm draws a decisive conclusion by reductio ad absurdum. Suppose God exists only in the understanding. Then we could conceive of an even greater being — one with all the same properties plus real existence. But then the original being would not be "that than which nothing greater can be conceived," which contradicts the definition. Therefore, under the pain of contradiction, God must exist in reality as well as in the understanding.
+
+The monk Gaunilo of Marmoutiers immediately objected: could not the same argument prove the existence of a perfect island? If the greatest conceivable island does not exist in reality, we could conceive of a greater one that does. Anselm's response is that the parody fails: islands can always be conceived as greater — more beaches, more coconuts — and there is no upper limit to island greatness. The concept of maximal greatness only applies to a being that is the absolute maximum of all perfections, not to contingent, limited objects like islands.
+
+The argument received its definitive modern treatment from Alvin Plantinga (1932–), who reformulated it in modal logic — the logic of possibility and necessity. Plantinga's argument proceeds: it is possible that a maximally great being exists; if such a being is possible, then it exists in some possible world; a maximally great being, by definition, exists necessarily (in all possible worlds); therefore, a maximally great being exists in the actual world — God exists. The key premise is the possibility claim: is it even possible that God exists? Plantinga argues this is at least as plausible as the claim that God is impossible, and the burden of proof lies on the atheist to demonstrate that maximal greatness is metaphysically impossible.
+
+Critics such as Kant objected that existence is not a predicate — that adding existence to a concept does not make the thing greater but merely instantiates it. Contemporary philosophers continue to debate whether Kant's objection successfully deflects Plantinga's modal version. What is clear is that the ontological argument represents one of the most profound attempts in human intellectual history to understand the relationship between thought and being, concept and reality, necessity and existence.`,
+    churchFatherQuotes: [
+      {
+        author: 'Anselm of Canterbury',
+        work: 'Proslogion, Chapter 2',
+        quote: 'Lord, you are not only that than which a greater cannot be thought; you are something greater than can be thought... And certainly that than which a greater cannot be thought cannot exist in the understanding alone. For if it exists even only in the understanding, it can be thought of as also existing in reality, which is greater. Therefore, if that than which a greater cannot be thought exists only in the understanding, then that than which a greater cannot be thought is that than which a greater can be thought. But this is obviously impossible.',
+      },
+      {
+        author: 'Augustine of Hippo',
+        work: 'On Free Will, Book II, Ch. 6',
+        quote: 'If there is anything more excellent than truth itself, that is God. If there is not, then truth itself is God. Whether it is or whether it is not, you cannot deny that God exists, and this was the question we set ourselves to consider.',
+      },
+      {
+        author: 'John of Damascus',
+        work: 'An Exact Exposition of the Orthodox Faith, Book I, Ch. 1',
+        quote: 'The knowledge of God\'s existence has been implanted by Him in all by nature. This existence of God, however, is not immediately self-evident to all. For as we require training and effort to know that God is, so it requires no less care and study to understand His nature and attributes.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Existence is not a predicate — you cannot define things into existence',
+        rebuttal: 'Kant\'s objection applies most forcefully to Anselm\'s original formulation, but Plantinga\'s modal version avoids it. The modal argument does not claim that existence is a predicate; it argues from the metaphysical possibility of maximal greatness to its necessity. If it is even possible that a maximally great being exists, then by the logic of possible worlds, it exists necessarily. The question shifts to whether maximal greatness is coherently possible — a question the atheist must answer negatively, bearing the burden of proof.',
+      },
+      {
+        title: 'The perfect island parody shows the argument proves too much',
+        rebuttal: 'Gaunilo\'s island parody fails because maximal greatness applies only to beings that admit of absolute maxima. Islands are contingent, limited objects — there is no upper bound to island-perfection (one could always add another amenity). God, as the greatest conceivable being, is the being beyond which nothing greater is possible. This is a unique concept that does not apply to any finite, contingent object. The parody therefore does not generalize.',
+      },
+      {
+        title: 'This is mere wordplay — you cannot think things into existence',
+        rebuttal: 'The argument does not claim that thinking makes things real. It argues that the concept of a maximally great being — if coherently possible — entails necessary existence. This is not wordplay but an investigation into the relationship between modality, possibility, and necessity. Mathematical truths provide an analogy: mathematical objects (like perfect circles or prime numbers) do not depend on anyone thinking about them. Necessary truths, including God\'s existence if God is necessary, are not brought into being by thought.',
+      },
+    ],
+    bibliography: [
+      'Anselm of Canterbury. Proslogion. Trans. M.J. Charlesworth. Oxford University Press, 1965.',
+      'Plantinga, Alvin. The Nature of Necessity. Oxford University Press, 1974.',
+      'Plantinga, Alvin. God, Freedom, and Evil. Eerdmans, 1977.',
+      'Hartshorne, Charles. The Logic of Perfection. Open Court, 1962.',
+      'Malcolm, Norman. "Anselm\'s Ontological Arguments." Philosophical Review 69 (1960): 41–62.',
+    ],
   },
   {
     id: 'descartes-ontological',

@@ -17,6 +17,8 @@ import CitationList from '@/components/reader/CitationList';
 import ArgumentSidebar from '@/components/reader/ArgumentSidebar';
 import CodexCard from '@/components/reader/CodexCard';
 import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
+import RelatedContent from '@/components/layout/RelatedContent';
 import { TreePine, Swords, BookOpen } from 'lucide-react';
 
 export default function ArgumentPage() {
@@ -27,6 +29,7 @@ export default function ArgumentPage() {
   const semanticDefenses = getSemanticDefensesByArgument(arg?.id ?? '');
   const [activeSemanticDefense, setActiveSemanticDefense] = useState<string | null>(null);
   const { lens } = useLens();
+  const lensVariant = LENS_VARIANTS[lens];
 
   if (!arg) {
     return (
@@ -155,6 +158,88 @@ export default function ArgumentPage() {
             </section>
           </RevealOnScroll>
 
+          {/* Extended Body */}
+          {arg.body && (
+            <RevealOnScroll>
+              <section id="body" className="mb-10">
+                <Eyebrow className="mb-4">IN DEPTH</Eyebrow>
+                {arg.body.split('\n\n').map((para, i) => (
+                  <p key={i} className="t-body mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.85 }}>
+                    {para}
+                  </p>
+                ))}
+              </section>
+            </RevealOnScroll>
+          )}
+
+          {/* Seeker callout — simplified language note */}
+          {lens === 'seeker' && (
+            <div
+              className="mb-8 p-4"
+              style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+            >
+              <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+                <strong style={{ color: 'var(--color-accent-gold)' }}>New to this?</strong> This argument can look complex, but the core idea is simple: the universe had a beginning, and beginnings need causes. If you want a simpler overview, consider switching to a different reading mode using the lens toggle in the navigation.
+              </p>
+            </div>
+          )}
+
+          {/* Church Father Quotes — only for devotional/scholar lenses */}
+          {lensVariant.showPatristicCitations && arg.churchFatherQuotes && arg.churchFatherQuotes.length > 0 && (
+            <RevealOnScroll>
+              <section id="church-fathers" className="mb-10">
+                <Eyebrow className="mb-4">CHURCH FATHERS ON THIS ARGUMENT</Eyebrow>
+                <div className="space-y-4">
+                  {arg.churchFatherQuotes.map((cfq, i) => (
+                    <blockquote
+                      key={i}
+                      className="pl-4 py-3"
+                      style={{ borderLeft: '3px solid var(--color-accent-gold)', background: 'rgba(212,168,83,0.04)' }}
+                    >
+                      <p className="t-body text-sm italic mb-2" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8 }}>
+                        &ldquo;{cfq.quote}&rdquo;
+                      </p>
+                      <footer className="t-meta" style={{ color: 'var(--color-accent-gold)' }}>
+                        — {cfq.author}, <em>{cfq.work}</em>
+                      </footer>
+                    </blockquote>
+                  ))}
+                </div>
+              </section>
+            </RevealOnScroll>
+          )}
+
+          {/* Simple Objections (additional) */}
+          {arg.simpleObjections && arg.simpleObjections.length > 0 && (
+            <RevealOnScroll>
+              <section id="common-objections" className="mb-10">
+                <Eyebrow className="mb-4">COMMON OBJECTIONS ANSWERED</Eyebrow>
+                <div className="space-y-3">
+                  {arg.simpleObjections.map((obj, i) => (
+                    <details
+                      key={i}
+                      className="group"
+                      style={{ border: '1px solid var(--color-border)', borderRadius: 2 }}
+                    >
+                      <summary
+                        className="t-caps text-xs px-4 py-3 cursor-pointer select-none list-none flex items-center justify-between"
+                        style={{ color: 'var(--color-text-primary)', background: 'var(--color-bg-secondary)' }}
+                      >
+                        {obj.title}
+                        <span style={{ color: 'var(--color-accent-gold)' }}>+</span>
+                      </summary>
+                      <div className="px-4 py-3">
+                        <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75 }}>
+                          {obj.rebuttal}
+                        </p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            </RevealOnScroll>
+          )}
+
           {/* Significance */}
           {arg.significance && (
             <RevealOnScroll>
@@ -174,6 +259,45 @@ export default function ArgumentPage() {
               <CitationList sources={arg.keySources} />
             </section>
           </RevealOnScroll>
+
+          {/* Related Content */}
+          <RelatedContent items={[
+            {
+              title: 'Explore Argument Tree',
+              href: `/explore/argument-tree`,
+              type: 'argument',
+              description: 'Visualize the logical structure interactively',
+            },
+            {
+              title: 'Debate Mode',
+              href: `/explore/debate-mode`,
+              type: 'argument',
+              description: 'Step through objections and responses',
+            },
+            {
+              title: 'Church Father Quotes',
+              href: '/sources/church-fathers',
+              type: 'father',
+              description: 'Primary sources from the early Church',
+            },
+          ]} />
+
+          {/* The Way cross-link */}
+          <div
+            className="mt-12 pt-8"
+            style={{ borderTop: '1px solid var(--color-border)' }}
+          >
+            <p className="t-meta mb-2" style={{ color: 'var(--color-text-muted)' }}>
+              Arguments point toward God. The Way invites you to encounter him.
+            </p>
+            <Link
+              href="/way"
+              className="t-caps text-xs"
+              style={{ color: 'var(--color-accent-gold)' }}
+            >
+              Explore The Way →
+            </Link>
+          </div>
         </main>
       </div>
 
