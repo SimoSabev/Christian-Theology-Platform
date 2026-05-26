@@ -38,6 +38,7 @@ export default function WayLayout({ children, sidebar }: WayLayoutProps) {
             flex: 1,
             padding: '2rem 1.5rem',
             maxWidth: sidebar ? '48rem' : '56rem',
+            margin: '0 auto',
           }}
         >
           {children}
