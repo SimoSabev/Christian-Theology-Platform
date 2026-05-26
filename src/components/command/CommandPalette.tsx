@@ -25,6 +25,7 @@ const ACTIONS: { id: string; label: string; href: string | undefined; Icon: Elem
 
 export default function CommandPalette({ open, onClose }: Props) {
   const t = useTranslations('command');
+  const tLensDesc = useTranslations('lens.descriptions');
   const router = useRouter();
   const [query, setQuery] = useState('');
   const [active, setActive] = useState(0);
@@ -174,7 +175,7 @@ export default function CommandPalette({ open, onClose }: Props) {
                       {l.charAt(0).toUpperCase() + l.slice(1)}
                     </div>
                     <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
-                      {LENS_VARIANTS[l].homepageMessage}
+                      {tLensDesc(l)}
                     </div>
                   </div>
                   {activeLens === l && (
