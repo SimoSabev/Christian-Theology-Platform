@@ -61,12 +61,19 @@ export default function CommandPalette({ open, onClose }: Props) {
     if (!open) return;
     function handleKey(e: KeyboardEvent) {
       if (e.key === 'Escape') { onClose(); return; }
+      if (lensMode) {
+        if (e.key === 'Escape') { setLensMode(false); return; }
+        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(a => Math.min(a + 1, LENSES.length - 1)); }
+        if (e.key === 'ArrowUp')   { e.preventDefault(); setActive(a => Math.max(a - 1, 0)); }
+        if (e.key === 'Enter') { setLens(LENSES[active]!); onClose(); return; }
+        return;
+      }
       if (isActionMode) {
-        const items = ACTIONS.filter((a) => a.href);
-        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(a => Math.min(a + 1, items.length - 1)); }
+        if (e.key === 'ArrowDown') { e.preventDefault(); setActive(a => Math.min(a + 1, ACTIONS.length - 1)); }
         if (e.key === 'ArrowUp')   { e.preventDefault(); setActive(a => Math.max(a - 1, 0)); }
         if (e.key === 'Enter') {
-          const sel = items[active];
+          const sel = ACTIONS[active];
+          if (sel?.id === 'lens') { setActive(0); setLensMode(true); return; }
           if (sel?.href) { router.push(sel.href); onClose(); }
         }
         return;
@@ -80,7 +87,7 @@ export default function CommandPalette({ open, onClose }: Props) {
     }
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [open, flat, active, router, onClose, isActionMode]);
+  }, [open, flat, active, router, onClose, isActionMode, lensMode, setLens]);
 
   if (!open) return null;
 
@@ -198,7 +205,7 @@ export default function CommandPalette({ open, onClose }: Props) {
                     <button
                       key={action.id}
                       onMouseEnter={() => setActive(idx)}
-                      onClick={() => { if (action.id === 'lens') { setLensMode(true); } else { onClose(); } }}
+                      onClick={() => { if (action.id === 'lens') { setActive(0); setLensMode(true); } else { onClose(); } }}
                       className="w-full text-left px-4 py-3 flex items-center gap-3"
                       style={{
                         background: isActive ? 'rgba(212,168,83,0.08)' : 'transparent',
