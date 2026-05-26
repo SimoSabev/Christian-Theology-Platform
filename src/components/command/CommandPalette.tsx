@@ -10,6 +10,8 @@ import { groupByKind, universalSearch } from './search/universalSearch';
 import { isVerseQuery, parseVerseRef } from './search/versePatternDetect';
 import type { SearchResult } from './search/types';
 import type { ElementType } from 'react';
+import { useLens } from '@/components/lens/useLens';
+import { LENSES, LENS_VARIANTS, type Lens } from '@/components/lens/types';
 
 type Props = { open: boolean; onClose: () => void };
 
@@ -27,6 +29,8 @@ export default function CommandPalette({ open, onClose }: Props) {
   const [query, setQuery] = useState('');
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { lens: activeLens, setLens } = useLens();
+  const [lensMode, setLensMode] = useState(false);
 
   const isActionMode = query.startsWith('/');
   const isVerse = !isActionMode && isVerseQuery(query);
@@ -46,6 +50,7 @@ export default function CommandPalette({ open, onClose }: Props) {
     if (open) {
       setQuery('');
       setActive(0);
+      setLensMode(false);
       setTimeout(() => inputRef.current?.focus(), 0);
     }
   }, [open]);
@@ -134,8 +139,47 @@ export default function CommandPalette({ open, onClose }: Props) {
         </div>
 
         <div id="command-results" className="max-h-[60vh] overflow-y-auto">
+          {/* LENS PICKER PANEL */}
+          {lensMode && (
+            <>
+              <div className="t-eyebrow px-4 py-2 flex items-center justify-between">
+                <span>READING MODE</span>
+                <button
+                  onClick={() => setLensMode(false)}
+                  className="t-meta"
+                  style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', fontSize: 11 }}
+                >
+                  ← Back
+                </button>
+              </div>
+              {LENSES.map((l: Lens) => (
+                <button
+                  key={l}
+                  onClick={() => { setLens(l); onClose(); }}
+                  className="w-full text-left px-4 py-3 flex items-center justify-between"
+                  style={{
+                    background: activeLens === l ? 'rgba(212,168,83,0.08)' : 'transparent',
+                    borderLeft: `2px solid ${activeLens === l ? 'var(--color-accent-gold)' : 'transparent'}`,
+                  }}
+                >
+                  <div>
+                    <div className="t-caps text-xs" style={{ color: 'var(--color-text-primary)' }}>
+                      {l.charAt(0).toUpperCase() + l.slice(1)}
+                    </div>
+                    <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
+                      {LENS_VARIANTS[l].homepageMessage}
+                    </div>
+                  </div>
+                  {activeLens === l && (
+                    <span style={{ color: 'var(--color-accent-gold)', fontSize: 10 }}>✓ Active</span>
+                  )}
+                </button>
+              ))}
+            </>
+          )}
+
           {/* Empty state — mode hint pills */}
-          {!query && (
+          {!lensMode && !query && (
             <div className="px-4 py-5 flex flex-wrap gap-2 items-center">
               <span style={pillStyle}>Type to search</span>
               <span style={pillStyle}>/ for actions</span>
@@ -144,7 +188,7 @@ export default function CommandPalette({ open, onClose }: Props) {
           )}
 
           {/* ACTION MODE */}
-          {isActionMode && (
+          {!lensMode && isActionMode && (
             <>
               <div className="t-eyebrow px-4 py-2">ACTIONS</div>
               {ACTIONS.map((action, idx) => {
@@ -154,7 +198,7 @@ export default function CommandPalette({ open, onClose }: Props) {
                     <button
                       key={action.id}
                       onMouseEnter={() => setActive(idx)}
-                      onClick={onClose}
+                      onClick={() => { if (action.id === 'lens') { setLensMode(true); } else { onClose(); } }}
                       className="w-full text-left px-4 py-3 flex items-center gap-3"
                       style={{
                         background: isActive ? 'rgba(212,168,83,0.08)' : 'transparent',
@@ -192,7 +236,7 @@ export default function CommandPalette({ open, onClose }: Props) {
           )}
 
           {/* VERSE MODE */}
-          {isVerse && parsedVerse && (
+          {!lensMode && isVerse && parsedVerse && (
             <div className="px-4 py-5">
               <div className="t-eyebrow mb-3">SCRIPTURE REFERENCE</div>
               <div className="mb-4" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text-primary)', fontSize: 16 }}>
@@ -227,7 +271,7 @@ export default function CommandPalette({ open, onClose }: Props) {
           )}
 
           {/* NORMAL SEARCH RESULTS */}
-          {!isActionMode && !isVerse && (
+          {!lensMode && !isActionMode && !isVerse && (
             <>
               {flat.length === 0 && query && (
                 <div className="px-4 py-6 t-meta text-center">{t('noResults')}</div>
