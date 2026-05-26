@@ -1,22 +1,23 @@
 // src/components/lens/types.ts
 //
 // LENS AUDIT — Pages using useLens():
-// - /defend/atheism/[category]/[argument]/page.tsx — YES (lens-aware, conditionals on 'seeker'/'defender')
-// - /defend/cults/[category]/[objection]/page.tsx  — NO (lens-not-needed, static content)
-// - /compare/page.tsx                              — NO (lens-not-needed)
-// - /compare/side-by-side/page.tsx                 — NO (lens-not-needed)
-// - /compare/[tradition]/page.tsx                  — NO (lens-not-needed)
-// - /explore/argument-tree/page.tsx                — NO (lens-not-needed)
-// - /explore/debate-mode/page.tsx                  — NO (lens-not-needed)
-// - /explore/timeline/page.tsx                     — NO (lens-not-needed)
-// - /sources/church-fathers/page.tsx               — NO (lens-not-needed)
-// - /sources/councils/page.tsx                     — NO (lens-not-needed)
-// - /sources/manuscripts/page.tsx                  — NO (lens-not-needed)
-// - /sources/manuscripts/[id]/page.tsx             — NO (lens-not-needed)
-// - /semantics/page.tsx                            — NO (lens-not-needed)
-// - /[locale]/page.tsx (home)                      — NO (lens-not-needed, uses QuoteOfDay)
+// - /defend/atheism/[category]/[argument]/page.tsx — YES (full lens adaptation)
+// - /defend/atheism/[category]/page.tsx            — YES (seeker hides formal premises + banner)
+// - /sources/church-fathers/page.tsx               — YES (seeker hides documents, showPatristicCitations)
+// - /sources/manuscripts/[id]/page.tsx             — YES (showGreekHebrew gates interlinear reader)
+// - /explore/debate-mode/page.tsx                  — YES (seeker/defender contextual tip)
+// - /semantics/page.tsx                            — YES (showGreekHebrew gate + intro note)
+// - /[locale]/page.tsx (home)                      — YES (homepageMessage display)
+// - CommandPalette                                  — YES (inline lens picker)
+// - LensOnboarding                                 — YES (descriptions shown)
 //
-// Identified pages that need lens implementation: argument detail page (already done)
+// Intentionally lens-neutral (content is identical across all modes):
+// - /defend/cults/[category]/[objection]/page.tsx
+// - /compare/page.tsx, /compare/side-by-side, /compare/[tradition]
+// - /explore/argument-tree/page.tsx
+// - /explore/timeline/page.tsx
+// - /sources/councils/page.tsx
+// - /sources/manuscripts/page.tsx (listing)
 
 export const LENSES = ['seeker', 'student', 'defender', 'researcher', 'all'] as const;
 export type Lens = (typeof LENSES)[number];
