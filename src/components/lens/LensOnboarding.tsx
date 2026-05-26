@@ -10,6 +10,7 @@ export default function LensOnboarding() {
   const { setLens, hydrated } = useLens();
   const t = useTranslations('lens.onboarding');
   const tNames = useTranslations('lens.names');
+  const tDesc = useTranslations('lens.descriptions');
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -48,6 +49,9 @@ export default function LensOnboarding() {
               style={{ borderColor: 'var(--color-border)' }}
             >
               <div className="t-caps text-xs">{tNames(l)}</div>
+              <div className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>
+                {tDesc(l)}
+              </div>
             </button>
           ))}
         </div>
