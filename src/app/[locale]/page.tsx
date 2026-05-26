@@ -10,10 +10,14 @@ import CodexCard from '@/components/reader/CodexCard';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import { getQuoteOfDay } from '@/data/sources/quotes';
 import LensRecommendedPath from '@/components/lens/LensRecommendedPath';
+import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
 
 export default function HomePage() {
   const t = useTranslations('home');
   const quoteOfDay = getQuoteOfDay();
+  const { lens, hydrated } = useLens();
+  const lensVariant = LENS_VARIANTS[lens];
 
   return (
     <div>
@@ -23,6 +27,11 @@ export default function HomePage() {
       {/* Lens Recommended Path */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
         <LensRecommendedPath />
+        {hydrated && (
+          <p className="mt-3 t-meta text-xs" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
+            {lensVariant.homepageMessage}
+          </p>
+        )}
       </section>
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
