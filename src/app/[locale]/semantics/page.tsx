@@ -16,7 +16,7 @@ export default function SemanticsDashboard() {
   const argumentsList = semanticDefenses.filter(sd => sd.id !== 'sd-tutorial');
 
   const [activeDefenseId, setActiveDefenseId] = useState<string | null>(null);
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const { showGreekHebrew } = LENS_VARIANTS[lens];
 
   const activeDefense = semanticDefenses.find(sd => sd.id === activeDefenseId);
@@ -36,7 +36,7 @@ export default function SemanticsDashboard() {
       <KeystoneDivider className="mb-10" />
 
       {/* Lens awareness note */}
-      {!showGreekHebrew && (
+      {hydrated && !showGreekHebrew && (
         <div
           className="mb-10 p-5"
           style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}

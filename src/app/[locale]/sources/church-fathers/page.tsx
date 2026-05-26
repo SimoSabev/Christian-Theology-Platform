@@ -15,7 +15,7 @@ const ALL_AUTHORS = Array.from(new Set(churchFatherQuotes.map(q => q.author))).s
 export default function ChurchFathersPage() {
   const [activeTheme, setActiveTheme] = useState<string | null>(null);
   const [activeAuthor, setActiveAuthor] = useState<string | null>(null);
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const { showPatristicCitations } = LENS_VARIANTS[lens];
 
   const filteredQuotes = churchFatherQuotes.filter(q => {
@@ -36,7 +36,7 @@ export default function ChurchFathersPage() {
         <Eyebrow className="mb-3">SOURCES · PATRISTICS</Eyebrow>
         <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)' }}>Church Fathers</h1>
         <p className="t-body mb-8" style={{ color: 'var(--color-text-secondary)' }}>The foundational writings of early Christianity</p>
-        {!showPatristicCitations && (
+        {hydrated && !showPatristicCitations && (
           <div
             className="mt-6 p-4"
             style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
@@ -157,7 +157,7 @@ export default function ChurchFathersPage() {
         </div>
       </section>
 
-      {showPatristicCitations && (
+      {(!hydrated || showPatristicCitations) && (
         <>
           <KeystoneDivider className="mb-10" />
           <div className="space-y-6">

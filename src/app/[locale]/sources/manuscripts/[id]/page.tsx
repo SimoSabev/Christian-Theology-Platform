@@ -37,7 +37,7 @@ export default function ManuscriptDetailPage() {
   const id = params.id as string;
   const ms = getManuscriptById(id);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const { showGreekHebrew } = LENS_VARIANTS[lens];
 
   if (!ms) {
@@ -130,7 +130,7 @@ export default function ManuscriptDetailPage() {
           {ms.passages.length > 0 && (
             <RevealOnScroll>
               <KeystoneDivider className="my-8" />
-              {showGreekHebrew ? (
+              {!hydrated || showGreekHebrew ? (
                 <CodexCard>
                   <Eyebrow className="mb-6">INTERACTIVE INTERLINEAR READING</Eyebrow>
                   <InterlinearReader passages={ms.passages} script={ms.script} />

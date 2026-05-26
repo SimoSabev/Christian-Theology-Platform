@@ -18,7 +18,7 @@ export default function DebateModePage() {
   const debate = kalamDebate;
   const [currentRound, setCurrentRound] = useState(0);
   const round = debate.rounds[currentRound];
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col">
@@ -85,7 +85,7 @@ export default function DebateModePage() {
       </div>
 
       {/* Lens-contextual tip */}
-      {(lens === 'seeker' || lens === 'defender') && (
+      {hydrated && (lens === 'seeker' || lens === 'defender') && (
         <div
           className="px-4 sm:px-6 lg:px-8 py-2 border-b border-border"
           style={{ background: 'rgba(212,168,83,0.04)' }}

@@ -14,7 +14,7 @@ export default function CategoryPage() {
   const category = params.category as ArgumentCategory;
   const catInfo = getCategoryInfo(category);
   const args = getArgumentsByCategory(category);
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const isSimplified = lens === 'seeker';
 
   if (!catInfo) {
@@ -39,7 +39,7 @@ export default function CategoryPage() {
         <Eyebrow className="mb-3">DEFEND · ATHEISM · {catInfo.name.toUpperCase()}</Eyebrow>
         <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)' }}>{catInfo.name}</h1>
         <p className="t-body mb-6" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>{catInfo.description}</p>
-        {isSimplified && (
+        {hydrated && isSimplified && (
           <div
             className="mb-8 p-4"
             style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
@@ -63,7 +63,7 @@ export default function CategoryPage() {
                 <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)' }}>{arg.shortDescription}</p>
 
                 {/* Mini formal statement */}
-                {!isSimplified && (
+                {(!hydrated || !isSimplified) && (
                   <div className="mb-4 text-sm space-y-1" style={{ borderLeft: '2px solid var(--color-border)', paddingLeft: 12 }}>
                     {arg.premises.map((p, pi) => (
                       <p key={p.id} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
