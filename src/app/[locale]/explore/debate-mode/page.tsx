@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { kalamDebate } from '@/data/debates';
 import { ArrowLeft, Swords, ChevronLeft, ChevronRight, BookOpen, CircleDot } from 'lucide-react';
 import { Eyebrow } from '@/components/ornament';
+import { useLens } from '@/components/lens/useLens';
 
 const strengthColors = {
   strong: { bg: 'bg-accent-green/10', border: 'border-accent-green/20', dot: 'bg-accent-green', label: 'Strong' },
@@ -17,6 +18,7 @@ export default function DebateModePage() {
   const debate = kalamDebate;
   const [currentRound, setCurrentRound] = useState(0);
   const round = debate.rounds[currentRound];
+  const { lens } = useLens();
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col">
@@ -81,6 +83,22 @@ export default function DebateModePage() {
           <span className="text-xs text-text-muted">Round {currentRound + 1} of {debate.rounds.length}</span>
         </div>
       </div>
+
+      {/* Lens-contextual tip */}
+      {(lens === 'seeker' || lens === 'defender') && (
+        <div
+          className="px-4 sm:px-6 lg:px-8 py-2 border-b border-border"
+          style={{ background: 'rgba(212,168,83,0.04)' }}
+        >
+          <div className="max-w-7xl mx-auto">
+            <p className="text-xs" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
+              {lens === 'seeker'
+                ? 'Each round shows the strongest argument for and against. Green = widely accepted. Amber = contested. Red = disputed among scholars.'
+                : 'Defender tip: focus on contested (red) evidence — these are the points opponents will attack. Prepare your responses for those first.'}
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Debate Panels */}
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
