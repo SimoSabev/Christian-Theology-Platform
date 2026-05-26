@@ -60,7 +60,6 @@ export default function CommandPalette({ open, onClose }: Props) {
   useEffect(() => {
     if (!open) return;
     function handleKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') { onClose(); return; }
       if (lensMode) {
         if (e.key === 'Escape') { setLensMode(false); return; }
         if (e.key === 'ArrowDown') { e.preventDefault(); setActive(a => Math.min(a + 1, LENSES.length - 1)); }
@@ -68,6 +67,7 @@ export default function CommandPalette({ open, onClose }: Props) {
         if (e.key === 'Enter') { setLens(LENSES[active]!); onClose(); return; }
         return;
       }
+      if (e.key === 'Escape') { onClose(); return; }
       if (isActionMode) {
         if (e.key === 'ArrowDown') { e.preventDefault(); setActive(a => Math.min(a + 1, ACTIONS.length - 1)); }
         if (e.key === 'ArrowUp')   { e.preventDefault(); setActive(a => Math.max(a - 1, 0)); }
