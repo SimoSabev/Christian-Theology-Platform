@@ -10,6 +10,8 @@ import CodexCard from '@/components/reader/CodexCard';
 import { getManuscriptById } from '@/data/manuscripts';
 import InterlinearReader from '@/components/manuscripts/InterlinearReader';
 import { useState } from 'react';
+import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
 
 const typeColors: Record<string, string> = {
   papyrus: 'bg-accent-amber/10 text-accent-amber border-accent-amber/20',
@@ -35,6 +37,8 @@ export default function ManuscriptDetailPage() {
   const id = params.id as string;
   const ms = getManuscriptById(id);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const { lens } = useLens();
+  const { showGreekHebrew } = LENS_VARIANTS[lens];
 
   if (!ms) {
     return (
@@ -126,10 +130,21 @@ export default function ManuscriptDetailPage() {
           {ms.passages.length > 0 && (
             <RevealOnScroll>
               <KeystoneDivider className="my-8" />
-              <CodexCard>
-                <Eyebrow className="mb-6">INTERACTIVE INTERLINEAR READING</Eyebrow>
-                <InterlinearReader passages={ms.passages} script={ms.script} />
-              </CodexCard>
+              {showGreekHebrew ? (
+                <CodexCard>
+                  <Eyebrow className="mb-6">INTERACTIVE INTERLINEAR READING</Eyebrow>
+                  <InterlinearReader passages={ms.passages} script={ms.script} />
+                </CodexCard>
+              ) : (
+                <div
+                  className="p-4"
+                  style={{ border: '1px solid var(--color-border)', background: 'rgba(212,168,83,0.03)' }}
+                >
+                  <p className="t-meta text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                    The interactive {ms.script === 'greek' ? 'Greek' : 'Hebrew'} interlinear reader is available in Defender and Researcher reading modes. Use the <strong>reading mode toggle</strong> in the top navigation to switch.
+                  </p>
+                </div>
+              )}
             </RevealOnScroll>
           )}
 
