@@ -7,12 +7,15 @@ import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import CodexCard from '@/components/reader/CodexCard';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useLens } from '@/components/lens/useLens';
 
 export default function CategoryPage() {
   const params = useParams();
   const category = params.category as ArgumentCategory;
   const catInfo = getCategoryInfo(category);
   const args = getArgumentsByCategory(category);
+  const { lens } = useLens();
+  const isSimplified = lens === 'seeker';
 
   if (!catInfo) {
     return (
@@ -35,7 +38,17 @@ export default function CategoryPage() {
       <RevealOnScroll>
         <Eyebrow className="mb-3">DEFEND · ATHEISM · {catInfo.name.toUpperCase()}</Eyebrow>
         <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)' }}>{catInfo.name}</h1>
-        <p className="t-body mb-8" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>{catInfo.description}</p>
+        <p className="t-body mb-6" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>{catInfo.description}</p>
+        {isSimplified && (
+          <div
+            className="mb-8 p-4"
+            style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+          >
+            <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: 'var(--color-accent-gold)' }}>Seeker mode:</strong> Click any argument to read a plain-language overview. The formal logical structure is hidden for clarity — switch to Student or Defender mode to see it.
+            </p>
+          </div>
+        )}
       </RevealOnScroll>
 
       <KeystoneDivider className="mb-10" />
@@ -50,16 +63,18 @@ export default function CategoryPage() {
                 <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)' }}>{arg.shortDescription}</p>
 
                 {/* Mini formal statement */}
-                <div className="mb-4 text-sm space-y-1" style={{ borderLeft: '2px solid var(--color-border)', paddingLeft: 12 }}>
-                  {arg.premises.map((p, pi) => (
-                    <p key={p.id} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
-                      <span style={{ color: 'var(--color-accent-gold)' }}>P{pi + 1}.</span> {p.text}
+                {!isSimplified && (
+                  <div className="mb-4 text-sm space-y-1" style={{ borderLeft: '2px solid var(--color-border)', paddingLeft: 12 }}>
+                    {arg.premises.map((p, pi) => (
+                      <p key={p.id} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+                        <span style={{ color: 'var(--color-accent-gold)' }}>P{pi + 1}.</span> {p.text}
+                      </p>
+                    ))}
+                    <p className="t-body text-sm" style={{ color: 'var(--color-accent-gold)', marginTop: 4 }}>
+                      ∴ {arg.conclusion}
                     </p>
-                  ))}
-                  <p className="t-body text-sm" style={{ color: 'var(--color-accent-gold)', marginTop: 4 }}>
-                    ∴ {arg.conclusion}
-                  </p>
-                </div>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="t-caps text-xs inline-flex items-center gap-1.5" style={{ color: 'var(--color-accent-gold)' }}>
