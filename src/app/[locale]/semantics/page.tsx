@@ -7,6 +7,8 @@ import SemanticDefenseSlideshow from '@/components/semantic/SemanticDefenseSlide
 import { BookType, BookOpen, ShieldAlert, ArrowRight } from 'lucide-react';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
+import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
 
 export default function SemanticsDashboard() {
   // Separate the tutorial out from the rest of the arguments
@@ -14,6 +16,8 @@ export default function SemanticsDashboard() {
   const argumentsList = semanticDefenses.filter(sd => sd.id !== 'sd-tutorial');
 
   const [activeDefenseId, setActiveDefenseId] = useState<string | null>(null);
+  const { lens } = useLens();
+  const { showGreekHebrew } = LENS_VARIANTS[lens];
 
   const activeDefense = semanticDefenses.find(sd => sd.id === activeDefenseId);
 
@@ -30,6 +34,18 @@ export default function SemanticsDashboard() {
         </div>
       </RevealOnScroll>
       <KeystoneDivider className="mb-10" />
+
+      {/* Lens awareness note */}
+      {!showGreekHebrew && (
+        <div
+          className="mb-10 p-5"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75 }}>
+            <strong style={{ color: 'var(--color-accent-gold)' }}>About this tool:</strong> Semantic Studies lets you explore the exact Koine Greek grammar of debated Biblical passages — word-by-word, with definition slides. It is designed for defenders and researchers. You can browse freely, or switch to <strong>Defender</strong> or <strong>Researcher</strong> reading mode for the full scholarly context.
+          </p>
+        </div>
+      )}
 
       {/* Tutorial Banner */}
       {tutorial && (
