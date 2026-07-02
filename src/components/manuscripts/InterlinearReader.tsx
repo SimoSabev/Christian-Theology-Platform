@@ -148,8 +148,8 @@ export default function InterlinearReader({ passages, script }: InterlinearReade
   const [showTransliteration, setShowTransliteration] = useState(true);
   const [showParsing, setShowParsing] = useState(false);
   const [activePassage, setActivePassage] = useState(0);
-  const { lens } = useLens();
-  const isResearcher = lens === 'researcher';
+  const { lens, hydrated } = useLens();
+  const isResearcher = hydrated && lens === 'researcher';
 
   const passage = passages[activePassage];
   if (!passage) return null;

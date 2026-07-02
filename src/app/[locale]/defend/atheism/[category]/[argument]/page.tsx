@@ -28,7 +28,7 @@ export default function ArgumentPage() {
   const arg = getArgumentBySlug(slug);
   const semanticDefenses = getSemanticDefensesByArgument(arg?.id ?? '');
   const [activeSemanticDefense, setActiveSemanticDefense] = useState<string | null>(null);
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const lensVariant = LENS_VARIANTS[lens];
 
   if (!arg) {
@@ -71,8 +71,8 @@ export default function ArgumentPage() {
           <ActionToolbar
             argName={arg.name}
             formattedArg={formattedArg}
-            className={`mb-8 ${lens === 'defender' ? 'py-3' : ''}`}
-            style={lens === 'defender' ? { borderBottom: '1px solid var(--color-border)', paddingBottom: 12 } : undefined}
+            className={`mb-8 ${hydrated && lens === 'defender' ? 'py-3' : ''}`}
+            style={hydrated && lens === 'defender' ? { borderBottom: '1px solid var(--color-border)', paddingBottom: 12 } : undefined}
           />
 
           {/* Explore links */}
@@ -107,11 +107,11 @@ export default function ArgumentPage() {
           <RevealOnScroll>
             <section id="historical-background" className="mb-10">
               <Eyebrow className="mb-4">HISTORICAL BACKGROUND</Eyebrow>
-              {lens === 'seeker' && arg.historicalBackground.length > 0 && (
+              {hydrated && lens === 'seeker' && arg.historicalBackground.length > 0 && (
                 <DropCap letter={arg.historicalBackground[0]!} />
               )}
               <p className="t-body" style={{ color: 'var(--color-text-secondary)', whiteSpace: 'pre-line' }}>
-                {lens === 'seeker' ? arg.historicalBackground.slice(1) : arg.historicalBackground}
+                {hydrated && lens === 'seeker' ? arg.historicalBackground.slice(1) : arg.historicalBackground}
               </p>
             </section>
           </RevealOnScroll>
@@ -173,7 +173,7 @@ export default function ArgumentPage() {
           )}
 
           {/* Seeker callout — simplified language note */}
-          {lens === 'seeker' && (
+          {hydrated && lens === 'seeker' && (
             <div
               className="mb-8 p-4"
               style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
@@ -185,7 +185,7 @@ export default function ArgumentPage() {
           )}
 
           {/* Church Father Quotes — only for devotional/scholar lenses */}
-          {lensVariant.showPatristicCitations && arg.churchFatherQuotes && arg.churchFatherQuotes.length > 0 && (
+          {(!hydrated || lensVariant.showPatristicCitations) && arg.churchFatherQuotes && arg.churchFatherQuotes.length > 0 && (
             <RevealOnScroll>
               <section id="church-fathers" className="mb-10">
                 <Eyebrow className="mb-4">CHURCH FATHERS ON THIS ARGUMENT</Eyebrow>

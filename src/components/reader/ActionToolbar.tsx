@@ -12,9 +12,9 @@ type Props = {
 };
 
 export default function ActionToolbar({ argName, formattedArg, className = '', style }: Props) {
-  const { lens } = useLens();
+  const { lens, hydrated } = useLens();
   const [copied, setCopied] = useState(false);
-  const isDefender = lens === 'defender';
+  const isDefender = hydrated && lens === 'defender';
 
   function handleCopy() {
     navigator.clipboard.writeText(formattedArg).then(() => {
