@@ -1,13 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { allManuscripts, manuscriptCategories } from '@/data/manuscripts';
 import type { ManuscriptCategory, FullManuscript } from '@/data/manuscripts';
-import { ArrowRight, ScrollText, BookOpen, Calendar, MapPin, Search, Filter, ChevronRight } from 'lucide-react';
+import { ArrowRight, ScrollText, BookOpen, Calendar, MapPin, Search, Filter, ChevronRight, X } from 'lucide-react';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
+
+/** Extract the book name (e.g. "John", "1 John", "Colossians") from a loose verse ref string. */
+function extractBookName(ref: string): string | null {
+  const match = ref.trim().match(/^((?:\d\s+)?[A-Za-z]+)\.?\s+\d+/);
+  return match ? match[1]!.trim() : null;
+}
+
+/** Whether a manuscript's known contents/passages loosely cover the given verse reference's book. */
+function manuscriptMatchesRef(ms: FullManuscript, book: string): boolean {
+  const needle = book.toLowerCase();
+  if (ms.contents.toLowerCase().includes(needle)) return true;
+  if (ms.contentsDetail?.toLowerCase().includes(needle)) return true;
+  return ms.passages.some((p) => p.reference.toLowerCase().includes(needle));
+}
 
 const typeColors: Record<string, string> = {
   papyrus: 'bg-accent-amber/10 text-accent-amber border-accent-amber/20',
@@ -91,11 +106,26 @@ function ManuscriptCard({ ms, index }: { ms: FullManuscript; index: number }) {
   );
 }
 
-export default function ManuscriptsPage() {
+function ManuscriptsPageInner() {
+  const searchParams = useSearchParams();
   const [activeCategory, setActiveCategory] = useState<ManuscriptCategory | 'all'>('all');
   const [search, setSearch] = useState('');
+  const [refCleared, setRefCleared] = useState(false);
 
-  const filtered = allManuscripts.filter(ms => {
+  const rawRef = searchParams.get('ref');
+  const ref = !refCleared && rawRef ? rawRef.trim() : null;
+  const refBook = useMemo(() => (ref ? extractBookName(ref) : null), [ref]);
+
+  const refMatches = useMemo(() => {
+    if (!ref) return null;
+    if (!refBook) return allManuscripts; // couldn't parse a book — fall back to full list
+    const byBook = allManuscripts.filter((ms) => manuscriptMatchesRef(ms, refBook));
+    return byBook.length > 0 ? byBook : allManuscripts; // no book-coverage match — fall back to full list
+  }, [ref, refBook]);
+
+  const baseList = refMatches ?? allManuscripts;
+
+  const filtered = baseList.filter(ms => {
     const matchesCategory = activeCategory === 'all' ||
       (activeCategory === 'papyri' && ms.type === 'papyrus') ||
       (activeCategory === 'uncials' && (ms.type === 'uncial' || ms.type === 'codex')) ||
@@ -118,6 +148,29 @@ export default function ManuscriptsPage() {
         <ChevronRight size={12} />
         <span className="text-text-secondary">Biblical Manuscripts</span>
       </div>
+
+      {/* Ref filter banner (from command palette "Find in Manuscripts") */}
+      {ref && (
+        <div
+          className="flex flex-wrap items-center justify-between gap-3 mb-8 px-4 py-3 rounded-xl"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+            {refBook && refMatches !== allManuscripts ? (
+              <>Showing manuscripts containing <strong style={{ color: 'var(--color-accent-gold)' }}>{ref}</strong></>
+            ) : (
+              <>No manuscripts with known coverage of <strong style={{ color: 'var(--color-accent-gold)' }}>{ref}</strong> — showing the full list instead.</>
+            )}
+          </p>
+          <button
+            onClick={() => setRefCleared(true)}
+            className="t-caps text-xs inline-flex items-center gap-1.5 px-3 py-1.5 border rounded-lg shrink-0"
+            style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}
+          >
+            <X size={12} /> Clear
+          </button>
+        </div>
+      )}
 
       {/* Hero */}
       <RevealOnScroll>
@@ -173,9 +226,9 @@ export default function ManuscriptsPage() {
             className="w-full pl-10 pr-4 py-3 bg-surface-glass border border-border rounded-xl text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent-gold/30 transition-colors"
           />
         </div>
-        {(activeCategory !== 'all' || search) && (
+        {(activeCategory !== 'all' || search || ref) && (
           <button
-            onClick={() => { setActiveCategory('all'); setSearch(''); }}
+            onClick={() => { setActiveCategory('all'); setSearch(''); setRefCleared(true); }}
             className="px-4 py-3 bg-surface-glass border border-border rounded-xl text-sm text-text-muted hover:text-text-primary transition-colors flex items-center gap-2"
           >
             <Filter size={14} /> Clear Filters
@@ -203,5 +256,13 @@ export default function ManuscriptsPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ManuscriptsPage() {
+  return (
+    <Suspense fallback={null}>
+      <ManuscriptsPageInner />
+    </Suspense>
   );
 }
