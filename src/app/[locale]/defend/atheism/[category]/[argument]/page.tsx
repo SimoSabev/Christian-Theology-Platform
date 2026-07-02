@@ -257,7 +257,18 @@ export default function ArgumentPage() {
           <RevealOnScroll>
             <section id="sources" className="mb-10">
               <Eyebrow className="mb-4">KEY SOURCES</Eyebrow>
-              <CitationList sources={arg.keySources} />
+              {hydrated && !lensVariant.showFootnotes ? (
+                <div
+                  className="p-4"
+                  style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)' }}
+                >
+                  <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+                    Citations hidden in this reading mode — switch to Student, Defender or Researcher mode to see sources.
+                  </p>
+                </div>
+              ) : (
+                <CitationList sources={arg.keySources} />
+              )}
             </section>
           </RevealOnScroll>
 

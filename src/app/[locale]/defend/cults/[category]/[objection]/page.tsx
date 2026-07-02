@@ -11,6 +11,8 @@ import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import CodexCard from '@/components/reader/CodexCard';
 import CitationList from '@/components/reader/CitationList';
+import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
 import { BookOpen, ShieldAlert, CheckCircle } from 'lucide-react';
 
 export default function CultObjectionPage() {
@@ -18,6 +20,8 @@ export default function CultObjectionPage() {
   const slug = params.objection as string;
   const objection = getCultObjectionBySlug(slug);
   const [activeSemanticDefenseId, setActiveSemanticDefenseId] = useState<string | null>(null);
+  const { lens, hydrated } = useLens();
+  const lensVariant = LENS_VARIANTS[lens];
 
   if (!objection) {
     return (
@@ -157,7 +161,18 @@ export default function CultObjectionPage() {
       <RevealOnScroll>
         <section className="mb-10">
           <Eyebrow className="mb-4">PRIMARY SOURCES INVESTIGATED</Eyebrow>
-          <CitationList sources={objection.keySources} />
+          {hydrated && !lensVariant.showFootnotes ? (
+            <div
+              className="p-4"
+              style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)' }}
+            >
+              <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+                Citations hidden in this reading mode — switch to Student, Defender or Researcher mode to see sources.
+              </p>
+            </div>
+          ) : (
+            <CitationList sources={objection.keySources} />
+          )}
         </section>
       </RevealOnScroll>
 
