@@ -30,6 +30,7 @@ export default function ArgumentPage() {
   const [activeSemanticDefense, setActiveSemanticDefense] = useState<string | null>(null);
   const { lens, hydrated } = useLens();
   const lensVariant = LENS_VARIANTS[lens];
+  const isSimplified = hydrated && lensVariant.argumentDepth === 'simplified';
 
   if (!arg) {
     return (
@@ -107,11 +108,11 @@ export default function ArgumentPage() {
           <RevealOnScroll>
             <section id="historical-background" className="mb-10">
               <Eyebrow className="mb-4">HISTORICAL BACKGROUND</Eyebrow>
-              {hydrated && lens === 'seeker' && arg.historicalBackground.length > 0 && (
+              {isSimplified && arg.historicalBackground.length > 0 && (
                 <DropCap letter={arg.historicalBackground[0]!} />
               )}
               <p className="t-body" style={{ color: 'var(--color-text-secondary)', whiteSpace: 'pre-line' }}>
-                {hydrated && lens === 'seeker' ? arg.historicalBackground.slice(1) : arg.historicalBackground}
+                {isSimplified ? arg.historicalBackground.slice(1) : arg.historicalBackground}
               </p>
             </section>
           </RevealOnScroll>
@@ -173,7 +174,7 @@ export default function ArgumentPage() {
           )}
 
           {/* Seeker callout — simplified language note */}
-          {hydrated && lens === 'seeker' && (
+          {isSimplified && (
             <div
               className="mb-8 p-4"
               style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}

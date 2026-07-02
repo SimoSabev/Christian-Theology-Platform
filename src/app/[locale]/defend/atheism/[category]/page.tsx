@@ -8,6 +8,7 @@ import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import CodexCard from '@/components/reader/CodexCard';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
 
 export default function CategoryPage() {
   const params = useParams();
@@ -15,7 +16,8 @@ export default function CategoryPage() {
   const catInfo = getCategoryInfo(category);
   const args = getArgumentsByCategory(category);
   const { lens, hydrated } = useLens();
-  const isSimplified = lens === 'seeker';
+  const depth = LENS_VARIANTS[lens].argumentDepth;
+  const isSimplified = hydrated && depth === 'simplified';
 
   if (!catInfo) {
     return (
@@ -39,7 +41,7 @@ export default function CategoryPage() {
         <Eyebrow className="mb-3">DEFEND · ATHEISM · {catInfo.name.toUpperCase()}</Eyebrow>
         <h1 className="t-h1 mb-3" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)' }}>{catInfo.name}</h1>
         <p className="t-body mb-6" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>{catInfo.description}</p>
-        {hydrated && isSimplified && (
+        {isSimplified && (
           <div
             className="mb-8 p-4"
             style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
@@ -63,7 +65,7 @@ export default function CategoryPage() {
                 <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)' }}>{arg.shortDescription}</p>
 
                 {/* Mini formal statement */}
-                {(!hydrated || !isSimplified) && (
+                {!isSimplified && (
                   <div className="mb-4 text-sm space-y-1" style={{ borderLeft: '2px solid var(--color-border)', paddingLeft: 12 }}>
                     {arg.premises.map((p, pi) => (
                       <p key={p.id} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
