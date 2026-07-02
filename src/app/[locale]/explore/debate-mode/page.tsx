@@ -1,12 +1,16 @@
 'use client';
 
-import { useState } from 'react';
-import { Link } from '@/i18n/navigation';
+import { Suspense, useCallback, useMemo, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { kalamDebate } from '@/data/debates';
-import { ArrowLeft, Swords, ChevronLeft, ChevronRight, BookOpen, CircleDot } from 'lucide-react';
+import { allDebates } from '@/data/debates';
+import { allTrees } from '@/data/trees';
+import { ArrowLeft, Swords, ChevronLeft, ChevronRight, TreePine } from 'lucide-react';
 import { Eyebrow } from '@/components/ornament';
 import { useLens } from '@/components/lens/useLens';
+
+const DEFAULT_DEBATE = 'kalam';
 
 const strengthColors = {
   strong: { bg: 'bg-accent-green/10', border: 'border-accent-green/20', dot: 'bg-accent-green', label: 'Strong' },
@@ -14,11 +18,32 @@ const strengthColors = {
   contested: { bg: 'bg-accent-red/10', border: 'border-accent-red/20', dot: 'bg-accent-red', label: 'Contested' },
 };
 
-export default function DebateModePage() {
-  const debate = kalamDebate;
+function DebateModeInner() {
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const debateKeys = useMemo(() => Object.keys(allDebates), []);
+  const paramDebate = searchParams.get('debate');
+  const activeKey = paramDebate && allDebates[paramDebate] ? paramDebate : DEFAULT_DEBATE;
+  const debate = allDebates[activeKey];
+
   const [currentRound, setCurrentRound] = useState(0);
   const round = debate.rounds[currentRound];
   const { lens, hydrated } = useLens();
+
+  const handleSelectDebate = useCallback(
+    (key: string) => {
+      setCurrentRound(0);
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('debate', key);
+      router.replace(`${pathname}?${params.toString()}`);
+    },
+    [pathname, router, searchParams]
+  );
+
+  // Cross-link to a matching argument tree, if one exists for this debate key.
+  const matchingTree = allTrees[activeKey];
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col">
@@ -70,6 +95,53 @@ export default function DebateModePage() {
         </div>
       </div>
 
+      {/* Debate selector + cross-link */}
+      <div className="px-4 sm:px-6 lg:px-8 py-3 border-b border-border bg-bg-primary">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap">
+            {debateKeys.map((key) => {
+              const isActive = key === activeKey;
+              return (
+                <button
+                  key={key}
+                  onClick={() => handleSelectDebate(key)}
+                  aria-pressed={isActive}
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '0.6rem',
+                    letterSpacing: '0.15em',
+                    textTransform: 'uppercase',
+                    padding: '6px 14px',
+                    borderRadius: '9999px',
+                    border: `1px solid ${isActive ? 'var(--color-accent-gold)' : 'var(--color-border)'}`,
+                    color: isActive ? 'var(--color-bg-primary)' : 'var(--color-text-muted)',
+                    background: isActive ? 'var(--color-accent-gold)' : 'transparent',
+                    transition: 'all 150ms',
+                  }}
+                >
+                  {allDebates[key].title}
+                </button>
+              );
+            })}
+          </div>
+          {matchingTree && (
+            <Link
+              href={`/explore/argument-tree?tree=${activeKey}`}
+              className="flex items-center gap-2 text-xs hover:opacity-80 transition-opacity"
+              style={{
+                fontFamily: 'var(--font-display)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                color: 'var(--color-accent-gold)',
+              }}
+            >
+              <TreePine size={14} />
+              View the argument tree →
+            </Link>
+          )}
+        </div>
+      </div>
+
       {/* Depth Meter */}
       <div className="px-4 sm:px-6 lg:px-8 py-2 border-b border-border bg-bg-primary">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
@@ -104,7 +176,7 @@ export default function DebateModePage() {
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
         <AnimatePresence mode="wait">
           <motion.div
-            key={currentRound}
+            key={`${activeKey}-${currentRound}`}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
@@ -173,5 +245,13 @@ export default function DebateModePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DebateModePage() {
+  return (
+    <Suspense fallback={null}>
+      <DebateModeInner />
+    </Suspense>
   );
 }
