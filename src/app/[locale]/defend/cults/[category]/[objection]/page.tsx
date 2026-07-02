@@ -22,6 +22,7 @@ export default function CultObjectionPage() {
   const [activeSemanticDefenseId, setActiveSemanticDefenseId] = useState<string | null>(null);
   const { lens, hydrated } = useLens();
   const lensVariant = LENS_VARIANTS[lens];
+  const isSimplified = hydrated && lensVariant.argumentDepth === 'simplified';
 
   if (!objection) {
     return (
@@ -54,6 +55,18 @@ export default function CultObjectionPage() {
         <p className="t-body mb-8" style={{ color: 'var(--color-text-secondary)' }}>{objection.shortDescription}</p>
       </RevealOnScroll>
 
+      {/* Seeker callout — simplified mode note */}
+      {isSimplified && (
+        <div
+          className="mb-8 p-4"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: 'var(--color-accent-gold)' }}>Seeker mode:</strong> this page shows a plain-language response. Switch to Student or Defender mode for the full apologetic detail.
+          </p>
+        </div>
+      )}
+
       {/* Action Buttons for Semantic Defenses */}
       {semanticDefenses.length > 0 && (
         <div className="flex flex-wrap gap-3 mb-10">
@@ -75,13 +88,15 @@ export default function CultObjectionPage() {
 
       <KeystoneDivider className="my-8" />
 
-      {/* Historical Background */}
-      <RevealOnScroll>
-        <section className="mb-10">
-          <Eyebrow className="mb-4">HISTORICAL BACKGROUND</Eyebrow>
-          <p className="t-body" style={{ color: 'var(--color-text-secondary)', whiteSpace: 'pre-line' }}>{objection.historicalBackground}</p>
-        </section>
-      </RevealOnScroll>
+      {/* Historical Background — patristic-heavy for ancient heresies (Arianism, Gnosticism), so gated */}
+      {(!hydrated || lensVariant.showPatristicCitations || objection.historicalOrModern !== 'historical') && (
+        <RevealOnScroll>
+          <section className="mb-10">
+            <Eyebrow className="mb-4">HISTORICAL BACKGROUND</Eyebrow>
+            <p className="t-body" style={{ color: 'var(--color-text-secondary)', whiteSpace: 'pre-line' }}>{objection.historicalBackground}</p>
+          </section>
+        </RevealOnScroll>
+      )}
 
       <KeystoneDivider className="my-8" />
 

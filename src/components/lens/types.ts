@@ -1,18 +1,29 @@
 // src/components/lens/types.ts
 //
 // LENS AUDIT — Pages using useLens():
-// - /defend/atheism/[category]/[argument]/page.tsx — YES (full lens adaptation)
-// - /defend/atheism/[category]/page.tsx            — YES (seeker hides formal premises + banner)
-// - /sources/church-fathers/page.tsx               — YES (seeker hides documents, showPatristicCitations)
-// - /sources/manuscripts/[id]/page.tsx             — YES (showGreekHebrew gates interlinear reader)
-// - /explore/debate-mode/page.tsx                  — YES (seeker/defender contextual tip)
-// - /semantics/page.tsx                            — YES (showGreekHebrew gate + intro note)
-// - /[locale]/page.tsx (home)                      — YES (homepageMessage display)
-// - CommandPalette                                  — YES (inline lens picker)
-// - LensOnboarding                                 — YES (descriptions shown)
+// - /defend/atheism/[category]/[argument]/page.tsx   — YES (full lens adaptation: argumentDepth
+//   simplified banner + DropCap, showFootnotes gates sources, showPatristicCitations gates
+//   Church Father quotes)
+// - /defend/atheism/[category]/page.tsx              — YES (seeker hides formal premises + banner)
+// - /defend/cults/[category]/[objection]/page.tsx    — YES (argumentDepth simplified seeker banner;
+//   showFootnotes gates Key Sources; showPatristicCitations gates Historical Background for
+//   historically-rooted heresies like Arianism/Gnosticism)
+// - /sources/church-fathers/page.tsx                 — YES (seeker hides documents, showPatristicCitations)
+// - /sources/manuscripts/[id]/page.tsx               — YES (showGreekHebrew gates interlinear reader)
+// - /explore/debate-mode/page.tsx                    — YES (seeker/defender contextual tip)
+// - /semantics/page.tsx                              — YES (showGreekHebrew gate + intro note)
+// - /[locale]/page.tsx (home)                        — YES (homepageMessage display)
+// - /way/journey/page.tsx                            — YES (lens-mapped stage recommendations)
+// - /way/skeptic/page.tsx (via SkepticPageClient)     — YES (lens-adapted content)
+// - /way/pray/lords-prayer/page.tsx (via LensAdaptedContent) — YES (lens-adapted phrase commentary)
+// - CommandPalette                                    — YES (inline lens picker)
+// - LensOnboarding                                   — YES (descriptions shown)
+//
+// argumentDepth and showFootnotes are now wired on both apologetics reader pages
+// (atheism arguments and cults objections); showGreekHebrew and showPatristicCitations
+// remain scoped to the pages listed above.
 //
 // Intentionally lens-neutral (content is identical across all modes):
-// - /defend/cults/[category]/[objection]/page.tsx
 // - /compare/page.tsx, /compare/side-by-side, /compare/[tradition]
 // - /explore/argument-tree/page.tsx
 // - /explore/timeline/page.tsx
