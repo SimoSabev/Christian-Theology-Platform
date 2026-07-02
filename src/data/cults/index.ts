@@ -222,6 +222,160 @@ export const cultObjections: CultObjection[] = [
       },
     ],
     pastoralNote: 'Oneness Pentecostals are often deeply committed Christians with a genuine experience of the Holy Spirit and a passionate love for Jesus. The disagreement over the Trinity is real and important, but approach it as a disagreement between Christians seeking truth rather than as an encounter with a cult in the pejorative sense. The most effective pastoral question is the baptism scene: at Jesus\'s baptism (Matthew 3:16–17), who is speaking from heaven while Jesus is in the water while the Spirit descends as a dove? If God is one Person manifesting in modes, this scene is either sequential (which the text does not suggest) or requires one Person to be simultaneously in three different places doing three different things — which strains the modalist interpretation to breaking point.',
+  },
+  {
+    id: 'cs-matter-is-illusion',
+    slug: 'matter-sin-sickness-illusion',
+    name: 'Christian Science: Matter, Sin, and Sickness as Illusion',
+    category: 'christian-science',
+    shortDescription: 'Christian Science teaches that matter, sin, sickness, and death are unreal illusions of "mortal mind" — a denial of the physical creation, the reality of sin, and the bodily nature of salvation.',
+    historicalBackground: 'Mary Baker Eddy founded Christian Science after claiming a healing in 1866, and published Science and Health with Key to the Scriptures (first edition 1875), the movement\'s doctrinal textbook, read alongside the Bible in every service. The Church of Christ, Scientist was organized in Boston in 1879. Eddy\'s system is a form of philosophical idealism fused with metaphysical healing: only Mind (God) is truly real, and the material world — including the body and its diseases — is a false belief to be overcome by correct thinking.',
+    cultPosition: 'Christian Science teaches that God is the only reality — infinite Mind, Spirit, Principle, Love — and that matter does not truly exist. Science and Health states, "There is no life, truth, intelligence, nor substance in matter. All is infinite Mind and its infinite manifestation." Consequently, sin, sickness, suffering, and death are illusions of "mortal mind" with no real existence. Healing comes not through medicine but through the mental correction of these false beliefs. The atonement is redefined as the demonstration of divine Principle, not a substitutionary death for real sin.',
+    orthodoxResponse: 'Historic Christianity affirms that God created a genuinely material universe and pronounced it "very good" (Genesis 1:31). The physical body is not an illusion to be transcended but part of God\'s good creation, destined for bodily resurrection (1 Corinthians 15). Sin is not a mistaken belief but a real moral rebellion against a holy God (Romans 3:23), and sickness and death are real consequences of the Fall (Genesis 3; Romans 5:12). Most critically, the denial of material reality collapses the incarnation: "the Word became flesh" (John 1:14, Greek sarx egeneto — literally "became flesh") and the atonement, in which Jesus "bore our sins in his body on the tree" (1 Peter 2:24). If matter is unreal, Christ neither truly took on a body nor truly died — which the New Testament treats as the very ground of salvation (1 Corinthians 15:3–4, 17). Eddy\'s system, though it uses Christian vocabulary, empties every central term of its biblical content.',
+    keySources: [
+      'Mary Baker Eddy, Science and Health with Key to the Scriptures (1875; Christian Science Publishing Society)',
+      'Walter Martin, The Kingdom of the Cults (Bethany House, rev. ed. 1997)',
+      'Anthony A. Hoekema, The Four Major Cults (Eerdmans, 1963)',
+      'Ron Rhodes, The Challenge of the Cults and New Religions (Zondervan, 2001)'
+    ],
+    semanticDefenseIds: ['sd-nt-word-tabernacled', 'sd-john-19-30'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: 'John 1:14 ("The Word became flesh")',
+        abuse: 'Christian Science reinterprets the incarnation spiritually: Jesus is the demonstration of the divine idea of "Christ," not God actually taking on real material flesh, since matter is unreal.',
+        response: 'The Greek is unambiguous: kai ho Logos sarx egeneto — "and the Word became flesh." Sarx is the ordinary word for physical flesh, and egeneto ("became") denotes a real entrance into a new mode of existence, not the appearance of one. John writes precisely to exclude the docetic idea that Christ only seemed to be material (a heresy he also confronts in 1 John 4:2–3, which makes confession that "Jesus Christ has come in the flesh" the test of true doctrine). If matter is illusory, the incarnation is a fiction, and with it the whole apostolic gospel of a God who genuinely entered His creation to redeem it.',
+      },
+      {
+        verse: 'Genesis 1:31 ("God saw everything that he had made, and behold, it was very good")',
+        abuse: 'Christian Science treats the "true" creation as purely spiritual (the account of Genesis 1), while the material creation of Genesis 2 is dismissed as the false "mortal mind" record — so the physical world is not truly God\'s good work.',
+        response: 'Genesis 1 presents a material creation — light, waters, plants "yielding seed," living creatures, and human bodies formed "male and female" — and God declares this physical order "very good" (tov meod). Scripture never treats matter as evil or illusory; the problem is sin, not materiality. The consistent biblical trajectory runs from a good material creation, through its corruption by real sin, to its real redemption in a bodily resurrection and "a new heaven and a new earth" (Revelation 21:1). To spiritualize away the physical creation is to reject the doctrine of creation itself.',
+      },
+      {
+        verse: '1 Peter 2:24 ("He himself bore our sins in his body on the tree")',
+        abuse: 'Because sin and matter are illusions, Christian Science redefines the atonement as Jesus demonstrating the unreality of evil and the power of divine Principle — not a real bodily death paying for real sin.',
+        response: 'Peter grounds salvation in a bodily event: Christ "bore our sins in his body (Greek sōma) on the tree, that we might die to sin and live to righteousness; by his wounds you have been healed." This requires a real body, real wounds, and real sin to be borne. Paul makes the same point the hinge of the faith: "if Christ has not been raised, your faith is futile and you are still in your sins" (1 Corinthians 15:17). The atonement is not a metaphysical demonstration but a substitutionary death (Isaiah 53:5–6; 2 Corinthians 5:21). Christian Science retains the word "atonement" while removing everything the Bible means by it.',
+      },
+    ],
+    pastoralNote: 'People drawn to Christian Science are often seeking relief from suffering and are attracted by its promise of healing and its serene, optimistic tone. Tragically, its denial of physical illness has led some adherents to forgo medical care for themselves and their children, sometimes with fatal results — so pastoral care here can carry real urgency and should be marked by gentleness rather than triumphalism. Begin with the goodness of the body: God made it, Christ took one, and the resurrection redeems it — Christianity is not a flight from the physical but its redemption. Affirm the genuine longing for healing, then point to the God who does not deny our pain but entered it, bore it in a real body, and promises to wipe away every tear (Revelation 21:4).',
+  },
+  {
+    id: 'new-age-you-are-divine',
+    slug: 'human-divinity-pantheism',
+    name: 'New Age: "You Are Divine" and the Pantheist Self',
+    category: 'new-age',
+    shortDescription: 'The New Age movement teaches that all is one, that the self is divine, and that salvation is the awakening to one\'s own godhood — reviving the serpent\'s original promise, "you will be like God."',
+    historicalBackground: 'The New Age movement is a diffuse, decentralized spiritual current that crystallized in the West in the 1970s–80s, drawing on 19th-century Theosophy (Helena Blavatsky), Hinduism and Buddhism (monism and reincarnation), Western esotericism, and the human-potential movement. It has no single founder or creed; figures such as Blavatsky, Alice Bailey, and later popularizers like Shirley MacLaine and the channeled Course in Miracles shaped it. Its worldview is broadly pantheistic or monistic: God is an impersonal divine energy of which everything, including the self, is a part.',
+    cultPosition: 'New Age spirituality teaches that "all is one" (monism) and that this one reality is divine (pantheism). The individual self is therefore ultimately divine — a "spark" of God who has forgotten its true identity. Salvation is not forgiveness of sin but enlightenment: the awakening to one\'s own godhood and unity with the cosmos, often across many reincarnations as the soul evolves. Shirley MacLaine\'s declaration "I am God" captures the ethic. Sin and judgment are illusions or lower-consciousness constructs; there is no personal Creator distinct from creation and no final judgment to fear.',
+    orthodoxResponse: 'The Bible opens by drawing an absolute line between Creator and creature: "In the beginning, God created the heavens and the earth" (Genesis 1:1). God is personal, holy, and ontologically distinct from what He has made; creation is not an emanation of God but a work of God. The claim that the self is divine is precisely the serpent\'s promise in Eden — "you will be like God" (Genesis 3:5) — the archetypal temptation, not the path to salvation. Scripture insists there is one God and no other (Isaiah 45:5–6), that human beings are creatures made in God\'s image but not sharers in His essence, and that death is followed by judgment, not endless reincarnation: "it is appointed for man to die once, and after that comes judgment" (Hebrews 9:27). Salvation is not self-realization but reconciliation with a personal God through the real forgiveness of real sin (Ephesians 2:8–9).',
+    keySources: [
+      'Douglas Groothuis, Unmasking the New Age (InterVarsity Press, 1986)',
+      'Ron Rhodes, The Challenge of the Cults and New Religions (Zondervan, 2001)',
+      'Norman Geisler & J. Yutaka Amano, The Reincarnation Sensation (Tyndale, 1986)',
+      'Peter Jones, The Gnostic Empire Strikes Back (P&R Publishing, 1992)'
+    ],
+    semanticDefenseIds: ['sd-ot-unchanging-creator', 'sd-nt-equal-god'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: 'Luke 17:21 ("The kingdom of God is within you")',
+        abuse: 'New Age teachers cite this to claim that divinity is already within every person — that God is an inner reality to be discovered, confirming the divine self.',
+        response: 'The Greek entos hymōn is better rendered "the kingdom of God is in your midst" (as most modern translations have it), and Jesus is speaking to the Pharisees — hardly candidates for having the divine kingdom resident "within" them as an inner spark. His point is that the kingdom had arrived in His own person, standing among them, not that each individual is intrinsically divine. Elsewhere Jesus is explicit that entering the kingdom requires new birth "from above" (John 3:3) and repentance (Mark 1:15) — the discovery of a Savior outside oneself, not the awakening of godhood within.',
+      },
+      {
+        verse: 'Psalm 82:6 / John 10:34 ("You are gods")',
+        abuse: 'New Age writers use "I said, you are gods" as biblical proof that humans are divine and simply need to realize it.',
+        response: 'Psalm 82 addresses corrupt human judges, ironically called "gods" (elohim) because they held delegated authority as God\'s representatives — and the very next verse pronounces their sentence: "you shall die like men" (Psalm 82:7). The passage undercuts, rather than supports, human divinity: these "gods" are mortal and under judgment. When Jesus cites it (John 10:34–36), He argues from the lesser to the greater to defend His own unique divine Sonship, not to teach that all people are gods. The whole of Scripture maintains the Creator–creature distinction: "I am God, and there is no other" (Isaiah 45:22).',
+      },
+      {
+        verse: 'Genesis 3:5 ("You will be like God")',
+        abuse: 'While rarely cited approvingly, the New Age ideal — the self realizing its own godhood — is in substance the promise offered here, and some esoteric writers explicitly rehabilitate the serpent as a bringer of liberating knowledge.',
+        response: 'Genesis presents this promise as the primal lie. The serpent\'s offer — autonomy, secret knowledge, and self-deification apart from God — is exactly what the Fall consists of, and its fruit is not enlightenment but alienation, shame, and death (Genesis 3:7–19). That some esoteric traditions openly cast the serpent as a liberator only confirms how directly the New Age vision inverts the biblical account. The gospel offers the opposite movement: not the creature grasping at godhood, but God graciously stooping to redeem the creature (Philippians 2:6–8).',
+      },
+    ],
+    pastoralNote: 'Those drawn to New Age spirituality are often earnest seekers disillusioned with materialism and hungry for transcendence, meaning, and healing — genuine desires that the church should honor rather than mock. The pantheist offer of unity and inner divinity can feel empowering, but it ultimately leaves the seeker alone: an impersonal divine energy cannot love, forgive, or be known personally. The most compelling counter is not argument but the personal God of the gospel — a God who is not the seeker\'s own higher self but a Father who speaks, who loves, who forgives real guilt, and who offers a relationship no meditative technique can manufacture. Meet the longing for the transcendent with the God who came near.',
+  },
+  {
+    id: 'arianism-created-son',
+    slug: 'the-son-a-created-being',
+    name: 'Arianism: "There Was When the Son Was Not"',
+    category: 'arianism',
+    shortDescription: 'The fourth-century heresy of Arius held that the Son is the first and highest creature, made by the Father out of nothing — denying that Christ is co-eternal and consubstantial with God. It was condemned at the Council of Nicaea in 325.',
+    historicalBackground: 'Arius (c. 256–336), a presbyter in Alexandria, taught that the Son, though the first and greatest of God\'s creatures, was created and therefore not eternal — summarized in the slogan ēn pote hote ouk ēn, "there was when he was not." The controversy convulsed the fourth-century church. The First Council of Nicaea (325), convened by Emperor Constantine, condemned Arianism and confessed the Son to be homoousios ("of the same substance/essence") with the Father, "begotten, not made." Arius\'s chief opponent was Athanasius of Alexandria. Despite Nicaea, Arianism persisted for decades (surviving among some Germanic tribes for centuries) until the Council of Constantinople (381) reaffirmed Nicene orthodoxy. Modern groups such as the Jehovah\'s Witnesses revive its central claim.',
+    cultPosition: 'Arianism holds that only the Father is truly, eternally God (agenētos, unbegotten and without origin). The Son is a distinct, subordinate being whom the Father created out of nothing before all ages — the instrument through whom the Father then made everything else. Therefore the Son is not co-eternal: "there was when he was not." He is called "God" only in a derived, honorary sense, not by nature. Arius appealed to texts stressing the Son\'s subordination and to titles such as "firstborn" and "only-begotten" to argue for the Son\'s creaturely origin.',
+    orthodoxResponse: 'The historic church, at Nicaea (325) and Constantinople (381), confessed the Son as "God from God, Light from Light, true God from true God, begotten not made, of one substance (homoousios) with the Father." Scripture teaches the Son\'s full deity and eternity: He is the Word who "was in the beginning with God, and was God" (John 1:1), the one through whom "all things were made" and "without him was not any thing made that was made" (John 1:3) — the Maker of all cannot be Himself a made thing. He is "before all things" (Colossians 1:17), the "radiance of the glory of God and the exact imprint of his nature" (Hebrews 1:3), addressed by the Father as "God" (Hebrews 1:8). Athanasius\'s decisive argument was soteriological: only God can save; if the Son were a creature, He could not reconcile creatures to God. "Begotten, not made" preserves the biblical distinction — the Son is eternally generated from the Father\'s own being, not fashioned as a creature out of nothing.',
+    keySources: [
+      'The Nicene Creed (Council of Nicaea, 325; Council of Constantinople, 381)',
+      'Athanasius, On the Incarnation and the Orations Against the Arians (4th century)',
+      'R.P.C. Hanson, The Search for the Christian Doctrine of God: The Arian Controversy 318–381 (T&T Clark, 1988)',
+      'John Behr, The Nicene Faith (St Vladimir\'s Seminary Press, 2004)'
+    ],
+    semanticDefenseIds: ['sd-john1-1', 'sd-nt-monogenes-theos', 'sd-nt-col-1-17', 'sd-heb-1-3', 'sd-john-8-58'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: 'John 1:1 ("and the Word was God")',
+        abuse: 'Arians (ancient and modern) argue that because ho theos ("the God," with the article) refers to the Father, the anarthrous theos applied to the Word means the Word is "a god" — a lesser, created divine being.',
+        response: 'In "kai theos ēn ho logos," theos is a predicate noun preceding the verb, and such predicates regularly drop the article while remaining definite or qualitative (Colwell\'s Rule; cf. the qualitative force John intends). The clause asserts that the Word fully shares the divine nature, while the word order distinguishes the Word from the Father as a distinct person — exactly the balance Nicaea later articulated: one essence, distinct persons. Crucially, John 1:3 says everything that came into being was made through the Word, placing the Word on the Creator side of the Creator–creature line. A being through whom all created things were made cannot itself be a created thing.',
+      },
+      {
+        verse: 'John 3:16 / John 1:18 ("only-begotten" — monogenēs)',
+        abuse: 'Arians take "only-begotten" (monogenēs) to mean the Son had a beginning — that He was "begotten" in the sense of being brought into existence, and so is not eternal.',
+        response: 'The Greek monogenēs derives from monos ("only") and genos ("kind/class"), meaning "one of a kind, unique," not "begotten in time." It describes the Son\'s unique relationship to the Father, not a point of origin. The best manuscripts of John 1:18 read monogenēs theos — "the only-begotten God" (or "God the only Son") — a phrase that directly affirms the Son\'s deity. Nicaea captured the sense precisely with "begotten, not made": eternal generation from the Father\'s own being is categorically different from creation out of nothing. The Son is eternally from the Father, never a creature who began to exist.',
+      },
+      {
+        verse: 'Colossians 1:15 ("the firstborn of all creation" — prōtotokos)',
+        abuse: 'Arius read "firstborn of all creation" as "first-created," making the Son the first and highest creature the Father produced.',
+        response: 'Prōtotokos denotes rank and preeminence, not chronological origin. In Psalm 89:27 God makes David "the firstborn, the highest of the kings of the earth" — a title of supremacy, though David was neither literally firstborn nor pre-existent. Paul\'s very next words exclude the Arian reading: "for by him all things were created... all things were created through him and for him. And he is before all things, and in him all things hold together" (Colossians 1:16–17). The one who created "all things" and exists "before all things" stands outside and above creation as its Lord, not within it as its first member.',
+      },
+      {
+        verse: 'Proverbs 8:22 ("The LORD created me at the beginning of his work")',
+        abuse: 'Arians identified the Son with personified Wisdom in Proverbs 8 and used the Septuagint\'s ektisen ("created me") to prove the Son was created.',
+        response: 'Reading the Son straightforwardly into Wisdom in Proverbs 8 is exegetically fragile — the passage is a poetic personification of Wisdom, not a Christological treatise. Even granting the association, the Hebrew verb qanah (v. 22) commonly means "possessed" or "acquired" (so many versions: "The LORD possessed me at the beginning of his way"), and the imagery of Wisdom being "brought forth" (vv. 24–25) fits eternal generation rather than creation from nothing. Athanasius argued that Scripture\'s clear teaching — the Son as eternal Creator (John 1:3; Colossians 1:16) — must govern the interpretation of a poetic and disputed text, not the reverse.',
+      },
+    ],
+    pastoralNote: 'Arianism is an ancient heresy, but it is not merely a museum piece: its central instinct — that a truly monotheistic God cannot also be a Trinity, so the Son must be less than God — recurs whenever the mystery of the Godhead is pressed into the mold of human logic, and it is the theological engine behind modern groups like the Jehovah\'s Witnesses. When engaging someone drawn to an Arian view, honor the genuine concern behind it: a desire to protect the oneness and supremacy of God. Then show that Nicene orthodoxy protects that very concern better than Arianism does — for if only God can save, a created Son could not. The historic creeds were not philosophical impositions on the Bible but the church\'s careful, hard-won effort to say no more and no less than Scripture says about Christ.',
+  },
+  {
+    id: 'gnosticism-secret-knowledge',
+    slug: 'secret-knowledge-and-the-demiurge',
+    name: 'Gnosticism: Secret Knowledge, the Demiurge, and the Denial of the Incarnation',
+    category: 'gnosticism',
+    shortDescription: 'The ancient Gnostic systems taught that the material world is the flawed product of a lesser deity (the demiurge), that salvation comes through secret knowledge (gnōsis), and that the divine Christ could not truly take on evil matter — heresies the early church fathers refuted at length.',
+    historicalBackground: 'Gnosticism was a family of religious movements that flourished in the second and third centuries AD, blending Christian, Jewish, Platonic, and Eastern elements. Its teachers included Valentinus, Basilides, and Marcion (a related dualist). The movement is known both from the polemics of the church fathers — above all Irenaeus\'s Against Heresies (c. 180) and the works of Tertullian and Hippolytus — and from primary Gnostic texts, most famously the Coptic library discovered at Nag Hammadi in Egypt in 1945 (including the Gospel of Thomas, the Gospel of Truth, and the Apocryphon of John). The church rejected Gnosticism as fundamentally incompatible with the apostolic faith.',
+    cultPosition: 'Classic Gnosticism is radically dualist: spirit is good, matter is evil. The true, unknowable God is utterly transcendent, and from Him emanate a series of divine beings (aeons) filling the divine "fullness" (plērōma). The material cosmos was fashioned not by the supreme God but by an inferior, ignorant, or malevolent craftsman — the demiurge, often identified with the Old Testament Creator. Human beings are divine sparks trapped in evil bodies; salvation comes not through Christ\'s atoning death but through secret saving knowledge (gnōsis) that awakens the spark to its true origin. Because matter is evil, most Gnostics denied that the divine Christ genuinely took on flesh, teaching instead that He only appeared to have a body (docetism) or that the divine Christ descended on the man Jesus temporarily and departed before the cross.',
+    orthodoxResponse: 'The apostolic faith contradicts Gnosticism at every point. There is one God who is Himself the Creator of both spirit and matter, and His material creation is good (Genesis 1:31; 1 Timothy 4:4, "everything created by God is good"). Salvation is not esoteric knowledge for an elite but the gift of God offered openly to all who believe (Ephesians 2:8–9); Jesus taught "openly to the world" and "said nothing in secret" (John 18:20). Above all, orthodoxy insists on a real incarnation: "the Word became flesh (sarx) and dwelt among us" (John 1:14), and John makes the confession that "Jesus Christ has come in the flesh" the very test of the Spirit of truth against the spirit of antichrist (1 John 4:2–3) — a direct blow against docetism. Paul answers the plērōma speculation head-on: "in him the whole fullness of deity (pan to plērōma tēs theotētos) dwells bodily" (Colossians 2:9) — the divine fullness is not dispersed among aeons but present completely in the incarnate Christ. Irenaeus argued that the same God is Creator and Redeemer, and that what Christ did not truly assume He could not redeem; a merely apparent body means a merely apparent salvation.',
+    keySources: [
+      'Irenaeus of Lyons, Against Heresies (Adversus Haereses, c. 180 AD)',
+      'The Nag Hammadi Library (Coptic texts discovered 1945; ed. James M. Robinson)',
+      'Tertullian, Against Marcion and The Prescription Against Heretics (c. 200 AD)',
+      'Bart D. Ehrman, Lost Christianities (Oxford University Press, 2003) — for historical survey'
+    ],
+    semanticDefenseIds: ['sd-nt-word-tabernacled', 'sd-col-2-9'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: 'Colossians 2:9 ("in him the whole fullness of deity dwells bodily")',
+        abuse: 'Gnostics used the term plērōma ("fullness") for the totality of divine aeons emanating from the unknowable God, treating Christ as one mediating aeon among many within that fullness.',
+        response: 'Paul appears to seize the Gnostics\' own vocabulary and turn it against them: "in him [Christ] the whole fullness of deity (pan to plērōma tēs theotētos) dwells bodily (sōmatikōs)." Two words demolish the Gnostic system at once. Pan to plērōma — the whole fullness — is not dispersed across a hierarchy of aeons but resident completely in Christ. And sōmatikōs — "bodily" — affirms precisely what Gnosticism denied: that this divine fullness dwells in a real, physical body. Far from being one aeon among many, Christ is the entire divine fullness incarnate.',
+      },
+      {
+        verse: 'John 1:14 ("The Word became flesh")',
+        abuse: 'Docetic Gnostics taught that the divine Christ only seemed (Greek dokeō, "to appear") to have a body, since the pure divine could not truly unite with evil matter.',
+        response: 'John writes ho Logos sarx egeneto — "the Word became flesh," using sarx, the concrete word for physical flesh, and egeneto, "became," denoting a genuine transition into a real bodily existence. The Gospel and epistles of John press this deliberately against docetism: "every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God" (1 John 4:2–3). The eyewitness claim is emphatically physical — "which we have heard, which we have seen with our eyes... and touched with our hands" (1 John 1:1). A Christ who only appeared to be human could neither truly die nor truly save.',
+      },
+      {
+        verse: '1 Timothy 6:20 ("what is falsely called knowledge" — gnōsis)',
+        abuse: 'Gnostics prized secret gnōsis as the means of salvation, reserved for spiritual initiates, and read the New Testament\'s language of "knowledge" and "mystery" as endorsement of their esoteric system.',
+        response: 'Paul explicitly warns Timothy to guard against "the contradictions of what is falsely called knowledge (pseudōnymou gnōseōs)" — the phrase reads almost as a direct rebuke of the emerging Gnostic tendency. In the New Testament, the "mystery" of the gospel is not hidden esoteric doctrine but a truth once concealed and now openly revealed to all (Colossians 1:26–27; Romans 16:25–26). Saving knowledge is knowing the person of Christ (John 17:3, "this is eternal life, that they know you"), offered freely to the humble rather than doled out to an initiated elite. Salvation is by grace through faith, not by secret information (Ephesians 2:8–9).',
+      },
+      {
+        verse: 'Genesis 1:1 / Genesis 1:31 (the Creator and the goodness of creation)',
+        abuse: 'Gnostics (and Marcion) identified the Old Testament Creator with an inferior demiurge and treated the material world he made as evil or defective, severing the God of creation from the God of redemption.',
+        response: 'Scripture allows no such division: the one God who created "the heavens and the earth" (Genesis 1:1) and pronounced His material creation "very good" (Genesis 1:31) is the same God who redeems it in Christ. The New Testament affirms creation\'s goodness explicitly — "everything created by God is good, and nothing is to be rejected" (1 Timothy 4:4) — and identifies the Son as the Creator\'s agent: "all things were made through him" (John 1:3; Colossians 1:16). Irenaeus\'s central argument against the Gnostics was exactly this unity: the Creator and the Redeemer are one God, and the material world is the good handiwork He entered and will restore, not a prison to escape.',
+      },
+    ],
+    pastoralNote: 'Though the ancient Gnostic schools are long gone, the Gnostic impulse is remarkably durable and resurfaces in modern spirituality: the appeal of secret or "suppressed" knowledge, the sense that the physical body and world are obstacles to a purely spiritual salvation, and the popular fascination with "lost gospels" like Thomas as if they preserved a truer Jesus. When these ideas surface, the pastoral task is to recover the earthy realism of the Christian faith: God made matter and called it good, the Son took a real body and rose in one, and the hope of the gospel is not escape from creation but its resurrection and renewal. The faith was delivered openly, "once for all... to the saints" (Jude 3) — not whispered to initiates. Point people to the tangible, historical Jesus whom the apostles saw, heard, and touched.',
   }
 ];
 
