@@ -1,16 +1,66 @@
 'use client';
 
-import { Suspense, useCallback, useMemo, useState } from 'react';
+import { Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { allDebates } from '@/data/debates';
 import { allTrees } from '@/data/trees';
-import { ArrowLeft, Swords, ChevronLeft, ChevronRight, TreePine } from 'lucide-react';
+import { allArguments, categories } from '@/data/arguments';
+import { ArrowLeft, Swords, ChevronLeft, ChevronRight, TreePine, ChevronDown } from 'lucide-react';
 import { Eyebrow } from '@/components/ornament';
 import { useLens } from '@/components/lens/useLens';
 
 const DEFAULT_DEBATE = 'kalam';
+const OTHER_CATEGORY_ID = 'other';
+
+type PickerEntry = {
+  key: string;
+  name: string;
+  categoryId: string;
+};
+
+type PickerCategory = {
+  id: string;
+  name: string;
+  entries: PickerEntry[];
+};
+
+/**
+ * Group the keys of a tree/debate record by the category of the matching
+ * argument (looked up by slug). Keys without a matching argument fall back
+ * to an "Other" group so the picker never silently drops an entry.
+ */
+function buildPickerCategories(keys: string[]): PickerCategory[] {
+  const byCategory = new Map<string, PickerCategory>();
+
+  keys.forEach((key) => {
+    const arg = allArguments.find((a) => a.slug === key);
+    const categoryId = arg?.category ?? OTHER_CATEGORY_ID;
+    const categoryInfo = categories.find((c) => c.id === categoryId);
+    const categoryName = categoryInfo?.name ?? 'Other';
+
+    if (!byCategory.has(categoryId)) {
+      byCategory.set(categoryId, { id: categoryId, name: categoryName, entries: [] });
+    }
+    byCategory.get(categoryId)!.entries.push({
+      key,
+      name: arg?.name ?? key,
+      categoryId,
+    });
+  });
+
+  // Preserve the canonical category order, then append any "Other" group last.
+  const ordered: PickerCategory[] = [];
+  categories.forEach((c) => {
+    const group = byCategory.get(c.id);
+    if (group) ordered.push(group);
+  });
+  const other = byCategory.get(OTHER_CATEGORY_ID);
+  if (other) ordered.push(other);
+
+  return ordered;
+}
 
 const strengthColors = {
   strong: { bg: 'bg-accent-green/10', border: 'border-accent-green/20', dot: 'bg-accent-green', label: 'Strong' },
@@ -24,9 +74,23 @@ function DebateModeInner() {
   const router = useRouter();
 
   const debateKeys = useMemo(() => Object.keys(allDebates), []);
+  const pickerCategories = useMemo(() => buildPickerCategories(debateKeys), [debateKeys]);
   const paramDebate = searchParams.get('debate');
   const activeKey = paramDebate && allDebates[paramDebate] ? paramDebate : DEFAULT_DEBATE;
   const debate = allDebates[activeKey];
+
+  const activeCategoryId = useMemo(
+    () => pickerCategories.find((c) => c.entries.some((e) => e.key === activeKey))?.id ?? pickerCategories[0]?.id,
+    [pickerCategories, activeKey]
+  );
+  const [selectedCategoryId, setSelectedCategoryId] = useState(activeCategoryId);
+
+  // Keep the category selector in sync when the active debate changes (e.g. via deep link or cross-link).
+  useEffect(() => {
+    setSelectedCategoryId(activeCategoryId);
+  }, [activeCategoryId]);
+
+  const selectedCategory = pickerCategories.find((c) => c.id === selectedCategoryId) ?? pickerCategories[0];
 
   const [currentRound, setCurrentRound] = useState(0);
   const round = debate.rounds[currentRound];
@@ -95,34 +159,73 @@ function DebateModeInner() {
         </div>
       </div>
 
-      {/* Debate selector + cross-link */}
+      {/* Category + debate selector + cross-link */}
       <div className="px-4 sm:px-6 lg:px-8 py-3 border-b border-border bg-bg-primary">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
-          <div className="flex items-center gap-2 flex-wrap">
-            {debateKeys.map((key) => {
-              const isActive = key === activeKey;
-              return (
-                <button
-                  key={key}
-                  onClick={() => handleSelectDebate(key)}
-                  aria-pressed={isActive}
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '0.6rem',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '9999px',
-                    border: `1px solid ${isActive ? 'var(--color-accent-gold)' : 'var(--color-border)'}`,
-                    color: isActive ? 'var(--color-bg-primary)' : 'var(--color-text-muted)',
-                    background: isActive ? 'var(--color-accent-gold)' : 'transparent',
-                    transition: 'all 150ms',
-                  }}
-                >
-                  {allDebates[key].title}
-                </button>
-              );
-            })}
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
+            {/* Category dropdown */}
+            <div className="relative">
+              <select
+                value={selectedCategoryId}
+                onChange={(e) => setSelectedCategoryId(e.target.value)}
+                aria-label="Argument category"
+                className="appearance-none cursor-pointer"
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '0.6rem',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                  padding: '6px 30px 6px 14px',
+                  borderRadius: '9999px',
+                  border: '1px solid var(--color-border)',
+                  color: 'var(--color-text-muted)',
+                  background: 'transparent',
+                }}
+              >
+                {pickerCategories.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown
+                size={12}
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                style={{ color: 'var(--color-text-muted)' }}
+              />
+            </div>
+
+            {/* Debate dropdown, scoped to the selected category */}
+            <div className="relative">
+              <select
+                value={activeKey}
+                onChange={(e) => handleSelectDebate(e.target.value)}
+                aria-label="Debate"
+                className="appearance-none cursor-pointer max-w-[65vw] sm:max-w-xs"
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '0.6rem',
+                  letterSpacing: '0.1em',
+                  textTransform: 'uppercase',
+                  padding: '6px 30px 6px 14px',
+                  borderRadius: '9999px',
+                  border: '1px solid var(--color-accent-gold)',
+                  color: 'var(--color-bg-primary)',
+                  background: 'var(--color-accent-gold)',
+                }}
+              >
+                {(selectedCategory?.entries ?? []).map((entry) => (
+                  <option key={entry.key} value={entry.key}>
+                    {entry.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown
+                size={12}
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                style={{ color: 'var(--color-bg-primary)' }}
+              />
+            </div>
           </div>
           {matchingTree && (
             <Link
