@@ -78,10 +78,10 @@ export default function ArgumentPage() {
 
           {/* Explore links */}
           <div className="flex flex-wrap gap-3 mb-10">
-            <Link href={`/explore/argument-tree/${arg.slug}`} className="t-caps text-xs inline-flex items-center gap-2 px-3 py-2 border" style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}>
+            <Link href={`/explore/argument-tree?tree=${arg.slug}`} className="t-caps text-xs inline-flex items-center gap-2 px-3 py-2 border" style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}>
               <TreePine size={12} /> Argument Tree
             </Link>
-            <Link href={`/explore/debate-mode/${arg.slug}`} className="t-caps text-xs inline-flex items-center gap-2 px-3 py-2 border" style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}>
+            <Link href={`/explore/debate-mode?debate=${arg.slug}`} className="t-caps text-xs inline-flex items-center gap-2 px-3 py-2 border" style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}>
               <Swords size={12} /> Debate Mode
             </Link>
             {semanticDefenses.map((sd) => (
