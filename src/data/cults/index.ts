@@ -260,6 +260,78 @@ export const cultObjections: CultObjection[] = [
     pastoralNote: 'People drawn to Christian Science are often seeking relief from suffering and are attracted by its promise of healing and its serene, optimistic tone. Tragically, its denial of physical illness has led some adherents to forgo medical care for themselves and their children, sometimes with fatal results — so pastoral care here can carry real urgency and should be marked by gentleness rather than triumphalism. Begin with the goodness of the body: God made it, Christ took one, and the resurrection redeems it — Christianity is not a flight from the physical but its redemption. Affirm the genuine longing for healing, then point to the God who does not deny our pain but entered it, bore it in a real body, and promises to wipe away every tear (Revelation 21:4).',
   },
   {
+    id: 'cs-science-and-health-revelation',
+    slug: 'science-and-health-as-revelation',
+    name: 'Christian Science: "Science and Health" as Higher Revelation',
+    category: 'christian-science',
+    shortDescription: 'Christian Science treats Mary Baker Eddy\'s Science and Health with Key to the Scriptures as the inspired interpretive key to the Bible — a second authority that governs how Scripture may be read, displacing the sufficiency of Scripture itself.',
+    historicalBackground: 'Mary Baker Eddy published Science and Health with Key to the Scriptures in 1875 and revised it repeatedly until her death in 1910. In the Church of Christ, Scientist, it functions not as commentary but as authoritative "revelation": at the heart of every Sunday service, an appointed reader reads correlated passages from the King James Bible and from Science and Health, with no sermon — the two are read side by side as the church\'s "dual and impersonal pastor." Eddy taught that her book supplied the spiritual "Key" without which Scripture could not be rightly understood, effectively subordinating the Bible to her interpretation.',
+    cultPosition: 'Christian Science affirms the Bible as its "sufficient guide to eternal Life," yet in practice reads it only through Eddy\'s Science and Health, which it regards as divinely inspired and free from the errors it attributes to the biblical text. Eddy claimed that God was the author of her book and that it contained the final, scientific revelation of Christ\'s method. Passages of Scripture are systematically reinterpreted through her metaphysical categories (God as Mind, matter as illusion), so that the plain sense of the text is overridden by the "Key."',
+    orthodoxResponse: 'Scripture presents itself as sufficient and complete for faith and life, needing no external key of later revelation. Paul tells Timothy that "all Scripture is breathed out by God and profitable... that the man of God may be complete, equipped for every good work" (2 Timothy 3:16–17) — the God-breathed writings, not a nineteenth-century supplement, make one complete. Scripture closes with a solemn warning against adding to the prophetic word (Revelation 22:18–19), and Jude appeals to "the faith once for all delivered to the saints" (Jude 3) — once for all, not progressively unveiled through Eddy. The Berean commendation is instructive: they tested even apostolic preaching "against the Scriptures" (Acts 17:11), the reverse of testing Scripture against a later book. A revelation that must be filtered through Science and Health to yield its true meaning is no longer the Bible speaking, but Eddy speaking through the Bible.',
+    keySources: [
+      'Mary Baker Eddy, Science and Health with Key to the Scriptures (1875; Christian Science Publishing Society)',
+      'Anthony A. Hoekema, The Four Major Cults (Eerdmans, 1963)',
+      'Walter Martin, The Kingdom of the Cults (Bethany House, rev. ed. 1997)',
+      'Church Manual of The First Church of Christ, Scientist (on the "impersonal pastor")'
+    ],
+    semanticDefenseIds: ['sd-2-tim-3-16', 'sd-scripture-sufficiency'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: '2 Timothy 3:16 ("All Scripture is breathed out by God")',
+        abuse: 'Christian Science affirms the inspiration of Scripture in principle but treats Science and Health as the indispensable "Key" that unlocks its true, spiritual meaning — so that the Bible cannot function as sufficient without Eddy\'s interpretation.',
+        response: 'Paul\'s point is precisely sufficiency: the God-breathed Scriptures are "profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work" (2 Timothy 3:16–17). If Scripture alone makes the believer complete and fully equipped, no additional revelatory key is required to render it usable. To make Science and Health the necessary lens is to deny the very sufficiency this verse asserts — it treats the God-breathed text as insufficient until supplemented by a human author.',
+      },
+      {
+        verse: 'Revelation 22:18–19 (the warning against adding to the words)',
+        abuse: 'Christian Science does not formally claim to add to the biblical canon, but functionally elevates Science and Health to co-equal authority, read alongside Scripture as the church\'s pastor and governing its interpretation.',
+        response: 'John closes the canon with a severe warning against adding to or taking from "the words of the prophecy of this book," reflecting the consistent biblical concern (Deuteronomy 4:2; 12:32; Proverbs 30:6) that God\'s word not be supplemented by human additions. A book that is read as the co-pastor of the church, without which Scripture cannot be understood, functions as an addition in the most consequential sense — it becomes the controlling authority. The orthodox posture is the opposite: every teacher, book, and tradition stands under Scripture and is judged by it, never the reverse.',
+      },
+      {
+        verse: 'Acts 17:11 (the Bereans "examining the Scriptures")',
+        abuse: 'Christian Science encourages members to study Science and Health as the trustworthy guide by which the meaning of the Bible is discerned, making Eddy\'s text the standard of judgment.',
+        response: 'Luke commends the Bereans as "more noble" because they received the message eagerly yet examined even the apostle Paul\'s preaching "against the Scriptures... to see if these things were so" (Acts 17:11). Scripture is the standard against which teaching is measured — including apostolic teaching. Christian Science inverts this: it measures Scripture against Eddy. The Berean method requires that Science and Health itself be tested against the Bible, and where Eddy denies the reality of the body, the atonement, and the bodily resurrection, she fails that test decisively.',
+      },
+    ],
+    pastoralNote: 'For a lifelong Christian Scientist, Science and Health is not merely a book but the trusted key that has organized their entire spiritual life, and questioning it can feel like questioning God. Rather than attacking Eddy directly, invite them into the text of Scripture on its own terms: read a Gospel account of Jesus healing a real body, or Paul\'s argument in 1 Corinthians 15, and simply ask what the passage says before any "key" is applied. Many raised in Christian Science have never encountered the Bible without Eddy\'s interpolations. Gently model the sufficiency of Scripture by letting it speak plainly, and trust the living Word to draw them.',
+  },
+  {
+    id: 'cs-healing-and-suffering',
+    slug: 'healing-testimony-and-the-problem-of-suffering',
+    name: 'Christian Science: Healing Claims and the Reality of Suffering',
+    category: 'christian-science',
+    shortDescription: 'Christian Science rests much of its credibility on testimonies of healing through correct thought alone, treating sickness as a mental error to be corrected — a claim that collides with medical reality and with the Bible\'s honest theology of suffering.',
+    historicalBackground: 'Mary Baker Eddy attributed her own recovery from an 1866 injury to a spiritual insight into the healing method of Jesus, and healing became the movement\'s central evidence and practice. Christian Science "practitioners" are trained to treat conditions through prayer and mental correction rather than medicine, and the church has long published testimonies of healing in its periodicals. Historically, adherents have declined medical treatment — including for their children — on the conviction that disease has no real existence. This has produced documented cases of preventable death and, in several U.S. jurisdictions, legal proceedings over the withholding of care from minors.',
+    cultPosition: 'Because matter and disease are unreal illusions of "mortal mind," Christian Science teaches that genuine healing comes by correcting the false belief in sickness, not by treating a body that only seems to be ill. Testimonies of recovery are offered as empirical proof of the "Science" of Christ. Suffering is not something God permits within a fallen but real creation; it is an error to be dispelled by right understanding. Reliance on medicine is regarded as a concession to the illusion and a hindrance to spiritual healing.',
+    orthodoxResponse: 'Scripture never treats suffering as an illusion to be thought away; it treats it as a real feature of a fallen world that God enters, redeems, and ultimately abolishes. Jesus healed real bodies with real diseases (Mark 1:40–42), yet he also wept at a real grave (John 11:35) and sweat in real anguish (Luke 22:44). Paul, a man of great faith, was left with a "thorn in the flesh" that God did not remove, teaching him that "my grace is sufficient for you, for my power is made perfect in weakness" (2 Corinthians 12:7–9) — a theology impossible if sickness were merely a mistaken thought. Paul commends medicine (1 Timothy 5:23), leaves a co-worker sick (2 Timothy 4:20), and calls Luke "the beloved physician" (Colossians 4:14). Anecdotal healing testimonies cannot establish a metaphysic that the New Testament flatly contradicts, and the pastoral stakes are grave: a doctrine that denies real illness can and has cost real lives. The Christian hope is not that suffering is unreal but that it is temporary — God "will wipe away every tear," and "death shall be no more" (Revelation 21:4).',
+    keySources: [
+      'Mary Baker Eddy, Science and Health with Key to the Scriptures (1875; Christian Science Publishing Society)',
+      'Rita Swan, "Children, Medicine, Religion, and the Law," in Advances in Pediatrics (on withheld care)',
+      'Anthony A. Hoekema, The Four Major Cults (Eerdmans, 1963)',
+      'Ron Rhodes, The Challenge of the Cults and New Religions (Zondervan, 2001)'
+    ],
+    semanticDefenseIds: ['sd-2-cor-12-9', 'sd-suffering-theodicy'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: 'Isaiah 53:5 / 1 Peter 2:24 ("by his wounds you have been healed")',
+        abuse: 'Christian Science reads "healed" as proof that the atonement guarantees the dispelling of physical sickness through correct spiritual understanding, since disease is unreal.',
+        response: 'Peter quotes Isaiah 53:5 in a context explicitly about sin, not physical disease: Christ "bore our sins in his body on the tree, that we might die to sin and live to righteousness; by his wounds you have been healed" (1 Peter 2:24). The healing in view is reconciliation to God from real sin — accomplished through Christ\'s real wounds and real body. The passage grounds salvation in a physical event, which is the opposite of Eddy\'s denial of matter. Where Scripture does describe bodily healing, it treats the body and its diseases as real things God graciously restores, never as illusions the sufferer must intellectually reject.',
+      },
+      {
+        verse: '2 Corinthians 12:7–9 (Paul\'s "thorn in the flesh")',
+        abuse: 'Christian Science must treat Paul\'s unhealed affliction as a failure to grasp the Science of healing, since a truly enlightened understanding would have dispelled the illusion of the thorn.',
+        response: 'Paul pleaded three times for the thorn\'s removal, and the Lord answered not by healing but by refusing to heal: "My grace is sufficient for you, for my power is made perfect in weakness" (2 Corinthians 12:9). Paul then rejoices in weaknesses so that Christ\'s power may rest on him. This is unintelligible on Christian Science premises — an apostle of surpassing faith, left afflicted by God\'s own deliberate choice, learning that God\'s purposes are served through real weakness. Scripture presents suffering not as an error awaiting correction but as a real trial God can sanctify (Romans 5:3–5; James 1:2–4).',
+      },
+      {
+        verse: 'Colossians 4:14 / 1 Timothy 5:23 (medicine and "the beloved physician")',
+        abuse: 'Because reliance on matter is a concession to illusion, Christian Science discourages medical treatment, treating recourse to physicians as spiritual failure.',
+        response: 'Paul, writing under inspiration, refers warmly to "Luke the beloved physician" (Colossians 4:14) and counsels Timothy, "no longer drink only water, but use a little wine for the sake of your stomach and your frequent ailments" (1 Timothy 5:23) — plain endorsement of ordinary physical remedy. He also reports leaving Trophimus "ill at Miletus" (2 Timothy 4:20), with no suggestion that this reflected a defect of faith. Scripture treats bodies and their ailments as real, and their care through material means as good and wise. The refusal of medicine on the ground that illness is unreal has no biblical warrant and, tragically, has proven deadly — a strong practical confirmation that the underlying doctrine is false.',
+      },
+    ],
+    pastoralNote: 'This is the point where Christian Science can do the most tangible harm, so gentleness must be paired with clarity, especially where children\'s welfare is involved. Many adherents cling to the healing doctrine because they have staked their identity and hope on it, and admitting illness is real can feel like spiritual defeat. Do not mock the longing for healing — it is good and God-given. Instead, present the God who neither denies pain nor abandons us to it: who took a real body, suffered in it, and rose in it, and who works even through physicians and medicine as gifts of his providence. The gospel offers something Christian Science cannot: not the pretense that suffering is nothing, but the promise that in Christ it is neither meaningless nor final.',
+  },
+  {
     id: 'new-age-you-are-divine',
     slug: 'human-divinity-pantheism',
     name: 'New Age: "You Are Divine" and the Pantheist Self',
@@ -294,6 +366,78 @@ export const cultObjections: CultObjection[] = [
       },
     ],
     pastoralNote: 'Those drawn to New Age spirituality are often earnest seekers disillusioned with materialism and hungry for transcendence, meaning, and healing — genuine desires that the church should honor rather than mock. The pantheist offer of unity and inner divinity can feel empowering, but it ultimately leaves the seeker alone: an impersonal divine energy cannot love, forgive, or be known personally. The most compelling counter is not argument but the personal God of the gospel — a God who is not the seeker\'s own higher self but a Father who speaks, who loves, who forgives real guilt, and who offers a relationship no meditative technique can manufacture. Meet the longing for the transcendent with the God who came near.',
+  },
+  {
+    id: 'new-age-reincarnation',
+    slug: 'reincarnation-vs-resurrection',
+    name: 'New Age: Reincarnation vs. Resurrection and Judgment',
+    category: 'new-age',
+    shortDescription: 'New Age spirituality teaches that the soul passes through many lifetimes, evolving toward enlightenment across endless rebirths — a cyclical view of destiny that Scripture answers with a single life, a bodily resurrection, and a final judgment.',
+    historicalBackground: 'Reincarnation entered Western spirituality chiefly through nineteenth-century Theosophy (Helena Blavatsky), which imported and reshaped Hindu and Buddhist ideas of samsara and karma for a Western audience. In the New Age synthesis, reincarnation is typically fused with an optimistic doctrine of "spiritual evolution": the soul is not trapped in suffering (as in much classical Eastern thought) but is progressively perfecting itself over many lives, working off karma and ascending toward unity with the divine. Popularized by figures such as Shirley MacLaine and by the therapeutic vogue for "past-life regression," reincarnation became one of the most widely held New Age beliefs.',
+    cultPosition: 'The New Age holds that the true self is an eternal soul that has lived many lives and will live many more, migrating from body to body until it attains enlightenment and reunion with the divine source. Moral consequences are handled by karma across lifetimes rather than by judgment before a personal God; there is therefore no final reckoning to fear and no urgency of decision within a single life. Death is merely a transition, and the self\'s ultimate destiny is guaranteed by the evolutionary process itself.',
+    orthodoxResponse: 'Scripture is emphatic and precise: "it is appointed for man to die once, and after that comes judgment" (Hebrews 9:27). One life, one death, then judgment — not an indefinite series of rebirths in which consequences are endlessly deferred. The Christian hope is not escape from the body into further incarnations but the resurrection of the body (1 Corinthians 15:42–44) and everlasting life with a personal God. Where the New Age locates salvation in a self-driven evolutionary ascent, the gospel locates it in grace: the dead cannot perfect themselves, and Christ\'s own resurrection is "the firstfruits of those who have fallen asleep" (1 Corinthians 15:20), the pattern and guarantee of the believer\'s future. Reincarnation also empties the cross of meaning — if every soul is guaranteed unlimited chances to work off its own karma, there is nothing for a Savior to accomplish. The finality of Hebrews 9:27 is precisely what makes the once-for-all sacrifice of Christ (Hebrews 9:26, 28) good news.',
+    keySources: [
+      'Norman Geisler & J. Yutaka Amano, The Reincarnation Sensation (Tyndale, 1986)',
+      'Douglas Groothuis, Unmasking the New Age (InterVarsity Press, 1986)',
+      'Mark Albrecht, Reincarnation: A Christian Appraisal (InterVarsity Press, 1982)',
+      'Ron Rhodes, The Challenge of the Cults and New Religions (Zondervan, 2001)'
+    ],
+    semanticDefenseIds: ['sd-heb-9-27', 'sd-1-cor-15-resurrection'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: 'John 9:2 ("who sinned, this man or his parents, that he was born blind?")',
+        abuse: 'New Age writers argue that the disciples\' question assumes the man could have sinned before birth — that is, in a previous life — showing that reincarnation was accepted in Jesus\'s day and implicit in the New Testament.',
+        response: 'The disciples\' question reflects a common Jewish assumption that suffering is a direct penalty for specific sin, not a belief in reincarnation; first-century Judaism did not teach the transmigration of souls. In any case, Jesus rejects both proposed causes outright: "It was not that this man sinned, or his parents, but that the works of God might be displayed in him" (John 9:3). Far from endorsing pre-existent sin, Jesus dismisses the framing entirely and redirects to God\'s redemptive purpose. A text in which Jesus denies both options cannot establish the option he never affirmed.',
+      },
+      {
+        verse: 'Matthew 11:14 (John the Baptist "is Elijah who is to come")',
+        abuse: 'New Age teachers cite Jesus\'s statement that John the Baptist "is Elijah" as evidence that John was the reincarnation of Elijah, and thus that Jesus taught reincarnation.',
+        response: 'The angel had already explained the sense before John\'s birth: he would go before the Lord "in the spirit and power of Elijah" (Luke 1:17) — a functional likeness in prophetic role, not a transfer of soul. This is confirmed decisively at the Transfiguration, where Elijah appears in person alongside Moses and Jesus (Matthew 17:3): Elijah is manifestly Elijah, not John, and the two are distinct persons living (or appearing) at the same time. Moreover Elijah never died but was taken up in a whirlwind (2 Kings 2:11), so there was no "soul" to be reborn. John himself flatly denied being Elijah (John 1:21). The Elijah-John identification is typological, not reincarnational.',
+      },
+      {
+        verse: 'Hebrews 9:27 ("it is appointed for man to die once, and after that comes judgment")',
+        abuse: 'Some New Age interpreters try to soften this verse as applying only to a particular body or a single stage, preserving room for the soul\'s many deaths and rebirths.',
+        response: 'The text will not bear the softening. "It is appointed for man to die once (hapax), and after that comes judgment" sets death as a singular appointment followed directly by judgment — the very structure reincarnation denies. The word hapax ("once for all") is the same emphasis applied in the next verse to Christ, who was offered "once to bear the sins of many" (Hebrews 9:28). The parallel is deliberate: as Christ died once, so man dies once. There is no textual space for a cycle of deaths; the one death and the one judgment are what make the one sacrifice sufficient.',
+      },
+    ],
+    pastoralNote: 'Reincarnation can feel comforting — it seems to offer endless second chances and to soften the finality of death — so the biblical insistence on one life and a coming judgment may land as harsh. But handled rightly, it is liberating rather than frightening: the gospel says you do not have to earn your way up through countless lives of karmic striving, because Christ has already done what no amount of self-perfection could. Where the seeker fears judgment, point them to the Judge who bore the judgment himself. Where they grieve a loved one\'s death, offer not the vague hope of rebirth elsewhere but the concrete promise of resurrection and reunion in a renewed creation. Meet the longing for continuance with the surer hope of everlasting life.',
+  },
+  {
+    id: 'new-age-channeling-and-energy',
+    slug: 'channeling-and-energy-practices',
+    name: 'New Age: Channeling, Mediums, and Energy Practices',
+    category: 'new-age',
+    shortDescription: 'New Age spirituality embraces channeling, mediumship, and the manipulation of subtle "energies" as paths to guidance and healing — practices the Bible does not dismiss as empty but warns against as real spiritual danger.',
+    historicalBackground: 'Contacting spirits and unseen forces is ancient, but the modern New Age forms trace through nineteenth-century Spiritualism (séances, mediums) and Theosophy\'s claimed communications from "Ascended Masters." In the late twentieth century "channeling" — a medium allowing a discarnate entity to speak through them — became prominent through figures such as J.Z. Knight (channeling "Ramtha") and the channeled text A Course in Miracles. Alongside this runs a family of energy-based practices (chakra work, Reiki, therapeutic "energy" healing, crystals) premised on an impersonal life-force that the practitioner learns to channel and balance. The common thread is the pursuit of guidance, power, or healing from a spiritual realm approached apart from the God of Scripture.',
+    cultPosition: 'The New Age treats the spirit realm as generally benevolent and accessible: channeled entities and "spirit guides" are wise teachers offering higher knowledge; mediums bridge the living and the dead; and unseen energies can be sensed, directed, and harmonized for healing and enlightenment. Because all is ultimately one divine energy, contacting spirits or manipulating life-force is seen as natural spiritual technology, morally neutral or positively good, and a means of accelerating the self\'s evolution toward godhood.',
+    orthodoxResponse: 'Scripture does not treat the spirit world as an open, friendly resource; it forbids these practices precisely because the realm is real and not safely neutral. The Law lists them together for prohibition: "There shall not be found among you anyone... who practices divination or tells fortunes or interprets omens... or a medium or a necromancer or one who inquires of the dead, for whoever does these things is an abomination to the LORD" (Deuteronomy 18:10–12). The reason is not superstition but danger: Paul warns that "even Satan disguises himself as an angel of light" (2 Corinthians 11:14), so a "wise" channeled guide may be exactly the deceiving spirit John tells believers to test rather than trust (1 John 4:1). Saul\'s consultation of the medium at Endor ends in condemnation and death (1 Samuel 28; 1 Chronicles 10:13–14). The Christian is not left to negotiate the spirit realm alone: guidance comes from the Word and the indwelling Holy Spirit, and the dead are entrusted to God, not summoned by the living. Where the New Age reaches into the unseen for power, the gospel offers relationship with the God who reaches down in love — and warns that the shortcut through spirits leads not upward but into bondage.',
+    keySources: [
+      'Douglas Groothuis, Confronting the New Age (InterVarsity Press, 1988)',
+      'Ron Rhodes, The Challenge of the Cults and New Religions (Zondervan, 2001)',
+      'Peter Jones, The Gnostic Empire Strikes Back (P&R Publishing, 1992)',
+      'Elliot Miller, A Crash Course on the New Age Movement (Baker, 1989)'
+    ],
+    semanticDefenseIds: ['sd-deut-18-10', 'sd-1-john-4-1'],
+    historicalOrModern: 'modern',
+    keyVersesAbused: [
+      {
+        verse: '1 Corinthians 12:8–10 ("word of knowledge," "distinguishing between spirits")',
+        abuse: 'New Age teachers point to the Bible\'s own language of spiritual gifts, spirit-communication, and "words of knowledge" to argue that channeling and psychic sensitivity are simply the same phenomena the church has always affirmed.',
+        response: 'Paul\'s spiritual gifts are given by the Holy Spirit to the church "for the common good" (1 Corinthians 12:7) and are exercised under his lordship, in submission to apostolic doctrine — the very opposite of an autonomous medium yielding their will to an unknown entity. Tellingly, the same list includes "the ability to distinguish between spirits" (v. 10), which presupposes that not every spirit is from God. John makes the duty explicit: "do not believe every spirit, but test the spirits to see whether they are from God" (1 John 4:1), and the test is confession that Jesus Christ has come in the flesh (4:2–3). Channeled entities routinely fail that test. Biblical gifts and New Age channeling are not the same phenomenon under different names; one flows from the Spirit of truth, the other from spirits Scripture commands us to test and, where they deny Christ, to reject.',
+      },
+      {
+        verse: '1 Samuel 28 (Saul and the medium at Endor)',
+        abuse: 'The apparent success of the medium in bringing up Samuel is cited as biblical precedent that mediumship works and can even summon the righteous dead.',
+        response: 'Whatever exactly occurred at Endor, the narrative is framed as sin, not sanction. Saul had himself expelled the mediums in obedience to the Law (1 Samuel 28:3, 9), and his secret return to one is presented as a final act of apostasy. The inspired verdict is unambiguous: "Saul died for his breach of faith... and also because he consulted a medium, seeking guidance, and did not seek guidance from the LORD. Therefore the LORD put him to death" (1 Chronicles 10:13–14). The passage is a warning against consulting the dead, not a manual for doing so — the one biblical figure who seeks a medium is condemned for it.',
+      },
+      {
+        verse: 'Acts 16:16–18 (the slave girl with a "spirit of divination")',
+        abuse: 'The girl\'s spirit accurately announced that Paul and his companions were "servants of the Most High God," which is taken to show that channeled and psychic spirits speak truth and can even affirm the gospel.',
+        response: 'The spirit did speak true words — yet Paul, "greatly annoyed," commanded it to come out (Acts 16:18), because a true statement from a deceiving spirit is a lure, not an endorsement. This mirrors 2 Corinthians 11:14: Satan appears as an angel of light, and demons in the Gospels sometimes announce Jesus\'s true identity (Mark 1:24) while remaining demons. The episode teaches discernment, not trust: the accuracy of a spirit message is no proof of its source or safety. Paul\'s response — expelling the spirit rather than consulting it — models the biblical stance toward channeling and divination.',
+      },
+    ],
+    pastoralNote: 'People engaged in channeling or energy practices are often sincerely seeking guidance, healing, or contact with a deceased loved one, and they may report genuinely uncanny experiences that a flat denial only alienates. Take the reality of the spiritual realm seriously rather than dismissing it as fantasy — Scripture does. The pastoral concern is protective, not superstitious: these doorways can lead into deception, fear, and bondage, and many who leave the New Age describe exactly that arc. Point to the God who does not have to be summoned, coaxed, or channeled, but who speaks clearly in his Word, indwells his people by his Spirit, and holds the departed safely in his hand. Where they have known fear from the spirit realm, offer the perfect love that casts out fear (1 John 4:18).',
   },
   {
     id: 'arianism-created-son',
@@ -337,6 +481,68 @@ export const cultObjections: CultObjection[] = [
     pastoralNote: 'Arianism is an ancient heresy, but it is not merely a museum piece: its central instinct — that a truly monotheistic God cannot also be a Trinity, so the Son must be less than God — recurs whenever the mystery of the Godhead is pressed into the mold of human logic, and it is the theological engine behind modern groups like the Jehovah\'s Witnesses. When engaging someone drawn to an Arian view, honor the genuine concern behind it: a desire to protect the oneness and supremacy of God. Then show that Nicene orthodoxy protects that very concern better than Arianism does — for if only God can save, a created Son could not. The historic creeds were not philosophical impositions on the Bible but the church\'s careful, hard-won effort to say no more and no less than Scripture says about Christ.',
   },
   {
+    id: 'arianism-i-am-eternality',
+    slug: 'the-eternal-i-am',
+    name: 'Arianism: "Before Abraham Was, I Am" and the Eternity of the Son',
+    category: 'arianism',
+    shortDescription: 'The Arian slogan "there was when he was not" collapses before Jesus\'s own claim, "before Abraham was, I am" (John 8:58) — a declaration of timeless existence and of the divine Name that the church confessed at Nicaea as the eternity of the Son.',
+    historicalBackground: 'The heart of Arius\'s teaching was temporal: the Son had a beginning ("there was when he was not," ēn pote hote ouk ēn), and so, however exalted, he belonged on the creaturely side of eternity. The Nicene response in 325 confessed the Son as "begotten of the Father before all ages... true God from true God, begotten not made," deliberately excluding any point at which the Son was not. Athanasius and the Cappadocians pressed the point that the Son\'s generation is eternal and internal to God\'s own being, not an event in time. Modern Arian groups such as the Jehovah\'s Witnesses inherit the temporal claim, and their New World Translation renders John 8:58 as "before Abraham came into existence, I have been," softening the present-tense "I am" precisely to avoid its force.',
+    cultPosition: 'Arianism holds that the Son, as the first and highest creature, came into existence before the ages but is not himself without beginning — only the Father is truly eternal and unoriginate (agenētos). Texts in which Jesus appears to claim pre-existence are read as referring to a created pre-existence: the Son existed before Abraham because he was made before Abraham, as the firstborn of creation, not because he is the eternal God. To blunt John 8:58, the claim to timeless "I am" is recast as merely "I have been" — long-lived, but still a creature with an origin.',
+    orthodoxResponse: 'In John 8:58 Jesus answers a question about time ("you are not yet fifty years old, and have you seen Abraham?") with a statement that shatters time: "Truly, truly, I say to you, before Abraham was (genesthai, "came to be"), I am (egō eimi)." He does not say "I was" but "I am" — an absolute present that asserts timeless, uncaused existence, standing behind and before the coming-to-be of Abraham. The phrase egō eimi also echoes the divine self-naming of Exodus 3:14 and the "I am he" declarations of Isaiah (43:10; 46:4, LXX egō eimi), which is why his hearers immediately "picked up stones to throw at him" (John 8:59) — the penalty for blasphemy, not for claiming mere longevity. This is exactly the Son whom John 1:1 places "in the beginning... with God," and through whom all things were made (John 1:3): a being who exists before all created things and outside the category of coming-to-be cannot himself have come to be. Nicaea\'s "begotten, not made... before all ages" simply confesses what Jesus here declares.',
+    keySources: [
+      'The Nicene Creed (Council of Nicaea, 325; Council of Constantinople, 381)',
+      'Athanasius, Orations Against the Arians (4th century)',
+      'D.A. Carson, The Gospel According to John (Eerdmans/Pillar, 1991)',
+      'James White, The Forgotten Trinity (Bethany House, 1998)'
+    ],
+    semanticDefenseIds: ['sd-john-8-58', 'sd-john1-1', 'sd-exodus-3-14'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: 'John 8:58 ("Before Abraham was, I am")',
+        abuse: 'Arians (and the New World Translation) render the present-tense egō eimi as "I have been," making Jesus claim only a long, created pre-existence — he existed before Abraham because he was created before Abraham — not eternal, uncreated being.',
+        response: 'Jesus deliberately contrasts two verbs: Abraham "came to be" (genesthai, an origin in time), but of himself he says egō eimi — "I am," an unbounded present, not "I was" or "I have been." The grammar sets timeless being over against coming-into-existence, which is the precise opposite of the Arian claim. The reaction of his hearers settles the meaning: they took up stones (John 8:59), the response to blasphemy, because they heard a claim to the divine Name (Exodus 3:14) and the "I am he" of Isaiah (43:10). A claim merely to be very old provokes no stoning; a claim to be the eternal I AM does. The one who is "before Abraham" in this sense cannot be a creature made before Abraham.',
+      },
+      {
+        verse: 'John 17:5 ("the glory that I had with you before the world existed")',
+        abuse: 'Arians read this as the pre-existent glory of an exalted creature — the Son enjoyed glory with the Father before creation because he was the first thing created, not because he is eternal God.',
+        response: 'Jesus prays to be glorified "with the glory that I had with you before the world existed" (John 17:5). He claims to have shared the Father\'s own glory before the created order began — yet God explicitly refuses to give his glory to another: "I am the LORD... my glory I give to no other" (Isaiah 42:8; 48:11). A creature cannot possess the divine glory the Father shares with no creature. The Son\'s pre-cosmic glory places him before and outside creation, on the Creator\'s side of the line — consistent with John 1:1–3 and irreconcilable with a Son who "was not" until the Father made him.',
+      },
+    ],
+    pastoralNote: 'When speaking with a Jehovah\'s Witness or anyone shaped by Arian assumptions, John 8:58 is often the most fruitful passage, because the issue turns on a single, checkable point: does Jesus say "I was" or "I am," and why did his hearers reach for stones? Invite them to read the verse in Greek or in a standard translation alongside their own, and to explain the stoning if Jesus claimed only to be old. Do this gently and with real respect — the concern to guard God\'s oneness is a good instinct, and Nicene faith honors it better than Arianism, since it is the one eternal God who himself comes to save. The goal is not to win an argument but to let the eternal "I am" speak for himself.',
+  },
+  {
+    id: 'arianism-nicaea-homoousios',
+    slug: 'nicaea-and-homoousios',
+    name: 'Arianism: Nicaea, homoousios, and the Charge of an Imposed Creed',
+    category: 'arianism',
+    shortDescription: 'Arians ancient and modern object that the Nicene word homoousios ("of the same substance") is an unbiblical, philosophical imposition on Scripture. In fact it was the church\'s minimal safeguard for exactly what Scripture teaches, forged against Arian evasions.',
+    historicalBackground: 'When the Council of Nicaea met in 325 to address the Arian controversy, the bishops found that every biblical title they proposed for the Son — "God," "from God," "power," "image" — could be reinterpreted by the Arians in a creaturely sense. To close the evasions, the council adopted a term not found verbatim in Scripture: homoousios, "of the same substance/essence" as the Father. Arius\'s later sympathizers countered with the near-identical homoiousios ("of like substance"), the famous single-iota difference. Athanasius spent much of his career defending homoousios not as philosophy for its own sake but as the only word the Arians could not twist. The Council of Constantinople (381) reaffirmed it, and it stands in the Nicene Creed confessed by the church ever since.',
+    cultPosition: 'Arians (and modern heirs such as the Jehovah\'s Witnesses) argue that homoousios is a foreign, extra-biblical, Greek-philosophical term smuggled into the faith by Constantine\'s council — proof that the Trinity is a later corruption rather than apostolic teaching. Since the word appears nowhere in the Bible, they claim, no one is bound to it, and the "true" biblical picture is the simpler, subordinationist one: one God the Father, and a lesser, created Son. The creed, on this telling, imposed philosophy on a Bible that never taught the Son\'s consubstantiality.',
+    orthodoxResponse: 'A term need not appear verbatim in Scripture to express Scripture faithfully — "Trinity," "incarnation," and even "Bible" are all in the same position, as is the Arians\' own vocabulary. Homoousios was adopted precisely because the plain biblical data required it and the Arians could evade every merely biblical phrase: if the Son is the one through whom "all things were made" (John 1:3), is "before all things" (Colossians 1:17), bears "the exact imprint of [God\'s] nature" (Hebrews 1:3), is addressed by the Father as "God" (Hebrews 1:8), and is the eternal "I am" (John 8:58), then he shares the Father\'s very being — which is all homoousios means. The council did not invent a doctrine; it drew a boundary around the biblical confession that Arianism kept slipping past. Nor was the outcome Constantine\'s political fiat: Arianism actually enjoyed imperial favor for decades after 325, yet Nicene orthodoxy prevailed because it did justice to the texts. Athanasius\'s deepest argument was soteriological and thoroughly biblical — only God can save, so a Son of merely "like" substance could not reconcile us to God (Hebrews 2:14–17). The word is extra-biblical; the truth it guards is not.',
+    keySources: [
+      'The Nicene Creed (Council of Nicaea, 325; Council of Constantinople, 381)',
+      'Athanasius, De Decretis (On the Decrees of the Council of Nicaea) and Orations Against the Arians',
+      'R.P.C. Hanson, The Search for the Christian Doctrine of God: The Arian Controversy 318–381 (T&T Clark, 1988)',
+      'Lewis Ayres, Nicaea and Its Legacy (Oxford University Press, 2004)'
+    ],
+    semanticDefenseIds: ['sd-heb-1-3', 'sd-nicaea-homoousios'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: 'Deuteronomy 4:2 ("You shall not add to the word")',
+        abuse: 'Arians and their heirs appeal to the prohibition against adding to God\'s word to argue that Nicaea\'s extra-biblical homoousios is an illegitimate addition to Scripture.',
+        response: 'The prohibition is against adding new commands or contrary doctrines to God\'s revelation, not against using precise words to summarize and defend what revelation says. By that misreading, "monotheism," "Trinity," and "incarnation" would all be forbidden, and even the Arians\' own term homoiousios would be self-condemned. A creed that uses a new word to fence an old truth adds nothing to Scripture; it protects Scripture\'s meaning against distortion — exactly what the Bereans model when they test teaching by the text (Acts 17:11). Homoousios adds no content beyond what John 1, Colossians 1, and Hebrews 1 already assert; it merely states it in a form Arianism could not evade.',
+      },
+      {
+        verse: 'Hebrews 1:3 ("the exact imprint of his nature")',
+        abuse: 'Arians take "imprint" or "image" language to imply derivation and therefore inferiority — an image is less than, and later than, its original, so the Son is a lesser being.',
+        response: 'Hebrews 1:3 says the Son is "the radiance of the glory of God and the exact imprint of his nature (charaktēr tēs hypostaseōs autou)," upholding the universe by his word — hardly the description of a creature. "Radiance" (apaugasma) conveys that the Son is to the Father as light is to its source: never later than, never separable from, of the very same nature. Charaktēr denotes an exact reproduction of the very substance (hypostasis), not a diminished copy. The same chapter has the Father address the Son directly as "God" whose throne is "forever and ever" (Hebrews 1:8) and as the unchanging Creator of heaven and earth (1:10–12). This is precisely the consubstantiality homoousios was coined to confess: same nature, distinct person.',
+      },
+    ],
+    pastoralNote: 'The "unbiblical word" objection can sound powerful to someone taught that any term absent from the Bible is suspect, so it helps to disarm it plainly: point out that "Bible" and "Trinity" are themselves not in the Bible, and that the objectors freely use extra-biblical words of their own. Then move the conversation from the word to the texts it guards — walk slowly through John 1:1–3, Colossians 1:16–17, and Hebrews 1, and ask what these passages require us to say about the Son. Homoousios is not a hurdle between the seeker and the Bible; it is a fence the church built after discovering how easily the biblical language could be evaded. Framed that way, the creed appears not as imposition but as faithful stewardship of exactly what Scripture says.',
+  },
+  {
     id: 'gnosticism-secret-knowledge',
     slug: 'secret-knowledge-and-the-demiurge',
     name: 'Gnosticism: Secret Knowledge, the Demiurge, and the Denial of the Incarnation',
@@ -376,6 +582,78 @@ export const cultObjections: CultObjection[] = [
       },
     ],
     pastoralNote: 'Though the ancient Gnostic schools are long gone, the Gnostic impulse is remarkably durable and resurfaces in modern spirituality: the appeal of secret or "suppressed" knowledge, the sense that the physical body and world are obstacles to a purely spiritual salvation, and the popular fascination with "lost gospels" like Thomas as if they preserved a truer Jesus. When these ideas surface, the pastoral task is to recover the earthy realism of the Christian faith: God made matter and called it good, the Son took a real body and rose in one, and the hope of the gospel is not escape from creation but its resurrection and renewal. The faith was delivered openly, "once for all... to the saints" (Jude 3) — not whispered to initiates. Point people to the tangible, historical Jesus whom the apostles saw, heard, and touched.',
+  },
+  {
+    id: 'gnosticism-demiurge-and-good-creation',
+    slug: 'the-demiurge-and-the-goodness-of-the-body',
+    name: 'Gnosticism: The Demiurge, Evil Matter, and the Redemption of the Body',
+    category: 'gnosticism',
+    shortDescription: 'Gnosticism traces the material world to an inferior, ignorant craftsman (the demiurge) and treats the body as a prison to escape. Scripture answers with one good Creator, a Son who took a real body, and a salvation that redeems the body rather than discarding it.',
+    historicalBackground: 'Gnostic and related dualist systems (Valentinus, and the sharper dualism of Marcion) severed the God of redemption from the Creator, assigning the making of the material cosmos to a lesser, often malevolent or ignorant being — the demiurge, frequently identified with the God of the Old Testament. Because matter was evil or defective, the body was a trap for the divine spark, and salvation meant the spark\'s escape from embodiment. Against this, Irenaeus of Lyons (Against Heresies, c. 180) developed the doctrine of "recapitulation": the one Creator-God himself became incarnate in his Son to sum up and restore humanity from within real flesh — "what was not assumed is not healed." Tertullian argued similarly against Marcion that the Creator and the Father of Christ are one and the same good God.',
+    cultPosition: 'Because spirit is good and matter is evil, the supreme, unknowable God could not have made the material world directly. It is the botched or malicious work of the demiurge, a lower power. Human bodies are prisons; the flesh is at best irrelevant and at worst hostile to salvation, which consists in the awakening and release of the inner spark, not in the healing of the body. Accordingly, the Gnostic denies that the divine Redeemer would truly take on flesh or that any bodily resurrection is desirable — the goal is to be free of the body, not raised in it.',
+    orthodoxResponse: 'The apostolic faith confesses one God who is both Creator and Redeemer, and who does not despise the flesh but assumes and redeems it. Irenaeus\'s recapitulation captures the logic of Scripture: the Word "became flesh" (John 1:14) so that "what was not assumed is not healed" — a Redeemer who bypassed the body could not save embodied creatures. Far from being a prison to escape, the body is destined for resurrection: Christ rose bodily, inviting Thomas to touch his wounds and eating before the disciples (Luke 24:39–43; John 20:27), and Paul makes the bodily resurrection the linchpin of the faith — "if the dead are not raised... your faith is futile" (1 Corinthians 15:16–17). The Spirit-indwelt body is called a temple, and believers are told to "glorify God in your body" (1 Corinthians 6:19–20). Salvation\'s trajectory is not the soul\'s flight from matter but the redemption of the whole person and the renewal of creation itself — "the creation itself will be set free from its bondage to corruption" (Romans 8:21). Against the demiurge, Irenaeus and Tertullian insisted the Creator and the Father of Jesus are one good God; against contempt for the body, the incarnation and resurrection stand as permanent rebukes.',
+    keySources: [
+      'Irenaeus of Lyons, Against Heresies (Adversus Haereses), esp. Book V on recapitulation and the resurrection of the flesh (c. 180 AD)',
+      'Tertullian, Against Marcion and On the Resurrection of the Flesh (c. 200–210 AD)',
+      'Bart D. Ehrman, Lost Christianities (Oxford University Press, 2003) — for historical survey',
+      'N.T. Wright, The Resurrection of the Son of God (Fortress, 2003)'
+    ],
+    semanticDefenseIds: ['sd-nt-word-tabernacled', 'sd-1-cor-15-resurrection'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: '1 Corinthians 15:50 ("flesh and blood cannot inherit the kingdom of God")',
+        abuse: 'Gnostics seized on this phrase as proof that the body has no place in salvation — the material must be left behind, and any "resurrection" is purely spiritual, not bodily.',
+        response: 'Paul is not disparaging the body but contrasting the perishable with the imperishable. In context he is describing the transformation of the body at the resurrection: "this perishable body must put on the imperishable" (1 Corinthians 15:53). "Flesh and blood" is an idiom for mortal, corruptible humanity as it now is; it cannot inherit the kingdom precisely because it "must" be raised and glorified — not discarded but changed (v. 51–52). The whole chapter is a sustained defense of bodily resurrection against those who denied it (v. 12–19), the very opposite of the Gnostic reading. Paul insists the same body is "sown perishable" and "raised imperishable" (v. 42).',
+      },
+      {
+        verse: 'John 3:6 ("that which is born of the flesh is flesh, and that which is born of the Spirit is spirit")',
+        abuse: 'Gnostics read Jesus\'s flesh/spirit language as an ontological dualism confirming that flesh belongs to the lower realm and only spirit can be saved.',
+        response: 'Jesus is drawing a distinction between two births — natural physical birth and the new birth "from above" wrought by the Spirit (John 3:3–8) — not between an evil material realm and a good spiritual one. The same Gospel opens by declaring that all things were made through the Word (John 1:3) and that this Word "became flesh" (1:14), and it closes with the risen Jesus displaying his wounded, tangible body (John 20:27). John\'s theology is not dualist: the problem is not flesh as such but flesh apart from the Spirit\'s regenerating work. The remedy is new birth, not escape from the body.',
+      },
+      {
+        verse: 'Colossians 1:16 ("all things were created through him... visible and invisible")',
+        abuse: 'Marcion and the Gnostics assigned the visible, material creation to the demiurge, reserving the invisible spiritual realm for the true God — dividing creation between two authors.',
+        response: 'Paul explicitly forecloses the division: in Christ "all things were created, in heaven and on earth, visible and invisible" (Colossians 1:16). The same Son is the agent of both the material and the spiritual orders; there is no second creator for the visible world. This is exactly Irenaeus\'s point against the Gnostics — the Creator of the physical cosmos and the Father of Jesus Christ are one God, and the Son who made the visible world is the same Son who entered it in the flesh and reconciles "all things" through the blood of his cross (1:20). Matter has one good Author, not an inferior demiurge.',
+      },
+    ],
+    pastoralNote: 'The instinct that the body is a problem — a source of shame, appetite, sickness, and death to be transcended — is deeply human and recurs constantly, from ancient Gnosticism to modern "spiritual but not physical" pieties. Meet it not with abstraction but with the scandalously physical shape of the Christian story: God made bodies and called them good, the Son took one, hungered and wept and bled in one, and rose in one that could be touched. The Christian hope is not to be liberated from the body but to be raised imperishable. For someone weary of or ashamed of their embodiment, this is good news: the flesh is not the enemy but the very thing God stooped to redeem.',
+  },
+  {
+    id: 'gnosticism-nag-hammadi-dating',
+    slug: 'lost-gospels-and-late-dating',
+    name: 'Gnosticism: The "Lost Gospels," Late Dating, and Public Apostolic Tradition',
+    category: 'gnosticism',
+    shortDescription: 'Popular accounts claim the Nag Hammadi "gospels" (Thomas, Judas, Philip) preserve a suppressed, truer Jesus. Their second-century dating and the public, checkable apostolic tradition tell against them and for the canonical Gospels.',
+    historicalBackground: 'The 1945 discovery of a Coptic library at Nag Hammadi, Egypt, brought to light dozens of Gnostic texts — the Gospel of Thomas, the Gospel of Philip, the Gospel of Truth, the Apocryphon of John, and later (published 2006) the Gospel of Judas. Popular writers and novelists cast these as suppressed "lost gospels" revealing a Jesus the church allegedly hid. Historically, however, these texts are second-century (and later) compositions: the canonical Gospels of Matthew, Mark, Luke, and John are dated to the first century, within living memory of the events, while the Gnostic gospels reflect the developed dualist theology of the 100s–200s. Irenaeus (c. 180) already knew and refuted such texts, arguing that the apostolic teaching was public, geographically distributed, and traceable through the succession of bishops — the opposite of a hidden tradition.',
+    cultPosition: 'Gnosticism claims a secret oral tradition of higher teaching passed from Jesus to an inner circle and preserved in texts like Thomas and Judas — a truer, more spiritual Jesus, later suppressed by an institutional church that canonized the "orthodox" four Gospels for reasons of power. On this account the Nag Hammadi texts are at least as ancient and authentic as the canonical Gospels, and the church\'s canon represents the victory of politics over the original esoteric message of Jesus.',
+    orthodoxResponse: 'The historical evidence runs the other way on both date and character. On date: the canonical Gospels are first-century documents rooted in eyewitness testimony (Luke 1:1–4; John 21:24; 1 John 1:1–3), whereas the Nag Hammadi gospels are demonstrably second-century or later, dependent on the earlier tradition and reflecting a fully developed Gnostic system. The Gospel of Thomas, Judas, and Philip simply do not compete chronologically with Mark or the sources behind the Synoptics. On character: the Christian tradition was public, not secret. Jesus himself said, "I have spoken openly to the world... I have said nothing in secret" (John 18:20), and the faith was "once for all delivered to the saints" (Jude 3) — Jude 3, not to an initiated elite. Irenaeus\'s decisive argument against the Gnostics was exactly this: apostolic teaching was preached openly, deposited in churches across the empire, and handed down through public succession, so that any claim to a hidden, contradictory tradition is by definition a later invention. The idea of suppressed authentic gospels inverts the actual chronology and mistakes second-century sectarian writings for buried first-century truth.',
+    keySources: [
+      'Irenaeus of Lyons, Against Heresies (Adversus Haereses), Books I and III — on public apostolic tradition and succession (c. 180 AD)',
+      'The Nag Hammadi Library (Coptic texts discovered 1945; ed. James M. Robinson)',
+      'Bart D. Ehrman, Lost Christianities (Oxford University Press, 2003)',
+      'Richard Bauckham, Jesus and the Eyewitnesses (Eerdmans, 2006)'
+    ],
+    semanticDefenseIds: ['sd-jude-3', 'sd-gospels-eyewitness'],
+    historicalOrModern: 'historical',
+    keyVersesAbused: [
+      {
+        verse: 'John 16:12 ("I still have many things to say to you, but you cannot bear them now")',
+        abuse: 'Gnostics cite this as proof that Jesus held back secret teachings for a spiritual elite — teachings later recorded in the hidden gospels rather than the public four.',
+        response: 'Jesus\'s very next words identify how the "many things" would come: "When the Spirit of truth comes, he will guide you into all the truth" (John 16:13). The promised further instruction is the Spirit\'s public leading of the apostles into the truth of the gospel — fulfilled in the apostolic preaching and writings addressed to the whole church, not in an esoteric transmission to initiates. This coheres with Jesus\'s explicit denial of secret teaching: "I have said nothing in secret" (John 18:20). The passage promises the Spirit\'s open illumination of the church, which is the opposite of a hidden Gnostic deposit.',
+      },
+      {
+        verse: '1 Corinthians 2:6–7 ("we impart a secret and hidden wisdom of God")',
+        abuse: 'Gnostics read Paul\'s language of "wisdom... among the mature" and "secret and hidden wisdom" as endorsement of an esoteric teaching reserved for spiritual initiates.',
+        response: 'Paul\'s "hidden wisdom" is not a body of secret doctrine but the gospel of the crucified Christ — a "mystery" once concealed in God\'s plan and now openly proclaimed to all. He immediately defines it: this wisdom is Christ crucified (1 Corinthians 2:2, 8), "revealed to us through the Spirit" (2:10), and preached publicly (1:23). Elsewhere Paul insists the "mystery" is now "disclosed and made known to all nations" (Romans 16:25–26; Colossians 1:26). The wisdom is "hidden" only in the sense that it is spiritually discerned, not that it is doled out to an elite; Paul preached it in the open marketplace, not in a closed circle.',
+      },
+      {
+        verse: 'Luke 1:1–4 (the eyewitness basis of the Gospel)',
+        abuse: 'Some treat the canonical Gospels as no more historically grounded than the Gnostic gospels, all equally "theological" and late, so that Thomas or Judas may preserve Jesus just as reliably.',
+        response: 'Luke opens by grounding his account in investigation and eyewitness testimony: he wrote after "those who from the beginning were eyewitnesses and ministers of the word delivered them to us," having "followed all things closely" so that Theophilus might have "certainty" (Luke 1:1–4). John makes the same eyewitness claim (John 21:24; 1 John 1:1–3). These are first-century documents tied to living memory. The Nag Hammadi gospels, by contrast, are second-century compositions with no comparable claim to eyewitness origin and clear dependence on the earlier tradition. Treating them as equal in historical weight ignores both their date and their derivative character.',
+      },
+    ],
+    pastoralNote: 'The "lost gospels" narrative has enormous popular traction — spread by bestselling novels and documentaries — and can leave sincere people convinced the church buried the real Jesus. Rather than reacting defensively, treat it as a genuine historical question with a genuine historical answer: which documents are early and eyewitness-based, and which are late and derivative? Walk through the dating calmly; the facts favor the canonical Gospels decisively. Then move from the documents to the person: the Jesus of the eyewitness Gospels is more compelling, not less, than the disembodied revealer of the Gnostic texts. The real story is better than the "suppressed" one — a God who came openly, in public, in the flesh, and invited the world to see.',
   }
 ];
 
