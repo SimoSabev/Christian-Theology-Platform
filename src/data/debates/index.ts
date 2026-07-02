@@ -1,4 +1,6 @@
 import { Debate } from '../arguments/types';
+import { allArguments } from '../arguments';
+import { generateDebate } from './generate';
 
 export const kalamDebate: Debate = {
   id: 'kalam-debate',
@@ -245,7 +247,18 @@ export const plantingaDebate: Debate = {
   ]
 };
 
+// Generated debates for every argument, keyed by argument slug. The three
+// hand-authored debates below override their generated counterparts (spread
+// order: hand-authored wins). Keyed by `arg.slug` so it lines up with
+// `allTrees` and the `?debate=<arg.slug>` links from the detail pages. Every
+// current argument has at least one authored objection, so every argument gets
+// a debate of at least two rounds.
+const generatedDebates: Record<string, Debate> = Object.fromEntries(
+  allArguments.map((arg) => [arg.slug, generateDebate(arg)]),
+);
+
 export const allDebates: Record<string, Debate> = {
+  ...generatedDebates,
   kalam: kalamDebate,
   anselm: anselmDebate,
   plantinga: plantingaDebate,
