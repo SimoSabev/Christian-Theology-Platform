@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { traditions } from '@/data/comparisons';
-import { denominations } from '@/data/denominations';
+import { denominations, schisms } from '@/data/denominations';
 import type { TraditionCategory } from '@/data/denominations';
 import { Eyebrow, KeystoneDivider, SectionMark } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
@@ -124,6 +124,94 @@ export default function ComparePage() {
           </section>
         ))}
       </div>
+
+      <KeystoneDivider className="my-10" />
+
+      {/* Great Schisms — the historic ruptures behind these traditions */}
+      <section>
+        <RevealOnScroll>
+          <div className="flex items-center gap-3 mb-3">
+            <SectionMark glyph="longCross" size={20} />
+            <Eyebrow>RUPTURES IN THE BODY</Eyebrow>
+          </div>
+          <h2 className="t-h2 mb-3" style={{ fontSize: 'clamp(1.35rem, 3vw, 1.75rem)' }}>Great Schisms</h2>
+          <p className="t-body mb-8" style={{ color: 'var(--color-text-secondary)', maxWidth: 640 }}>
+            The traditions above did not emerge in isolation — each major branch of the church was shaped by
+            a historic rupture. Here are the two most consequential schisms, their causes, and their unresolved
+            questions.
+          </p>
+        </RevealOnScroll>
+
+        <div className="space-y-8">
+          {schisms.map((schism, i) => (
+            <RevealOnScroll key={schism.id} delay={i * 0.08}>
+              <CodexCard as="article">
+                <div className="flex flex-wrap items-baseline justify-between gap-2 mb-6">
+                  <h3 className="t-h2" style={{ fontSize: '1.15rem', color: 'var(--color-text-primary)' }}>{schism.name}</h3>
+                  <span
+                    className="t-eyebrow px-2 py-1"
+                    style={{ fontSize: '0.6rem', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
+                  >
+                    {schism.year}
+                  </span>
+                </div>
+
+                {/* Parties */}
+                <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                  {schism.parties.map((party, pi) => (
+                    <div
+                      key={pi}
+                      style={{ borderLeft: `2px solid ${pi === 0 ? 'var(--color-accent-gold)' : 'var(--color-border)'}`, paddingLeft: 14 }}
+                    >
+                      <div
+                        className="t-eyebrow mb-2"
+                        style={{ fontSize: '0.6rem', color: pi === 0 ? 'var(--color-accent-gold)' : 'var(--color-text-muted)' }}
+                      >
+                        {party.name}
+                      </div>
+                      <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>{party.position}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Causes */}
+                <div className="mb-6 pt-5" style={{ borderTop: '1px solid var(--color-border)' }}>
+                  <div className="t-eyebrow mb-3" style={{ fontSize: '0.6rem', color: 'var(--color-accent-gold)' }}>CAUSES</div>
+                  <ul className="space-y-1.5">
+                    {schism.causes.map((cause, ci) => (
+                      <li key={ci} className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>&middot; {cause}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Resolution / Current Status */}
+                <div className="grid sm:grid-cols-2 gap-5 mb-6 pt-5" style={{ borderTop: '1px solid var(--color-border)' }}>
+                  {schism.resolution && (
+                    <div>
+                      <div className="t-eyebrow mb-2" style={{ fontSize: '0.6rem', color: 'var(--color-accent-gold)' }}>RESOLUTION</div>
+                      <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>{schism.resolution}</p>
+                    </div>
+                  )}
+                  <div>
+                    <div className="t-eyebrow mb-2" style={{ fontSize: '0.6rem', color: 'var(--color-text-muted)' }}>CURRENT STATUS</div>
+                    <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)' }}>{schism.currentStatus}</p>
+                  </div>
+                </div>
+
+                {/* Sources */}
+                <div className="pt-5" style={{ borderTop: '1px solid var(--color-border)' }}>
+                  <div className="t-eyebrow mb-2" style={{ fontSize: '0.6rem', color: 'var(--color-text-muted)' }}>SOURCES</div>
+                  <ul className="space-y-0.5">
+                    {schism.sources.map((s, si) => (
+                      <li key={si} className="t-meta" style={{ color: 'var(--color-text-muted)' }}>{s}</li>
+                    ))}
+                  </ul>
+                </div>
+              </CodexCard>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
