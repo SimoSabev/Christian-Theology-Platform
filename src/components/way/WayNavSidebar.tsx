@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 const NAV_LINKS = [
   { href: '/way', label: 'Home', icon: '🕯' },
   { href: '/way/pray', label: 'Pray', icon: '🕯' },
+  { href: '/way/why-pray', label: 'Why Pray?', icon: '🕯' },
   { href: '/way/act', label: 'Act', icon: '🕯' },
   { href: '/way/love', label: 'Love', icon: '🕯' },
   { href: '/way/journey', label: 'Journey', icon: '🕯' },
