@@ -150,13 +150,13 @@ export default function TimelinePage() {
                     </div>
                     {'relatedWayHref' in event && event.relatedWayHref && (
                       <div className="mt-2">
-                        <a
+                        <Link
                           href={event.relatedWayHref as string}
                           className="text-xs"
                           style={{ color: 'var(--color-accent-gold)', textDecoration: 'none', fontFamily: 'var(--font-display)', letterSpacing: '0.1em', textTransform: 'uppercase' }}
                         >
                           Explore in The Way →
-                        </a>
+                        </Link>
                       </div>
                     )}
                   </div>
