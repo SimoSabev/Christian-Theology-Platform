@@ -15,6 +15,43 @@ const CATEGORY_GLYPHS: Record<string, 'cross' | 'patee' | 'longCross' | 'plusCir
   historical:   'longCross',
 };
 
+const FURTHER_STUDY: {
+  href: string;
+  glyph: 'cross' | 'patee' | 'longCross' | 'plusCircle' | 'chiRho' | 'section' | 'diamond';
+  name: string;
+  description: string;
+  cta: string;
+}[] = [
+  {
+    href: '/defend/prophecy',
+    glyph: 'chiRho',
+    name: 'Fulfilled Prophecy',
+    description: 'Messianic prophecies fulfilled in Jesus, prophecies against the nations verified in history, and the mathematics of coincidental fulfillment.',
+    cta: 'Explore prophecy',
+  },
+  {
+    href: '/defend/theology',
+    glyph: 'section',
+    name: 'Theology Explorer',
+    description: 'Core Christian doctrines, their biblical foundations, historical development, and the methods used to defend them.',
+    cta: 'Explore theology',
+  },
+  {
+    href: '/defend/science',
+    glyph: 'plusCircle',
+    name: 'Science & Faith',
+    description: 'Believing scientists whose faith shaped their pursuit of nature, and a fresh look at the alleged conflicts between science and Scripture.',
+    cta: 'Explore science & faith',
+  },
+  {
+    href: '/defend/worldviews',
+    glyph: 'diamond',
+    name: 'World Religions & Worldviews',
+    description: 'A comparative survey of major world religions and secular worldviews, their key differences from Christianity, and the apologetic issues they raise.',
+    cta: 'Explore worldviews',
+  },
+];
+
 export default function DefendPage() {
   const t = useTranslations('defend');
 
@@ -48,6 +85,37 @@ export default function DefendPage() {
           </RevealOnScroll>
         ))}
       </div>
+
+      <KeystoneDivider className="mb-16" />
+
+      {/* Further study — dedicated deep-dive pages */}
+      <section className="mb-16">
+        <RevealOnScroll>
+          <div className="text-center mb-8">
+            <Eyebrow className="mb-3">FURTHER STUDY</Eyebrow>
+            <h2 className="t-h2" style={{ fontSize: 'clamp(1.35rem, 3vw, 1.75rem)' }}>Dedicated Deep Dives</h2>
+          </div>
+        </RevealOnScroll>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {FURTHER_STUDY.map((item, i) => (
+            <RevealOnScroll key={item.href} delay={i * 0.08}>
+              <Link href={item.href} className="block">
+                <CodexCard className="h-full" as="article">
+                  <div className="mb-4">
+                    <SectionMark glyph={item.glyph} size={22} />
+                  </div>
+                  <h3 className="t-caps text-sm mb-2" style={{ color: 'var(--color-text-primary)' }}>{item.name}</h3>
+                  <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{item.description}</p>
+                  <div className="t-eyebrow" style={{ color: 'var(--color-accent-gold)' }}>
+                    {item.cta} →
+                  </div>
+                </CodexCard>
+              </Link>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </section>
 
       <KeystoneDivider />
 
