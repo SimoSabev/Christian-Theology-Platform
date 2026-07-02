@@ -1,23 +1,57 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { semanticDefenses } from '@/data/semantic-defense';
 import SemanticDefenseSlideshow from '@/components/semantic/SemanticDefenseSlideshow';
-import { BookType, BookOpen, ShieldAlert, ArrowRight } from 'lucide-react';
+import { BookType, BookOpen, ShieldAlert, ArrowRight, X } from 'lucide-react';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import { useLens } from '@/components/lens/useLens';
 import { LENS_VARIANTS } from '@/components/lens/types';
+import type { SemanticDefense } from '@/data/semantic-defense/types';
 
-export default function SemanticsDashboard() {
+/** Normalize a verse reference for loose matching: lowercase, collapse whitespace. */
+function normalizeRef(ref: string): string {
+  return ref.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+/** Find the semantic defense whose baseline (or parallel) verse matches the given ?ref= query loosely. */
+function findDefenseByRef(ref: string): SemanticDefense | undefined {
+  const target = normalizeRef(ref);
+  return semanticDefenses.find(sd => {
+    const candidates = [sd.baselineVerse.reference, ...(sd.parallelVerses?.map(v => v.reference) ?? [])];
+    return candidates.some(c => {
+      const normalized = normalizeRef(c);
+      return normalized === target || normalized.includes(target) || target.includes(normalized);
+    });
+  });
+}
+
+function SemanticsDashboardInner() {
+  const searchParams = useSearchParams();
   // Separate the tutorial out from the rest of the arguments
   const tutorial = semanticDefenses.find(sd => sd.id === 'sd-tutorial');
   const argumentsList = semanticDefenses.filter(sd => sd.id !== 'sd-tutorial');
 
   const [activeDefenseId, setActiveDefenseId] = useState<string | null>(null);
+  const [unmatchedRef, setUnmatchedRef] = useState<string | null>(null);
   const { lens, hydrated } = useLens();
   const { showGreekHebrew } = LENS_VARIANTS[lens];
+
+  useEffect(() => {
+    const ref = searchParams.get('ref');
+    if (!ref) return;
+    const match = findDefenseByRef(ref);
+    if (match) {
+      setActiveDefenseId(match.id);
+    } else {
+      setUnmatchedRef(ref);
+    }
+    // Only run once on mount for the initial query param.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const activeDefense = semanticDefenses.find(sd => sd.id === activeDefenseId);
 
@@ -34,6 +68,26 @@ export default function SemanticsDashboard() {
         </div>
       </RevealOnScroll>
       <KeystoneDivider className="mb-10" />
+
+      {/* No word study found for the requested ?ref= note */}
+      {unmatchedRef && (
+        <div
+          className="mb-10 p-5 flex items-start justify-between gap-4"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75 }}>
+            No word study found for <strong style={{ color: 'var(--color-accent-gold)' }}>{unmatchedRef}</strong> yet.
+          </p>
+          <button
+            onClick={() => setUnmatchedRef(null)}
+            aria-label="Dismiss"
+            className="flex-shrink-0"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            <X size={16} />
+          </button>
+        </div>
+      )}
 
       {/* Lens awareness note */}
       {hydrated && !showGreekHebrew && (
@@ -138,5 +192,13 @@ export default function SemanticsDashboard() {
       </AnimatePresence>
 
     </div>
+  );
+}
+
+export default function SemanticsDashboard() {
+  return (
+    <Suspense fallback={null}>
+      <SemanticsDashboardInner />
+    </Suspense>
   );
 }
