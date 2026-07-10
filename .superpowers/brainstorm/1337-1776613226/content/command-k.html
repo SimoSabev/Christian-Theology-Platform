@@ -1,0 +1,112 @@
+<style>
+  .ck-card { background:#0a0e1a; border:1px solid rgba(212,168,83,0.25); border-radius:14px; overflow:hidden; cursor:pointer; transition:all 0.3s; }
+  .ck-card:hover { border-color:#d4a853; box-shadow:0 0 36px rgba(212,168,83,0.18); transform:translateY(-2px); }
+  .ck-card.selected { border-color:#d4a853; box-shadow:0 0 0 2px #d4a853; }
+  .ck-meta { padding:18px 22px; border-top:1px solid rgba(212,168,83,0.18); }
+  .ck-meta h3 { color:#f1f5f9; font-family:'Cinzel',serif; letter-spacing:2px; text-transform:uppercase; font-size:13px; margin:0 0 6px; }
+  .ck-meta p { color:#94a3b8; font-size:13px; line-height:1.5; margin:0; font-family:'Crimson Pro',Georgia,serif; }
+  .ic { font-family:'Cinzel',serif; }
+  .bd { font-family:'Crimson Pro',Georgia,serif; }
+  .stage { background:rgba(0,0,0,0.4);padding:30px;display:flex;align-items:flex-start;justify-content:center;min-height:380px; }
+  .palette { background:#111827;border:1px solid rgba(212,168,83,0.4);border-radius:8px;width:100%;max-width:560px;box-shadow:0 30px 80px rgba(0,0,0,0.6),0 0 60px rgba(212,168,83,0.08);overflow:hidden; }
+  .pin { padding:16px 18px;border-bottom:1px solid rgba(212,168,83,0.15);display:flex;align-items:center;gap:12px; }
+  .pin-input { flex:1;background:transparent;border:0;color:#f1f5f9;font-family:'Crimson Pro',serif;font-size:16px;outline:0; }
+  .row { padding:10px 18px;display:flex;align-items:center;gap:12px;font-family:'Crimson Pro',serif;color:#94a3b8;font-size:13px;border-left:2px solid transparent; }
+  .row.active { background:rgba(212,168,83,0.06);border-left-color:#d4a853;color:#f1f5f9; }
+  .badge { font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:#d4a853;border:1px solid rgba(212,168,83,0.4);padding:2px 6px;border-radius:3px;text-transform:uppercase; }
+  .kbd { font-family:'JetBrains Mono',monospace;font-size:10px;color:#64748b;border:1px solid rgba(212,168,83,0.2);padding:1px 5px;border-radius:3px;background:rgba(255,255,255,0.02); }
+  .group { padding:6px 18px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:#d4a853;text-transform:uppercase; }
+</style>
+
+<h2>Command bar (⌘K) treatment</h2>
+<p class="subtitle">The workhorse. Press ⌘K anywhere → this opens. Same content, three behaviors.</p>
+
+<div style="display:grid;gap:24px">
+
+  <!-- A: Universal -->
+  <div class="ck-card" data-choice="universal" onclick="toggleSelect(this)">
+    <div class="stage">
+      <div class="palette">
+        <div class="pin">
+          <span class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853">⌕</span>
+          <input class="pin-input" value="kalam" />
+          <span class="kbd">esc</span>
+        </div>
+        <div>
+          <div class="group">Arguments · 4</div>
+          <div class="row active"><span class="badge">DEFEND</span><span style="flex:1">The <b>Kalam</b> Cosmological Argument</span><span class="kbd">↵</span></div>
+          <div class="row"><span class="badge">DEFEND</span><span style="flex:1">Leibnizian Contingency (vs. Kalam)</span></div>
+          <div class="group">Sources · 2</div>
+          <div class="row"><span class="badge" style="color:#22c55e;border-color:#22c55e">SOURCE</span><span style="flex:1">Craig, "The Kalam Cosmological Argument" (1979)</span></div>
+          <div class="group">Cults addressing this · 1</div>
+          <div class="row"><span class="badge" style="color:#ef4444;border-color:#ef4444">CULT</span><span style="flex:1">JW response to first-cause arguments</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ck-meta">
+      <h3>A · Universal Search</h3>
+      <p>One field, fuzzy across everything: arguments, sources, cult positions, doctrines, scripture. Grouped by content type. Closest to Linear/Raycast.</p>
+    </div>
+  </div>
+
+  <!-- B: Action-led -->
+  <div class="ck-card" data-choice="action" onclick="toggleSelect(this)">
+    <div class="stage">
+      <div class="palette">
+        <div class="pin">
+          <span class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853">›</span>
+          <input class="pin-input" value="" placeholder="Type a command, search, or scripture…" />
+          <span class="kbd">⌘K</span>
+        </div>
+        <div>
+          <div class="group">Actions</div>
+          <div class="row active"><span style="font-family:Cinzel,serif;color:#d4a853;width:18px">⚔</span><span style="flex:1">Defend against an objection…</span><span class="kbd">D</span></div>
+          <div class="row"><span style="font-family:Cinzel,serif;color:#d4a853;width:18px">⊕</span><span style="flex:1">Compare two traditions…</span><span class="kbd">C</span></div>
+          <div class="row"><span style="font-family:Cinzel,serif;color:#d4a853;width:18px">📜</span><span style="flex:1">Open a manuscript…</span><span class="kbd">M</span></div>
+          <div class="row"><span style="font-family:Cinzel,serif;color:#d4a853;width:18px">✠</span><span style="flex:1">Look up a verse…</span><span class="kbd">V</span></div>
+          <div class="row"><span style="font-family:Cinzel,serif;color:#d4a853;width:18px">⤢</span><span style="flex:1">Switch lens (Defender / Student / …)</span><span class="kbd">L</span></div>
+          <div class="group">Recent</div>
+          <div class="row"><span class="badge">DEFEND</span><span style="flex:1">Problem of Evil — Free Will Defense</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ck-meta">
+      <h3>B · Action-Led</h3>
+      <p>Verbs first ("Defend against…", "Compare…"). Each action launches a guided sub-flow. Best for first-time users; powerful for power users via shortcuts.</p>
+    </div>
+  </div>
+
+  <!-- C: Scripture-first -->
+  <div class="ck-card" data-choice="scripture" onclick="toggleSelect(this)">
+    <div class="stage">
+      <div class="palette">
+        <div class="pin">
+          <span class="ic" style="font-size:11px;letter-spacing:3px;color:#d4a853">✠</span>
+          <input class="pin-input" value="John 1:1" />
+          <span class="kbd">esc</span>
+        </div>
+        <div style="padding:18px;border-bottom:1px solid rgba(212,168,83,0.15);background:rgba(212,168,83,0.04)">
+          <div class="ic" style="font-size:9px;letter-spacing:3px;color:#d4a853;margin-bottom:6px">JOHN · 1 · 1 · KJV</div>
+          <div class="bd" style="color:#f1f5f9;font-size:15px;line-height:1.5;font-style:italic">"In the beginning was the Word, and the Word was with God, and the Word was God."</div>
+          <div style="display:flex;gap:6px;margin-top:10px">
+            <span class="kbd">KJV</span><span class="kbd">ESV</span><span class="kbd">GREEK</span><span class="kbd">VULGATE</span>
+          </div>
+        </div>
+        <div>
+          <div class="group">Used in arguments</div>
+          <div class="row"><span class="badge">DEFEND</span><span style="flex:1">Logos doctrine — divinity of Christ</span></div>
+          <div class="row"><span class="badge" style="color:#ef4444;border-color:#ef4444">CULT</span><span style="flex:1">JW translation: "a god" — refutation</span></div>
+          <div class="group">Manuscripts</div>
+          <div class="row"><span class="badge" style="color:#22c55e;border-color:#22c55e">𝔓⁶⁶</span><span style="flex:1">Bodmer Papyrus — interlinear reader</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ck-meta">
+      <h3>C · Scripture-First</h3>
+      <p>Detects scripture refs (John 1:1, Rom 4:5) and goes deep: shows the verse, lists arguments using it, links manuscripts. Powerful for theology specifically.</p>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:24px;color:#64748b;font-size:12px;text-align:center">My recommendation: <b>A as the base behavior</b> + <b>C's scripture detection auto-triggered when input matches a verse pattern</b> + <b>B's actions surfaced as a "/" prefix</b> (typing "/" reveals action verbs). One bar, three behaviors based on what you type.</p>

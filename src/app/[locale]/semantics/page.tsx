@@ -1,38 +1,105 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { semanticDefenses } from '@/data/semantic-defense';
 import SemanticDefenseSlideshow from '@/components/semantic/SemanticDefenseSlideshow';
-import { BookType, BookOpen, ShieldAlert, ArrowRight } from 'lucide-react';
+import { BookType, BookOpen, ShieldAlert, ArrowRight, X } from 'lucide-react';
+import { Eyebrow, KeystoneDivider } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
+import { useLens } from '@/components/lens/useLens';
+import { LENS_VARIANTS } from '@/components/lens/types';
+import type { SemanticDefense } from '@/data/semantic-defense/types';
 
-export default function SemanticsDashboard() {
+/** Normalize a verse reference for loose matching: lowercase, collapse whitespace. */
+function normalizeRef(ref: string): string {
+  return ref.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+/** Find the semantic defense whose baseline (or parallel) verse matches the given ?ref= query loosely. */
+function findDefenseByRef(ref: string): SemanticDefense | undefined {
+  const target = normalizeRef(ref);
+  return semanticDefenses.find(sd => {
+    const candidates = [sd.baselineVerse.reference, ...(sd.parallelVerses?.map(v => v.reference) ?? [])];
+    return candidates.some(c => {
+      const normalized = normalizeRef(c);
+      return normalized === target || normalized.includes(target) || target.includes(normalized);
+    });
+  });
+}
+
+function SemanticsDashboardInner() {
+  const searchParams = useSearchParams();
   // Separate the tutorial out from the rest of the arguments
   const tutorial = semanticDefenses.find(sd => sd.id === 'sd-tutorial');
   const argumentsList = semanticDefenses.filter(sd => sd.id !== 'sd-tutorial');
 
   const [activeDefenseId, setActiveDefenseId] = useState<string | null>(null);
+  const [unmatchedRef, setUnmatchedRef] = useState<string | null>(null);
+  const { lens, hydrated } = useLens();
+  const { showGreekHebrew } = LENS_VARIANTS[lens];
+
+  useEffect(() => {
+    const ref = searchParams.get('ref');
+    if (!ref) return;
+    const match = findDefenseByRef(ref);
+    if (match) {
+      setActiveDefenseId(match.id);
+    } else {
+      setUnmatchedRef(ref);
+    }
+    // Only run once on mount for the initial query param.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const activeDefense = semanticDefenses.find(sd => sd.id === activeDefenseId);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-16"
-      >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-gold/20 bg-accent-gold/5 text-accent-gold text-xs font-medium mb-4">
-          <BookType size={14} />
-          Semantic Studies Workspace
+      <RevealOnScroll>
+        <div className="text-center mb-12">
+          <Eyebrow className="mb-4">SEMANTIC STUDIES</Eyebrow>
+          <h1 className="t-h1 mb-4" style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)' }}>Interactive Grammar & Exegesis</h1>
+          <p className="t-body max-w-2xl mx-auto" style={{ color: 'var(--color-text-secondary)', fontSize: '1.0625rem' }}>
+            Explore the exact Koine Greek structure of the most debated Biblical passages.
+          </p>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 gold-gradient">Interactive Grammar & Exegesis</h1>
-        <p className="text-text-secondary text-lg font-serif max-w-2xl mx-auto">
-          Explore the exact Koine Greek structure of the most debated Biblical passages.
-          Understand Colwell&apos;s Rule, Granville Sharp, verb morphology, and qualitative nouns.
-        </p>
-      </motion.div>
+      </RevealOnScroll>
+      <KeystoneDivider className="mb-10" />
+
+      {/* No word study found for the requested ?ref= note */}
+      {unmatchedRef && (
+        <div
+          className="mb-10 p-5 flex items-start justify-between gap-4"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75 }}>
+            No word study found for <strong style={{ color: 'var(--color-accent-gold)' }}>{unmatchedRef}</strong> yet.
+          </p>
+          <button
+            onClick={() => setUnmatchedRef(null)}
+            aria-label="Dismiss"
+            className="flex-shrink-0"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            <X size={16} />
+          </button>
+        </div>
+      )}
+
+      {/* Lens awareness note */}
+      {hydrated && !showGreekHebrew && (
+        <div
+          className="mb-10 p-5"
+          style={{ border: '1px solid rgba(212,168,83,0.3)', background: 'rgba(212,168,83,0.04)', borderLeft: '3px solid var(--color-accent-gold)' }}
+        >
+          <p className="t-body text-sm" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.75 }}>
+            <strong style={{ color: 'var(--color-accent-gold)' }}>About this tool:</strong> Semantic Studies lets you explore the exact Koine Greek grammar of debated Biblical passages — word-by-word, with definition slides. It is designed for defenders and researchers. You can browse freely, or switch to <strong>Defender</strong> or <strong>Researcher</strong> reading mode for the full scholarly context.
+          </p>
+        </div>
+      )}
 
       {/* Tutorial Banner */}
       {tutorial && (
@@ -40,7 +107,8 @@ export default function SemanticsDashboard() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-12 glass-card p-6 md:p-8 border-l-4 border-l-accent-gold cursor-pointer group hover:-translate-y-1 transition-all"
+          className="mb-12 codex-card p-6 md:p-8 cursor-pointer"
+          style={{ borderLeft: '4px solid var(--color-accent-gold)' }}
           onClick={() => setActiveDefenseId(tutorial.id)}
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -74,7 +142,7 @@ export default function SemanticsDashboard() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + (i * 0.1) }}
             onClick={() => setActiveDefenseId(arg.id)}
-            className="glass-card hover:border-accent-gold/40 hover:shadow-[0_0_20px_rgba(212,168,83,0.1)] transition-all cursor-pointer group flex flex-col h-full overflow-hidden"
+            className="codex-card cursor-pointer group flex flex-col h-full overflow-hidden"
           >
             <div className="p-6 sm:p-8 flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-4">
@@ -124,5 +192,13 @@ export default function SemanticsDashboard() {
       </AnimatePresence>
 
     </div>
+  );
+}
+
+export default function SemanticsDashboard() {
+  return (
+    <Suspense fallback={null}>
+      <SemanticsDashboardInner />
+    </Suspense>
   );
 }

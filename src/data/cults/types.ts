@@ -1,9 +1,24 @@
 export type CultCategory =
   | 'jehovahs-witnesses'
   | 'lds'
+  | 'christian-science'
+  | 'oneness-pentecostalism'
+  | 'new-age'
   | 'arianism'
   | 'gnosticism'
+  | 'pelagianism'
+  | 'nestorianism'
+  | 'modalism'
+  | 'docetism'
+  | 'monophysitism'
+  | 'montanism'
   | 'islam';
+
+export interface KeyVerseAbused {
+  verse: string;
+  abuse: string;
+  response: string;
+}
 
 export interface CultObjection {
   id: string;        // e.g., "jw-deity-of-christ"
@@ -16,6 +31,10 @@ export interface CultObjection {
   orthodoxResponse: string; // The Christian response
   keySources: string[];
   semanticDefenseIds: string[]; // Links to semantic defense slide shows
+  // Extended fields
+  keyVersesAbused?: KeyVerseAbused[];
+  pastoralNote?: string;
+  historicalOrModern?: 'historical' | 'modern';
 }
 
 export interface CultCategoryInfo {

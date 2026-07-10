@@ -13,6 +13,17 @@ export interface Objection {
   sources: string[];
 }
 
+export interface ChurchFatherQuoteRef {
+  author: string;
+  work: string;
+  quote: string;
+}
+
+export interface ArgumentObjectionSimple {
+  title: string;
+  rebuttal: string;
+}
+
 export interface Argument {
   id: string;
   slug: string;
@@ -27,6 +38,14 @@ export interface Argument {
   significance: string;
   relatedArguments: string[];
   keySources: string[];
+  // Extended fields for content depth
+  body?: string;
+  churchFatherQuotes?: ChurchFatherQuoteRef[];
+  simpleObjections?: ArgumentObjectionSimple[];
+  scholarProponents?: string[];
+  bibliography?: string[];
+  timelineEventIds?: string[];
+  manuscriptIds?: string[];
 }
 
 export type ArgumentCategory =
@@ -36,7 +55,8 @@ export type ArgumentCategory =
   | 'moral'
   | 'existential'
   | 'historical'
-  | 'objections';
+  | 'objections'
+  | 'psychological';
 
 export interface CategoryInfo {
   id: ArgumentCategory;

@@ -64,7 +64,58 @@ export const ontologicalArguments: Argument[] = [
       'Anselm, Reply to Gaunilo',
       'Charles Hartshorne, The Logic of Perfection (1962)',
       'Norman Malcolm, "Anselm\'s Ontological Arguments" (1960)',
-    ]
+    ],
+    body: `The Ontological Argument stands apart from every other theistic argument in the history of philosophy. While the Cosmological Argument reasons from the existence of the universe to a First Cause, and the Teleological Argument reasons from the complexity of life to a Designer, the Ontological Argument proceeds entirely from within — deducing the existence of God from the very concept of God, without a single appeal to empirical experience. It is the most audacious argument in the history of philosophy of religion, and has provoked admiration and rejection in equal measure for nearly a millennium.
+
+Anselm of Canterbury (1033–1109) formulated the argument in his Proslogion, addressed as a meditation directly to God. He begins with a definition that has become perhaps the most famous in all philosophy: God is "that than which nothing greater can be conceived" — id quo nihil maius cogitari potest. This is not arbitrary. It captures precisely what theists mean by God: the ultimate, the supreme, the most perfect being. Even the atheist — the "fool" of Psalm 14:1 who says in his heart there is no God — understands this concept. The concept of God, as the greatest conceivable being, exists at minimum in the understanding.
+
+The key move is Anselm's second premise: it is greater to exist in reality than to exist only in the understanding. Consider a real $100 bill versus an imagined $100 bill — the real one can buy things; the imagined one cannot. A real God could create, sustain, love, and redeem; a merely conceived God could do nothing. Existence in reality is a great-making property — it adds something to a being that existence only in the mind lacks.
+
+From these two premises, Anselm draws a decisive conclusion by reductio ad absurdum. Suppose God exists only in the understanding. Then we could conceive of an even greater being — one with all the same properties plus real existence. But then the original being would not be "that than which nothing greater can be conceived," which contradicts the definition. Therefore, under the pain of contradiction, God must exist in reality as well as in the understanding.
+
+The monk Gaunilo of Marmoutiers immediately objected: could not the same argument prove the existence of a perfect island? If the greatest conceivable island does not exist in reality, we could conceive of a greater one that does. Anselm's response is that the parody fails: islands can always be conceived as greater — more beaches, more coconuts — and there is no upper limit to island greatness. The concept of maximal greatness only applies to a being that is the absolute maximum of all perfections, not to contingent, limited objects like islands.
+
+The argument received its definitive modern treatment from Alvin Plantinga (1932–), who reformulated it in modal logic — the logic of possibility and necessity. Plantinga's argument proceeds: it is possible that a maximally great being exists; if such a being is possible, then it exists in some possible world; a maximally great being, by definition, exists necessarily (in all possible worlds); therefore, a maximally great being exists in the actual world — God exists. The key premise is the possibility claim: is it even possible that God exists? Plantinga argues this is at least as plausible as the claim that God is impossible, and the burden of proof lies on the atheist to demonstrate that maximal greatness is metaphysically impossible.
+
+Critics such as Kant objected that existence is not a predicate — that adding existence to a concept does not make the thing greater but merely instantiates it. Contemporary philosophers continue to debate whether Kant's objection successfully deflects Plantinga's modal version. What is clear is that the ontological argument represents one of the most profound attempts in human intellectual history to understand the relationship between thought and being, concept and reality, necessity and existence.`,
+    churchFatherQuotes: [
+      {
+        author: 'Anselm of Canterbury',
+        work: 'Proslogion, Chapter 2',
+        quote: 'Lord, you are not only that than which a greater cannot be thought; you are something greater than can be thought... And certainly that than which a greater cannot be thought cannot exist in the understanding alone. For if it exists even only in the understanding, it can be thought of as also existing in reality, which is greater. Therefore, if that than which a greater cannot be thought exists only in the understanding, then that than which a greater cannot be thought is that than which a greater can be thought. But this is obviously impossible.',
+      },
+      {
+        author: 'Augustine of Hippo',
+        work: 'On Free Will, Book II, Ch. 6',
+        quote: 'If there is anything more excellent than truth itself, that is God. If there is not, then truth itself is God. Whether it is or whether it is not, you cannot deny that God exists, and this was the question we set ourselves to consider.',
+      },
+      {
+        author: 'John of Damascus',
+        work: 'An Exact Exposition of the Orthodox Faith, Book I, Ch. 1',
+        quote: 'The knowledge of God\'s existence has been implanted by Him in all by nature. This existence of God, however, is not immediately self-evident to all. For as we require training and effort to know that God is, so it requires no less care and study to understand His nature and attributes.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Existence is not a predicate — you cannot define things into existence',
+        rebuttal: 'Kant\'s objection applies most forcefully to Anselm\'s original formulation, but Plantinga\'s modal version avoids it. The modal argument does not claim that existence is a predicate; it argues from the metaphysical possibility of maximal greatness to its necessity. If it is even possible that a maximally great being exists, then by the logic of possible worlds, it exists necessarily. The question shifts to whether maximal greatness is coherently possible — a question the atheist must answer negatively, bearing the burden of proof.',
+      },
+      {
+        title: 'The perfect island parody shows the argument proves too much',
+        rebuttal: 'Gaunilo\'s island parody fails because maximal greatness applies only to beings that admit of absolute maxima. Islands are contingent, limited objects — there is no upper bound to island-perfection (one could always add another amenity). God, as the greatest conceivable being, is the being beyond which nothing greater is possible. This is a unique concept that does not apply to any finite, contingent object. The parody therefore does not generalize.',
+      },
+      {
+        title: 'This is mere wordplay — you cannot think things into existence',
+        rebuttal: 'The argument does not claim that thinking makes things real. It argues that the concept of a maximally great being — if coherently possible — entails necessary existence. This is not wordplay but an investigation into the relationship between modality, possibility, and necessity. Mathematical truths provide an analogy: mathematical objects (like perfect circles or prime numbers) do not depend on anyone thinking about them. Necessary truths, including God\'s existence if God is necessary, are not brought into being by thought.',
+      },
+    ],
+    bibliography: [
+      'Anselm of Canterbury. Proslogion. Trans. M.J. Charlesworth. Oxford University Press, 1965.',
+      'Plantinga, Alvin. The Nature of Necessity. Oxford University Press, 1974.',
+      'Plantinga, Alvin. God, Freedom, and Evil. Eerdmans, 1977.',
+      'Hartshorne, Charles. The Logic of Perfection. Open Court, 1962.',
+      'Malcolm, Norman. "Anselm\'s Ontological Arguments." Philosophical Review 69 (1960): 41–62.',
+    ],
   },
   {
     id: 'descartes-ontological',
@@ -120,7 +171,12 @@ export const ontologicalArguments: Argument[] = [
       'René Descartes, Meditations on First Philosophy, V (1641)',
       'Gottfried Wilhelm Leibniz, "That a Most Perfect Being Exists" (1676)',
       'Immanuel Kant, Critique of Pure Reason (1781)',
-    ]
+    ],
+    body: `In the Fifth Meditation of his Meditations on First Philosophy, René Descartes offers a version of the ontological argument that proceeds not through Anselm's reductio but through an analogy with mathematics. Descartes observes that certain properties belong to the essence of a thing so necessarily that we cannot coherently conceive of the thing without them — a triangle, for instance, necessarily has angles summing to 180 degrees, whether or not any triangle actually exists anywhere in the world. Reflecting with equal clarity and distinctness on the idea of a supremely perfect being, Descartes claims we discover that existence belongs to its essence in exactly the same way: a supremely perfect being lacking existence would be a contradiction in terms, no less than a "mountain without a valley," since existence is itself among the perfections that such a being, by definition, must possess.
+
+The argument's most celebrated weakness was exposed by Descartes' own contemporary, Gottfried Leibniz, who noticed a gap the argument had simply assumed away: before we can conclude that a supremely perfect being exists from the mere concept of one, we first need to establish that the concept itself is logically possible — that "supremely perfect being" does not conceal a hidden contradiction the way "square circle" does. Leibniz supplied exactly this missing step in his short paper "That a Most Perfect Being Exists" (1676), arguing that all perfections are simple, positive, unlimited qualities, and that contradictions can only arise between a positive quality and its negation, or between two limited qualities competing for the same space. Since perfections are neither negations nor limitations, no two of them can conflict — the concept of a being possessing all of them is therefore coherent, and therefore possible.
+
+Descartes' formulation, refined by Leibniz's proof of the possibility premise, became the direct ancestor of every subsequent ontological argument, from Plantinga's modal version through Maydole's and Gödel's. Immanuel Kant's famous objection — that "existence is not a real predicate," and that a hundred real thalers contain no more than a hundred merely possible ones — remains the most influential challenge to this line of reasoning. Yet even granting Kant's point about bare existence, later philosophers observed that necessary existence, the property at stake in the modal versions of the argument, is not obviously subject to the same objection: a being that cannot fail to exist plausibly is greater than one that merely happens to.`,
   },
   {
     id: 'plantinga-modal',
@@ -184,7 +240,12 @@ export const ontologicalArguments: Argument[] = [
       'Alvin Plantinga, The Nature of Necessity (1974)',
       'Alvin Plantinga, God, Freedom, and Evil (1977)',
       'William Lane Craig, Reasonable Faith (2008)',
-    ]
+    ],
+    body: `Alvin Plantinga's modal ontological argument, developed in The Nature of Necessity (1974), is widely regarded as the most philosophically serious version of the ontological argument produced in the twentieth century, largely because it sidesteps Kant's famous objection entirely. Kant's complaint was that bare existence is not a "perfection" or "great-making property" — it adds nothing to a concept. Plantinga's argument does not rest on bare existence at all. It rests on necessary existence: the property of existing not merely in the actual world but in every possible world. Whatever one thinks of Kant's point about bare existence, necessary existence plainly does add something substantive to a concept — a being that could not have failed to exist is a very different, and arguably greater, kind of thing than one that merely happens to be here.
+
+Plantinga defines a "maximally great being" as one possessing maximal excellence — omnipotence, omniscience, and moral perfection — in every possible world. The argument then proceeds by the rules of modal logic system S5, the standard system accepted by the great majority of working logicians: if it is even possible that a maximally great being exists, then such a being exists in some possible world; but a being that is maximally great by definition possesses its excellences in every possible world, not merely some; and S5 licenses the inference that whatever is possibly necessary is actually necessary. The entire weight of the argument therefore rests on a single premise — that the concept of a maximally great being is possible, that is, free of hidden contradiction.
+
+Plantinga's own assessment of this premise is characteristically modest: he does not claim to have proven God's existence beyond doubt, since a critic could always insist, without demonstrating it, that the concept harbors some undiscovered incoherence. What he claims instead is that the premise is more plausible than its denial — we have positive reason to think omnipotence, omniscience, and moral perfection are mutually compatible (no contradiction has ever been successfully demonstrated among them, and the classical "paradoxes" of omnipotence, such as the stone too heavy to lift, turn out on analysis to be pseudo-problems), whereas the denial requires asserting the much stronger and wholly unsupported claim that maximal greatness is positively impossible. On this basis, Plantinga concludes that it is rational to accept the argument's key premise, and therefore rational to accept its conclusion.`,
   },
   {
     id: 'maydole',
@@ -233,7 +294,12 @@ export const ontologicalArguments: Argument[] = [
       'Robert Maydole, "The Modal Perfection Argument" (2009)',
       'Gottfried Wilhelm Leibniz, "That a Most Perfect Being Exists" (1676)',
       'Alvin Plantinga, The Nature of Necessity (1974)',
-    ]
+    ],
+    body: `Robert Maydole's Modal Perfection Argument, published in 2009, targets what many philosophers regard as the single weakest link in Plantinga's celebrated modal ontological argument: the possibility premise. Plantinga could only offer the intuitive claim that maximal greatness "seems" possible, backed by the observation that no one has ever demonstrated a contradiction in the concept. Maydole set out to replace that intuition with an actual proof, and in doing so produced what many consider the most formally rigorous version of the ontological argument on offer.
+
+Maydole's strategy revives and systematizes an argument Leibniz sketched in 1676: perfections — omnipotence, omniscience, moral perfection, and the like — are simple, positive, unlimited qualities, and logical contradictions can only arise in one of two ways: between a positive quality and its own negation, or between two limited qualities competing for the same finite space (as "the tallest building" and "the shortest building" could not both describe one structure). Since perfections are neither negations nor limitations — they are, by definition, unlimited and purely positive — no two of them can stand in the kind of relationship that generates contradiction. Maydole works through this reasoning systematically, showing step by step that the properties constituting perfection are mutually compatible, and therefore that the concept of a perfect being is coherent and possible.
+
+Once possibility is secured this rigorously, the rest of the argument proceeds by the same S5 modal logic that powers Plantinga's version: whatever is possibly necessary is actually necessary, so a perfect being — which by definition would exist necessarily if it exists at all — turns out to exist not merely possibly but actually. Critics have suggested Maydole's argument merely repackages Plantinga's in different language, but this understates its contribution: where Plantinga treated the possibility premise as a plausible starting point, Maydole treats it as a conclusion requiring its own proof, closing the very gap that critics of the ontological argument tradition had most consistently exploited.`,
   },
   {
     id: 'godel',
@@ -298,6 +364,11 @@ export const ontologicalArguments: Argument[] = [
       'Christoph Benzmüller & Bruno Woltzenlogel Paleo, "Formalization, Mechanization and Automation of Gödel\'s Proof of God\'s Existence" (2013)',
       'J. Howard Sobel, Logic and Theism (2004)',
       'Graham Oppy, Ontological Arguments and Belief in God (1995)',
-    ]
+    ],
+    body: `Kurt Gödel, widely considered the greatest logician since Aristotle, spent decades developing a formal ontological proof he was reluctant to publish, fearing it would be read as a personal declaration of faith rather than appreciated as the rigorous logical exercise he intended it to be. The proof circulated privately among logicians and was only published after his death in 1978. It represents the most technically demanding version of the ontological argument in the entire tradition, built not on intuitive appeals to "greatness" but on an axiomatic theory of "positive properties."
+
+Gödel defines a property as positive if and only if its negation is not positive, and stipulates that any property necessarily entailed by a positive property is itself positive. From these axioms he defines "God-likeness" as the property of possessing every positive property, and argues that God-likeness is itself positive, since it represents the totality of everything that contributes to perfection or greatness. He further argues that necessary existence — existing in every possible world — is itself a positive property (its negation, contingent existence or non-existence, is a limitation, and therefore not positive), so that any God-like being must, by the very axioms defining it, possess necessary existence. The final and most delicate step is showing that the axioms governing positive properties do not themselves contain a hidden contradiction — that God-likeness is possibly exemplified — a step Gödel derived formally from his own axioms.
+
+In 2013, logicians Christoph Benzmüller and Bruno Woltzenlogel Paleo used automated theorem-proving software to formally verify that Gödel's axioms do in fact entail his conclusion — a computer confirmed that the logic of the proof contains no error, a result that made international headlines as "a computer-verified proof of God." The genuine philosophical debate, as with all versions of the ontological argument, is not over the validity of the reasoning but over whether its axioms are true. J. Howard Sobel identified a serious problem with Gödel's original axioms — that they entail "modal collapse," making every true proposition necessarily true, which would be absurd. C. Anthony Anderson and later Dana Scott proposed emended versions of the axioms that preserve the argument's validity while avoiding this collapse, and it is these corrected versions that represent the current state of the argument. Gödel's proof stands as the technical culmination of a tradition running from Anselm through Descartes and Leibniz to Plantinga and Maydole — the attempt to show that reason alone, starting from the concept of a perfect being, can arrive at its necessary existence.`,
   }
 ];

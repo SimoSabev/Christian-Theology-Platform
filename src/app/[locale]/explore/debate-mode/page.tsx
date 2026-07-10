@@ -1,10 +1,66 @@
 'use client';
 
-import { useState } from 'react';
-import { Link } from '@/i18n/navigation';
+import { Suspense, useCallback, useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { kalamDebate } from '@/data/debates';
-import { ArrowLeft, Swords, ChevronLeft, ChevronRight, BookOpen, CircleDot } from 'lucide-react';
+import { allDebates } from '@/data/debates';
+import { allTrees } from '@/data/trees';
+import { allArguments, categories } from '@/data/arguments';
+import { ArrowLeft, Swords, ChevronLeft, ChevronRight, TreePine, ChevronDown } from 'lucide-react';
+import { Eyebrow } from '@/components/ornament';
+import { useLens } from '@/components/lens/useLens';
+
+const DEFAULT_DEBATE = 'kalam';
+const OTHER_CATEGORY_ID = 'other';
+
+type PickerEntry = {
+  key: string;
+  name: string;
+  categoryId: string;
+};
+
+type PickerCategory = {
+  id: string;
+  name: string;
+  entries: PickerEntry[];
+};
+
+/**
+ * Group the keys of a tree/debate record by the category of the matching
+ * argument (looked up by slug). Keys without a matching argument fall back
+ * to an "Other" group so the picker never silently drops an entry.
+ */
+function buildPickerCategories(keys: string[]): PickerCategory[] {
+  const byCategory = new Map<string, PickerCategory>();
+
+  keys.forEach((key) => {
+    const arg = allArguments.find((a) => a.slug === key);
+    const categoryId = arg?.category ?? OTHER_CATEGORY_ID;
+    const categoryInfo = categories.find((c) => c.id === categoryId);
+    const categoryName = categoryInfo?.name ?? 'Other';
+
+    if (!byCategory.has(categoryId)) {
+      byCategory.set(categoryId, { id: categoryId, name: categoryName, entries: [] });
+    }
+    byCategory.get(categoryId)!.entries.push({
+      key,
+      name: arg?.name ?? key,
+      categoryId,
+    });
+  });
+
+  // Preserve the canonical category order, then append any "Other" group last.
+  const ordered: PickerCategory[] = [];
+  categories.forEach((c) => {
+    const group = byCategory.get(c.id);
+    if (group) ordered.push(group);
+  });
+  const other = byCategory.get(OTHER_CATEGORY_ID);
+  if (other) ordered.push(other);
+
+  return ordered;
+}
 
 const strengthColors = {
   strong: { bg: 'bg-accent-green/10', border: 'border-accent-green/20', dot: 'bg-accent-green', label: 'Strong' },
@@ -12,10 +68,46 @@ const strengthColors = {
   contested: { bg: 'bg-accent-red/10', border: 'border-accent-red/20', dot: 'bg-accent-red', label: 'Contested' },
 };
 
-export default function DebateModePage() {
-  const debate = kalamDebate;
+function DebateModeInner() {
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const debateKeys = useMemo(() => Object.keys(allDebates), []);
+  const pickerCategories = useMemo(() => buildPickerCategories(debateKeys), [debateKeys]);
+  const paramDebate = searchParams.get('debate');
+  const activeKey = paramDebate && allDebates[paramDebate] ? paramDebate : DEFAULT_DEBATE;
+  const debate = allDebates[activeKey];
+
+  const activeCategoryId = useMemo(
+    () => pickerCategories.find((c) => c.entries.some((e) => e.key === activeKey))?.id ?? pickerCategories[0]?.id,
+    [pickerCategories, activeKey]
+  );
+  const [selectedCategoryId, setSelectedCategoryId] = useState(activeCategoryId);
+
+  // Keep the category selector in sync when the active debate changes (e.g. via deep link or cross-link).
+  useEffect(() => {
+    setSelectedCategoryId(activeCategoryId);
+  }, [activeCategoryId]);
+
+  const selectedCategory = pickerCategories.find((c) => c.id === selectedCategoryId) ?? pickerCategories[0];
+
   const [currentRound, setCurrentRound] = useState(0);
   const round = debate.rounds[currentRound];
+  const { lens, hydrated } = useLens();
+
+  const handleSelectDebate = useCallback(
+    (key: string) => {
+      setCurrentRound(0);
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('debate', key);
+      router.replace(`${pathname}?${params.toString()}`);
+    },
+    [pathname, router, searchParams]
+  );
+
+  // Cross-link to a matching argument tree, if one exists for this debate key.
+  const matchingTree = allTrees[activeKey];
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col">
@@ -26,10 +118,10 @@ export default function DebateModePage() {
             <Link href="/explore" className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-glass transition-colors">
               <ArrowLeft size={18} />
             </Link>
-            <Swords size={20} className="text-accent-blue" />
+            <Swords size={20} style={{ color: 'var(--color-accent-gold)' }} />
             <div>
-              <h1 className="font-bold text-lg">Debate Mode</h1>
-              <p className="text-xs text-text-muted">{debate.title}</p>
+              <Eyebrow className="mb-1">EXPLORE · DEBATE MODE</Eyebrow>
+              <h1 className="t-h1" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>{debate.title}</h1>
             </div>
           </div>
           {/* Round Navigator */}
@@ -67,6 +159,92 @@ export default function DebateModePage() {
         </div>
       </div>
 
+      {/* Category + debate selector + cross-link */}
+      <div className="px-4 sm:px-6 lg:px-8 py-3 border-b border-border bg-bg-primary">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
+            {/* Category dropdown */}
+            <div className="relative">
+              <select
+                value={selectedCategoryId}
+                onChange={(e) => setSelectedCategoryId(e.target.value)}
+                aria-label="Argument category"
+                className="appearance-none cursor-pointer"
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '0.6rem',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                  padding: '6px 30px 6px 14px',
+                  borderRadius: '9999px',
+                  border: '1px solid var(--color-border)',
+                  color: 'var(--color-text-muted)',
+                  background: 'transparent',
+                }}
+              >
+                {pickerCategories.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown
+                size={12}
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                style={{ color: 'var(--color-text-muted)' }}
+              />
+            </div>
+
+            {/* Debate dropdown, scoped to the selected category */}
+            <div className="relative">
+              <select
+                value={activeKey}
+                onChange={(e) => handleSelectDebate(e.target.value)}
+                aria-label="Debate"
+                className="appearance-none cursor-pointer max-w-[65vw] sm:max-w-xs"
+                style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '0.6rem',
+                  letterSpacing: '0.1em',
+                  textTransform: 'uppercase',
+                  padding: '6px 30px 6px 14px',
+                  borderRadius: '9999px',
+                  border: '1px solid var(--color-accent-gold)',
+                  color: 'var(--color-bg-primary)',
+                  background: 'var(--color-accent-gold)',
+                }}
+              >
+                {(selectedCategory?.entries ?? []).map((entry) => (
+                  <option key={entry.key} value={entry.key}>
+                    {entry.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown
+                size={12}
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                style={{ color: 'var(--color-bg-primary)' }}
+              />
+            </div>
+          </div>
+          {matchingTree && (
+            <Link
+              href={`/explore/argument-tree?tree=${activeKey}`}
+              className="flex items-center gap-2 text-xs hover:opacity-80 transition-opacity"
+              style={{
+                fontFamily: 'var(--font-display)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                color: 'var(--color-accent-gold)',
+              }}
+            >
+              <TreePine size={14} />
+              View the argument tree →
+            </Link>
+          )}
+        </div>
+      </div>
+
       {/* Depth Meter */}
       <div className="px-4 sm:px-6 lg:px-8 py-2 border-b border-border bg-bg-primary">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
@@ -81,11 +259,27 @@ export default function DebateModePage() {
         </div>
       </div>
 
+      {/* Lens-contextual tip */}
+      {hydrated && (lens === 'seeker' || lens === 'defender') && (
+        <div
+          className="px-4 sm:px-6 lg:px-8 py-2 border-b border-border"
+          style={{ background: 'rgba(212,168,83,0.04)' }}
+        >
+          <div className="max-w-7xl mx-auto">
+            <p className="text-xs" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
+              {lens === 'seeker'
+                ? 'Each round shows the strongest argument for and against. Green = widely accepted. Amber = contested. Red = disputed among scholars.'
+                : 'Defender tip: focus on contested (red) evidence — these are the points opponents will attack. Prepare your responses for those first.'}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Debate Panels */}
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
         <AnimatePresence mode="wait">
           <motion.div
-            key={currentRound}
+            key={`${activeKey}-${currentRound}`}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
@@ -154,5 +348,13 @@ export default function DebateModePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DebateModePage() {
+  return (
+    <Suspense fallback={null}>
+      <DebateModeInner />
+    </Suspense>
   );
 }

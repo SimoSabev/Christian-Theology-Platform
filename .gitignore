@@ -39,3 +39,38 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Git worktrees
+.worktrees/
+.claude/worktrees/
+
+# Superpowers brainstorm artifacts
+.superpowers/
+.claude/scheduled_tasks.lock
+
+# Koine Greek NT interlinear data (STEPBible TAGNT, CC BY 4.0).
+# Not redistributed via this repo per the data maintainers' request —
+# run `node scripts/fetch-greek-nt.mjs` to (re)generate locally.
+/src/data/bible/greek/*.json
+
+# generated reports / codemap diffs
+/.reports/
+
+# scratch / temp working directory
+/tmp/
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# logs
+*.log
+npm-debug.log*
+lint_output.txt

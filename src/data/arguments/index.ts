@@ -1,6 +1,7 @@
 import { cosmologicalArguments } from './cosmological';
 import { ontologicalArguments } from './ontological';
 import { teleologicalArguments, moralArguments, historicalArguments } from './teleological-moral-historical';
+import { existentialArguments } from './existential';
 import type { Argument, ArgumentCategory, CategoryInfo } from './types';
 
 export type { Argument, ArgumentCategory, CategoryInfo, TreeNode, Debate, DebateRound } from './types';
@@ -11,6 +12,7 @@ export const allArguments: Argument[] = [
   ...teleologicalArguments,
   ...moralArguments,
   ...historicalArguments,
+  ...existentialArguments,
 ];
 
 export const categories: CategoryInfo[] = [
@@ -19,6 +21,7 @@ export const categories: CategoryInfo[] = [
   { id: 'teleological', name: 'Teleological Arguments', description: 'From the order and fine-tuning of the universe to intelligent design', icon: '🔬', color: 'accent-teal', argumentCount: teleologicalArguments.length },
   { id: 'moral', name: 'Moral Arguments', description: 'From the existence of objective moral values to a moral lawgiver', icon: '⚖️', color: 'accent-gold', argumentCount: moralArguments.length },
   { id: 'historical', name: 'Historical Evidence', description: 'From manuscript evidence, eyewitness testimony, and the Resurrection', icon: '📜', color: 'accent-green', argumentCount: historicalArguments.length },
+  { id: 'existential', name: 'Existential & Consciousness Arguments', description: 'From consciousness, reason, desire, and religious experience to a personal God', icon: '🧠', color: 'accent-rose', argumentCount: existentialArguments.length },
 ];
 
 export function getArgumentsByCategory(category: ArgumentCategory): Argument[] {

@@ -2,86 +2,135 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { motion } from 'framer-motion';
 import { categories } from '@/data/arguments';
-import { Shield, ArrowRight, Swords, BookOpen, ChevronRight } from 'lucide-react';
+import { Eyebrow, KeystoneDivider, SectionMark } from '@/components/ornament';
+import RevealOnScroll from '@/components/motion/RevealOnScroll';
+import CodexCard from '@/components/reader/CodexCard';
 
-const categoryIcons: Record<string, string> = {
-  cosmological: '🌌',
-  ontological: '💭',
-  teleological: '🔬',
-  moral: '⚖️',
-  historical: '📜',
+const CATEGORY_GLYPHS: Record<string, 'cross' | 'patee' | 'longCross' | 'plusCircle' | 'chiRho' | 'section' | 'diamond'> = {
+  cosmological: 'plusCircle',
+  ontological:  'chiRho',
+  teleological: 'cross',
+  moral:        'patee',
+  historical:   'longCross',
 };
 
-const categoryColors: Record<string, string> = {
-  cosmological: 'from-blue-500/10 to-blue-600/5 border-blue-500/20 hover:border-blue-400/40',
-  ontological: 'from-purple-500/10 to-purple-600/5 border-purple-500/20 hover:border-purple-400/40',
-  teleological: 'from-teal-500/10 to-teal-600/5 border-teal-500/20 hover:border-teal-400/40',
-  moral: 'from-amber-500/10 to-amber-600/5 border-amber-500/20 hover:border-amber-400/40',
-  historical: 'from-green-500/10 to-green-600/5 border-green-500/20 hover:border-green-400/40',
-};
+const FURTHER_STUDY: {
+  href: string;
+  glyph: 'cross' | 'patee' | 'longCross' | 'plusCircle' | 'chiRho' | 'section' | 'diamond';
+  name: string;
+  description: string;
+  cta: string;
+}[] = [
+  {
+    href: '/defend/prophecy',
+    glyph: 'chiRho',
+    name: 'Fulfilled Prophecy',
+    description: 'Messianic prophecies fulfilled in Jesus, prophecies against the nations verified in history, and the mathematics of coincidental fulfillment.',
+    cta: 'Explore prophecy',
+  },
+  {
+    href: '/defend/theology',
+    glyph: 'section',
+    name: 'Theology Explorer',
+    description: 'Core Christian doctrines, their biblical foundations, historical development, and the methods used to defend them.',
+    cta: 'Explore theology',
+  },
+  {
+    href: '/defend/science',
+    glyph: 'plusCircle',
+    name: 'Science & Faith',
+    description: 'Believing scientists whose faith shaped their pursuit of nature, and a fresh look at the alleged conflicts between science and Scripture.',
+    cta: 'Explore science & faith',
+  },
+  {
+    href: '/defend/worldviews',
+    glyph: 'diamond',
+    name: 'World Religions & Worldviews',
+    description: 'A comparative survey of major world religions and secular worldviews, their key differences from Christianity, and the apologetic issues they raise.',
+    cta: 'Explore worldviews',
+  },
+];
 
 export default function DefendPage() {
   const t = useTranslations('defend');
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-16"
-      >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-blue/20 bg-accent-blue/5 text-accent-blue text-xs font-medium mb-4">
-          <Shield size={14} />
-          {t('title')}
+      <RevealOnScroll>
+        <div className="text-center mb-16">
+          <Eyebrow className="mb-4">{t('eyebrow') ?? 'APOLOGETICS'}</Eyebrow>
+          <h1 className="t-h1 mb-4" style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)' }}>{t('title')}</h1>
+          <p className="t-body max-w-2xl mx-auto" style={{ color: 'var(--color-text-secondary)', fontSize: '1.0625rem' }}>{t('subtitle')}</p>
         </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 gold-gradient">{t('title')}</h1>
-        <p className="text-text-secondary text-lg font-serif max-w-2xl mx-auto">{t('subtitle')}</p>
-      </motion.div>
+      </RevealOnScroll>
 
-      {/* Category Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <KeystoneDivider className="mb-12" />
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
         {categories.map((cat, i) => (
-          <motion.div
-            key={cat.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-          >
-            <Link
-              href={`/defend/atheism/${cat.id}`}
-              className={`block rounded-2xl border bg-gradient-to-br p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${categoryColors[cat.id] || ''}`}
-            >
-              <div className="text-3xl mb-4">{categoryIcons[cat.id]}</div>
-              <h2 className="text-lg font-bold mb-2">{cat.name}</h2>
-              <p className="text-text-secondary text-sm font-serif leading-relaxed mb-4">{cat.description}</p>
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-text-muted">{cat.argumentCount} arguments</span>
-                <ChevronRight size={16} className="text-text-muted" />
-              </div>
+          <RevealOnScroll key={cat.id} delay={i * 0.08}>
+            <Link href={`/defend/atheism/${cat.id}`} className="block">
+              <CodexCard className="h-full" as="article">
+                <div className="mb-4">
+                  <SectionMark glyph={CATEGORY_GLYPHS[cat.id] ?? 'diamond'} size={22} />
+                </div>
+                <h2 className="t-caps text-sm mb-2" style={{ color: 'var(--color-text-primary)' }}>{cat.name}</h2>
+                <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{cat.description}</p>
+                <div className="t-eyebrow" style={{ color: 'var(--color-accent-gold)' }}>
+                  {cat.argumentCount} {cat.argumentCount === 1 ? 'argument' : 'arguments'} →
+                </div>
+              </CodexCard>
             </Link>
-          </motion.div>
+          </RevealOnScroll>
         ))}
       </div>
 
-      {/* Quick links to cults section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="glass-card p-8"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <Swords size={20} className="text-accent-red" />
-          <h2 className="text-xl font-bold">{t('againstCults')}</h2>
+      <KeystoneDivider className="mb-16" />
+
+      {/* Further study — dedicated deep-dive pages */}
+      <section className="mb-16">
+        <RevealOnScroll>
+          <div className="text-center mb-8">
+            <Eyebrow className="mb-3">FURTHER STUDY</Eyebrow>
+            <h2 className="t-h2" style={{ fontSize: 'clamp(1.35rem, 3vw, 1.75rem)' }}>Dedicated Deep Dives</h2>
+          </div>
+        </RevealOnScroll>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {FURTHER_STUDY.map((item, i) => (
+            <RevealOnScroll key={item.href} delay={i * 0.08}>
+              <Link href={item.href} className="block">
+                <CodexCard className="h-full" as="article">
+                  <div className="mb-4">
+                    <SectionMark glyph={item.glyph} size={22} />
+                  </div>
+                  <h3 className="t-caps text-sm mb-2" style={{ color: 'var(--color-text-primary)' }}>{item.name}</h3>
+                  <p className="t-body text-sm mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{item.description}</p>
+                  <div className="t-eyebrow" style={{ color: 'var(--color-accent-gold)' }}>
+                    {item.cta} →
+                  </div>
+                </CodexCard>
+              </Link>
+            </RevealOnScroll>
+          ))}
         </div>
-        <p className="text-text-secondary font-serif mb-6">Historical heresies (Gnosticism, Arianism, Pelagianism) and modern movements (LDS, Jehovah's Witnesses, Christian Science) — analyzed through Scripture, councils, and Church Fathers.</p>
-        <Link href="/defend/cults" className="inline-flex items-center gap-2 text-accent-gold text-sm font-medium hover:gap-3 transition-all">
-          Explore Cult Refutation <ArrowRight size={14} />
-        </Link>
-      </motion.div>
+      </section>
+
+      <KeystoneDivider />
+
+      <RevealOnScroll>
+        <div className="mt-12 text-center">
+          <Eyebrow className="mb-3">ALSO</Eyebrow>
+          <Link
+            href="/defend/cults"
+            className="inline-block px-6 py-3 t-caps text-xs border"
+            style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}
+          >
+            Against Cults & Heresies
+          </Link>
+        </div>
+      </RevealOnScroll>
     </div>
   );
 }

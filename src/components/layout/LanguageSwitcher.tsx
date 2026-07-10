@@ -34,7 +34,7 @@ export default function LanguageSwitcher() {
         aria-label="Language"
       >
         <Globe size={16} />
-        <span className="hidden sm:inline">{localeNames[locale]}</span>
+        <span className="hidden 2xl:inline">{localeNames[locale]}</span>
         <ChevronDown size={14} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
 

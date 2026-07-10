@@ -1,0 +1,46 @@
+<style>
+  .typo-card { background:#0a0e1a; border:1px solid rgba(212,168,83,0.25); border-radius:12px; padding:32px 28px; cursor:pointer; transition:all 0.25s; min-height:280px; display:flex; flex-direction:column; }
+  .typo-card:hover { border-color:#d4a853; box-shadow:0 0 32px rgba(212,168,83,0.18); transform:translateY(-2px); }
+  .typo-card.selected { border-color:#d4a853; box-shadow:0 0 0 2px #d4a853; }
+  .typo-eyebrow { font-size:10px; letter-spacing:4px; color:#d4a853; text-transform:uppercase; margin-bottom:14px; }
+  .typo-h { color:#f1f5f9; line-height:1.1; margin:0 0 16px; }
+  .typo-body { color:#94a3b8; font-size:15px; line-height:1.65; flex:1; }
+  .typo-meta { color:#64748b; font-size:11px; letter-spacing:1px; margin-top:18px; padding-top:14px; border-top:1px solid rgba(212,168,83,0.15); }
+  .typo-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  @media (max-width:900px) { .typo-grid { grid-template-columns:1fr; } }
+</style>
+
+<h2>Which typography conveys firmness?</h2>
+<p class="subtitle">All on your current navy + gold palette. Pick the one that feels carved, not printed.</p>
+
+<div class="typo-grid">
+  <div class="typo-card" data-choice="cinzel" onclick="toggleSelect(this)">
+    <div class="typo-eyebrow">A · Cinzel + Source Serif</div>
+    <h3 class="typo-h" style="font-family:'Cinzel',serif;font-weight:700;font-size:34px;letter-spacing:2px;text-transform:uppercase">Soli Deo Gloria</h3>
+    <p class="typo-body" style="font-family:'Source Serif Pro',Georgia,serif;font-size:15px">In the beginning was the Word, and the Word was with God. The Logos doctrine establishes the eternal divinity of Christ — a foundation upon which the entire Christian theology rests.</p>
+    <div class="typo-meta">ENGRAVED · ROMAN CAPITAL · MONUMENTAL</div>
+  </div>
+
+  <div class="typo-card" data-choice="garamond" onclick="toggleSelect(this)">
+    <div class="typo-eyebrow">B · Cormorant Garamond + Inter</div>
+    <h3 class="typo-h" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:42px;letter-spacing:-0.5px">Soli Deo Gloria</h3>
+    <p class="typo-body" style="font-family:'Inter',sans-serif;font-size:14.5px">In the beginning was the Word, and the Word was with God. The Logos doctrine establishes the eternal divinity of Christ — a foundation upon which the entire Christian theology rests.</p>
+    <div class="typo-meta">SHARP · CLASSICAL · EDITORIAL</div>
+  </div>
+
+  <div class="typo-card" data-choice="ebgaramond" onclick="toggleSelect(this)">
+    <div class="typo-eyebrow">C · EB Garamond Throughout</div>
+    <h3 class="typo-h" style="font-family:'EB Garamond',Georgia,serif;font-weight:600;font-size:38px;letter-spacing:0">Soli Deo Gloria</h3>
+    <p class="typo-body" style="font-family:'EB Garamond',Georgia,serif;font-size:17px;line-height:1.55">In the beginning was the Word, and the Word was with God. The Logos doctrine establishes the eternal divinity of Christ — a foundation upon which the entire Christian theology rests.</p>
+    <div class="typo-meta">HUMANIST · SCHOLARLY · UNIFIED</div>
+  </div>
+
+  <div class="typo-card" data-choice="trajan" onclick="toggleSelect(this)">
+    <div class="typo-eyebrow">D · Cinzel + Crimson Pro</div>
+    <h3 class="typo-h" style="font-family:'Cinzel',serif;font-weight:900;font-size:30px;letter-spacing:3px;text-transform:uppercase;color:#d4a853">Soli Deo Gloria</h3>
+    <p class="typo-body" style="font-family:'Crimson Pro',Georgia,serif;font-size:16px;line-height:1.6;font-weight:500">In the beginning was the Word, and the Word was with God. The Logos doctrine establishes the eternal divinity of Christ — a foundation upon which the entire Christian theology rests.</p>
+    <div class="typo-meta">INSCRIPTIONAL · GOLD · WEIGHTY</div>
+  </div>
+</div>
+
+<p style="margin-top:24px;color:#64748b;font-size:12px;text-align:center">Click a card to select. Tell me which feels most "firm" to you.</p>

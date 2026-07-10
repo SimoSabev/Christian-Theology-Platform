@@ -57,7 +57,68 @@ export const cosmologicalArguments: Argument[] = [
       'William Lane Craig, The Kalām Cosmological Argument (1979)',
       'Alexander Pruss, The Principle of Sufficient Reason (2006)',
       'Borde, Guth & Vilenkin, "Inflationary Spacetimes Are Incomplete" (2003)',
-    ]
+    ],
+    body: `The Kalam Cosmological Argument stands as one of the most elegant and powerful arguments for the existence of God, weaving together centuries of philosophical reflection with the most recent discoveries of modern cosmology. At its core, the argument is deceptively simple: everything that begins to exist has a cause; the universe began to exist; therefore, the universe has a cause. But beneath this simplicity lies profound metaphysical depth that has occupied the greatest minds in both Islamic and Christian philosophy.
+
+The argument takes its name from the Arabic word kalam, meaning theological discourse, and was first systematically formulated by the Islamic philosopher Al-Ghazali (1058–1111 AD) in his celebrated work The Incoherence of the Philosophers. However, the underlying intuition that the universe must have a first cause is far older, appearing in Aristotle's unmoved mover, in the thought of John Philoponus, and anticipating the later Thomistic tradition. John Philoponus, the 6th-century Christian philosopher of Alexandria, argued against Aristotle's eternal universe by demonstrating that an actual infinite series of past events is logically impossible — a key move in the Kalam's second premise.
+
+The first premise — that whatever begins to exist has a cause — rests on the bedrock metaphysical principle ex nihilo nihil fit: from nothing, nothing comes. This principle is not merely an inductive generalization from experience, though it enjoys overwhelming empirical support. It is a metaphysical truth rooted in the very nature of being itself. For "nothing" — by definition — has no properties, no potentialities, and no causal powers. The idea that the entire universe could spring into being from absolute nothing, uncaused, represents not a sophisticated scientific hypothesis but a violation of the most basic canons of rational thought. If things could come into existence uncaused from absolute nothingness, there would be no explanation for why anything exists rather than nothing, why universes don't pop into existence randomly at every moment, and why the scientific enterprise — premised on the discovery of causal explanations — is possible at all.
+
+The second premise — that the universe began to exist — received decisive confirmation from an unexpected quarter in the 20th century. The Big Bang model, now supported by multiple independent lines of evidence including the Hubble expansion of galaxies, the cosmic microwave background radiation, the abundance of light elements from Big Bang nucleosynthesis, and the large-scale structure of the cosmos, indicates that all of physical reality — not merely matter and energy, but space and time themselves — had an absolute beginning approximately 13.8 billion years ago. The universe did not emerge into pre-existing space; rather, space itself came into being at the Big Bang singularity.
+
+This scientific confirmation was supplemented by the celebrated Borde-Guth-Vilenkin theorem of 2003, which proved mathematically that any universe which has, on average, been expanding throughout its history cannot be infinite in the past but must have a past space-time boundary — a beginning. Crucially, this theorem applies to inflationary multiverse models as well as to our observable universe; indeed, Alexander Vilenkin himself — an atheist cosmologist — has stated publicly: "All the evidence we have says that the universe had a beginning."
+
+The philosophical defense of the second premise is equally robust. An actually infinite regress of past events is impossible for reasons identified by medieval Islamic and Christian thinkers alike. If the past were actually infinite, one could never arrive at the present moment — the present would require the traversal of an actually infinite series of prior moments, which is impossible. As Al-Ghazali observed, and as contemporary philosophers like William Lane Craig have rigorously argued, the concept of a completed actual infinite leads to absurdities: one could subtract infinite sets from infinite sets and arrive at contradictory results. The Hilbert's Hotel thought experiment illustrates these absurdities vividly, showing that actual infinities — while mathematically consistent as abstract objects — cannot exist in concrete reality.
+
+The conclusion — that the universe has a cause — demands reflection on what kind of cause could produce the entirety of physical reality. Since the cause brings into existence all matter, energy, space, and time, it must itself be immaterial (not made of matter), non-spatial, and timeless. Since it created time, it cannot itself be in time prior to its creative act. Since it produced the universe from nothing, it must be unimaginably powerful. And since it is timeless and immaterial, yet capable of initiating a temporal effect, the most plausible candidate is a personal agent — a mind with will. Abstract objects are causally inert; they cannot cause anything. A personal, timeless mind whose free decision explains the origin of the universe fits precisely the classical description of God.
+
+William Lane Craig, who has done more than any other contemporary philosopher to revive and defend the Kalam Argument, draws these implications out with clarity: the cause of the universe must be uncaused, timeless, spaceless, immaterial, enormously powerful, and personal. These are not ad hoc additions but necessary properties derived from the argument itself. The Kalam thus does not merely prove that the universe has a cause; it provides a substantive description of that cause that corresponds to the God of classical theism.
+
+The argument faces serious objections — the quantum vacuum, cyclic cosmologies, the Hartle-Hawking no-boundary proposal — but each of these has been met with equally serious responses. The quantum vacuum is emphatically not "nothing" but a structured, law-governed physical state. Cyclic models fall under the BGV theorem. The no-boundary proposal, as Vilenkin and Hawking both acknowledge, still implies a finite past. The Kalam Cosmological Argument remains, after a millennium of philosophical scrutiny, one of the most powerful rational arguments for the existence of God.`,
+    churchFatherQuotes: [
+      {
+        author: 'John of Damascus',
+        work: 'An Exact Exposition of the Orthodox Faith, Book I, Ch. 3',
+        quote: 'All things that exist are either created or uncreated. If created, they are certainly changeable; for those things whose existence originated in change must be subject to change, whether it be that they cease to exist or that they be altered. But if uncreated they are assuredly unchangeable. For things which are opposed in their nature must also be opposed in the mode of their existence... God, then, is uncreated, and for that reason is also unchangeable.',
+      },
+      {
+        author: 'Thomas Aquinas',
+        work: 'Summa Theologiae, I, Question 2, Article 3',
+        quote: 'In the world of sensible things we find there is an order of efficient causes. There is no case known (neither is it, indeed, possible) in which a thing is found to be the efficient cause of itself; for so it would be prior to itself, which is impossible. Now in efficient causes it is not possible to go on to infinity... Therefore it is necessary to admit a first efficient cause, to which everyone gives the name of God.',
+      },
+      {
+        author: 'Augustine of Hippo',
+        work: 'Confessions, Book I, Ch. 1',
+        quote: 'Thou madest us for Thyself, and our heart is restless, until it repose in Thee... Who shall seek Thee, and how, since Thou art not known to us? Or if He is not known, how shall we seek for Him? And how shall He find repose in us who know Him not? Before Thee is all that I know of myself; and with Thee is all that I know not of myself.',
+      },
+    ],
+    simpleObjections: [
+      {
+        title: 'Who created God?',
+        rebuttal: 'The Kalam argument specifically concludes that the first cause must be uncreated — a being that exists without beginning and therefore does not require a cause. The question "who created God?" misunderstands the argument: the conclusion is not that "everything has a cause" but that "everything that begins to exist has a cause." An eternal, uncreated God by definition has no beginning and therefore needs no cause. This is not special pleading but the logical terminus of the explanatory chain.',
+      },
+      {
+        title: 'The universe could have popped into existence uncaused from nothing',
+        rebuttal: 'This suggestion, while sometimes attributed to quantum cosmology, represents a misunderstanding of physics. The quantum vacuum is not "nothing" — it is a rich physical entity with energy, fields, and laws governing it. More fundamentally, the claim that the universe emerged from absolute nothingness without any cause violates the most basic principle of rational thought. If things could come from nothing uncaused, we could not explain why anything specific exists rather than nothing, or why everything does not randomly appear from nothing at all times.',
+      },
+      {
+        title: 'An infinite regress of causes is possible',
+        rebuttal: 'A past-eternal series of causes leads to insurmountable philosophical difficulties. An actually infinite series of past events cannot be completed by successive addition — you cannot traverse an actual infinite to arrive at the present. Furthermore, the Borde-Guth-Vilenkin theorem demonstrates that any universe with average positive expansion must have had a beginning, ruling out an infinite past on cosmological grounds. An infinite regress of causes, even if logically possible in the abstract, is physically impossible given the nature of our universe.',
+      },
+    ],
+    scholarProponents: [
+      'William Lane Craig (Talbot School of Theology)',
+      'Alexander Pruss (Baylor University)',
+      'J.P. Moreland (Talbot School of Theology)',
+      'Robert Koons (University of Texas at Austin)',
+    ],
+    bibliography: [
+      'Craig, William Lane. The Kalām Cosmological Argument. Macmillan, 1979.',
+      'Craig, William Lane, and Quentin Smith. Theism, Atheism, and Big Bang Cosmology. Oxford University Press, 1993.',
+      'Pruss, Alexander R. The Principle of Sufficient Reason: A Reassessment. Cambridge University Press, 2006.',
+      'Borde, Arvind, Alan H. Guth, and Alexander Vilenkin. "Inflationary Spacetimes Are Incomplete in Past Directions." Physical Review Letters 90, no. 15 (2003).',
+      'Vilenkin, Alexander. Many Worlds in One: The Search for Other Universes. Hill and Wang, 2006.',
+    ],
   },
   {
     id: 'leibniz',
@@ -114,7 +175,14 @@ export const cosmologicalArguments: Argument[] = [
     keySources: [
       'Leibniz, "On the Ultimate Origination of Things" (1697)',
       'Alexander Pruss, The Principle of Sufficient Reason (2006)',
-    ]
+    ],
+    body: `Where the Kalam argument asks why the universe began, the Leibnizian argument from contingency asks a more fundamental question: why does anything exist at all, whether or not it had a beginning? Gottfried Wilhelm Leibniz posed this as the deepest question of metaphysics — "why is there something rather than nothing?" — and answered it with the Principle of Sufficient Reason (PSR): every fact, without exception, has an explanation, either in the necessity of its own nature or in some external cause.
+
+This is what makes the Leibnizian argument, in the judgment of many philosophers of religion, the strongest of the cosmological arguments. It does not depend on any contested claim about an infinite past or a scientific Big Bang. Even if the universe had existed from eternity past, it would still be a contingent thing — a thing that could have failed to exist, or existed differently — and contingent things, by their very nature, cry out for an explanation beyond themselves.
+
+The universe, understood as the totality of all matter, energy, space, and time, cannot explain its own existence, because any physical explanation would simply be one more part of the universe requiring its own explanation. The chain of physical causes, however long, never escapes contingency. What is needed is a being whose existence is not derived from anything else — a being that exists by the necessity of its own nature, and could not have failed to exist. Because this being must be non-physical (transcending the totality of physical things it explains) and capable of grounding the existence of everything else, it must also be personal: the only immaterial entities capable of causal activity that we have any acquaintance with are minds. An impersonal abstract object, like a number, cannot bring a universe into being.
+
+The most common objection — that the universe is simply a "brute fact" requiring no explanation — comes at a steep philosophical price. If the whole of reality can exist utterly unexplained, then the very practice of asking "why?" that underwrites science, history, and everyday reasoning loses its rational footing. As Richard Taylor observed, no one who stumbled upon a large translucent ball in the forest would accept "it just exists, inexplicably" as a satisfying answer — and enlarging the ball to the size of the universe does not make the demand for explanation disappear. Leibniz's argument insists that reality, in the end, is intelligible all the way down, and that its ultimate explanation is a necessary, transcendent, personal being — what theists have always called God.`,
   },
   {
     id: 'thomistic',
@@ -163,6 +231,275 @@ export const cosmologicalArguments: Argument[] = [
     keySources: [
       'Thomas Aquinas, Summa Theologiae, I, q. 2, art. 3',
       'Edward Feser, Five Proofs of the Existence of God (2017)',
-    ]
+    ],
+    body: `Thomas Aquinas's Five Ways, proposed in the Summa Theologiae in the thirteenth century, remain the single most influential set of arguments for God's existence in the history of Western philosophy. They are not, as popular caricature sometimes suggests, five interchangeable proofs of the same point; they are five distinct lines of reasoning — from motion, efficient causation, contingency, degrees of perfection, and the directedness of unintelligent things — that converge on the same conclusion: a being that everyone calls God.
+
+The First Way, from motion, turns on Aquinas's Aristotelian distinction between potentiality and actuality. Nothing can actualize its own potential — a thing cannot give itself what it does not have — so whatever changes must be changed by another. The crucial move, one frequently missed by modern critics, is the distinction between an accidentally ordered series (like a chain of human generations, where each cause can act independently of the others) and an essentially ordered series (like a hand moving a stick moving a stone, where every member depends, right now, on the causal power of what precedes it). An essentially ordered series cannot regress infinitely, because none of its members have any causal power of their own to pass along — it must terminate in something that is pure actuality, actualizing all other things without itself being actualized by anything further. Edward Feser has argued this is not an argument about the distant past but about what is required, here and now, to sustain any change whatsoever — even an eternal universe would need such a sustainer.
+
+The Second Way applies the same essentially-ordered structure to efficient causation; the Third Way argues that if everything that exists were merely contingent, then at some point nothing would have existed, and since ex nihilo nihil fit, nothing would exist now — yet things plainly do exist, so some necessary being must ground them. The Fourth Way reasons from degrees of perfection (goodness, truth, nobility) to a maximum that is the cause of all lesser degrees, in the way that fire, the hottest thing, is thought to cause all other hot things. The Fifth Way observes that unintelligent things in nature nonetheless act consistently toward ends — the regularities that make science itself possible — and argues that such directedness, in things lacking minds of their own, requires a directing intelligence.
+
+Together the Five Ways establish not merely that a first cause exists, but — through further argument Aquinas develops elsewhere in the Summa — that this cause must be one, simple, immaterial, perfect, good, and intelligent: the God of classical theism.`,
+  },
+  {
+    id: 'rowe-contingency',
+    slug: 'rowe-contingency',
+    name: 'The Argument from Contingency of the Cosmos (Rowe)',
+    category: 'cosmological',
+    shortDescription: 'The totality of contingent beings cannot explain itself; a necessary, self-existent being must ground the entire cosmos.',
+    historicalBackground: `William L. Rowe developed this version of the contingency argument in his 1975 work building on Leibniz and Samuel Clarke. While the Leibnizian form asks why there is something rather than nothing, Rowe sharpens the focus: the cosmos as a whole is a contingent fact, and an infinite regress of contingent explanations explains nothing at all. The argument presses that the Principle of Sufficient Reason demands a necessary being outside the series of contingent things.`,
+    premises: [
+      {
+        id: 'rowe-p1',
+        text: 'Every contingent fact has an explanation.',
+        defense: 'The Principle of Sufficient Reason (PSR) applies universally. Science itself operates on the assumption that facts have explanations. Accepting brute contingency about the entire cosmos is more mysterious than positing a necessary being. To deny that contingent facts have explanations is to undermine the rationality of all inquiry.',
+        sources: ['Rowe, The Cosmological Argument (1975)', 'Pruss, The Principle of Sufficient Reason (2006)']
+      },
+      {
+        id: 'rowe-p2',
+        text: 'The cosmos as a whole — the totality of all contingent beings — is itself a contingent fact.',
+        defense: 'The cosmos is not a necessary being; it could have failed to exist or been different. Its existence is not self-explanatory. A collection of contingent things does not become necessary simply by being large or infinite — a sum of contingent IOU notes does not produce real money.',
+        sources: ['Rowe, The Cosmological Argument (1975)', 'Craig & Moreland, The Blackwell Companion to Natural Theology (2009)']
+      },
+      {
+        id: 'rowe-p3',
+        text: 'The explanation of the cosmos cannot itself be contingent.',
+        defense: 'An infinite regress of contingencies explains nothing. Each contingent member of the series requires its own explanation, and the series as a whole — being contingent — still demands an explanation outside itself. A chain of contingent dependencies cannot terminate in itself; it requires a ground that is not contingent.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)', 'Pruss & Gale, "A New Cosmological Argument" (1999)']
+      }
+    ],
+    conclusion: 'Therefore the cosmos is explained by a necessary, self-existent being — God.',
+    proponents: [
+      { name: 'William L. Rowe', era: '20th–21st century' },
+      { name: 'Gottfried Wilhelm Leibniz', era: '17th–18th century' },
+      { name: 'Samuel Clarke', era: '18th century' },
+    ],
+    objections: [
+      {
+        id: 'rowe-obj1',
+        title: 'The Brute Fact Reply',
+        description: 'The cosmos simply exists as an unexplained brute fact; there is no reason to demand an explanation for the whole.',
+        response: 'Accepting brute contingency about the entire cosmos is more mysterious than positing a necessary being. Science itself operates on PSR. Brute-fact acceptance for the whole cosmos is arbitrary: if the cosmos can be a brute fact, anything can be, and rational inquiry collapses.',
+        sources: ['Rowe, The Cosmological Argument (1975)']
+      },
+      {
+        id: 'rowe-obj2',
+        title: 'Composition Fallacy',
+        description: 'Each part of the cosmos has an explanation, so the whole does not need a separate one.',
+        response: 'This conflates explanations of parts with explanation of the whole aggregate. A collection of IOU notes does not explain the money; the sum of contingent explanations does not account for the contingency of the whole series. The whole collection of contingent things is itself contingent and requires an external ground.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)']
+      },
+      {
+        id: 'rowe-obj3',
+        title: 'Who created God?',
+        description: 'If everything requires an explanation, God requires one too.',
+        response: 'The argument specifically posits a necessary being — one whose non-existence is impossible. Such a being has no external cause because its essence entails its existence. God is not "everything" but the terminus of the explanatory chain: a being that exists by the necessity of its own nature.',
+        sources: ['Craig, Reasonable Faith (2008)']
+      }
+    ],
+    significance: 'Rowe\'s formulation is notable because it does not depend on the universe having a temporal beginning. Even an eternal cosmos would still be contingent and require a necessary ground. The argument targets the deepest question: why is there anything at all?',
+    relatedArguments: ['leibniz', 'kalam', 'thomistic'],
+    keySources: [
+      'William L. Rowe, The Cosmological Argument (Princeton University Press, 1975)',
+      'Alexander Pruss, The Principle of Sufficient Reason (Cambridge University Press, 2006)',
+      'Craig & Moreland, eds., The Blackwell Companion to Natural Theology (Wiley-Blackwell, 2009)',
+    ],
+    body: `William Rowe's formulation of the cosmological argument sharpens Leibniz's question about contingency by focusing not on any individual thing within the universe but on the cosmos as a single, aggregate fact. Every contingent being we know of — every star, every particle, every event — could have failed to exist or could have been otherwise. Rowe's argument asks what happens when we consider the totality of all such contingent beings taken together.
+
+That totality, Rowe argues, is itself contingent: the whole collection could have failed to exist, or existed differently, just as each of its members could have. And a contingent totality, no less than a contingent part, requires an explanation. This is where Rowe's argument does its most important philosophical work, blocking a tempting but fallacious reply — that if every individual part of the cosmos has its own explanation (this star from that nebula, this event from that prior event), then the whole needs no further explanation. Rowe compares this to imagining that a stack of IOU notes, each one explaining the next, could ever add up to actual money. No matter how long or even infinite the chain of contingent explanations, the chain as a whole remains contingent and unexplained unless it terminates in something that does not itself require external explanation.
+
+That terminus cannot itself be contingent, on pain of restarting the very question the argument seeks to answer. It must be a necessary being — one that exists by the necessity of its own nature and could not have failed to exist. Rowe's version is especially significant because, like Leibniz's, it makes no appeal to the universe having had a beginning in time. Even an infinite, beginningless series of contingent causes would, taken as a whole, remain a contingent fact requiring a necessary ground outside itself. The argument presses the deepest form of the question first posed by Leibniz: why does anything at all exist, rather than nothing?`,
+  },
+  {
+    id: 'hawking-penrose-singularity',
+    slug: 'hawking-penrose-singularity',
+    name: 'The Argument from the Big Bang Singularity',
+    category: 'cosmological',
+    shortDescription: 'The Hawking-Penrose singularity theorems show that space, time, matter, and energy had an absolute beginning — pointing to a timeless, non-spatial first cause.',
+    historicalBackground: `Stephen Hawking and Roger Penrose proved in 1965–1970 that, under general relativity, the universe must have begun at a space-time singularity. Robert Jastrow, an agnostic astronomer, drew apologetic implications in God and the Astronomers (1978). William Lane Craig synthesized the physics with philosophical argument. The Borde-Guth-Vilenkin theorem (2003) extended the result to inflation and multiverse scenarios, showing that any universe with average positive expansion must have an absolute beginning.`,
+    premises: [
+      {
+        id: 'hps-p1',
+        text: 'The Hawking-Penrose singularity theorems demonstrate that the universe began at a space-time singularity — a boundary of space, time, matter, and energy.',
+        defense: 'Under general relativity with realistic energy conditions, all past-directed timelike and null geodesics are incomplete — they terminate. This is not a singularity in matter but in the fabric of spacetime itself. The Borde-Guth-Vilenkin theorem (2003) strengthens this: any spacetime with average positive Hubble expansion must be geodesically incomplete in the past, requiring an absolute beginning regardless of quantum corrections at the Planck era.',
+        sources: ['Hawking & Penrose, "The Singularities of Gravitational Collapse" (1970)', 'Borde, Guth & Vilenkin, "Inflationary Spacetimes Are Incomplete" (2003)']
+      },
+      {
+        id: 'hps-p2',
+        text: 'Whatever begins to exist has a cause outside and prior to itself; and since space and time began at the singularity, that cause must be timeless and non-spatial.',
+        defense: 'If nothing existed before the singularity — no space, no time, no matter — then the cause of the universe must transcend all of these. A timeless, non-spatial cause that is immensely powerful matches what theologians have always called God. The cause cannot be physical; it must be immaterial.',
+        sources: ['Craig, "The Caused Beginning of the Universe" (1993)', 'Craig, Reasonable Faith (2008)']
+      }
+    ],
+    conclusion: 'Therefore the universe has a timeless, non-spatial, immensely powerful cause — consistent with the classical description of God.',
+    proponents: [
+      { name: 'William Lane Craig', era: 'Contemporary' },
+      { name: 'Robert Jastrow', era: '20th century' },
+      { name: 'Roger Penrose', era: 'Contemporary' },
+    ],
+    objections: [
+      {
+        id: 'hps-obj1',
+        title: 'Quantum gravity loop-holes',
+        description: 'Hawking\'s no-boundary proposal and quantum cosmologies (Vilenkin, Hartle-Hawking) may avoid a hard singularity.',
+        response: 'Even the no-boundary model posits a finite quantum past. More decisively, the BGV theorem applies regardless of quantum effects at the Planck era — it operates at the classical spacetime level and shows that the inflationary expansion phase cannot be past-eternal. Even quantum cosmologies require a beginning.',
+        sources: ['Borde, Guth & Vilenkin (2003)', 'Vilenkin, Many Worlds in One (2006)']
+      },
+      {
+        id: 'hps-obj2',
+        title: 'An eternally inflating multiverse pushes the beginning back indefinitely',
+        description: 'A multiverse could be eternal, making the BGV theorem inapplicable.',
+        response: 'The BGV theorem explicitly applies to inflationary multiverse models: if the multiverse has average positive Hubble expansion, it must have an absolute beginning. Vilenkin has stated publicly that even multiverse scenarios require a beginning.',
+        sources: ['Borde, Guth & Vilenkin (2003)']
+      },
+      {
+        id: 'hps-obj3',
+        title: '"Cause" is a category error before time',
+        description: 'Causation requires temporal priority; if time began, there can be no "before."',
+        response: '"Cause" can be understood as ontological dependence rather than temporal precedence. A timeless being can be the sufficient ground of a temporal effect without itself being in time. Philosophers distinguish between temporal and causal priority; the latter does not require the former.',
+        sources: ['Craig, Reasonable Faith (2008)', 'Craig, "The Caused Beginning of the Universe" (1993)']
+      }
+    ],
+    significance: 'The singularity argument is uniquely powerful because it draws on some of the best-confirmed physics of the 20th century. Even atheist astronomer Robert Jastrow acknowledged: "The scientist has scaled the mountains of ignorance; he is about to conquer the highest peak; as he pulls himself over the final rock, he is greeted by a band of theologians who have been sitting there for centuries."',
+    relatedArguments: ['kalam', 'leibniz'],
+    keySources: [
+      'Hawking & Penrose, "The Singularities of Gravitational Collapse and Cosmology," Proc. Royal Society A (1970)',
+      'Borde, Guth & Vilenkin, "Inflationary Spacetimes Are Incomplete in Past Directions," Physical Review Letters (2003)',
+      'Craig, "The Caused Beginning of the Universe," British Journal for the Philosophy of Science (1993)',
+    ],
+    body: `While the Kalam argument builds its case for a beginning from both philosophy and cosmology together, the singularity argument rests its weight squarely on one of the best-confirmed results in twentieth-century physics: the Hawking-Penrose singularity theorems. Working within the mathematical framework of general relativity, Stephen Hawking and Roger Penrose proved between 1965 and 1970 that, given the energy conditions we observe to hold in our universe, all past-directed paths through spacetime must terminate — they cannot be extended indefinitely into the past. This is not merely a claim that matter was once compressed into a small volume; it is a claim about spacetime itself reaching a boundary, a point beyond which the concepts of "earlier" and "before" cease to apply.
+
+The Borde-Guth-Vilenkin theorem of 2003 extended this result dramatically, showing that it applies not only to the standard Big Bang model but to essentially any cosmology — including inflationary and multiverse models — that has, on average, been expanding throughout its history. This closed off what had been the most popular escape routes for a past-eternal universe. Alexander Vilenkin, one of the theorem's own authors and an agnostic on matters of theology, has stated plainly that cosmologists "cannot hide behind the possibility of a past-eternal universe" any longer.
+
+If space, time, matter, and energy themselves began at this boundary, then whatever caused the universe to exist cannot itself be spatial, temporal, material, or energetic — it must transcend all of these categories entirely. Robert Jastrow, an agnostic astronomer, captured the apologetic force of this discovery memorably: describing the scientist who, after scaling "the mountains of ignorance" and pulling himself over the final rock to the summit, is "greeted by a band of theologians who have been sitting there for centuries." The physics of the singularity does not by itself prove the existence of a personal God, but it establishes, on grounds entirely independent of philosophical argument, that the universe had an absolute beginning — precisely the premise that theistic cosmological arguments have long claimed, and which naturalism has historically resisted.`,
+  },
+  {
+    id: 'clarke-first-cause',
+    slug: 'clarke-first-cause',
+    name: "Clarke's Argument from First Cause",
+    category: 'cosmological',
+    shortDescription: 'Samuel Clarke\'s 1705 demonstration that the chain of contingent beings cannot extend infinitely and must terminate in a necessarily existent being.',
+    historicalBackground: `Samuel Clarke (1675–1729) presented his argument in A Demonstration of the Being and Attributes of God (1705), delivered as the Boyle Lectures. Clarke moved beyond Locke's empiricism to construct a rigorous a priori argument that something has always existed, and that the chain of contingent beings must be grounded in a necessary being. His version anticipates Leibniz and directly influenced 18th-century British natural theology.`,
+    premises: [
+      {
+        id: 'clarke-p1',
+        text: 'Something exists now; therefore something has always existed (from nothing, nothing comes).',
+        defense: 'If there were ever absolutely nothing, there would still be nothing. Something presently exists. Therefore something must have always existed — the non-existence of all things is impossible. This is grounded in the principle ex nihilo nihil fit, which is among the most secure metaphysical principles.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)']
+      },
+      {
+        id: 'clarke-p2',
+        text: 'Whatever exists either exists necessarily (cannot not exist) or contingently (could not exist).',
+        defense: 'This is a logical dichotomy: a thing either exists by the necessity of its own nature, or it exists dependently. Contingent beings can fail to exist; necessary beings cannot. The question is which type of being is ultimately responsible for the existence of contingent things.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)', 'Leftow, God and Necessity (2012)']
+      },
+      {
+        id: 'clarke-p3',
+        text: 'The chain of contingent beings cannot extend infinitely, for an infinite series of dependent beings has no ultimate sustaining ground.',
+        defense: 'Clarke\'s point is ontological, not temporal: even an infinite series of contingent items collectively fails to explain why anything at all exists. The whole series is contingent and requires a ground outside itself. An infinite chain of dependent things is still a chain of dependent things — none of its members can confer necessary existence on the whole.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)', 'Rowe, The Cosmological Argument (1975)']
+      }
+    ],
+    conclusion: 'Therefore there exists at least one necessarily existent being that sustains all contingent existence — this being is God.',
+    proponents: [
+      { name: 'Samuel Clarke', era: '18th century' },
+      { name: 'Gottfried Wilhelm Leibniz', era: '17th–18th century' },
+    ],
+    objections: [
+      {
+        id: 'clarke-obj1',
+        title: 'An infinite regress of contingent causes is coherent',
+        description: 'Hume argued that a beginningless series of contingent causes is logically possible and requires no external explanation.',
+        response: 'Clarke\'s point is not temporal but ontological: even an infinite series of contingent items collectively fails to explain why anything at all exists rather than nothing. The whole series is contingent and requires a ground outside itself.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)']
+      },
+      {
+        id: 'clarke-obj2',
+        title: 'The universe itself could be necessary',
+        description: 'Physicalists argue the universe or its laws exist necessarily.',
+        response: 'Physical laws and constants appear to admit of alternatives — fine-tuning evidence shows the constants could have been different. What exists necessarily cannot coherently be conceived as non-existent, yet we can coherently conceive of a different physics. The universe does not have the marks of necessary existence.',
+        sources: ['Leftow, God and Necessity (2012)']
+      },
+      {
+        id: 'clarke-obj3',
+        title: "Clarke's God is not clearly personal",
+        description: 'The argument establishes a necessary being but not a personal God.',
+        response: 'Clarke proceeds in his Demonstration to argue that a being of infinite power, knowledge, and self-sufficiency must also possess will and intelligence. A being of infinite perfection without personality would be less than the greatest conceivable — a separate but connected argument.',
+        sources: ['Clarke, A Demonstration of the Being and Attributes of God (1705)']
+      }
+    ],
+    significance: "Clarke's argument exerted enormous influence on 18th-century British theology and philosophy. Its ontological (rather than temporal) framing — that even an eternal cosmos needs a necessary ground — anticipates the most sophisticated contemporary versions of the cosmological argument.",
+    relatedArguments: ['leibniz', 'rowe-contingency', 'thomistic'],
+    keySources: [
+      'Samuel Clarke, A Demonstration of the Being and Attributes of God (Cambridge University Press, 1705/1998)',
+      'William L. Rowe, The Cosmological Argument (Princeton University Press, 1975)',
+      'Brian Leftow, God and Necessity (Oxford University Press, 2012)',
+    ],
+    body: `Delivered as the prestigious Boyle Lectures in 1704 and published the following year, Samuel Clarke's A Demonstration of the Being and Attributes of God offered one of the most rigorous a priori arguments for God's existence produced in the early modern period — a work that directly anticipated and influenced Leibniz's own contingency argument. Clarke begins from an observation so simple it is easy to overlook its force: something exists right now. Since absolutely nothing cannot produce something (ex nihilo nihil fit), and something plainly does exist, it follows that something must have always existed — the total non-existence of all things, at any point, is metaphysically impossible.
+
+Clarke then presses a dichotomy that structures the rest of his argument: whatever exists does so either necessarily, by the sheer necessity of its own nature, incapable of non-existence, or contingently, dependent on something else for its existence and capable of failing to exist. The heart of Clarke's demonstration is his argument that an infinite chain of merely contingent, dependent beings — however long, however far back it regresses — can never by itself account for why anything exists at all. Every member of such a chain still stands in need of an external explanation; multiplying dependent beings indefinitely does not manufacture the independence that explanation requires. As with a chain of nothing but promissory notes, no matter how many notes you add, you never arrive at actual currency.
+
+Therefore, Clarke concludes, there must exist at least one being that exists necessarily — the self-sufficient ground that terminates the regress and sustains all contingent existence. In the sections of the Demonstration that follow this core argument, Clarke goes on to argue that a being of such infinite power, knowledge, and self-sufficiency must also possess intelligence and will, rather than being a mere impersonal substrate — moving from bare necessary existence to the personal, providential God of theism. Clarke's framing, treating the question as ontological rather than temporal, anticipated the most sophisticated contemporary defenses of the cosmological argument and shaped an entire tradition of eighteenth-century British natural theology.`,
+  },
+  {
+    id: 'pruss-psr',
+    slug: 'pruss-psr',
+    name: "Pruss's Modern Principle of Sufficient Reason Argument",
+    category: 'cosmological',
+    shortDescription: 'A necessary being with free will is required to explain the conjunction of all contingent truths without collapsing modal distinctions.',
+    historicalBackground: `Alexander Pruss (Georgetown) and Robert Koons developed sophisticated contemporary defences of the PSR-based cosmological argument. Pruss's 2006 Cambridge monograph addressed the classic "modal collapse" objection and proposed a "weak PSR" that avoids it. His formulation shows that even a modest demand for explanation — that contingent truths have some explanation — leads to a free, necessary being as the ultimate explanatory terminus.`,
+    premises: [
+      {
+        id: 'pruss-p1',
+        text: 'The weak PSR: for every contingent truth, there is an explanation (even if we do not know it).',
+        defense: 'The weak PSR does not require that we can find explanations, only that they exist. It underlies all scientific inquiry: scientists assume phenomena have explanations. Denying it leads to radical scepticism about explanation generally. The weak form avoids the modal collapse objection while still generating the argument.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)', 'Pruss & Gale, "A New Cosmological Argument" (1999)']
+      },
+      {
+        id: 'pruss-p2',
+        text: 'The conjunction of all contingent truths is itself a contingent truth and requires an explanation.',
+        defense: 'If every contingent truth has an explanation, then the Big Conjunctive Contingent Fact (BCCF) — the conjunction of all contingent truths — also has an explanation. The explanation cannot be another contingent truth (that would enlarge the BCCF) nor can it be a necessary truth alone (necessary truths entail only necessary effects). Therefore the explanation must involve a free act of a necessary being.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)']
+      }
+    ],
+    conclusion: 'Therefore the explanation of the contingent world involves a free, necessary being whose free choices explain why the contingent world is as it is — this is God.',
+    proponents: [
+      { name: 'Alexander Pruss', era: 'Contemporary' },
+      { name: 'Robert Koons', era: 'Contemporary' },
+    ],
+    objections: [
+      {
+        id: 'pruss-obj1',
+        title: 'Modal Collapse',
+        description: 'If a necessary being necessarily explains all contingent truths, those truths become necessary, collapsing modal distinctions.',
+        response: 'Pruss distinguishes between a necessary being and necessary explanations. A necessary being can freely choose among possible worlds; the choice itself is free and not necessitated, so the explained facts remain contingent. The necessity of the explainer does not transfer to the explained.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)']
+      },
+      {
+        id: 'pruss-obj2',
+        title: 'The PSR is itself unjustified',
+        description: 'Why accept the PSR?',
+        response: 'The weak PSR merely requires that explanations exist, not that we can always find them. Denying it leads to radical scepticism. Moreover, the PSR is a presupposition of all scientific and philosophical inquiry — those who deny it in argument rely on it in practice.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)', 'Koons, "A New Look at the Cosmological Argument" (1997)']
+      },
+      {
+        id: 'pruss-obj3',
+        title: 'Self-explaining facts',
+        description: 'Some facts (e.g., mathematical truths) may be self-explanatory; why not physical facts?',
+        response: 'Self-explanation applies only to necessary truths. Contingent physical facts — things that could have been otherwise — cannot explain themselves; they require external grounds. The contingency of physical laws is evidenced by the fine-tuning data: the constants could have been different.',
+        sources: ['Pruss, The Principle of Sufficient Reason (2006)']
+      }
+    ],
+    significance: "Pruss's formulation is the most technically rigorous contemporary cosmological argument. By using only the weak PSR it avoids the classic modal collapse objection while still establishing a free, necessary, personal being as the ultimate explanation of the contingent world.",
+    relatedArguments: ['leibniz', 'rowe-contingency', 'clarke-first-cause'],
+    keySources: [
+      'Alexander Pruss, The Principle of Sufficient Reason: A Reassessment (Cambridge University Press, 2006)',
+      'Alexander Pruss & Richard Gale, "A New Cosmological Argument," Religious Studies 35/4 (1999)',
+      'Robert Koons, "A New Look at the Cosmological Argument," American Philosophical Quarterly 34/2 (1997)',
+    ],
+    body: `Alexander Pruss's contemporary formulation of the Principle of Sufficient Reason argument is widely regarded as the most technically sophisticated version of the cosmological argument on offer today, because it is built to survive the single objection that has troubled PSR-based arguments since Leibniz: the charge of "modal collapse." If a necessary being necessarily explains every contingent fact, does that not make every fact necessary too, erasing the very distinction between what is contingent and what is necessary — including erasing human freedom?
+
+Pruss's solution begins with a deliberately modest "weak PSR": for every contingent truth, there exists an explanation, even if we can never discover what it is. This weak form is all that scientific and everyday reasoning actually presupposes — no scientist requires that every explanation be knowable in advance, only that one exists. From this modest premise, Pruss constructs the argument's engine: the Big Conjunctive Contingent Fact (BCCF), the conjunction of every contingent truth there is. By the weak PSR, the BCCF itself has an explanation. But that explanation cannot be another contingent truth, since any contingent truth would simply be folded into the BCCF and require its own explanation in turn; nor can a purely necessary truth explain it, since necessary truths by themselves only entail further necessary truths, never contingent ones.
+
+The only remaining possibility is that the BCCF is explained by the free act of a necessary being — a being whose own existence needs no further explanation, but who freely chooses among alternative possible worlds rather than being determined by logical necessity to bring about only one. Because the choice is free, the facts it explains remain genuinely contingent — they could have been otherwise — even though the being making the choice exists necessarily. This distinction between the necessity of the explainer and the contingency of what is freely chosen is what allows Pruss's argument to avoid modal collapse while still concluding that a free, necessary, personal being — precisely what theists mean by God — is the ultimate explanatory foundation of the contingent world.`,
   }
 ];

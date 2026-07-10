@@ -1,0 +1,104 @@
+<style>
+  .hero-card { background:#0a0e1a; border:1px solid rgba(212,168,83,0.25); border-radius:14px; overflow:hidden; cursor:pointer; transition:all 0.3s; }
+  .hero-card:hover { border-color:#d4a853; box-shadow:0 0 40px rgba(212,168,83,0.2); transform:translateY(-3px); }
+  .hero-card.selected { border-color:#d4a853; box-shadow:0 0 0 2px #d4a853; }
+  .hero-meta { padding:18px 22px; border-top:1px solid rgba(212,168,83,0.18); }
+  .hero-meta h3 { color:#f1f5f9; font-family:'Cinzel',serif; letter-spacing:2px; text-transform:uppercase; font-size:14px; margin:0 0 6px; }
+  .hero-meta p { color:#94a3b8; font-size:13px; line-height:1.5; margin:0; font-family:'Crimson Pro',Georgia,serif; }
+  .hero-grid { display:grid; gap:24px; }
+  .hr-cinzel { font-family:'Cinzel',serif; }
+  .hr-body { font-family:'Crimson Pro',Georgia,serif; }
+</style>
+
+<h2>Choose the threshold</h2>
+<p class="subtitle">First impression for a Seeker arriving at the homepage. Same palette, three different doorways.</p>
+
+<div class="hero-grid">
+
+  <!-- A: Triptych Portal -->
+  <div class="hero-card" data-choice="triptych" onclick="toggleSelect(this)">
+    <div style="background:linear-gradient(180deg,#0a0e1a 0%,#111827 100%);padding:60px 40px 40px;position:relative;min-height:340px">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="hr-cinzel" style="font-size:11px;letter-spacing:8px;color:#d4a853;margin-bottom:18px">A · D · MMXXVI</div>
+        <div class="hr-cinzel" style="font-size:38px;letter-spacing:6px;color:#f1f5f9;font-weight:700;text-transform:uppercase;line-height:1.15">Theologia</div>
+        <div style="width:48px;height:1px;background:#d4a853;margin:18px auto"></div>
+        <div class="hr-body" style="font-size:15px;color:#94a3b8;font-style:italic;max-width:480px;margin:0 auto">"In the beginning was the Word, and the Word was with God, and the Word was God."</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:680px;margin:0 auto">
+        <div style="border:1px solid rgba(212,168,83,0.3);background:rgba(212,168,83,0.04);padding:24px 16px;text-align:center;border-radius:4px">
+          <div style="font-size:24px;color:#d4a853;margin-bottom:8px">☩</div>
+          <div class="hr-cinzel" style="font-size:11px;letter-spacing:3px;color:#f1f5f9">DEFEND</div>
+          <div class="hr-body" style="font-size:11px;color:#64748b;margin-top:6px">Apologetics</div>
+        </div>
+        <div style="border:1px solid rgba(212,168,83,0.3);background:rgba(212,168,83,0.04);padding:24px 16px;text-align:center;border-radius:4px">
+          <div style="font-size:24px;color:#d4a853;margin-bottom:8px">⊕</div>
+          <div class="hr-cinzel" style="font-size:11px;letter-spacing:3px;color:#f1f5f9">COMPARE</div>
+          <div class="hr-body" style="font-size:11px;color:#64748b;margin-top:6px">Traditions</div>
+        </div>
+        <div style="border:1px solid rgba(212,168,83,0.3);background:rgba(212,168,83,0.04);padding:24px 16px;text-align:center;border-radius:4px">
+          <div style="font-size:24px;color:#d4a853;margin-bottom:8px">📜</div>
+          <div class="hr-cinzel" style="font-size:11px;letter-spacing:3px;color:#f1f5f9">SOURCES</div>
+          <div class="hr-body" style="font-size:11px;color:#64748b;margin-top:6px">Manuscripts</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <h3>A · Triptych Portal</h3>
+      <p>Three doors, like a church facade. Inscribed Latin date, central verse, three pillared entry cards. Calm, ordered, monumental.</p>
+    </div>
+  </div>
+
+  <!-- B: Manuscript Opening -->
+  <div class="hero-card" data-choice="manuscript" onclick="toggleSelect(this)">
+    <div style="background:radial-gradient(ellipse at top,#1a2035 0%,#0a0e1a 70%);padding:50px 40px;min-height:340px;position:relative">
+      <div style="max-width:760px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start">
+        <div style="position:relative;width:120px;height:140px;background:linear-gradient(135deg,#d4a853 0%,#8b6914 100%);border:2px solid #d4a853;border-radius:4px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(212,168,83,0.3)">
+          <div class="hr-cinzel" style="font-size:96px;color:#0a0e1a;font-weight:900;line-height:1">I</div>
+          <div style="position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:1px solid rgba(212,168,83,0.3);border-radius:6px"></div>
+        </div>
+        <div>
+          <div class="hr-cinzel" style="font-size:10px;letter-spacing:6px;color:#d4a853;margin-bottom:12px">CHAPTER · I · OF · THE · GOSPEL · OF · JOHN</div>
+          <div class="hr-body" style="font-size:22px;line-height:1.5;color:#f1f5f9;font-style:italic">n the beginning was the Word, and the Word was with God, and the Word was God. The same was in the beginning with God. All things were made by him; and without him was not any thing made that was made.</div>
+          <div style="margin-top:24px;display:flex;gap:14px;align-items:center">
+            <button style="background:#d4a853;color:#0a0e1a;padding:10px 22px;border:none;border-radius:2px;font-family:Cinzel,serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;cursor:pointer">Begin Reading</button>
+            <span class="hr-body" style="color:#64748b;font-size:13px">or </span>
+            <span style="color:#d4a853;font-family:'Crimson Pro',serif;font-size:13px;border-bottom:1px solid #d4a853;padding-bottom:1px">explore the library →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <h3>B · Illuminated Manuscript</h3>
+      <p>Opens like a sacred codex. Gold drop-cap "I", verse spilling beside it, scholar's beginning. Most literary, most distinct.</p>
+    </div>
+  </div>
+
+  <!-- C: Architectural Statement -->
+  <div class="hero-card" data-choice="architectural" onclick="toggleSelect(this)">
+    <div style="background:#0a0e1a;padding:70px 40px;min-height:340px;position:relative;overflow:hidden;text-align:center">
+      <!-- arches -->
+      <svg viewBox="0 0 600 200" style="position:absolute;top:30px;left:50%;transform:translateX(-50%);width:90%;max-width:600px;opacity:0.18">
+        <path d="M50,180 L50,80 Q50,30 100,30 Q150,30 150,80 L150,180" stroke="#d4a853" stroke-width="1" fill="none"/>
+        <path d="M225,180 L225,60 Q225,10 300,10 Q375,10 375,60 L375,180" stroke="#d4a853" stroke-width="1.5" fill="none"/>
+        <path d="M450,180 L450,80 Q450,30 500,30 Q550,30 550,80 L550,180" stroke="#d4a853" stroke-width="1" fill="none"/>
+      </svg>
+      <div style="position:relative;z-index:2">
+        <div class="hr-cinzel" style="font-size:11px;letter-spacing:10px;color:#d4a853;margin-bottom:24px">SOLI · DEO · GLORIA</div>
+        <div class="hr-cinzel" style="font-size:56px;letter-spacing:4px;color:#f1f5f9;font-weight:700;line-height:1;text-transform:uppercase">Know what<br/>you believe</div>
+        <div class="hr-body" style="font-size:17px;color:#94a3b8;margin-top:24px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.55">Two thousand years of Christian thought, examined, defended, and made navigable.</div>
+        <div style="margin-top:36px;display:flex;gap:14px;justify-content:center">
+          <button style="background:#d4a853;color:#0a0e1a;padding:14px 28px;border:none;font-family:Cinzel,serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;cursor:pointer">Enter</button>
+          <button style="background:transparent;color:#d4a853;padding:14px 28px;border:1px solid #d4a853;font-family:Cinzel,serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer">Take a Tour</button>
+        </div>
+        <div style="margin-top:28px;font-family:'Crimson Pro',serif;font-size:12px;color:#64748b;letter-spacing:1px">⌘K  to search anything</div>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <h3>C · Architectural Statement</h3>
+      <p>Cathedral arches in faint gold linework, monumental statement headline, twin CTAs. Bold, confident, marketing-strong.</p>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:24px;color:#64748b;font-size:12px;text-align:center">Click your favorite. We can mix elements (e.g., A's triptych below C's headline).</p>

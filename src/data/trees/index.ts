@@ -1,4 +1,6 @@
 import { TreeNode } from '../arguments/types';
+import { allArguments } from '../arguments';
+import { generateTree } from './generate';
 
 export const kalamTree: TreeNode = {
   id: 'kalam-root',
@@ -351,7 +353,17 @@ export const plantingaTree: TreeNode = {
   ]
 };
 
+// Generated trees for every argument, keyed by argument slug. The three
+// hand-authored trees below override their generated counterparts (spread
+// order: hand-authored wins). Both `allTrees` and `allDebates` must be keyed
+// by `arg.slug` because the explore pages cross-reference them by the same key
+// and detail pages link via `?tree=<arg.slug>`.
+const generatedTrees: Record<string, TreeNode> = Object.fromEntries(
+  allArguments.map((arg) => [arg.slug, generateTree(arg)]),
+);
+
 export const allTrees: Record<string, TreeNode> = {
+  ...generatedTrees,
   kalam: kalamTree,
   anselm: anselmTree,
   plantinga: plantingaTree,
