@@ -34,9 +34,9 @@ export default function CommandBarTrigger() {
         }}
       >
         <Search size={14} />
-        <span className="hidden sm:inline">{t('triggerLabel')}</span>
+        <span className="hidden 2xl:inline">{t('triggerLabel')}</span>
         <kbd
-          className="hidden sm:inline"
+          className="hidden 2xl:inline"
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 10,

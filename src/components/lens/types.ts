@@ -18,6 +18,8 @@
 // - /way/pray/lords-prayer/page.tsx (via LensAdaptedContent) — YES (lens-adapted phrase commentary)
 // - CommandPalette                                    — YES (inline lens picker)
 // - LensOnboarding                                   — YES (descriptions shown)
+// - /read/[book]/[chapter]/page.tsx                  — YES (seeker reading tip)
+// - /critics/[category]/[objection]/page.tsx         — YES (argumentDepth simplified banner; showFootnotes gates sources)
 //
 // argumentDepth and showFootnotes are now wired on both apologetics reader pages
 // (atheism arguments and cults objections); showGreekHebrew and showPatristicCitations

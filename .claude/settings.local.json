@@ -27,7 +27,10 @@
       "Bash(grep -E \"\\\\.ts$\")",
       "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; \\(Get-Content src\\\\data\\\\arguments\\\\moral.ts\\).Count; \\(Get-Content src\\\\data\\\\arguments\\\\historical.ts\\).Count; \\(Get-Content src\\\\data\\\\arguments\\\\teleological.ts\\).Count)",
       "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; \\(Get-Content src\\\\data\\\\denominations\\\\index.ts\\).Count)",
-      "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; npx tsc --noEmit 2>&1 | Select-Object -First 20; Write-Host \"---LINE COUNTS---\"; \\(Get-Content src\\\\data\\\\denominations\\\\index.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-catholic-orthodox.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-protestant.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-other.ts\\).Count)"
+      "PowerShell(cd \"C:\\\\Users\\\\User\\\\Desktop\\\\study-theology-platform\"; npx tsc --noEmit 2>&1 | Select-Object -First 20; Write-Host \"---LINE COUNTS---\"; \\(Get-Content src\\\\data\\\\denominations\\\\index.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-catholic-orthodox.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-protestant.ts\\).Count; \\(Get-Content src\\\\data\\\\denominations\\\\denominations-other.ts\\).Count)",
+      "Bash(npm test *)",
+      "Bash(scripts/start-server.sh *)",
+      "Bash(bash *)"
     ]
   },
   "enableAllProjectMcpServers": true,

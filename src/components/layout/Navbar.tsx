@@ -2,29 +2,16 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
-import { Menu, X } from 'lucide-react';
+import { Link } from '@/i18n/navigation';
+import { Menu } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import ThemeToggle from './ThemeToggle';
 import { LensToggle } from '@/components/lens';
 import { CommandBarTrigger } from '@/components/command';
-import { KeystoneDivider } from '@/components/ornament';
-
-const NAV_ITEMS = [
-  { href: '/defend',    labelKey: 'defend' },
-  { href: '/compare',   labelKey: 'compare' },
-  { href: '/explore',   labelKey: 'explore' },
-  { href: '/semantics', labelKey: 'semantics' },
-  { href: '/sources',   labelKey: 'sources' },
-] as const;
-
-const WAY_ITEM = { href: '/way', label: 'The Way' } as const;
+import NavMenuOverlay from './NavMenuOverlay';
 
 export default function Navbar() {
-  const t = useTranslations('nav');
-  const pathname = usePathname();
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header
@@ -40,104 +27,25 @@ export default function Navbar() {
             THEOLOGIA
           </Link>
 
-          <div className="hidden md:flex items-center gap-6">
-            {NAV_ITEMS.map(({ href, labelKey }) => {
-              const isActive = pathname.startsWith(href);
-              return (
-                <Link
-                  key={href}
-                  href={href}
-                  className="t-caps text-xs relative py-1"
-                  style={{
-                    color: isActive ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)',
-                    transition: 'color var(--motion-duration-base) var(--motion-ease-out)',
-                  }}
-                >
-                  {t(labelKey)}
-                  {isActive && (
-                    <span
-                      className="absolute left-0 right-0 -bottom-1 h-0.5"
-                      style={{ background: 'var(--color-accent-gold)' }}
-                    />
-                  )}
-                </Link>
-              );
-            })}
-            <Link
-              href={WAY_ITEM.href}
-              className="relative py-1"
-              style={{
-                fontFamily: 'var(--font-body, serif)',
-                fontStyle: 'italic',
-                fontSize: '0.875rem',
-                color: pathname.startsWith(WAY_ITEM.href) ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)',
-                transition: 'color var(--motion-duration-base) var(--motion-ease-out)',
-                textDecoration: 'none',
-              }}
-            >
-              {WAY_ITEM.label}
-              {pathname.startsWith(WAY_ITEM.href) && (
-                <span
-                  className="absolute left-0 right-0 -bottom-1 h-0.5"
-                  style={{ background: 'var(--color-accent-gold)' }}
-                />
-              )}
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             <CommandBarTrigger />
             <ThemeToggle />
             <LensToggle />
             <LanguageSwitcher />
             <button
-              className="md:hidden p-2"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Menu"
-              style={{ color: 'var(--color-text-secondary)' }}
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+              className="flex items-center gap-2 px-3 py-2 t-caps text-xs border"
+              style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}
             >
-              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+              <Menu size={14} />
+              <span className="hidden sm:inline">Menu</span>
             </button>
           </div>
         </div>
       </nav>
 
-      {mobileOpen && (
-        <div className="md:hidden" style={{ background: 'var(--color-bg-primary)', borderTop: '1px solid var(--color-border)' }}>
-          <div className="px-4 py-4">
-            {NAV_ITEMS.map(({ href, labelKey }, i) => (
-              <div key={href}>
-                <Link
-                  href={href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block t-caps text-xs py-3"
-                  style={{ color: pathname.startsWith(href) ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)' }}
-                >
-                  {t(labelKey)}
-                </Link>
-                {i < NAV_ITEMS.length - 1 && <KeystoneDivider />}
-              </div>
-            ))}
-            <div>
-              <KeystoneDivider />
-              <Link
-                href={WAY_ITEM.href}
-                onClick={() => setMobileOpen(false)}
-                className="block py-3"
-                style={{
-                  fontFamily: 'var(--font-body, serif)',
-                  fontStyle: 'italic',
-                  fontSize: '0.875rem',
-                  color: pathname.startsWith(WAY_ITEM.href) ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)',
-                  textDecoration: 'none',
-                }}
-              >
-                {WAY_ITEM.label}
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+      <NavMenuOverlay open={menuOpen} onClose={() => setMenuOpen(false)} />
     </header>
   );
 }

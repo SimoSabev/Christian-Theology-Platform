@@ -39,7 +39,7 @@ export default function LensToggle() {
         aria-label={t('toggleAriaLabel')}
       >
         <Eye size={14} />
-        <span className="hidden sm:inline">{t(`names.${lens}`)}</span>
+        <span className="hidden 2xl:inline">{t(`names.${lens}`)}</span>
       </button>
 
       {open && (

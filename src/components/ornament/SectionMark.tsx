@@ -8,9 +8,10 @@ const GLYPHS = {
   plusCircle: '⊕',
   chiRho: '☧',
   diamond: '◆',
+  shadowedCross: '✞',
 } as const;
 
-type Glyph = keyof typeof GLYPHS;
+export type Glyph = keyof typeof GLYPHS;
 
 type Props = { glyph: Glyph; className?: string; size?: number };
 

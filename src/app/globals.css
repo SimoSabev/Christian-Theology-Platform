@@ -51,6 +51,29 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: var(--color-accent-gold); }
 
 /* -------------------------------------------------------------
+   Pointer cursor on every interactive element.
+   Tailwind's preflight resets <button> to cursor: default — this
+   restores the hand cursor across all clickable controls, including
+   ARIA-role-based custom components (menu items, tabs, switches).
+   ------------------------------------------------------------- */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+[role="menuitem"],
+[role="menuitemradio"],
+[role="tab"],
+[role="switch"],
+[role="option"],
+label[for],
+summary,
+select {
+  cursor: pointer;
+}
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+/* -------------------------------------------------------------
    Semantic typography classes — components compose these.
    ------------------------------------------------------------- */
 .t-display    { font-family: var(--font-display); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
