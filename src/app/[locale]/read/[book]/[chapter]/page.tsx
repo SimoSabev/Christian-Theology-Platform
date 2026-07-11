@@ -82,9 +82,18 @@ export default async function ChapterReaderPage({ params }: PageProps) {
         ))}
       </div>
 
-      {greekChapter && (
+      {greekChapter ? (
         <ChapterGreekPanel bookName={book.name} chapterNum={chapterNum} greekChapter={greekChapter} />
-      )}
+      ) : hasGreekInterlinear(book.id) ? (
+        <>
+          <KeystoneDivider className="my-8" />
+          <div className="p-4" style={{ border: '1px solid var(--color-border)', background: 'rgba(212,168,83,0.03)' }}>
+            <p className="t-meta text-xs" style={{ color: 'var(--color-text-muted)' }}>
+              The Greek interlinear for this chapter is temporarily unavailable on this deployment — it is regenerated from a separately-licensed dataset and was not bundled with this build.
+            </p>
+          </div>
+        </>
+      ) : null}
 
       <KeystoneDivider className="mb-8" />
 

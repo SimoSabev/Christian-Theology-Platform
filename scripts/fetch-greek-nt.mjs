@@ -85,6 +85,45 @@ async function parseSource(text, books) {
   return dataRows;
 }
 
+// Compares parsed verse counts against the known-good KJV verse counts for
+// the same book/chapter. The TAGNT source can legitimately omit disputed
+// passages (e.g. the Comma Johanneum, the Pericope Adulterae, the Longer
+// Ending of Mark) — this doesn't fail the build, it just surfaces gaps in
+// the build log so a silently under-populated chapter doesn't go unnoticed.
+function checkCompleteness(books) {
+  const kjvDir = path.join(__dirname, '..', 'src', 'data', 'bible', 'kjv');
+  const missingBooks = [];
+  const chapterGaps = [];
+
+  for (const bookId of Object.values(BOOK_MAP)) {
+    const kjvPath = path.join(kjvDir, `${bookId}.json`);
+    if (!fs.existsSync(kjvPath)) continue;
+    const kjvChapters = JSON.parse(fs.readFileSync(kjvPath, 'utf-8'));
+
+    if (!books[bookId]) {
+      missingBooks.push(bookId);
+      continue;
+    }
+
+    for (const { chapter, verses } of kjvChapters) {
+      const parsedVerseCount = Object.keys(books[bookId][chapter] || {}).length;
+      if (parsedVerseCount < verses.length) {
+        chapterGaps.push(`${bookId} ${chapter} (${parsedVerseCount}/${verses.length} verses)`);
+      }
+    }
+  }
+
+  if (missingBooks.length > 0) {
+    console.warn(`Greek NT: no data parsed at all for: ${missingBooks.join(', ')}`);
+  }
+  if (chapterGaps.length > 0) {
+    console.warn(`Greek NT: chapters with fewer parsed verses than KJV (may be expected for disputed passages): ${chapterGaps.join(', ')}`);
+  }
+  if (missingBooks.length === 0 && chapterGaps.length === 0) {
+    console.log('Greek NT: verse counts match KJV for every book/chapter.');
+  }
+}
+
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const books = {};
@@ -95,6 +134,7 @@ async function main() {
     total += await parseSource(text, books);
   }
   console.log(`Parsed ${total} word rows across ${Object.keys(books).length} books.`);
+  checkCompleteness(books);
 
   for (const [bookId, chapters] of Object.entries(books)) {
     const chapterArr = Object.entries(chapters).map(([chNum, verses]) => {
@@ -111,6 +151,10 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+  // Runs as `prebuild` before `next build` — a transient fetch failure here
+  // (rate limit, network blip) must not fail the whole site build. The app
+  // already degrades gracefully when this data is absent (see
+  // `getGreekChapter` in src/data/bible/index.ts): the interlinear panel
+  // simply doesn't render for that deploy. Exit 0 so `next build` still runs.
+  console.error('Greek NT interlinear fetch failed — continuing without it:', err);
 });
