@@ -18,19 +18,50 @@
 //
 // SCOPE: only books whose LXX book division and versification align
 // cleanly with the Protestant 39-book canon already used elsewhere in this
-// app are included. Five OT books are deliberately excluded because they
-// don't have a clean 1:1 mapping and would risk silently mislabeling verses:
-//   - Psalms: LXX psalm numbering is offset from the Hebrew/English
-//     numbering used elsewhere in this app (e.g. LXX Ps 9 = Heb Ps 9+10
-//     combined); needs a dedicated renumbering table, not done here.
+// app are included. Two OT books are still excluded because they don't have
+// a workable mapping:
+//   - Psalms: deliberately NOT attempted, even partially. LXX psalm
+//     numbering diverges from Hebrew/English numbering at 4 known
+//     chapter-level merge/split points, 3 of which are confirmed:
+//       - Heb Ps 9+10 -> LXX Ps 9 (split at LXX/Vulgate Ps 9:22 = Heb
+//         Ps 10:1 — confirmed via Vulgate cross-references, which follow
+//         the same LXX-derived Psalm numbering)
+//       - Heb Ps 116 -> LXX Ps 114 (Heb vv.1-9) + LXX Ps 115 (Heb vv.10-19)
+//       - Heb Ps 147 -> LXX Ps 146 (Heb vv.1-11) + LXX Ps 147 (Heb vv.12-20)
+//       - Heb Ps 114+115 -> LXX Ps 113 (boundary not found)
+//     But the deeper problem: Hebrew Ps 9 has only 20 verses, yet its LXX
+//     boundary falls at LXX verse 22 — meaning LXX verse numbering had
+//     already drifted 2 verses ahead of Hebrew numbering by the end of
+//     Ps 9 ALONE, most likely because the LXX/Vulgate often counts a
+//     psalm's title/superscription as verse 1 where Hebrew/English does
+//     not. This means individual verse alignment can drift within psalms
+//     assumed to be "untouched" (not just at the 4 merge/split points),
+//     and a verse-COUNT check (like checkCompleteness() below) CANNOT
+//     catch a consistent one-verse shift — the total count still matches,
+//     every verse is just mislabeled by one. Building this safely needs a
+//     genuine verse-by-verse concordance (e.g. a full NETS Psalms
+//     apparatus) for all 150 psalms, not just the 4 merge/split points;
+//     general web research could not produce one. Left out entirely rather
+//     than risk silently mislabeling Scripture text.
+//   - Ecclesiastes: not present in this dataset at all as of this writing —
+//     would need a different source entirely.
+//
+// Two formerly-excluded books are now included with documented handling:
 //   - Ezra, Nehemiah: the LXX tradition combines these into one continuous
-//     book ("Esdras B"); splitting it at the correct chapter requires
-//     further verification and isn't done here.
-//   - Ecclesiastes: not present in this dataset at all as of this writing.
-//   - Daniel: the LXX tradition has two competing Greek versions (the Old
-//     Greek and Theodotion's); which one to present is an editorial
-//     decision not made here.
-// These can be added later once each is individually researched and mapped.
+//     book ("Esdras B" / "2 Esdras"), chapters 1–10 = Ezra and 11–23 =
+//     Nehemiah (renumbered 1–13). Confirmed by content: Esdras B chapter 11
+//     opens with "Νεεμία υἱοῦ Χελκειά" — the Greek rendering of Nehemiah
+//     1:1's opening words, "the words of Nehemiah the son of Hachaliah".
+//   - Daniel: the LXX tradition has two competing Greek versions. The
+//     Theodotion version (not the earlier "Old Greek") is used here — it
+//     displaced the Old Greek so thoroughly early in church history that
+//     only two known manuscripts of the Old Greek Daniel survive at all;
+//     Theodotion's is the version historically read as "the Septuagint
+//     Daniel" in patristic and liturgical use.
+// Note: the exact upper chapter/verse extent of the Esdras B and Daniel
+// source files was not independently re-verified beyond spot-checking their
+// format and the chapter-11 content match above — the completeness check
+// below will surface any gap against the KJV verse counts on first run.
 //
 // Usage: node scripts/fetch-lxx-swete.mjs
 
@@ -79,7 +110,14 @@ const BOOK_FILES = {
   haggai: '45.Aggaeus',
   zechariah: '46.Zacharias',
   malachi: '47.Malachias',
+  daniel: '57.Daniel_Theodotionis_versio',
 };
+
+// Esdras B combines Ezra and Nehemiah as one continuously-numbered book;
+// split at the confirmed chapter boundary (see file header) rather than
+// fetched as a single BOOK_FILES entry.
+const ESDRAS_B_FILE = '18.Esdras_B';
+const ESDRAS_B_NEHEMIAH_START_CHAPTER = 11;
 
 // Each line is "<book>.<chapter>.<verse> <greekWord>", one word per line,
 // with the same ref repeated for every word in that verse. Verse "0" is a
@@ -137,6 +175,11 @@ function checkCompleteness(bookId, chapters) {
   }
 }
 
+function writeBook(bookId, chapters) {
+  checkCompleteness(bookId, chapters);
+  fs.writeFileSync(path.join(OUT_DIR, `${bookId}.json`), JSON.stringify(chapters));
+}
+
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   let written = 0;
@@ -145,10 +188,21 @@ async function main() {
     console.log(`Fetching ${bookId} (${filename})...`);
     const text = await downloadText(url);
     const chapters = parseBookText(text);
-    checkCompleteness(bookId, chapters);
-    fs.writeFileSync(path.join(OUT_DIR, `${bookId}.json`), JSON.stringify(chapters));
+    writeBook(bookId, chapters);
     written++;
   }
+
+  console.log(`Fetching ezra+nehemiah (${ESDRAS_B_FILE})...`);
+  const esdrasBText = await downloadText(`${RAW_BASE}/${encodeURIComponent(ESDRAS_B_FILE)}.txt`);
+  const esdrasBChapters = parseBookText(esdrasBText);
+  const ezraChapters = esdrasBChapters.filter((c) => c.chapter < ESDRAS_B_NEHEMIAH_START_CHAPTER);
+  const nehemiahChapters = esdrasBChapters
+    .filter((c) => c.chapter >= ESDRAS_B_NEHEMIAH_START_CHAPTER)
+    .map((c) => ({ ...c, chapter: c.chapter - ESDRAS_B_NEHEMIAH_START_CHAPTER + 1 }));
+  writeBook('ezra', ezraChapters);
+  writeBook('nehemiah', nehemiahChapters);
+  written += 2;
+
   console.log(`Wrote ${written} Septuagint book files to ${OUT_DIR}`);
 }
 

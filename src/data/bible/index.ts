@@ -102,19 +102,20 @@ export async function getGreekChapter(bookId: string, chapter: number): Promise<
  * the Hebrew OT, c. 3rd–2nd century BC — is available as plain text (no
  * word-by-word morphology/gloss/Strong's, unlike the NT interlinear), sourced
  * from Swete's edition (public domain) via nathans/lxx-swete (CC BY-SA 4.0).
- * Five OT books are deliberately excluded because their LXX book division or
- * versification doesn't map 1:1 onto the Protestant canon used elsewhere in
- * this app: Psalms (LXX numbering is offset from Hebrew/English numbering),
- * Ezra and Nehemiah (combined into one book in the LXX tradition), Ecclesiastes
- * (absent from this dataset), and Daniel (two competing Greek versions exist —
- * Old Greek and Theodotion's — and choosing between them isn't done here).
- * See scripts/fetch-lxx-swete.mjs for the full rationale.
+ * Two OT books are still excluded because their LXX versification doesn't
+ * map cleanly onto the Protestant canon used elsewhere in this app: Psalms
+ * (LXX numbering is offset from Hebrew/English numbering at several points,
+ * needing verse-level splits, not just chapter renumbering) and Ecclesiastes
+ * (absent from this dataset entirely). Ezra, Nehemiah (split from the
+ * combined LXX "Esdras B"), and Daniel (using Theodotion's version, the
+ * text historically read as "the Septuagint Daniel") are included — see
+ * scripts/fetch-lxx-swete.mjs for the full rationale on all four.
  */
 export const SEPTUAGINT_BOOKS = new Set([
   'genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'joshua', 'judges', 'ruth',
-  '1samuel', '2samuel', '1kings', '2kings', '1chronicles', '2chronicles', 'esther', 'job',
-  'proverbs', 'songofsolomon', 'isaiah', 'jeremiah', 'lamentations', 'ezekiel',
-  'hosea', 'joel', 'amos', 'obadiah', 'jonah', 'micah', 'nahum', 'habakkuk',
+  '1samuel', '2samuel', '1kings', '2kings', '1chronicles', '2chronicles', 'ezra', 'nehemiah',
+  'esther', 'job', 'proverbs', 'songofsolomon', 'isaiah', 'jeremiah', 'lamentations', 'ezekiel',
+  'daniel', 'hosea', 'joel', 'amos', 'obadiah', 'jonah', 'micah', 'nahum', 'habakkuk',
   'zephaniah', 'haggai', 'zechariah', 'malachi',
 ]);
 
