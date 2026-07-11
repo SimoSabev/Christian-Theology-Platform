@@ -1,10 +1,11 @@
 import { Link } from '@/i18n/navigation';
-import { getBookBySlug, getChapter, getAdjacentChapter, isChapterAvailable, getGreekChapter, hasGreekInterlinear } from '@/data/bible';
+import { getBookBySlug, getChapter, getAdjacentChapter, isChapterAvailable, getGreekChapter, hasGreekInterlinear, getSeptuagintChapter, hasSeptuagint } from '@/data/bible';
 import { Eyebrow, KeystoneDivider } from '@/components/ornament';
 import RevealOnScroll from '@/components/motion/RevealOnScroll';
 import ActionToolbar from '@/components/reader/ActionToolbar';
 import SeekerReadingTip from '@/components/reader/SeekerReadingTip';
 import ChapterGreekPanel from '@/components/reader/ChapterGreekPanel';
+import ChapterSeptuagintPanel from '@/components/reader/ChapterSeptuagintPanel';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 interface PageProps {
@@ -28,6 +29,7 @@ export default async function ChapterReaderPage({ params }: PageProps) {
   const prev = getAdjacentChapter(book.id, chapterNum, 'prev');
   const next = getAdjacentChapter(book.id, chapterNum, 'next');
   const greekChapter = hasGreekInterlinear(book.id) ? await getGreekChapter(book.id, chapterNum) : undefined;
+  const septuagintChapter = hasSeptuagint(book.id) ? await getSeptuagintChapter(book.id, chapterNum) : undefined;
 
   if (!chapter) {
     return (
@@ -90,6 +92,19 @@ export default async function ChapterReaderPage({ params }: PageProps) {
           <div className="p-4" style={{ border: '1px solid var(--color-border)', background: 'rgba(212,168,83,0.03)' }}>
             <p className="t-meta text-xs" style={{ color: 'var(--color-text-muted)' }}>
               The Greek interlinear for this chapter is temporarily unavailable on this deployment — it is regenerated from a separately-licensed dataset and was not bundled with this build.
+            </p>
+          </div>
+        </>
+      ) : null}
+
+      {septuagintChapter ? (
+        <ChapterSeptuagintPanel bookName={book.name} chapterNum={chapterNum} septuagintChapter={septuagintChapter} />
+      ) : hasSeptuagint(book.id) ? (
+        <>
+          <KeystoneDivider className="my-8" />
+          <div className="p-4" style={{ border: '1px solid var(--color-border)', background: 'rgba(212,168,83,0.03)' }}>
+            <p className="t-meta text-xs" style={{ color: 'var(--color-text-muted)' }}>
+              The Septuagint text for this chapter is temporarily unavailable on this deployment — it is regenerated from a separately-licensed dataset and was not bundled with this build.
             </p>
           </div>
         </>
